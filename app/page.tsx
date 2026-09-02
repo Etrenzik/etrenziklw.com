@@ -1,12 +1,8 @@
-"use client";
+import { GridPageContent } from "@/components/grid/GridPageContent";
 
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
-
-export default function Home() {
-  const router = useRouter();
-  useEffect(() => {
-    router.replace("/grid");
-  }, [router]);
-  return null;
+// Renders the grid directly rather than client-side redirecting to /grid —
+// a static export's homepage should show real content immediately, not
+// depend on JS executing before anything appears.
+export default async function Home() {
+  return <GridPageContent />;
 }
