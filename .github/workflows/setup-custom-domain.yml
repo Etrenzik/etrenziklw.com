@@ -54,7 +54,7 @@ jobs:
       # Only runs when the zone has zero existing DNS records, so this can never
       # overwrite/collide with something already pointed at the domain (email, etc).
       - name: Create CNAME record if the zone is empty
-        if: inputs.create_dns_record == 'true'
+        if: ${{ inputs.create_dns_record }}
         run: |
           COUNT=$(node -e "const j=require('./dns-records-response.json');console.log(j.result.length)")
           echo "Existing record count: $COUNT"
