@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Spread — CFB Predictor & Season Grid
 
-## Getting Started
+A personal college football win-probability model, season grid, and
+accuracy dashboard. Built to support a CBS Sports Pick'em confidence pool
+("The Spread") — this app does **not** scrape or automate
+picks.cbssports.com. It's a standalone predictor backed by
+[CollegeFootballData.com](https://collegefootballdata.com) (CFBD) data.
 
-First, run the development server:
+## What it does
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. **Prediction model** — for every FBS game, blends a market-calibrated
+   win probability (from the closing spread) with a matchup-strength model
+   (SP+ ratings, recent form, turnover margin, home field, rest/travel,
+   head-to-head) into one win probability, predicted margin, and an
+   "upset alert" flag. See [`lib/model`](lib/model).
+2. **Season grid** — every FBS team × every week (Week 0 through bowls and
+   the CFP championship), with the pick, spread, and result per cell. See
+   [`app/grid`](app/grid) and [`components/grid`](components/grid).
+3. **History dashboard** — straight-up (SU) and against-the-spread (ATS)
+   accuracy, broken out by confidence bucket, conference, favorite/underdog,
+   and site, plus a calibration chart and week-by-week log. See
+   [`app/dashboard`](app/dashboard) and [`components/dashboard`](components/dashboard).
+
+## How the model works
+
+- **Market probability**: `p = sigmoid(b + k * homeSpread)`, where `k`/`b`
+  are fit via logistic regression against several prior CFBD seasons
+  (`npm run calibrate` → `data/calibration.json`), not hardcoded.
+- **Matchup probability**: a weighted sum of point-margin features (SP+
+  differential, recent form, turnover margin, home field, rest/travel,
+  head-to-head), converted to a probability with the same calibrated
+  slope. Weights live in one place: [`lib/model/config.ts`](lib/model/config.ts).
+- **Blend**: `BLEND_MARKET_WEIGHT` (default 0.6) of market + the rest
+  matchup, also in `lib/model/config.ts`.
+- **Backtest**: `npm run backtest` runs the full model against
+  `BACKTEST_SEASONS` and writes `data/backtest/*.json`, which seeds the
+  dashboard with real history on day one.
+
+## Data pipeline
+
+Raw CFBD pulls and computed picks are committed as JSON under `data/` (no
+database) so the static export always has something to render:
+
+```
+data/raw/<year>/          # normalized CFBD snapshots (teams, games, lines, sp-ratings, records, turnovers)
+data/calibration.json     # fitted market logistic (k, b)
+data/picks/<year>.json    # full season grid: every game + pick
+data/dashboard/<year>.json# current-season accuracy breakdown
+data/backtest/<year>.json # per-season backtest accuracy
+data/backtest/summary.json# combined backtest accuracy across all seasons
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Scripts (run with `tsx`, see `package.json`):
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Command | What it does |
+| --- | --- |
+| `npm run calibrate` | Fits `k`/`b` against `BACKTEST_SEASONS`, writes `data/calibration.json` |
+| `npm run backtest` | Runs the model against `BACKTEST_SEASONS`, writes `data/backtest/*` |
+| `npm run fetch` | Pulls the current season from CFBD into `data/raw/<year>/` |
+| `npm run compute` | Runs the model over the current season, writes `data/picks` + `data/dashboard` |
+| `npm run refresh` | `fetch` + `compute` (what the scheduled job runs) |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Local development
 
-## Learn More
+```bash
+cp .env.example .env.local   # then paste your CFBD_API_KEY (get one free at collegefootballdata.com/key)
+npm install
+npm run calibrate && npm run backtest   # one-time, seeds calibration + history
+npm run fetch && npm run compute        # pulls + scores the current season
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+`CFBD_API_KEY` is never committed — it's read from `.env.local` locally
+and from a GitHub Actions secret in CI.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Data refresh**: [`.github/workflows/refresh-and-deploy.yml`](.github/workflows/refresh-and-deploy.yml)
+  runs daily during the season / weekly off-season (or on demand via
+  `workflow_dispatch`), commits refreshed `data/` files, builds the static
+  export, and deploys it to Cloudflare Pages.
+- **Hosting**: Next.js static export (`output: "export"`, see
+  `next.config.ts`) → `out/` → Cloudflare Pages, project name
+  `the-spread-cfb`, custom domain `EtrenzikLW.com`.
+- **Secrets** (GitHub Actions → repo secrets): `CFBD_API_KEY`,
+  `CLOUDFLARE_API_TOKEN` (Pages:Edit scope), `CLOUDFLARE_ACCOUNT_ID`.
 
-## Deploy on Vercel
+## Tech
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js (App Router) + TypeScript + Tailwind CSS, static-exported. No
+server/database — everything is precomputed JSON regenerated by CI.

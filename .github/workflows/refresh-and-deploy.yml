@@ -1,0 +1,74 @@
+name: Refresh data & deploy
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # Daily during the season (Aug-Dec, Jan) at 13:00 UTC.
+    - cron: "0 13 * 8-12,1 *"
+    # Weekly (Sundays) during the off-season (Feb-Jul) at 13:00 UTC.
+    - cron: "0 13 * 2-7 0"
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Bootstrap calibration + backtest (first run only)
+        run: |
+          if [ ! -f data/calibration.json ]; then
+            echo "No calibration on disk yet — fitting the market model and running the backtest."
+            npm run calibrate
+            npm run backtest
+          else
+            echo "data/calibration.json already present, skipping calibrate+backtest."
+          fi
+
+      - name: Fetch current season data
+        run: npm run fetch
+
+      - name: Compute picks + dashboard stats
+        run: npm run compute
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore: refresh CFBD data [skip ci]"
+            git push
+          fi
+
+      - name: Build static site
+        run: npm run build
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy out --project-name=the-spread-cfb --branch=main
