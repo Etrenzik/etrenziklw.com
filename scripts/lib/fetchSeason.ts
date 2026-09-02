@@ -34,7 +34,14 @@ export async function fetchSeasonRawData(year: number): Promise<SeasonRawData> {
   ]);
 
   const teams = teamsRaw.map(normalizeTeam);
-  const games = gamesRaw.map(normalizeGame);
+
+  // CFBD's /games endpoint isn't scoped by classification, so with no team/conference
+  // filter it returns every NCAA division's games (FBS, FCS, D2, D3 — several times the
+  // ~800-900 actual FBS games per season). Keep only games with at least one FBS side.
+  const fbsTeamNames = new Set(teams.map((t) => t.school));
+  const games = gamesRaw
+    .filter((g) => fbsTeamNames.has(g.homeTeam) || fbsTeamNames.has(g.awayTeam))
+    .map(normalizeGame);
 
   const lines = new Map<number, RawLine>();
   for (const lg of linesRaw) {
