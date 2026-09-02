@@ -33,6 +33,18 @@ jobs:
             "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CLOUDFLARE_ACCOUNT_ID }}/pages/projects/the-spread-cfb/domains/${{ inputs.domain }}" \
             -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" | tee domain-status-response.json
 
+      - name: List existing DNS records for the zone (read-only)
+        if: always()
+        run: |
+          ZONE_ID=$(curl -s "https://api.cloudflare.com/client/v4/zones?name=${{ inputs.domain }}" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" | tee zone-lookup-response.json | \
+            node -e "let d='';process.stdin.on('data',c=>d+=c).on('end',()=>{const j=JSON.parse(d);console.log(j.result?.[0]?.id ?? '')})")
+          echo "Zone ID: $ZONE_ID"
+          if [ -n "$ZONE_ID" ]; then
+            curl -s "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/dns_records?per_page=100" \
+              -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" | tee dns-records-response.json
+          fi
+
       - name: Upload responses
         if: always()
         uses: actions/upload-artifact@v4
@@ -41,3 +53,5 @@ jobs:
           path: |
             domain-add-response.json
             domain-status-response.json
+            zone-lookup-response.json
+            dns-records-response.json
