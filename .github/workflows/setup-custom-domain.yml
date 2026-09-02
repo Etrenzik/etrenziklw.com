@@ -7,6 +7,11 @@ on:
         description: "Domain to attach to the the-spread-cfb Pages project"
         required: true
         default: "EtrenzikLW.com"
+      create_dns_record:
+        description: "Also create the apex CNAME record (only proceeds if the zone has zero existing DNS records)"
+        type: boolean
+        required: true
+        default: false
 
 jobs:
   attach-domain:
@@ -40,10 +45,27 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" | tee zone-lookup-response.json | \
             node -e "let d='';process.stdin.on('data',c=>d+=c).on('end',()=>{const j=JSON.parse(d);console.log(j.result?.[0]?.id ?? '')})")
           echo "Zone ID: $ZONE_ID"
+          echo "ZONE_ID=$ZONE_ID" >> "$GITHUB_ENV"
           if [ -n "$ZONE_ID" ]; then
             curl -s "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/dns_records?per_page=100" \
               -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" | tee dns-records-response.json
           fi
+
+      # Only runs when the zone has zero existing DNS records, so this can never
+      # overwrite/collide with something already pointed at the domain (email, etc).
+      - name: Create CNAME record if the zone is empty
+        if: inputs.create_dns_record == 'true'
+        run: |
+          COUNT=$(node -e "const j=require('./dns-records-response.json');console.log(j.result.length)")
+          echo "Existing record count: $COUNT"
+          if [ "$COUNT" != "0" ]; then
+            echo "Zone already has DNS records — refusing to auto-create, handle manually."
+            exit 1
+          fi
+          curl -s -X POST "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/dns_records" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data '{"type":"CNAME","name":"@","content":"the-spread-cfb.pages.dev","proxied":true}' | tee dns-create-response.json
 
       - name: Upload responses
         if: always()
@@ -55,3 +77,4 @@ jobs:
             domain-status-response.json
             zone-lookup-response.json
             dns-records-response.json
+            dns-create-response.json
