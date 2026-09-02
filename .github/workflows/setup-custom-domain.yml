@@ -1,0 +1,43 @@
+name: Attach custom domain to Cloudflare Pages
+
+on:
+  workflow_dispatch:
+    inputs:
+      domain:
+        description: "Domain to attach to the the-spread-cfb Pages project"
+        required: true
+        default: "EtrenzikLW.com"
+
+jobs:
+  attach-domain:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add custom domain
+        run: |
+          set -e
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+            "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CLOUDFLARE_ACCOUNT_ID }}/pages/projects/the-spread-cfb/domains" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data "{\"name\":\"${{ inputs.domain }}\"}")
+          BODY=$(echo "$RESPONSE" | head -n -1)
+          STATUS=$(echo "$RESPONSE" | tail -n 1)
+          echo "HTTP status: $STATUS"
+          echo "$BODY"
+          echo "$BODY" > domain-add-response.json
+
+      - name: Check current domain status
+        if: always()
+        run: |
+          curl -s \
+            "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CLOUDFLARE_ACCOUNT_ID }}/pages/projects/the-spread-cfb/domains/${{ inputs.domain }}" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" | tee domain-status-response.json
+
+      - name: Upload responses
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domain-setup-responses
+          path: |
+            domain-add-response.json
+            domain-status-response.json
