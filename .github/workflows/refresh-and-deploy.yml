@@ -60,15 +60,23 @@ jobs:
             echo "No data changes to commit."
           else
             git commit -m "chore: refresh CFBD data [skip ci]"
+            git fetch origin main
+            git rebase origin/main
             git push
           fi
 
       - name: Build static site
         run: npm run build
 
+      - name: Ensure Cloudflare Pages project exists
+        continue-on-error: true
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: pages project create the-spread-cfb --production-branch=main
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy out --project-name=the-spread-cfb --branch=main
+          command: pages deploy out --project-name=the-spread-cfb --branch=main --commit-dirty=true
