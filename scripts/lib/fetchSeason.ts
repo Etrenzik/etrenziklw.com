@@ -52,10 +52,28 @@ export async function fetchSeasonRawData(year: number): Promise<SeasonRawData> {
   const records = recordsRaw.map(normalizeRecord);
   const spRatings = spRaw.map(normalizeSPRating);
 
+  // /games/teams 400s unless scoped by week (or team/conference), so fetch it one
+  // week at a time using the (seasonType, week) pairs that actually occur in this
+  // season's schedule, then merge.
   const turnoversCommittedByGameTeam = new Map<string, number>();
-  try {
-    const gameTeamStats = await cfbd.getGameTeamStats({ year, seasonType: "both" });
-    for (const gt of gameTeamStats) {
+  const weekKeys = new Map<string, { seasonType: "regular" | "postseason"; week: number }>();
+  for (const g of games) {
+    weekKeys.set(`${g.seasonType}:${g.week}`, { seasonType: g.seasonType, week: g.week });
+  }
+
+  const gameTeamResults = await Promise.allSettled(
+    Array.from(weekKeys.values()).map((wk) =>
+      cfbd.getGameTeamStats({ year, seasonType: wk.seasonType, week: wk.week })
+    )
+  );
+
+  let turnoverFetchFailures = 0;
+  for (const result of gameTeamResults) {
+    if (result.status === "rejected") {
+      turnoverFetchFailures++;
+      continue;
+    }
+    for (const gt of result.value) {
       for (const teamEntry of gt.teams ?? []) {
         const stat = teamEntry.stats?.find((s) => s.category.toLowerCase() === "turnovers");
         if (stat) {
@@ -64,10 +82,10 @@ export async function fetchSeasonRawData(year: number): Promise<SeasonRawData> {
         }
       }
     }
-  } catch (err) {
+  }
+  if (turnoverFetchFailures > 0) {
     console.warn(
-      `[fetch] game-team stats (turnovers) unavailable for ${year}; turnover-margin feature will be skipped.`,
-      err
+      `[fetch] game-team stats (turnovers) failed for ${turnoverFetchFailures}/${weekKeys.size} week(s) in ${year}; those games will skip the turnover-margin feature.`
     );
   }
 
