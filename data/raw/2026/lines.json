@@ -171,7 +171,18 @@
       "homeTeam": "Purdue",
       "awayTeam": "Indiana State",
       "spread": 35.5,
-      "overUnder": 55.5,
+      "overUnder": 56.5,
+      "provider": "DraftKings"
+    }
+  ],
+  [
+    401866623,
+    {
+      "gameId": 401866623,
+      "homeTeam": "Georgia State",
+      "awayTeam": "North Carolina A&T",
+      "spread": 29.5,
+      "overUnder": 61.5,
       "provider": "DraftKings"
     }
   ],
@@ -216,17 +227,6 @@
       "awayTeam": "Merrimack",
       "spread": 31.5,
       "overUnder": 56.5,
-      "provider": "DraftKings"
-    }
-  ],
-  [
-    401866623,
-    {
-      "gameId": 401866623,
-      "homeTeam": "Georgia State",
-      "awayTeam": "North Carolina A&T",
-      "spread": 29.5,
-      "overUnder": 62.5,
       "provider": "DraftKings"
     }
   ],
@@ -2233,17 +2233,6 @@
     }
   ],
   [
-    401870763,
-    {
-      "gameId": 401870763,
-      "homeTeam": "Troy",
-      "awayTeam": "Sam Houston",
-      "spread": 17,
-      "overUnder": 54.5,
-      "provider": "Bovada"
-    }
-  ],
-  [
     401856665,
     {
       "gameId": 401856665,
@@ -2288,6 +2277,17 @@
     }
   ],
   [
+    401856634,
+    {
+      "gameId": 401856634,
+      "homeTeam": "Alabama",
+      "awayTeam": "East Carolina",
+      "spread": 27,
+      "overUnder": 52.5,
+      "provider": "Bovada"
+    }
+  ],
+  [
     401862699,
     {
       "gameId": 401862699,
@@ -2306,6 +2306,17 @@
       "awayTeam": "UCLA",
       "spread": -2.5,
       "overUnder": 53.5,
+      "provider": "Bovada"
+    }
+  ],
+  [
+    401870763,
+    {
+      "gameId": 401870763,
+      "homeTeam": "Troy",
+      "awayTeam": "Sam Houston",
+      "spread": 17,
+      "overUnder": 55,
       "provider": "Bovada"
     }
   ],
@@ -2365,17 +2376,6 @@
     }
   ],
   [
-    401856634,
-    {
-      "gameId": 401856634,
-      "homeTeam": "Alabama",
-      "awayTeam": "East Carolina",
-      "spread": 28,
-      "overUnder": 52.5,
-      "provider": "Bovada"
-    }
-  ],
-  [
     401856780,
     {
       "gameId": 401856780,
@@ -2420,23 +2420,12 @@
     }
   ],
   [
-    401856660,
-    {
-      "gameId": 401856660,
-      "homeTeam": "LSU",
-      "awayTeam": "Clemson",
-      "spread": 10,
-      "overUnder": 50.5,
-      "provider": "Bovada"
-    }
-  ],
-  [
     401858429,
     {
       "gameId": 401858429,
       "homeTeam": "Michigan State",
       "awayTeam": "Toledo",
-      "spread": 10,
+      "spread": 10.5,
       "overUnder": 46.5,
       "provider": "Bovada"
     }
@@ -2447,8 +2436,19 @@
       "gameId": 401862695,
       "homeTeam": "Memphis",
       "awayTeam": "Arkansas State",
-      "spread": 11,
+      "spread": 10.5,
       "overUnder": 52,
+      "provider": "Bovada"
+    }
+  ],
+  [
+    401856660,
+    {
+      "gameId": 401856660,
+      "homeTeam": "LSU",
+      "awayTeam": "Clemson",
+      "spread": 10,
+      "overUnder": 50.5,
       "provider": "Bovada"
     }
   ],
