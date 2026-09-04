@@ -324,27 +324,11 @@
           "correct": false
         },
         {
-          "gameId": 401866409,
-          "matchup": "UAlbany @ Buffalo",
-          "pick": "Buffalo",
-          "confidence": 78.13887770663531,
-          "result": "Buffalo 21-17 UAlbany",
-          "correct": true
-        },
-        {
           "gameId": 401856767,
           "matchup": "Bethune-Cookman @ UCF",
           "pick": "UCF",
           "confidence": 90.86807726302067,
           "result": "UCF 73-6 Bethune-Cookman",
-          "correct": true
-        },
-        {
-          "gameId": 401864425,
-          "matchup": "West Georgia @ Kennesaw State",
-          "pick": "Kennesaw State",
-          "confidence": 80.23277267676801,
-          "result": "Kennesaw State 47-0 West Georgia",
           "correct": true
         },
         {
@@ -364,12 +348,20 @@
           "correct": true
         },
         {
-          "gameId": 401856776,
-          "matchup": "Colorado @ Georgia Tech",
-          "pick": "Georgia Tech",
-          "confidence": 71.19492263382604,
-          "result": "Georgia Tech 13-14 Colorado",
-          "correct": false
+          "gameId": 401864425,
+          "matchup": "West Georgia @ Kennesaw State",
+          "pick": "Kennesaw State",
+          "confidence": 80.23277267676801,
+          "result": "Kennesaw State 47-0 West Georgia",
+          "correct": true
+        },
+        {
+          "gameId": 401866409,
+          "matchup": "UAlbany @ Buffalo",
+          "pick": "Buffalo",
+          "confidence": 78.13887770663531,
+          "result": "Buffalo 21-17 UAlbany",
+          "correct": true
         },
         {
           "gameId": 401858422,
@@ -378,6 +370,14 @@
           "confidence": 83.80686035922037,
           "result": "Minnesota 59-7 Eastern Illinois",
           "correct": true
+        },
+        {
+          "gameId": 401856776,
+          "matchup": "Colorado @ Georgia Tech",
+          "pick": "Georgia Tech",
+          "confidence": 71.19492263382604,
+          "result": "Georgia Tech 13-14 Colorado",
+          "correct": false
         },
         {
           "gameId": 401856663,
