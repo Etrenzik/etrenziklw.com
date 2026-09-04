@@ -1,10 +1,10 @@
 {
   "season": 2026,
-  "n": 8,
-  "suWins": 6,
-  "suLosses": 2,
-  "atsWins": 4,
-  "atsLosses": 4,
+  "n": 12,
+  "suWins": 9,
+  "suLosses": 3,
+  "atsWins": 6,
+  "atsLosses": 6,
   "atsPushes": 0,
   "confidenceBuckets": [
     {
@@ -77,12 +77,12 @@
       "bucket": "80-85",
       "min": 80,
       "max": 85,
-      "n": 0,
-      "suWins": 0,
+      "n": 1,
+      "suWins": 1,
       "suLosses": 0,
-      "suWinPct": 0,
-      "avgPredictedProb": 0,
-      "actualWinRate": 0
+      "suWinPct": 1,
+      "avgPredictedProb": 82.74635404652925,
+      "actualWinRate": 1
     },
     {
       "bucket": "85-90",
@@ -99,37 +99,61 @@
       "bucket": "90-95",
       "min": 90,
       "max": 95,
-      "n": 0,
-      "suWins": 0,
+      "n": 1,
+      "suWins": 1,
       "suLosses": 0,
-      "suWinPct": 0,
-      "avgPredictedProb": 0,
-      "actualWinRate": 0
+      "suWinPct": 1,
+      "avgPredictedProb": 90.86807726302067,
+      "actualWinRate": 1
     },
     {
       "bucket": "95-100",
       "min": 95,
       "max": 100,
-      "n": 2,
-      "suWins": 2,
-      "suLosses": 0,
-      "suWinPct": 1,
-      "avgPredictedProb": 98.19820353168673,
-      "actualWinRate": 1
+      "n": 4,
+      "suWins": 3,
+      "suLosses": 1,
+      "suWinPct": 0.75,
+      "avgPredictedProb": 97.66945641364241,
+      "actualWinRate": 0.75
     }
   ],
   "byConference": [
     {
       "key": "ACC",
       "label": "ACC",
-      "n": 3,
-      "suWins": 3,
+      "n": 4,
+      "suWins": 4,
       "suLosses": 0,
       "suWinPct": 1,
       "atsWins": 2,
+      "atsLosses": 2,
+      "atsPushes": 0,
+      "atsWinPct": 0.5
+    },
+    {
+      "key": "Big 12",
+      "label": "Big 12",
+      "n": 2,
+      "suWins": 1,
+      "suLosses": 1,
+      "suWinPct": 0.5,
+      "atsWins": 1,
       "atsLosses": 1,
       "atsPushes": 0,
-      "atsWinPct": 0.6666666666666666
+      "atsWinPct": 0.5
+    },
+    {
+      "key": "Big Ten",
+      "label": "Big Ten",
+      "n": 2,
+      "suWins": 1,
+      "suLosses": 1,
+      "suWinPct": 0.5,
+      "atsWins": 0,
+      "atsLosses": 2,
+      "atsPushes": 0,
+      "atsWinPct": 0
     },
     {
       "key": "Mountain West",
@@ -144,32 +168,20 @@
       "atsWinPct": 0.5
     },
     {
-      "key": "Big 12",
-      "label": "Big 12",
-      "n": 1,
-      "suWins": 0,
-      "suLosses": 1,
-      "suWinPct": 0,
-      "atsWins": 0,
-      "atsLosses": 1,
-      "atsPushes": 0,
-      "atsWinPct": 0
-    },
-    {
-      "key": "Big Ten",
-      "label": "Big Ten",
+      "key": "Mid-American",
+      "label": "Mid-American",
       "n": 1,
       "suWins": 1,
       "suLosses": 0,
       "suWinPct": 1,
-      "atsWins": 0,
-      "atsLosses": 1,
+      "atsWins": 1,
+      "atsLosses": 0,
       "atsPushes": 0,
-      "atsWinPct": 0
+      "atsWinPct": 1
     },
     {
-      "key": "Mid-American",
-      "label": "Mid-American",
+      "key": "Conference USA",
+      "label": "Conference USA",
       "n": 1,
       "suWins": 1,
       "suLosses": 0,
@@ -184,12 +196,12 @@
     {
       "key": "favorite",
       "label": "Picked the favorite",
-      "n": 8,
-      "suWins": 6,
-      "suLosses": 2,
+      "n": 12,
+      "suWins": 9,
+      "suLosses": 3,
       "suWinPct": 0.75,
-      "atsWins": 4,
-      "atsLosses": 4,
+      "atsWins": 6,
+      "atsLosses": 6,
       "atsPushes": 0,
       "atsWinPct": 0.5
     }
@@ -210,22 +222,22 @@
     {
       "key": "home",
       "label": "Picked home team",
-      "n": 7,
-      "suWins": 6,
-      "suLosses": 1,
-      "suWinPct": 0.8571428571428571,
-      "atsWins": 4,
-      "atsLosses": 3,
+      "n": 11,
+      "suWins": 9,
+      "suLosses": 2,
+      "suWinPct": 0.8181818181818182,
+      "atsWins": 6,
+      "atsLosses": 5,
       "atsPushes": 0,
-      "atsWinPct": 0.5714285714285714
+      "atsWinPct": 0.5454545454545454
     }
   ],
   "weekLog": [
     {
       "columnId": "2026-week-w1",
       "label": "Week 1",
-      "runningSU": "6-2",
-      "runningATS": "4-4",
+      "runningSU": "9-3",
+      "runningATS": "6-6",
       "games": [
         {
           "gameId": 401856766,
@@ -268,19 +280,19 @@
           "correct": true
         },
         {
-          "gameId": 401858201,
-          "matchup": "Hawai'i @ Stanford",
-          "pick": "Stanford",
-          "confidence": 61.888196138686425,
-          "result": "Stanford 37-27 Hawai'i",
-          "correct": true
-        },
-        {
           "gameId": 401864570,
           "matchup": "New Mexico State @ Florida State",
           "pick": "Florida State",
           "confidence": 97.43741344406897,
           "result": "Florida State 34-17 New Mexico State",
+          "correct": true
+        },
+        {
+          "gameId": 401858201,
+          "matchup": "Hawai'i @ Stanford",
+          "pick": "Stanford",
+          "confidence": 61.888196138686425,
+          "result": "Stanford 37-27 Hawai'i",
           "correct": true
         },
         {
@@ -290,6 +302,38 @@
           "confidence": 65.65522867843934,
           "result": "UNLV 21-27 Memphis",
           "correct": false
+        },
+        {
+          "gameId": 401858423,
+          "matchup": "Massachusetts @ Rutgers",
+          "pick": "Rutgers",
+          "confidence": 97.84017519528622,
+          "result": "Rutgers 21-37 Massachusetts",
+          "correct": false
+        },
+        {
+          "gameId": 401856767,
+          "matchup": "Bethune-Cookman @ UCF",
+          "pick": "UCF",
+          "confidence": 90.86807726302067,
+          "result": "UCF 73-6 Bethune-Cookman",
+          "correct": true
+        },
+        {
+          "gameId": 401858204,
+          "matchup": "Akron @ Wake Forest",
+          "pick": "Wake Forest",
+          "confidence": 96.44124339590995,
+          "result": "Wake Forest 38-16 Akron",
+          "correct": true
+        },
+        {
+          "gameId": 401864424,
+          "matchup": "Merrimack @ Delaware",
+          "pick": "Delaware",
+          "confidence": 82.74635404652925,
+          "result": "Delaware 42-7 Merrimack",
+          "correct": true
         }
       ]
     }
