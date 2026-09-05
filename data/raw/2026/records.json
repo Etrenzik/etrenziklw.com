@@ -165,7 +165,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Colby",
@@ -202,10 +202,10 @@
   {
     "team": "UConn",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.9932807683944702
   },
   {
     "team": "Yale",
@@ -219,9 +219,9 @@
     "team": "Georgetown",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.0006021121516823769
   },
   {
     "team": "Howard",
@@ -274,10 +274,10 @@
   {
     "team": "Stetson",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 1,
     "ties": 0,
-    "expectedWins": 0.00584256649017334
+    "expectedWins": 1.0058425664901733
   },
   {
     "team": "Florida",
@@ -341,15 +341,15 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Iowa State",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.9699541330337524
   },
   {
     "team": "Luther",
@@ -357,7 +357,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Boise State",
@@ -381,7 +381,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Millikin",
@@ -442,10 +442,10 @@
   {
     "team": "Indiana",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 1
   },
   {
     "team": "Rose Hulman",
@@ -469,7 +469,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Pittsburg State",
@@ -490,10 +490,10 @@
   {
     "team": "Kentucky",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.9834052920341492
   },
   {
     "team": "Louisville",
@@ -539,9 +539,9 @@
     "team": "Holy Cross",
     "year": 2026,
     "wins": 0,
-    "losses": 1,
+    "losses": 2,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.006066739559173584
   },
   {
     "team": "Harvard",
@@ -597,7 +597,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Towson",
@@ -645,7 +645,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Michigan State",
@@ -795,9 +795,9 @@
     "team": "East Carolina",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.003367483615875244
   },
   {
     "team": "NC State",
@@ -834,10 +834,10 @@
   {
     "team": "Nebraska",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.9854192137718201
   },
   {
     "team": "Dartmouth",
@@ -851,9 +851,9 @@
     "team": "New Hampshire",
     "year": 2026,
     "wins": 0,
-    "losses": 1,
+    "losses": 2,
     "ties": 0,
-    "expectedWins": 0.21733474731445312
+    "expectedWins": 0.22506380081176758
   },
   {
     "team": "Hamline",
@@ -861,7 +861,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Princeton",
@@ -933,15 +933,15 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Syracuse",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.9922709465026855
   },
   {
     "team": "Rochester (NY)",
@@ -963,9 +963,9 @@
     "team": "Bowling Green",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.32716673612594604
   },
   {
     "team": "Heidelberg",
@@ -973,31 +973,31 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Miami (OH)",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.027242958545684814
   },
   {
     "team": "Ohio State",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.9805747270584106
   },
   {
     "team": "Ohio",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.014580786228179932
   },
   {
     "team": "Northeastern State",
@@ -1053,15 +1053,15 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Oregon State",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.03728795051574707
   },
   {
     "team": "Pacific (OR)",
@@ -1109,15 +1109,15 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Temple",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.9981927871704102
   },
   {
     "team": "Pennsylvania",
@@ -1130,10 +1130,10 @@
   {
     "team": "Pittsburgh",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.9727570414543152
   },
   {
     "team": "Villanova",
@@ -1163,9 +1163,9 @@
     "team": "Rhode Island",
     "year": 2026,
     "wins": 1,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0.9639443717896938
+    "expectedWins": 0.9657515846192837
   },
   {
     "team": "Clemson",
@@ -1213,7 +1213,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Vanderbilt",
@@ -1274,16 +1274,16 @@
   {
     "team": "Houston",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.9627120494842529
   },
   {
     "team": "North Texas",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
     "expectedWins": 0
   },
@@ -1330,10 +1330,10 @@
   {
     "team": "James Madison",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.9580274224281311
   },
   {
     "team": "Richmond",
@@ -1365,7 +1365,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Loras",
@@ -1405,7 +1405,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Wisconsin Oshkosh",
@@ -1413,7 +1413,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Wisconsin Platteville",
@@ -1450,10 +1450,10 @@
   {
     "team": "West Virginia",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.8831110596656799
   },
   {
     "team": "Fresno State",
@@ -1474,10 +1474,10 @@
   {
     "team": "Stonehill",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 1,
     "ties": 0,
-    "expectedWins": 0.005513038020581007
+    "expectedWins": 1.005513038020581
   },
   {
     "team": "North Carolina Wesleyan",
@@ -1517,7 +1517,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Old Dominion",
@@ -1533,7 +1533,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "San Diego",
@@ -1565,7 +1565,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Ashland",
@@ -1611,9 +1611,9 @@
     "team": "Lafayette",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.006719231605529785
   },
   {
     "team": "Moravian",
@@ -1621,15 +1621,15 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Coastal Carolina",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.11688894033432007
   },
   {
     "team": "Texas State",
@@ -1674,10 +1674,10 @@
   {
     "team": "Alabama",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.9966325163841248
   },
   {
     "team": "Wesleyan (CT)",
@@ -1709,7 +1709,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Mississippi State",
@@ -1730,10 +1730,10 @@
   {
     "team": "Army",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.99765944480896
   },
   {
     "team": "Wingate",
@@ -1749,7 +1749,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Olivet",
@@ -1773,7 +1773,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Alfred",
@@ -1813,7 +1813,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "UMass Dartmouth",
@@ -1853,7 +1853,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Oberlin",
@@ -1861,7 +1861,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "St. Augustine's",
@@ -1877,7 +1877,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Wilkes",
@@ -1901,7 +1901,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Concordia (WI)",
@@ -1909,7 +1909,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Chapman",
@@ -1917,7 +1917,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "George Fox",
@@ -1949,7 +1949,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Northern State",
@@ -1965,7 +1965,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Ohio Northern",
@@ -1973,7 +1973,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Westminster (MO)",
@@ -1981,7 +1981,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Lake Erie",
@@ -1997,7 +1997,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Endicott",
@@ -2005,7 +2005,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "West Virginia Wesleyan",
@@ -2037,7 +2037,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "LaGrange",
@@ -2125,15 +2125,15 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Air Force",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.992472767829895
   },
   {
     "team": "Akron",
@@ -2197,7 +2197,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Allen",
@@ -2221,7 +2221,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Angelo State",
@@ -2339,9 +2339,9 @@
     "team": "Ball State",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.019425272941589355
   },
   {
     "team": "Belhaven",
@@ -2405,7 +2405,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Bridgewater",
@@ -2469,7 +2469,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Carnegie Mellon",
@@ -2645,15 +2645,15 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Colgate",
     "year": 2026,
-    "wins": 1,
+    "wins": 2,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0.9493116587400436
+    "expectedWins": 1.94324491918087
   },
   {
     "team": "Colorado School of Mines",
@@ -2677,7 +2677,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Concordia (MN)",
@@ -2685,7 +2685,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Cornell (IA)",
@@ -2693,7 +2693,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Davidson",
@@ -2733,7 +2733,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Dickinson",
@@ -2755,9 +2755,9 @@
     "team": "Duquesne",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.0075272321701049805
   },
   {
     "team": "East Stroudsburg",
@@ -3021,7 +3021,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Guilford",
@@ -3069,7 +3069,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Hiram",
@@ -3077,7 +3077,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Houston Christian",
@@ -3093,7 +3093,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Benedictine (IL)",
@@ -3109,7 +3109,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Illinois State",
@@ -3187,9 +3187,9 @@
     "team": "Kent State",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.003661513328552246
   },
   {
     "team": "Kentucky State",
@@ -3242,10 +3242,10 @@
   {
     "team": "Lehigh",
     "year": 2026,
-    "wins": 1,
+    "wins": 2,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 1
+    "expectedWins": 1.9993978878483176
   },
   {
     "team": "Lenoir Rhyne",
@@ -3267,9 +3267,9 @@
     "team": "Liberty",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.041972577571868896
   },
   {
     "team": "Limestone",
@@ -3309,7 +3309,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Macalester",
@@ -3317,7 +3317,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Manchester",
@@ -3325,7 +3325,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Minnesota State",
@@ -3365,7 +3365,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "McNeese",
@@ -3461,7 +3461,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Mississippi Valley State",
@@ -3498,10 +3498,10 @@
   {
     "team": "Monmouth",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 1,
     "ties": 0,
-    "expectedWins": 0.3475080728530884
+    "expectedWins": 1.1379651427268982
   },
   {
     "team": "Morehead State",
@@ -3533,7 +3533,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "New Mexico Highlands",
@@ -3603,7 +3603,7 @@
     "team": "New Haven",
     "year": 2026,
     "wins": 1,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
     "expectedWins": 0.8518881797790527
   },
@@ -3613,7 +3613,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Newberry",
@@ -3829,15 +3829,15 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Sacred Heart",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.20954293012619019
   },
   {
     "team": "Salisbury",
@@ -3883,9 +3883,9 @@
     "team": "Southeast Missouri State",
     "year": 2026,
     "wins": 1,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0.6642771363258362
+    "expectedWins": 0.6943230032920837
   },
   {
     "team": "Shaw",
@@ -3909,7 +3909,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Shippensburg",
@@ -3925,7 +3925,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": null
+    "expectedWins": 0
   },
   {
     "team": "Simpson (IA)",
@@ -3986,10 +3986,10 @@
   {
     "team": "South Carolina",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": 0.9963384866714478
   },
   {
     "team": "Southern",
@@ -4003,7 +4003,7 @@
     "team": "Southern Connecticut State",
     "year": 2026,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
     "expectedWins": 0
   },
@@ -4045,7 +4045,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "St. Joseph's (IN)",
@@ -4090,10 +4090,10 @@
   {
     "team": "Tarleton State",
     "year": 2026,
-    "wins": 1,
+    "wins": 2,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 1
+    "expectedWins": 1.672833263874054
   },
   {
     "team": "TCU",
@@ -4298,10 +4298,10 @@
   {
     "team": "Wagner",
     "year": 2026,
-    "wins": 0,
+    "wins": 1,
     "losses": 1,
     "ties": 0,
-    "expectedWins": 0.0682995468378067
+    "expectedWins": 1.0682995468378067
   },
   {
     "team": "Walsh",
@@ -4325,7 +4325,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Washburn",
@@ -4341,7 +4341,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Weber State",
@@ -4509,7 +4509,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Wisconsin La Crosse",
@@ -4517,7 +4517,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Wisconsin Lutheran",
@@ -4525,7 +4525,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Wisconsin Stevens Point",
@@ -4549,7 +4549,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Wittenberg",
@@ -4557,7 +4557,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Wofford",
@@ -4581,7 +4581,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Wyoming",
@@ -4595,9 +4595,9 @@
     "team": "Youngstown State",
     "year": 2026,
     "wins": 1,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0.990749716758728
+    "expectedWins": 1.0073444247245789
   },
   {
     "team": "Grambling",
@@ -4669,7 +4669,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Alma",
@@ -4677,7 +4677,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Bethel (MN)",
@@ -4685,15 +4685,15 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Bryant",
     "year": 2026,
     "wins": 1,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "expectedWins": 0.994486961979419
+    "expectedWins": 0.996827517170459
   },
   {
     "team": "Chowan",
@@ -4725,7 +4725,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Hope",
@@ -4733,7 +4733,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Lindenwood",
@@ -4837,7 +4837,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Sul Ross State",
@@ -4885,7 +4885,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Wayne State (NE)",
@@ -4901,7 +4901,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Western Oregon",
@@ -4949,7 +4949,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Lincoln (MO)",
@@ -4997,7 +4997,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Sioux Falls",
@@ -5029,7 +5029,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "William Jewell",
@@ -5069,7 +5069,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Southwestern Oklahoma State",
@@ -5085,7 +5085,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Huntingdon",
@@ -5117,7 +5117,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Case Western Reserve",
@@ -5141,7 +5141,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Gustavus Adolphus",
@@ -5165,7 +5165,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Plymouth State",
@@ -5173,7 +5173,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Shepherd",
@@ -5181,7 +5181,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Trinity (CT)",
@@ -5221,7 +5221,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Utah Tech",
@@ -5237,7 +5237,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Apprentice School",
@@ -5277,7 +5277,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Lyon",
@@ -5357,7 +5357,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Franklin Pierce",
@@ -5429,7 +5429,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Roosevelt",
@@ -5453,7 +5453,7 @@
     "wins": 0,
     "losses": 0,
     "ties": 0,
-    "expectedWins": 0
+    "expectedWins": null
   },
   {
     "team": "Schreiner",
