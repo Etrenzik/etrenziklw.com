@@ -1,10 +1,10 @@
 {
   "season": 2026,
-  "n": 19,
-  "suWins": 15,
-  "suLosses": 4,
-  "atsWins": 9,
-  "atsLosses": 10,
+  "n": 23,
+  "suWins": 18,
+  "suLosses": 5,
+  "atsWins": 11,
+  "atsLosses": 12,
   "atsPushes": 0,
   "confidenceBuckets": [
     {
@@ -44,11 +44,11 @@
       "bucket": "65-70",
       "min": 65,
       "max": 70,
-      "n": 1,
+      "n": 2,
       "suWins": 0,
-      "suLosses": 1,
+      "suLosses": 2,
       "suWinPct": 0,
-      "avgPredictedProb": 65.65522867843934,
+      "avgPredictedProb": 66.43922471741143,
       "actualWinRate": 0
     },
     {
@@ -77,11 +77,11 @@
       "bucket": "80-85",
       "min": 80,
       "max": 85,
-      "n": 5,
-      "suWins": 5,
+      "n": 6,
+      "suWins": 6,
       "suLosses": 0,
       "suWinPct": 1,
-      "avgPredictedProb": 82.88071156046117,
+      "avgPredictedProb": 82.75985544563284,
       "actualWinRate": 1
     },
     {
@@ -99,26 +99,38 @@
       "bucket": "90-95",
       "min": 90,
       "max": 95,
-      "n": 1,
-      "suWins": 1,
+      "n": 2,
+      "suWins": 2,
       "suLosses": 0,
       "suWinPct": 1,
-      "avgPredictedProb": 90.86807726302067,
+      "avgPredictedProb": 90.7300650883426,
       "actualWinRate": 1
     },
     {
       "bucket": "95-100",
       "min": 95,
       "max": 100,
+      "n": 6,
+      "suWins": 5,
+      "suLosses": 1,
+      "suWinPct": 0.8333333333333334,
+      "avgPredictedProb": 97.69073764276187,
+      "actualWinRate": 0.8333333333333334
+    }
+  ],
+  "byConference": [
+    {
+      "key": "Big Ten",
+      "label": "Big Ten",
       "n": 5,
       "suWins": 4,
       "suLosses": 1,
       "suWinPct": 0.8,
-      "avgPredictedProb": 97.37425658903939,
-      "actualWinRate": 0.8
-    }
-  ],
-  "byConference": [
+      "atsWins": 1,
+      "atsLosses": 4,
+      "atsPushes": 0,
+      "atsWinPct": 0.2
+    },
     {
       "key": "ACC",
       "label": "ACC",
@@ -130,18 +142,6 @@
       "atsLosses": 3,
       "atsPushes": 0,
       "atsWinPct": 0.4
-    },
-    {
-      "key": "Big Ten",
-      "label": "Big Ten",
-      "n": 4,
-      "suWins": 3,
-      "suLosses": 1,
-      "suWinPct": 0.75,
-      "atsWins": 1,
-      "atsLosses": 3,
-      "atsPushes": 0,
-      "atsWinPct": 0.25
     },
     {
       "key": "Big 12",
@@ -156,24 +156,24 @@
       "atsWinPct": 0.6666666666666666
     },
     {
+      "key": "Mid-American",
+      "label": "Mid-American",
+      "n": 3,
+      "suWins": 2,
+      "suLosses": 1,
+      "suWinPct": 0.6666666666666666,
+      "atsWins": 1,
+      "atsLosses": 2,
+      "atsPushes": 0,
+      "atsWinPct": 0.3333333333333333
+    },
+    {
       "key": "Mountain West",
       "label": "Mountain West",
       "n": 2,
       "suWins": 1,
       "suLosses": 1,
       "suWinPct": 0.5,
-      "atsWins": 1,
-      "atsLosses": 1,
-      "atsPushes": 0,
-      "atsWinPct": 0.5
-    },
-    {
-      "key": "Mid-American",
-      "label": "Mid-American",
-      "n": 2,
-      "suWins": 2,
-      "suLosses": 0,
-      "suWinPct": 1,
       "atsWins": 1,
       "atsLosses": 1,
       "atsPushes": 0,
@@ -194,28 +194,40 @@
     {
       "key": "SEC",
       "label": "SEC",
+      "n": 2,
+      "suWins": 2,
+      "suLosses": 0,
+      "suWinPct": 1,
+      "atsWins": 1,
+      "atsLosses": 1,
+      "atsPushes": 0,
+      "atsWinPct": 0.5
+    },
+    {
+      "key": "Sun Belt",
+      "label": "Sun Belt",
       "n": 1,
       "suWins": 1,
       "suLosses": 0,
       "suWinPct": 1,
-      "atsWins": 0,
-      "atsLosses": 1,
+      "atsWins": 1,
+      "atsLosses": 0,
       "atsPushes": 0,
-      "atsWinPct": 0
+      "atsWinPct": 1
     }
   ],
   "byFavoriteUnderdog": [
     {
       "key": "favorite",
       "label": "Picked the favorite",
-      "n": 19,
-      "suWins": 15,
-      "suLosses": 4,
-      "suWinPct": 0.7894736842105263,
-      "atsWins": 9,
-      "atsLosses": 10,
+      "n": 23,
+      "suWins": 18,
+      "suLosses": 5,
+      "suWinPct": 0.782608695652174,
+      "atsWins": 11,
+      "atsLosses": 12,
       "atsPushes": 0,
-      "atsWinPct": 0.47368421052631576
+      "atsWinPct": 0.4782608695652174
     }
   ],
   "bySite": [
@@ -234,12 +246,12 @@
     {
       "key": "home",
       "label": "Picked home team",
-      "n": 18,
-      "suWins": 15,
-      "suLosses": 3,
-      "suWinPct": 0.8333333333333334,
-      "atsWins": 9,
-      "atsLosses": 9,
+      "n": 22,
+      "suWins": 18,
+      "suLosses": 4,
+      "suWinPct": 0.8181818181818182,
+      "atsWins": 11,
+      "atsLosses": 11,
       "atsPushes": 0,
       "atsWinPct": 0.5
     }
@@ -248,8 +260,8 @@
     {
       "columnId": "2026-week-w1",
       "label": "Week 1",
-      "runningSU": "15-4",
-      "runningATS": "9-10",
+      "runningSU": "18-5",
+      "runningATS": "11-12",
       "games": [
         {
           "gameId": 401856766,
@@ -340,14 +352,6 @@
           "correct": true
         },
         {
-          "gameId": 401858204,
-          "matchup": "Akron @ Wake Forest",
-          "pick": "Wake Forest",
-          "confidence": 96.44124339590995,
-          "result": "Wake Forest 38-16 Akron",
-          "correct": true
-        },
-        {
           "gameId": 401864425,
           "matchup": "West Georgia @ Kennesaw State",
           "pick": "Kennesaw State",
@@ -361,6 +365,22 @@
           "pick": "Delaware",
           "confidence": 82.74635404652925,
           "result": "Delaware 42-7 Merrimack",
+          "correct": true
+        },
+        {
+          "gameId": 401858204,
+          "matchup": "Akron @ Wake Forest",
+          "pick": "Wake Forest",
+          "confidence": 96.44124339590995,
+          "result": "Wake Forest 38-16 Akron",
+          "correct": true
+        },
+        {
+          "gameId": 401856663,
+          "matchup": "Arkansas-Pine Bluff @ Missouri",
+          "pick": "Missouri",
+          "confidence": 84.13922754936299,
+          "result": "Missouri 54-14 Arkansas-Pine Bluff",
           "correct": true
         },
         {
@@ -380,14 +400,6 @@
           "correct": false
         },
         {
-          "gameId": 401856663,
-          "matchup": "Arkansas-Pine Bluff @ Missouri",
-          "pick": "Missouri",
-          "confidence": 84.13922754936299,
-          "result": "Missouri 54-14 Arkansas-Pine Bluff",
-          "correct": true
-        },
-        {
           "gameId": 401856768,
           "matchup": "Idaho @ Utah",
           "pick": "Utah",
@@ -401,6 +413,38 @@
           "pick": "Illinois",
           "confidence": 96.19345729062736,
           "result": "Illinois 42-23 UAB",
+          "correct": true
+        },
+        {
+          "gameId": 401864495,
+          "matchup": "San José State @ Eastern Michigan",
+          "pick": "Eastern Michigan",
+          "confidence": 67.22322075638351,
+          "result": "Eastern Michigan 21-27 San José State",
+          "correct": false
+        },
+        {
+          "gameId": 401866623,
+          "matchup": "North Carolina A&T @ Georgia State",
+          "pick": "Georgia State",
+          "confidence": 82.15557487149118,
+          "result": "Georgia State 59-10 North Carolina A&T",
+          "correct": true
+        },
+        {
+          "gameId": 401858435,
+          "matchup": "Indiana State @ Purdue",
+          "pick": "Purdue",
+          "confidence": 90.59205291366452,
+          "result": "Purdue 44-19 Indiana State",
+          "correct": true
+        },
+        {
+          "gameId": 401856664,
+          "matchup": "UTEP @ Oklahoma",
+          "pick": "Oklahoma",
+          "confidence": 99.27314291137432,
+          "result": "Oklahoma 51-0 UTEP",
           "correct": true
         }
       ]
