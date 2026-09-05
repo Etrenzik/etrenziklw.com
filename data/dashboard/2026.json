@@ -348,11 +348,19 @@
           "correct": false
         },
         {
-          "gameId": 401866409,
-          "matchup": "UAlbany @ Buffalo",
-          "pick": "Buffalo",
-          "confidence": 78.13887770663531,
-          "result": "Buffalo 21-17 UAlbany",
+          "gameId": 401858204,
+          "matchup": "Akron @ Wake Forest",
+          "pick": "Wake Forest",
+          "confidence": 96.44124339590995,
+          "result": "Wake Forest 38-16 Akron",
+          "correct": true
+        },
+        {
+          "gameId": 401864424,
+          "matchup": "Merrimack @ Delaware",
+          "pick": "Delaware",
+          "confidence": 82.74635404652925,
+          "result": "Delaware 42-7 Merrimack",
           "correct": true
         },
         {
@@ -372,27 +380,11 @@
           "correct": true
         },
         {
-          "gameId": 401858204,
-          "matchup": "Akron @ Wake Forest",
-          "pick": "Wake Forest",
-          "confidence": 96.44124339590995,
-          "result": "Wake Forest 38-16 Akron",
-          "correct": true
-        },
-        {
-          "gameId": 401864424,
-          "matchup": "Merrimack @ Delaware",
-          "pick": "Delaware",
-          "confidence": 82.74635404652925,
-          "result": "Delaware 42-7 Merrimack",
-          "correct": true
-        },
-        {
-          "gameId": 401858422,
-          "matchup": "Eastern Illinois @ Minnesota",
-          "pick": "Minnesota",
-          "confidence": 83.80686035922037,
-          "result": "Minnesota 59-7 Eastern Illinois",
+          "gameId": 401866409,
+          "matchup": "UAlbany @ Buffalo",
+          "pick": "Buffalo",
+          "confidence": 78.13887770663531,
+          "result": "Buffalo 21-17 UAlbany",
           "correct": true
         },
         {
@@ -409,6 +401,14 @@
           "pick": "Missouri",
           "confidence": 84.13922754936299,
           "result": "Missouri 54-14 Arkansas-Pine Bluff",
+          "correct": true
+        },
+        {
+          "gameId": 401858422,
+          "matchup": "Eastern Illinois @ Minnesota",
+          "pick": "Minnesota",
+          "confidence": 83.80686035922037,
+          "result": "Minnesota 59-7 Eastern Illinois",
           "correct": true
         },
         {
@@ -436,14 +436,6 @@
           "correct": false
         },
         {
-          "gameId": 401858435,
-          "matchup": "Indiana State @ Purdue",
-          "pick": "Purdue",
-          "confidence": 90.59205291366452,
-          "result": "Purdue 44-19 Indiana State",
-          "correct": true
-        },
-        {
           "gameId": 401866623,
           "matchup": "North Carolina A&T @ Georgia State",
           "pick": "Georgia State",
@@ -452,11 +444,11 @@
           "correct": true
         },
         {
-          "gameId": 401858429,
-          "matchup": "Toledo @ Michigan State",
-          "pick": "Michigan State",
-          "confidence": 81.6338117274092,
-          "result": "Michigan State 30-20 Toledo",
+          "gameId": 401858435,
+          "matchup": "Indiana State @ Purdue",
+          "pick": "Purdue",
+          "confidence": 90.59205291366452,
+          "result": "Purdue 44-19 Indiana State",
           "correct": true
         },
         {
@@ -465,6 +457,14 @@
           "pick": "Oklahoma",
           "confidence": 99.27314291137432,
           "result": "Oklahoma 51-0 UTEP",
+          "correct": true
+        },
+        {
+          "gameId": 401858429,
+          "matchup": "Toledo @ Michigan State",
+          "pick": "Michigan State",
+          "confidence": 81.6338117274092,
+          "result": "Michigan State 30-20 Toledo",
           "correct": true
         },
         {
