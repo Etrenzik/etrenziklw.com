@@ -27,6 +27,29 @@ function loadCalibration(): CalibrationFit {
   return JSON.parse(fs.readFileSync(p, "utf8"));
 }
 
+/**
+ * Writes the grid only if something besides `generatedAt` actually changed.
+ * Without this, `generatedAt` ticks every run even when the fetch step found
+ * nothing new (e.g. skipped due to a CFBD quota), which turns every run into
+ * a spurious commit + rebuild + redeploy.
+ */
+function writeGridIfChanged(filePath: string, grid: SeasonGrid) {
+  if (fs.existsSync(filePath)) {
+    try {
+      const existing = JSON.parse(fs.readFileSync(filePath, "utf8")) as SeasonGrid;
+      const existingWithNewTimestamp = { ...existing, generatedAt: grid.generatedAt };
+      if (JSON.stringify(existingWithNewTimestamp) === JSON.stringify(grid)) {
+        console.log(`[compute-picks] data/picks/${grid.season}.json unchanged, leaving it as-is`);
+        return;
+      }
+    } catch {
+      // Existing file is missing/corrupt — fall through and write a fresh one.
+    }
+  }
+  fs.writeFileSync(filePath, JSON.stringify(grid, null, 2));
+  console.log(`[compute-picks] wrote data/picks/${grid.season}.json (${grid.games.length} games)`);
+}
+
 async function main() {
   const year = currentSeasonYear();
   if (!hasRawData(year)) {
@@ -57,8 +80,7 @@ async function main() {
 
   const picksDir = path.join(process.cwd(), "data", "picks");
   fs.mkdirSync(picksDir, { recursive: true });
-  fs.writeFileSync(path.join(picksDir, `${year}.json`), JSON.stringify(grid, null, 2));
-  console.log(`[compute-picks] wrote data/picks/${year}.json (${picks.length} games)`);
+  writeGridIfChanged(path.join(picksDir, `${year}.json`), grid);
 
   const accuracy = computeSeasonAccuracy(year, picks, raw.teams);
   const dashboardDir = path.join(process.cwd(), "data", "dashboard");
