@@ -18,11 +18,15 @@ export class CfbdError extends Error {
   constructor(
     public status: number,
     public path: string,
-    body: string
+    public body: string
   ) {
     super(`CFBD request failed (${status}) for ${path}: ${body.slice(0, 500)}`);
     this.name = "CfbdError";
   }
+}
+
+export function isQuotaExceededError(err: unknown): boolean {
+  return err instanceof CfbdError && err.status === 429 && /quota/i.test(err.body);
 }
 
 async function cfbdGet<T>(
@@ -44,10 +48,20 @@ async function cfbdGet<T>(
           Accept: "application/json",
         },
       });
-      if (res.status === 429 && attempt < maxRetries) {
-        const wait = 1000 * 2 ** attempt;
-        await new Promise((r) => setTimeout(r, wait));
-        continue;
+      if (res.status === 429) {
+        const body = await res.text();
+        // A monthly/plan quota is exhausted, not a transient rate limit — retrying
+        // just burns more of a quota that's already at zero, and won't recover
+        // until CFBD resets it. Fail fast with a clear error instead.
+        if (/quota/i.test(body)) {
+          throw new CfbdError(res.status, path, body);
+        }
+        if (attempt < maxRetries) {
+          const wait = 1000 * 2 ** attempt;
+          await new Promise((r) => setTimeout(r, wait));
+          continue;
+        }
+        throw new CfbdError(res.status, path, body);
       }
       if (!res.ok) {
         const body = await res.text();

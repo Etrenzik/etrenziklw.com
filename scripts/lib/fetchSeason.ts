@@ -23,7 +23,10 @@ export interface SeasonRawData {
 
 const DATA_ROOT = path.join(process.cwd(), "data", "raw");
 
-export async function fetchSeasonRawData(year: number): Promise<SeasonRawData> {
+export async function fetchSeasonRawData(
+  year: number,
+  previous?: Pick<SeasonRawData, "turnoversCommittedByGameTeam">
+): Promise<SeasonRawData> {
   console.log(`[fetch] season ${year}: teams, games, lines, records, SP+ ratings...`);
   const [teamsRaw, gamesRaw, linesRaw, recordsRaw, spRaw] = await Promise.all([
     cfbd.getFbsTeams(year),
@@ -52,19 +55,41 @@ export async function fetchSeasonRawData(year: number): Promise<SeasonRawData> {
   const records = recordsRaw.map(normalizeRecord);
   const spRatings = spRaw.map(normalizeSPRating);
 
-  // /games/teams 400s unless scoped by week (or team/conference), so fetch it one
-  // week at a time using the (seasonType, week) pairs that actually occur in this
-  // season's schedule, then merge.
-  const turnoversCommittedByGameTeam = new Map<string, number>();
+  // /games/teams 400s unless scoped by week (or team/conference), so it has to be
+  // fetched one week at a time — which burns through CFBD's monthly call quota fast
+  // if done on every run. A week's turnover numbers never change once every completed
+  // game in it is already cached, so carry forward whatever we already have and only
+  // spend a call on a week that still has a completed game we haven't seen turnovers
+  // for yet (i.e. the current/most recent week(s), not the whole season every time).
+  const turnoversCommittedByGameTeam = new Map(previous?.turnoversCommittedByGameTeam ?? []);
   const weekKeys = new Map<string, { seasonType: "regular" | "postseason"; week: number }>();
+  const gamesByWeekKey = new Map<string, RawGame[]>();
   for (const g of games) {
-    weekKeys.set(`${g.seasonType}:${g.week}`, { seasonType: g.seasonType, week: g.week });
+    const key = `${g.seasonType}:${g.week}`;
+    weekKeys.set(key, { seasonType: g.seasonType, week: g.week });
+    const list = gamesByWeekKey.get(key) ?? [];
+    list.push(g);
+    gamesByWeekKey.set(key, list);
   }
 
+  const weeksNeedingFetch = Array.from(weekKeys.entries())
+    .filter(([key]) => {
+      const weekGames = gamesByWeekKey.get(key) ?? [];
+      return weekGames.some(
+        (g) =>
+          g.completed &&
+          (!turnoversCommittedByGameTeam.has(`${g.id}:${g.homeTeam}`) ||
+            !turnoversCommittedByGameTeam.has(`${g.id}:${g.awayTeam}`))
+      );
+    })
+    .map(([, wk]) => wk);
+
+  console.log(
+    `[fetch] turnovers: ${weeksNeedingFetch.length}/${weekKeys.size} week(s) need a fresh call (rest already cached)`
+  );
+
   const gameTeamResults = await Promise.allSettled(
-    Array.from(weekKeys.values()).map((wk) =>
-      cfbd.getGameTeamStats({ year, seasonType: wk.seasonType, week: wk.week })
-    )
+    weeksNeedingFetch.map((wk) => cfbd.getGameTeamStats({ year, seasonType: wk.seasonType, week: wk.week }))
   );
 
   let turnoverFetchFailures = 0;
@@ -85,7 +110,7 @@ export async function fetchSeasonRawData(year: number): Promise<SeasonRawData> {
   }
   if (turnoverFetchFailures > 0) {
     console.warn(
-      `[fetch] game-team stats (turnovers) failed for ${turnoverFetchFailures}/${weekKeys.size} week(s) in ${year}; those games will skip the turnover-margin feature.`
+      `[fetch] game-team stats (turnovers) failed for ${turnoverFetchFailures}/${weeksNeedingFetch.length} fetched week(s) in ${year}; those games will skip the turnover-margin feature.`
     );
   }
 
