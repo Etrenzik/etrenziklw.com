@@ -76,11 +76,12 @@ and from a GitHub Actions secret in CI.
 ## Deploy
 
 - **Data refresh**: [`.github/workflows/refresh-and-deploy.yml`](.github/workflows/refresh-and-deploy.yml)
-  runs every Wednesday year-round (or on demand via `workflow_dispatch`),
-  commits refreshed `data/` files, builds the static export, and deploys it
-  to Cloudflare Pages. Kept intentionally infrequent to stay well within
-  CFBD's monthly API call quota — see the schedule comment in that file for
-  the incident that prompted this.
+  runs daily during the season / weekly off-season (or on demand via
+  `workflow_dispatch`), commits refreshed `data/` files, builds the static
+  export, and deploys it to Cloudflare Pages. Uses a CFBD Tier 2 key
+  (30,000 calls/month) — see the schedule comment in that file for the
+  quota incident that shaped the cadence and the incremental turnover-stats
+  fetch in `scripts/lib/fetchSeason.ts`.
 - **Hosting**: Next.js static export (`output: "export"`, see
   `next.config.ts`) → `out/` → Cloudflare Pages, project name
   `the-spread-cfb`, custom domain `EtrenzikLW.com`.

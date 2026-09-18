@@ -7,10 +7,16 @@ on:
     # free API key has a MONTHLY call quota, and that cadence burned through it
     # in about a week (every scheduled run failed with 429 "Monthly call quota
     # exceeded" from 2026-09-11 through 2026-09-17 before this was caught).
-    # Dialed back further per request: once a week, every Wednesday, year-round —
-    # mid-week, after the prior weekend's games are final and each week's
-    # spreads have settled, well ahead of the following weekend's kickoffs.
-    - cron: "0 13 * * 3" # every Wednesday at 13:00 UTC (~8-9am ET)
+    # Since then the key was upgraded to CFBD's Tier 2 (30,000 calls/month), and
+    # the per-run turnover-stats fetch was made incremental (fetchSeason.ts) —
+    # a daily run costs only a handful of calls now, comfortably within quota.
+    #
+    # 13:00 UTC (~8-9am ET) lands after the previous day's games have finished
+    # and CFBD has ingested final scores, and after sportsbooks' overnight line
+    # moves — so each run picks up fresh results and a reasonably current
+    # spread.
+    - cron: "0 13 * 8-12,1 *" # daily during the season (Aug-Dec, Jan)
+    - cron: "0 13 * 2-7 0" # weekly (Sundays) in the off-season (Feb-Jul)
   push:
     branches: [main]
 
