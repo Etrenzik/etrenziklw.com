@@ -6,16 +6,11 @@ on:
     # NOTE: an earlier version of this polled every 3 hours on game days. CFBD's
     # free API key has a MONTHLY call quota, and that cadence burned through it
     # in about a week (every scheduled run failed with 429 "Monthly call quota
-    # exceeded" from 2026-09-11 through 2026-09-17 before this was caught) — so
-    # "more often" is not actually better here. Once a day is what "daily" in
-    # the original spec meant, and it comfortably fits the quota.
-    #
-    # 13:00 UTC (~8-9am ET) lands after the previous day's games have finished
-    # and CFBD has ingested final scores, and after sportsbooks' overnight line
-    # moves — so each run picks up fresh results and a reasonably current
-    # spread without needing multiple calls a day.
-    - cron: "0 13 * 8-12,1 *" # daily during the season (Aug-Dec, Jan)
-    - cron: "0 13 * 2-7 0" # weekly (Sundays) in the off-season (Feb-Jul)
+    # exceeded" from 2026-09-11 through 2026-09-17 before this was caught).
+    # Dialed back further per request: once a week, every Wednesday, year-round —
+    # mid-week, after the prior weekend's games are final and each week's
+    # spreads have settled, well ahead of the following weekend's kickoffs.
+    - cron: "0 13 * * 3" # every Wednesday at 13:00 UTC (~8-9am ET)
   push:
     branches: [main]
 

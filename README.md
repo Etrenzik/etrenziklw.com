@@ -76,9 +76,11 @@ and from a GitHub Actions secret in CI.
 ## Deploy
 
 - **Data refresh**: [`.github/workflows/refresh-and-deploy.yml`](.github/workflows/refresh-and-deploy.yml)
-  runs daily during the season / weekly off-season (or on demand via
-  `workflow_dispatch`), commits refreshed `data/` files, builds the static
-  export, and deploys it to Cloudflare Pages.
+  runs every Wednesday year-round (or on demand via `workflow_dispatch`),
+  commits refreshed `data/` files, builds the static export, and deploys it
+  to Cloudflare Pages. Kept intentionally infrequent to stay well within
+  CFBD's monthly API call quota — see the schedule comment in that file for
+  the incident that prompted this.
 - **Hosting**: Next.js static export (`output: "export"`, see
   `next.config.ts`) → `out/` → Cloudflare Pages, project name
   `the-spread-cfb`, custom domain `EtrenzikLW.com`.
