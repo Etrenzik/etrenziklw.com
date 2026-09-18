@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import type { GamePick, SeasonGrid } from "@/lib/types";
 import {
   buildGameIndex,
@@ -12,14 +12,31 @@ import {
   type TeamGameCell,
 } from "./gridUtils";
 import { MatchupDetailModal } from "./MatchupDetailModal";
+import { useMyPicks } from "./useMyPicks";
+
+const WEEKLY_PICK_TARGET = 15;
 
 export function GridView({ grid }: { grid: SeasonGrid }) {
   const [search, setSearch] = useState("");
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
   const [selectedGame, setSelectedGame] = useState<GamePick | null>(null);
+  const { picks: myPicks, togglePick, clearAll } = useMyPicks(grid.season);
 
   const gameIndex = useMemo(() => buildGameIndex(grid.games), [grid.games]);
   const groups = useMemo(() => groupTeamsByConference(grid), [grid]);
+  const gamesById = useMemo(() => new Map(grid.games.map((g) => [g.gameId, g])), [grid.games]);
+
+  const pickCountByColumn = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const gameIdStr of Object.keys(myPicks)) {
+      const game = gamesById.get(Number(gameIdStr));
+      if (!game) continue;
+      counts.set(game.columnId, (counts.get(game.columnId) ?? 0) + 1);
+    }
+    return counts;
+  }, [myPicks, gamesById]);
+
+  const totalPicks = Object.keys(myPicks).length;
 
   const filteredGroups = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -45,7 +62,7 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
 
   return (
     <div className="flex-1 flex flex-col min-h-0">
-      <div className="px-4 py-3 border-b border-neutral-800 flex items-center gap-3">
+      <div className="px-4 py-3 border-b border-neutral-800 flex flex-wrap items-center gap-3">
         <h1 className="text-lg font-semibold">
           {grid.season} Season Grid
         </h1>
@@ -62,6 +79,19 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
           <LegendSwatch className="bg-neutral-900 border-2 border-amber-500" label="Upset alert" />
           <LegendSwatch className="bg-neutral-900/60 border border-neutral-700" label="Not played" />
         </div>
+        <div className="flex items-center gap-2 text-xs w-full sm:w-auto">
+          <span className="text-amber-400">★ My picks: {totalPicks}</span>
+          {totalPicks > 0 && (
+            <button
+              onClick={() => {
+                if (window.confirm("Clear all of your saved picks for this season?")) clearAll();
+              }}
+              className="text-neutral-500 hover:text-neutral-300 underline"
+            >
+              Clear
+            </button>
+          )}
+        </div>
       </div>
 
       <div className="flex-1 min-h-0 overflow-auto">
@@ -71,14 +101,35 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
               <th className="sticky left-0 top-0 z-30 bg-neutral-950 border-b border-r border-neutral-800 px-3 py-2 text-left w-48 min-w-48">
                 Team
               </th>
-              {grid.columns.map((col) => (
-                <th
-                  key={col.id}
-                  className="sticky top-0 z-20 bg-neutral-950 border-b border-neutral-800 px-2 py-2 text-center font-medium whitespace-nowrap min-w-32"
-                >
-                  {col.label}
-                </th>
-              ))}
+              {grid.columns.map((col) => {
+                const count = pickCountByColumn.get(col.id) ?? 0;
+                return (
+                  <Fragment key={col.id}>
+                    <th className="sticky top-0 z-20 bg-neutral-950 border-b border-neutral-800 px-2 py-2 text-center font-medium whitespace-nowrap min-w-32">
+                      {col.label}
+                    </th>
+                    <th
+                      className="sticky top-0 z-20 bg-neutral-950 border-b border-l border-neutral-800 px-1 py-2 text-center font-medium whitespace-nowrap w-14 min-w-14"
+                      title="Your picks for this week (e.g. a CBS Sports Pick'em pool)"
+                    >
+                      <span className="text-amber-400">★</span>
+                      <span
+                        className={
+                          count === 0
+                            ? "block text-neutral-600"
+                            : count > WEEKLY_PICK_TARGET
+                              ? "block text-rose-400"
+                              : count === WEEKLY_PICK_TARGET
+                                ? "block text-emerald-400"
+                                : "block text-neutral-400"
+                        }
+                      >
+                        {count}/{WEEKLY_PICK_TARGET}
+                      </span>
+                    </th>
+                  </Fragment>
+                );
+              })}
             </tr>
           </thead>
           <tbody>
@@ -92,6 +143,8 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
                 collapsed={collapsed.has(group.conference)}
                 onToggle={() => toggleConference(group.conference)}
                 onSelectGame={setSelectedGame}
+                myPicks={myPicks}
+                onTogglePick={togglePick}
               />
             ))}
           </tbody>
@@ -122,6 +175,8 @@ function ConferenceGroup({
   collapsed,
   onToggle,
   onSelectGame,
+  myPicks,
+  onTogglePick,
 }: {
   conference: string;
   teams: SeasonGrid["teams"];
@@ -130,12 +185,14 @@ function ConferenceGroup({
   collapsed: boolean;
   onToggle: () => void;
   onSelectGame: (g: GamePick) => void;
+  myPicks: Record<number, string>;
+  onTogglePick: (gameId: number, team: string) => void;
 }) {
   return (
     <>
       <tr>
         <th
-          colSpan={columns.length + 1}
+          colSpan={columns.length * 2 + 1}
           className="sticky left-0 z-10 bg-neutral-900 text-left px-3 py-1.5 border-b border-neutral-800 font-medium text-neutral-300 cursor-pointer select-none"
           onClick={onToggle}
         >
@@ -151,14 +208,35 @@ function ConferenceGroup({
             </td>
             {columns.map((col) => {
               const cell = gameIndex.get(`${team.school}::${col.id}`);
+              const thisTeam = cell ? (cell.isHome ? cell.game.homeTeam : cell.game.awayTeam) : null;
+              const isPicked = cell ? myPicks[cell.game.gameId] === thisTeam : false;
               return (
-                <td key={col.id} className="border-b border-neutral-900 p-0.5 align-top">
-                  {cell ? (
-                    <GridCell cell={cell} onSelect={() => onSelectGame(cell.game)} />
-                  ) : (
-                    <div className="h-full min-h-12" />
-                  )}
-                </td>
+                <Fragment key={col.id}>
+                  <td className="border-b border-neutral-900 p-0.5 align-top">
+                    {cell ? (
+                      <GridCell cell={cell} onSelect={() => onSelectGame(cell.game)} />
+                    ) : (
+                      <div className="h-full min-h-12" />
+                    )}
+                  </td>
+                  <td className="border-b border-l border-neutral-900 p-0.5 align-top">
+                    {cell && thisTeam ? (
+                      <button
+                        onClick={() => onTogglePick(cell.game.gameId, thisTeam)}
+                        title={isPicked ? "Remove from my picks" : "Mark as one of my picks"}
+                        className={`w-full h-full min-h-12 flex items-center justify-center rounded text-base transition-colors ${
+                          isPicked
+                            ? "bg-amber-500/15 text-amber-400 ring-2 ring-amber-500 ring-inset"
+                            : "bg-neutral-900/40 text-neutral-700 hover:text-neutral-300 hover:bg-neutral-900"
+                        }`}
+                      >
+                        {isPicked ? "★" : "☆"}
+                      </button>
+                    ) : (
+                      <div className="h-full min-h-12" />
+                    )}
+                  </td>
+                </Fragment>
               );
             })}
           </tr>
