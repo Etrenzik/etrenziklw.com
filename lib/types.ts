@@ -136,6 +136,12 @@ export interface GamePick {
   predictedMarginMatchup: number;
   predictedMargin: number; // blended, positive = home favored
 
+  overUnder: number | null; // market total (home + away combined points), when a line exists
+  predictedTotal: number | null; // combined points estimate used for the tiebreaker predictor
+  predictedTotalSource: "market" | "history" | null;
+  predictedHomeScore: number | null; // predictedTotal split by predictedMargin
+  predictedAwayScore: number | null;
+
   predictedWinner: string; // team name
   confidence: number; // 0-100, winner-perspective probability
   upsetAlert: boolean;

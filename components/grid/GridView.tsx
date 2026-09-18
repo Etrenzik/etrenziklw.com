@@ -12,6 +12,7 @@ import {
   type TeamGameCell,
 } from "./gridUtils";
 import { MatchupDetailModal } from "./MatchupDetailModal";
+import { TiebreakerPredictor } from "./TiebreakerPredictor";
 import { useMyPicks } from "./useMyPicks";
 
 const WEEKLY_PICK_TARGET = 15;
@@ -150,6 +151,8 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
           </tbody>
         </table>
       </div>
+
+      <TiebreakerPredictor games={grid.games} columns={grid.columns} />
 
       {selectedGame && (
         <MatchupDetailModal game={selectedGame} onClose={() => setSelectedGame(null)} />

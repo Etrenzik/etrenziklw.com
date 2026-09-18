@@ -5,6 +5,7 @@ export interface RecentGameResult {
   date: string;
   won: boolean;
   margin: number; // this team's points minus opponent's
+  totalPoints: number; // this team's points plus opponent's (for the total-points/tiebreaker predictor)
   turnoverMargin: number | null; // takeaways minus giveaways, null if unknown
 }
 
@@ -35,6 +36,13 @@ export function recentFormWinPct(ctx: TeamSeasonContext, window = 5): number | n
 export function recentFormAvgMargin(ctx: TeamSeasonContext, window = 5): number | null {
   const games = last(window, ctx.priorGames);
   return avg(games.map((g) => g.margin));
+}
+
+/** Average combined (both teams') points per game over the window — used as a
+ * total-points fallback when no market over/under exists yet. */
+export function recentFormAvgTotal(ctx: TeamSeasonContext, window = 5): number | null {
+  const games = last(window, ctx.priorGames);
+  return avg(games.map((g) => g.totalPoints));
 }
 
 export function seasonTurnoverMarginPerGame(ctx: TeamSeasonContext): number | null {

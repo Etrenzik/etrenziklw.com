@@ -1,4 +1,4 @@
-import { buildMatchupFeatures, type TeamSeasonContext } from "../../lib/model/features";
+import { buildMatchupFeatures, recentFormAvgTotal, type TeamSeasonContext } from "../../lib/model/features";
 import { computeGamePick } from "../../lib/model/pick";
 import type { LogisticFit } from "../../lib/model/market";
 import { columnIdFor } from "../../lib/data/columns";
@@ -114,7 +114,15 @@ export function simulateSeason(opts: SimulateSeasonOptions): GamePick[] {
 
     const line = raw.lines.get(game.id) ?? null;
     const columnId = columnIdFor(game);
-    const pick = computeGamePick({ game, columnId, line, features, fit });
+
+    const homeAvgTotal = recentFormAvgTotal(homeState);
+    const awayAvgTotal = recentFormAvgTotal(awayState);
+    const fallbackTotal =
+      homeAvgTotal !== null && awayAvgTotal !== null
+        ? (homeAvgTotal + awayAvgTotal) / 2
+        : (homeAvgTotal ?? awayAvgTotal);
+
+    const pick = computeGamePick({ game, columnId, line, features, fit, fallbackTotal });
     picks.push(pick);
 
     if (game.completed && game.homePoints !== null && game.awayPoints !== null) {
@@ -128,12 +136,14 @@ export function simulateSeason(opts: SimulateSeasonOptions): GamePick[] {
         date: game.startDate,
         won: hp > ap,
         margin: hp - ap,
+        totalPoints: hp + ap,
         turnoverMargin: bothKnown ? (awayTOCommitted as number) - (homeTOCommitted as number) : null,
       });
       awayState.priorGames.push({
         date: game.startDate,
         won: ap > hp,
         margin: ap - hp,
+        totalPoints: hp + ap,
         turnoverMargin: bothKnown ? (homeTOCommitted as number) - (awayTOCommitted as number) : null,
       });
       homeState.lastGameDate = game.startDate;

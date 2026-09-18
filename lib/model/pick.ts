@@ -9,6 +9,9 @@ export interface ComputePickInput {
   line: RawLine | null;
   features: MatchupFeatures;
   fit: LogisticFit;
+  /** Fallback combined-points estimate (avg of both teams' recent game totals) for
+   * when no market over/under exists yet — see scripts/lib/simulateSeason.ts. */
+  fallbackTotal: number | null;
 }
 
 function siteOf(game: RawGame): SiteType {
@@ -61,7 +64,7 @@ function buildExplanation(params: {
 }
 
 export function computeGamePick(input: ComputePickInput): GamePick {
-  const { game, columnId, line, features, fit } = input;
+  const { game, columnId, line, features, fit, fallbackTotal } = input;
 
   const spread = line?.spread ?? null; // already normalized: positive = home favored
   const spreadFavorite: "home" | "away" | null =
@@ -83,6 +86,17 @@ export function computeGamePick(input: ComputePickInput): GamePick {
 
   const predictedWinner = pFinal >= 0.5 ? game.homeTeam : game.awayTeam;
   const confidence = (pFinal >= 0.5 ? pFinal : 1 - pFinal) * 100;
+
+  // Combined-points ("tiebreaker") estimate: prefer the market total when a line
+  // exists, since a book's over/under is a well-calibrated total-points predictor;
+  // otherwise fall back to both teams' recent scoring history. Split the total by
+  // the model's blended margin to get a full predicted final score for each side.
+  const overUnder = line?.overUnder ?? null;
+  const predictedTotal = overUnder ?? fallbackTotal;
+  const predictedTotalSource: "market" | "history" | null =
+    overUnder !== null ? "market" : fallbackTotal !== null ? "history" : null;
+  const predictedHomeScore = predictedTotal !== null ? (predictedTotal + predictedMargin) / 2 : null;
+  const predictedAwayScore = predictedTotal !== null ? (predictedTotal - predictedMargin) / 2 : null;
 
   let upsetAlert = false;
   let upsetReason: string | null = null;
@@ -152,6 +166,11 @@ export function computeGamePick(input: ComputePickInput): GamePick {
     predictedMarginMarket,
     predictedMarginMatchup,
     predictedMargin,
+    overUnder,
+    predictedTotal,
+    predictedTotalSource,
+    predictedHomeScore,
+    predictedAwayScore,
     predictedWinner,
     confidence,
     upsetAlert,
