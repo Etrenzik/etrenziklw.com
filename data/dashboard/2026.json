@@ -1,120 +1,120 @@
 {
   "season": 2026,
-  "n": 402,
-  "suWins": 343,
-  "suLosses": 59,
-  "atsWins": 219,
-  "atsLosses": 176,
+  "n": 448,
+  "suWins": 377,
+  "suLosses": 71,
+  "atsWins": 240,
+  "atsLosses": 201,
   "atsPushes": 7,
   "confidenceBuckets": [
     {
       "bucket": "50-55",
       "min": 50,
       "max": 55,
-      "n": 21,
-      "suWins": 9,
-      "suLosses": 12,
-      "suWinPct": 0.42857142857142855,
-      "avgPredictedProb": 52.5778528637215,
-      "actualWinRate": 0.42857142857142855
+      "n": 25,
+      "suWins": 14,
+      "suLosses": 11,
+      "suWinPct": 0.56,
+      "avgPredictedProb": 52.58812844607684,
+      "actualWinRate": 0.56
     },
     {
       "bucket": "55-60",
       "min": 55,
       "max": 60,
-      "n": 27,
-      "suWins": 17,
-      "suLosses": 10,
-      "suWinPct": 0.6296296296296297,
-      "avgPredictedProb": 57.79311303417099,
-      "actualWinRate": 0.6296296296296297
+      "n": 39,
+      "suWins": 21,
+      "suLosses": 18,
+      "suWinPct": 0.5384615384615384,
+      "avgPredictedProb": 57.41478661567073,
+      "actualWinRate": 0.5384615384615384
     },
     {
       "bucket": "60-65",
       "min": 60,
       "max": 65,
-      "n": 29,
-      "suWins": 21,
-      "suLosses": 8,
-      "suWinPct": 0.7241379310344828,
-      "avgPredictedProb": 62.88526110262399,
-      "actualWinRate": 0.7241379310344828
+      "n": 19,
+      "suWins": 17,
+      "suLosses": 2,
+      "suWinPct": 0.8947368421052632,
+      "avgPredictedProb": 62.80311222420056,
+      "actualWinRate": 0.8947368421052632
     },
     {
       "bucket": "65-70",
       "min": 65,
       "max": 70,
-      "n": 29,
+      "n": 32,
       "suWins": 22,
-      "suLosses": 7,
-      "suWinPct": 0.7586206896551724,
-      "avgPredictedProb": 67.96075265349418,
-      "actualWinRate": 0.7586206896551724
+      "suLosses": 10,
+      "suWinPct": 0.6875,
+      "avgPredictedProb": 67.42263096476383,
+      "actualWinRate": 0.6875
     },
     {
       "bucket": "70-75",
       "min": 70,
       "max": 75,
-      "n": 23,
-      "suWins": 18,
-      "suLosses": 5,
-      "suWinPct": 0.782608695652174,
-      "avgPredictedProb": 72.065447144284,
-      "actualWinRate": 0.782608695652174
+      "n": 37,
+      "suWins": 29,
+      "suLosses": 8,
+      "suWinPct": 0.7837837837837838,
+      "avgPredictedProb": 72.38265068656642,
+      "actualWinRate": 0.7837837837837838
     },
     {
       "bucket": "75-80",
       "min": 75,
       "max": 80,
-      "n": 33,
-      "suWins": 26,
-      "suLosses": 7,
-      "suWinPct": 0.7878787878787878,
-      "avgPredictedProb": 77.58343799864527,
-      "actualWinRate": 0.7878787878787878
+      "n": 44,
+      "suWins": 31,
+      "suLosses": 13,
+      "suWinPct": 0.7045454545454546,
+      "avgPredictedProb": 78.02460190476884,
+      "actualWinRate": 0.7045454545454546
     },
     {
       "bucket": "80-85",
       "min": 80,
       "max": 85,
-      "n": 94,
-      "suWins": 88,
-      "suLosses": 6,
-      "suWinPct": 0.9361702127659575,
-      "avgPredictedProb": 83.05635201849393,
-      "actualWinRate": 0.9361702127659575
+      "n": 93,
+      "suWins": 89,
+      "suLosses": 4,
+      "suWinPct": 0.956989247311828,
+      "avgPredictedProb": 83.0251207146414,
+      "actualWinRate": 0.956989247311828
     },
     {
       "bucket": "85-90",
       "min": 85,
       "max": 90,
-      "n": 45,
-      "suWins": 43,
+      "n": 55,
+      "suWins": 53,
       "suLosses": 2,
-      "suWinPct": 0.9555555555555556,
-      "avgPredictedProb": 87.44698904361358,
-      "actualWinRate": 0.9555555555555556
+      "suWinPct": 0.9636363636363636,
+      "avgPredictedProb": 87.54953321682274,
+      "actualWinRate": 0.9636363636363636
     },
     {
       "bucket": "90-95",
       "min": 90,
       "max": 95,
-      "n": 49,
-      "suWins": 47,
-      "suLosses": 2,
-      "suWinPct": 0.9591836734693877,
-      "avgPredictedProb": 92.54208782024888,
-      "actualWinRate": 0.9591836734693877
+      "n": 51,
+      "suWins": 48,
+      "suLosses": 3,
+      "suWinPct": 0.9411764705882353,
+      "avgPredictedProb": 92.41075762248768,
+      "actualWinRate": 0.9411764705882353
     },
     {
       "bucket": "95-100",
       "min": 95,
       "max": 100,
-      "n": 52,
-      "suWins": 52,
+      "n": 53,
+      "suWins": 53,
       "suLosses": 0,
       "suWinPct": 1,
-      "avgPredictedProb": 97.52037007344528,
+      "avgPredictedProb": 97.62688746037855,
       "actualWinRate": 1
     }
   ],
@@ -122,134 +122,134 @@
     {
       "key": "Big Ten",
       "label": "Big Ten",
-      "n": 63,
-      "suWins": 52,
-      "suLosses": 11,
-      "suWinPct": 0.8253968253968254,
-      "atsWins": 31,
-      "atsLosses": 31,
+      "n": 69,
+      "suWins": 59,
+      "suLosses": 10,
+      "suWinPct": 0.855072463768116,
+      "atsWins": 34,
+      "atsLosses": 34,
       "atsPushes": 1,
       "atsWinPct": 0.5
     },
     {
       "key": "SEC",
       "label": "SEC",
-      "n": 57,
-      "suWins": 51,
-      "suLosses": 6,
-      "suWinPct": 0.8947368421052632,
-      "atsWins": 30,
-      "atsLosses": 27,
+      "n": 64,
+      "suWins": 54,
+      "suLosses": 10,
+      "suWinPct": 0.84375,
+      "atsWins": 32,
+      "atsLosses": 32,
       "atsPushes": 0,
-      "atsWinPct": 0.5263157894736842
+      "atsWinPct": 0.5
     },
     {
       "key": "Big 12",
       "label": "Big 12",
-      "n": 52,
-      "suWins": 46,
+      "n": 57,
+      "suWins": 51,
       "suLosses": 6,
-      "suWinPct": 0.8846153846153846,
-      "atsWins": 29,
-      "atsLosses": 22,
+      "suWinPct": 0.8947368421052632,
+      "atsWins": 33,
+      "atsLosses": 23,
       "atsPushes": 1,
-      "atsWinPct": 0.5686274509803921
+      "atsWinPct": 0.5892857142857143
     },
     {
       "key": "ACC",
       "label": "ACC",
-      "n": 51,
-      "suWins": 43,
-      "suLosses": 8,
-      "suWinPct": 0.8431372549019608,
+      "n": 57,
+      "suWins": 44,
+      "suLosses": 13,
+      "suWinPct": 0.7719298245614035,
       "atsWins": 26,
-      "atsLosses": 24,
+      "atsLosses": 30,
       "atsPushes": 1,
-      "atsWinPct": 0.52
-    },
-    {
-      "key": "Sun Belt",
-      "label": "Sun Belt",
-      "n": 36,
-      "suWins": 32,
-      "suLosses": 4,
-      "suWinPct": 0.8888888888888888,
-      "atsWins": 22,
-      "atsLosses": 13,
-      "atsPushes": 1,
-      "atsWinPct": 0.6285714285714286
+      "atsWinPct": 0.4642857142857143
     },
     {
       "key": "American Athletic",
       "label": "American Athletic",
-      "n": 35,
-      "suWins": 28,
-      "suLosses": 7,
-      "suWinPct": 0.8,
-      "atsWins": 14,
-      "atsLosses": 19,
+      "n": 41,
+      "suWins": 33,
+      "suLosses": 8,
+      "suWinPct": 0.8048780487804879,
+      "atsWins": 18,
+      "atsLosses": 21,
       "atsPushes": 2,
-      "atsWinPct": 0.42424242424242425
+      "atsWinPct": 0.46153846153846156
+    },
+    {
+      "key": "Sun Belt",
+      "label": "Sun Belt",
+      "n": 40,
+      "suWins": 34,
+      "suLosses": 6,
+      "suWinPct": 0.85,
+      "atsWins": 22,
+      "atsLosses": 17,
+      "atsPushes": 1,
+      "atsWinPct": 0.5641025641025641
     },
     {
       "key": "Mid-American",
       "label": "Mid-American",
-      "n": 29,
-      "suWins": 25,
-      "suLosses": 4,
-      "suWinPct": 0.8620689655172413,
-      "atsWins": 15,
-      "atsLosses": 14,
+      "n": 35,
+      "suWins": 30,
+      "suLosses": 5,
+      "suWinPct": 0.8571428571428571,
+      "atsWins": 18,
+      "atsLosses": 17,
       "atsPushes": 0,
-      "atsWinPct": 0.5172413793103449
+      "atsWinPct": 0.5142857142857142
     },
     {
       "key": "Mountain West",
       "label": "Mountain West",
-      "n": 28,
-      "suWins": 20,
+      "n": 30,
+      "suWins": 22,
       "suLosses": 8,
-      "suWinPct": 0.7142857142857143,
-      "atsWins": 15,
+      "suWinPct": 0.7333333333333333,
+      "atsWins": 17,
       "atsLosses": 13,
       "atsPushes": 0,
-      "atsWinPct": 0.5357142857142857
+      "atsWinPct": 0.5666666666666667
     },
     {
       "key": "Conference USA",
       "label": "Conference USA",
       "n": 24,
-      "suWins": 21,
-      "suLosses": 3,
-      "suWinPct": 0.875,
-      "atsWins": 18,
-      "atsLosses": 5,
+      "suWins": 22,
+      "suLosses": 2,
+      "suWinPct": 0.9166666666666666,
+      "atsWins": 19,
+      "atsLosses": 4,
       "atsPushes": 1,
-      "atsWinPct": 0.782608695652174
+      "atsWinPct": 0.8260869565217391
     },
     {
       "key": "Pac-12",
       "label": "Pac-12",
-      "n": 19,
-      "suWins": 17,
+      "n": 21,
+      "suWins": 19,
       "suLosses": 2,
-      "suWinPct": 0.8947368421052632,
-      "atsWins": 13,
-      "atsLosses": 6,
+      "suWinPct": 0.9047619047619048,
+      "atsWins": 14,
+      "atsLosses": 7,
       "atsPushes": 0,
-      "atsWinPct": 0.6842105263157895
+      "atsWinPct": 0.6666666666666666
     },
     {
       "key": "FBS Independents",
       "label": "FBS Independents",
-      "n": 7,
-      "suWins": 7,
-      "suLosses": 0,
-      "suWinPct": 1,
-      "atsWins": 5,
-      "atsLosses": 2,
+      "n": 9,
+      "suWins": 8,
+      "suLosses": 1,
+      "suWinPct": 0.8888888888888888,
+      "atsWins": 6,
+      "atsLosses": 3,
       "atsPushes": 0,
-      "atsWinPct": 0.7142857142857143
+      "atsWinPct": 0.6666666666666666
     },
     {
       "key": "Unknown",
@@ -268,64 +268,64 @@
     {
       "key": "favorite",
       "label": "Picked the favorite",
-      "n": 391,
-      "suWins": 338,
-      "suLosses": 53,
-      "suWinPct": 0.8644501278772379,
-      "atsWins": 214,
-      "atsLosses": 171,
+      "n": 430,
+      "suWins": 367,
+      "suLosses": 63,
+      "suWinPct": 0.8534883720930233,
+      "atsWins": 230,
+      "atsLosses": 194,
       "atsPushes": 6,
-      "atsWinPct": 0.5558441558441558
+      "atsWinPct": 0.5424528301886793
     },
     {
       "key": "underdog",
       "label": "Picked the underdog",
-      "n": 11,
-      "suWins": 5,
-      "suLosses": 6,
-      "suWinPct": 0.45454545454545453,
-      "atsWins": 5,
-      "atsLosses": 5,
+      "n": 18,
+      "suWins": 10,
+      "suLosses": 8,
+      "suWinPct": 0.5555555555555556,
+      "atsWins": 10,
+      "atsLosses": 7,
       "atsPushes": 1,
-      "atsWinPct": 0.5
+      "atsWinPct": 0.5882352941176471
     }
   ],
   "bySite": [
     {
       "key": "neutral",
       "label": "Neutral site",
-      "n": 6,
+      "n": 7,
       "suWins": 4,
-      "suLosses": 2,
-      "suWinPct": 0.6666666666666666,
+      "suLosses": 3,
+      "suWinPct": 0.5714285714285714,
       "atsWins": 2,
-      "atsLosses": 4,
+      "atsLosses": 5,
       "atsPushes": 0,
-      "atsWinPct": 0.3333333333333333
+      "atsWinPct": 0.2857142857142857
     },
     {
       "key": "home",
       "label": "Picked home team",
-      "n": 303,
-      "suWins": 270,
-      "suLosses": 33,
-      "suWinPct": 0.8910891089108911,
-      "atsWins": 172,
-      "atsLosses": 128,
+      "n": 329,
+      "suWins": 289,
+      "suLosses": 40,
+      "suWinPct": 0.878419452887538,
+      "atsWins": 185,
+      "atsLosses": 141,
       "atsPushes": 3,
-      "atsWinPct": 0.5733333333333334
+      "atsWinPct": 0.5674846625766872
     },
     {
       "key": "away",
       "label": "Picked away team",
-      "n": 93,
-      "suWins": 69,
-      "suLosses": 24,
-      "suWinPct": 0.7419354838709677,
-      "atsWins": 45,
-      "atsLosses": 44,
+      "n": 112,
+      "suWins": 84,
+      "suLosses": 28,
+      "suWinPct": 0.75,
+      "atsWins": 53,
+      "atsLosses": 55,
       "atsPushes": 4,
-      "atsWinPct": 0.5056179775280899
+      "atsWinPct": 0.49074074074074076
     }
   ],
   "weekLog": [
@@ -339,7 +339,7 @@
           "gameId": 401856766,
           "matchup": "North Carolina @ TCU",
           "pick": "TCU",
-          "confidence": 70.25099971005419,
+          "confidence": 66.60880344351172,
           "result": "TCU 10-15 North Carolina",
           "correct": false
         },
@@ -347,7 +347,7 @@
           "gameId": 401864494,
           "matchup": "San José State @ USC",
           "pick": "USC",
-          "confidence": 99.00464583333412,
+          "confidence": 98.82793766248852,
           "result": "USC 42-26 San José State",
           "correct": true
         },
@@ -355,7 +355,7 @@
           "gameId": 401858202,
           "matchup": "NC State @ Virginia",
           "pick": "Virginia",
-          "confidence": 68.26560794553167,
+          "confidence": 67.27734037819195,
           "result": "Virginia 34-8 NC State",
           "correct": true
         },
@@ -363,7 +363,7 @@
           "gameId": 401864577,
           "matchup": "Jacksonville State @ North Dakota State",
           "pick": "North Dakota State",
-          "confidence": 74.02175559321216,
+          "confidence": 73.31215977503744,
           "result": "North Dakota State 33-7 Jacksonville State",
           "correct": true
         },
@@ -371,31 +371,31 @@
           "gameId": 401866408,
           "matchup": "Sacramento State @ Eastern Michigan",
           "pick": "Eastern Michigan",
-          "confidence": 73.18910341781988,
+          "confidence": 79.8586530805457,
           "result": "Eastern Michigan 28-17 Sacramento State",
-          "correct": true
-        },
-        {
-          "gameId": 401864570,
-          "matchup": "New Mexico State @ Florida State",
-          "pick": "Florida State",
-          "confidence": 97.02614538543749,
-          "result": "Florida State 34-17 New Mexico State",
           "correct": true
         },
         {
           "gameId": 401858201,
           "matchup": "Hawai'i @ Stanford",
           "pick": "Stanford",
-          "confidence": 69.27444482859045,
+          "confidence": 65.14383701254278,
           "result": "Stanford 37-27 Hawai'i",
+          "correct": true
+        },
+        {
+          "gameId": 401864570,
+          "matchup": "New Mexico State @ Florida State",
+          "pick": "Florida State",
+          "confidence": 96.69376454533538,
+          "result": "Florida State 34-17 New Mexico State",
           "correct": true
         },
         {
           "gameId": 401862693,
           "matchup": "Memphis @ UNLV",
           "pick": "UNLV",
-          "confidence": 55.0794632151529,
+          "confidence": 50.02680625258752,
           "result": "UNLV 21-27 Memphis",
           "correct": false
         },
@@ -403,16 +403,16 @@
           "gameId": 401858423,
           "matchup": "Massachusetts @ Rutgers",
           "pick": "Rutgers",
-          "confidence": 93.24773200686084,
+          "confidence": 93.0860199865259,
           "result": "Rutgers 21-37 Massachusetts",
           "correct": false
         },
         {
-          "gameId": 401856767,
-          "matchup": "Bethune-Cookman @ UCF",
-          "pick": "UCF",
-          "confidence": 90.86807726302067,
-          "result": "UCF 73-6 Bethune-Cookman",
+          "gameId": 401858204,
+          "matchup": "Akron @ Wake Forest",
+          "pick": "Wake Forest",
+          "confidence": 97.15308204614789,
+          "result": "Wake Forest 38-16 Akron",
           "correct": true
         },
         {
@@ -424,14 +424,6 @@
           "correct": true
         },
         {
-          "gameId": 401864425,
-          "matchup": "West Georgia @ Kennesaw State",
-          "pick": "Kennesaw State",
-          "confidence": 80.23277267676801,
-          "result": "Kennesaw State 47-0 West Georgia",
-          "correct": true
-        },
-        {
           "gameId": 401864424,
           "matchup": "Merrimack @ Delaware",
           "pick": "Delaware",
@@ -440,28 +432,20 @@
           "correct": true
         },
         {
-          "gameId": 401858204,
-          "matchup": "Akron @ Wake Forest",
-          "pick": "Wake Forest",
-          "confidence": 96.67698125156578,
-          "result": "Wake Forest 38-16 Akron",
+          "gameId": 401864425,
+          "matchup": "West Georgia @ Kennesaw State",
+          "pick": "Kennesaw State",
+          "confidence": 80.23277267676801,
+          "result": "Kennesaw State 47-0 West Georgia",
           "correct": true
         },
         {
-          "gameId": 401856663,
-          "matchup": "Arkansas-Pine Bluff @ Missouri",
-          "pick": "Missouri",
-          "confidence": 84.13922754936299,
-          "result": "Missouri 54-14 Arkansas-Pine Bluff",
+          "gameId": 401856767,
+          "matchup": "Bethune-Cookman @ UCF",
+          "pick": "UCF",
+          "confidence": 90.86807726302067,
+          "result": "UCF 73-6 Bethune-Cookman",
           "correct": true
-        },
-        {
-          "gameId": 401856776,
-          "matchup": "Colorado @ Georgia Tech",
-          "pick": "Georgia Tech",
-          "confidence": 71.03683394414932,
-          "result": "Georgia Tech 13-14 Colorado",
-          "correct": false
         },
         {
           "gameId": 401858422,
@@ -472,10 +456,26 @@
           "correct": true
         },
         {
+          "gameId": 401856776,
+          "matchup": "Colorado @ Georgia Tech",
+          "pick": "Georgia Tech",
+          "confidence": 72.54153106038316,
+          "result": "Georgia Tech 13-14 Colorado",
+          "correct": false
+        },
+        {
+          "gameId": 401856663,
+          "matchup": "Arkansas-Pine Bluff @ Missouri",
+          "pick": "Missouri",
+          "confidence": 84.13922754936299,
+          "result": "Missouri 54-14 Arkansas-Pine Bluff",
+          "correct": true
+        },
+        {
           "gameId": 401858424,
           "matchup": "UAB @ Illinois",
           "pick": "Illinois",
-          "confidence": 96.10195754321222,
+          "confidence": 95.4740846444513,
           "result": "Illinois 42-23 UAB",
           "correct": true
         },
@@ -491,7 +491,7 @@
           "gameId": 401864495,
           "matchup": "San José State @ Eastern Michigan",
           "pick": "Eastern Michigan",
-          "confidence": 65.76875129994353,
+          "confidence": 69.2190771007772,
           "result": "Eastern Michigan 21-27 San José State",
           "correct": false
         },
@@ -512,18 +512,10 @@
           "correct": true
         },
         {
-          "gameId": 401856664,
-          "matchup": "UTEP @ Oklahoma",
-          "pick": "Oklahoma",
-          "confidence": 99.11810611678311,
-          "result": "Oklahoma 51-0 UTEP",
-          "correct": true
-        },
-        {
           "gameId": 401858429,
           "matchup": "Toledo @ Michigan State",
           "pick": "Michigan State",
-          "confidence": 69.54352766142222,
+          "confidence": 71.77807861103591,
           "result": "Michigan State 30-20 Toledo",
           "correct": true
         },
@@ -536,83 +528,43 @@
           "correct": true
         },
         {
-          "gameId": 401858436,
-          "matchup": "Fresno State @ USC",
-          "pick": "USC",
-          "confidence": 94.84898129144898,
-          "result": "USC 39-0 Fresno State",
+          "gameId": 401856664,
+          "matchup": "UTEP @ Oklahoma",
+          "pick": "Oklahoma",
+          "confidence": 99.14383353362466,
+          "result": "Oklahoma 51-0 UTEP",
           "correct": true
         },
         {
           "gameId": 401858206,
           "matchup": "Miami @ Stanford",
           "pick": "Miami",
-          "confidence": 95.34313548470888,
+          "confidence": 95.99511213859928,
           "result": "Stanford 6-45 Miami",
           "correct": true
         },
         {
-          "gameId": 401861962,
-          "matchup": "Lafayette @ UConn",
-          "pick": "UConn",
-          "confidence": 78.73909238705853,
-          "result": "UConn 56-7 Lafayette",
-          "correct": true
-        },
-        {
-          "gameId": 401866410,
-          "matchup": "Tarleton State @ Bowling Green",
-          "pick": "Bowling Green",
-          "confidence": 58.509125512609096,
-          "result": "Bowling Green 13-20 Tarleton State",
-          "correct": false
-        },
-        {
-          "gameId": 401856778,
-          "matchup": "Oregon State @ Houston",
-          "pick": "Houston",
-          "confidence": 90.4857309541522,
-          "result": "Houston 33-20 Oregon State",
-          "correct": true
-        },
-        {
-          "gameId": 401858425,
-          "matchup": "North Texas @ Indiana",
-          "pick": "Indiana",
-          "confidence": 98.52856704349297,
-          "result": "Indiana 52-16 North Texas",
+          "gameId": 401858436,
+          "matchup": "Fresno State @ USC",
+          "pick": "USC",
+          "confidence": 92.9759816978637,
+          "result": "USC 39-0 Fresno State",
           "correct": true
         },
         {
           "gameId": 401856634,
           "matchup": "East Carolina @ Alabama",
           "pick": "Alabama",
-          "confidence": 96.7916577965357,
+          "confidence": 96.78826765883208,
           "result": "Alabama 48-10 East Carolina",
           "correct": true
         },
         {
-          "gameId": 401869960,
-          "matchup": "Liberty @ James Madison",
-          "pick": "James Madison",
-          "confidence": 71.07658681371265,
-          "result": "James Madison 20-13 Liberty",
-          "correct": true
-        },
-        {
-          "gameId": 401858430,
-          "matchup": "Ohio @ Nebraska",
-          "pick": "Nebraska",
-          "confidence": 95.54264504784555,
-          "result": "Nebraska 49-21 Ohio",
-          "correct": true
-        },
-        {
-          "gameId": 401856780,
-          "matchup": "Coastal Carolina @ West Virginia",
-          "pick": "West Virginia",
-          "confidence": 90.54647341891425,
-          "result": "West Virginia 31-24 Coastal Carolina",
+          "gameId": 401856778,
+          "matchup": "Oregon State @ Houston",
+          "pick": "Houston",
+          "confidence": 87.50776795290938,
+          "result": "Houston 33-20 Oregon State",
           "correct": true
         },
         {
@@ -624,6 +576,22 @@
           "correct": true
         },
         {
+          "gameId": 401869960,
+          "matchup": "Liberty @ James Madison",
+          "pick": "James Madison",
+          "confidence": 67.97609837964735,
+          "result": "James Madison 20-13 Liberty",
+          "correct": true
+        },
+        {
+          "gameId": 401861962,
+          "matchup": "Lafayette @ UConn",
+          "pick": "UConn",
+          "confidence": 78.73909238705853,
+          "result": "UConn 56-7 Lafayette",
+          "correct": true
+        },
+        {
           "gameId": 401862701,
           "matchup": "Bryant @ Army",
           "pick": "Army",
@@ -632,35 +600,59 @@
           "correct": true
         },
         {
-          "gameId": 401858432,
-          "matchup": "Ball State @ Ohio State",
-          "pick": "Ohio State",
-          "confidence": 99.7909548261169,
-          "result": "Ohio State 56-3 Ball State",
+          "gameId": 401856780,
+          "matchup": "Coastal Carolina @ West Virginia",
+          "pick": "West Virginia",
+          "confidence": 90.43479057220722,
+          "result": "West Virginia 31-24 Coastal Carolina",
+          "correct": true
+        },
+        {
+          "gameId": 401858425,
+          "matchup": "North Texas @ Indiana",
+          "pick": "Indiana",
+          "confidence": 97.73203467971281,
+          "result": "Indiana 52-16 North Texas",
+          "correct": true
+        },
+        {
+          "gameId": 401866410,
+          "matchup": "Tarleton State @ Bowling Green",
+          "pick": "Bowling Green",
+          "confidence": 58.509125512609096,
+          "result": "Bowling Green 13-20 Tarleton State",
+          "correct": false
+        },
+        {
+          "gameId": 401858430,
+          "matchup": "Ohio @ Nebraska",
+          "pick": "Nebraska",
+          "confidence": 95.09921672841148,
+          "result": "Nebraska 49-21 Ohio",
           "correct": true
         },
         {
           "gameId": 401858207,
           "matchup": "Miami (OH) @ Pittsburgh",
           "pick": "Pittsburgh",
-          "confidence": 88.96165319573124,
+          "confidence": 88.49868320564283,
           "result": "Pittsburgh 59-14 Miami (OH)",
+          "correct": true
+        },
+        {
+          "gameId": 401858432,
+          "matchup": "Ball State @ Ohio State",
+          "pick": "Ohio State",
+          "confidence": 99.78803143911071,
+          "result": "Ohio State 56-3 Ball State",
           "correct": true
         },
         {
           "gameId": 401856665,
           "matchup": "Kent State @ South Carolina",
           "pick": "South Carolina",
-          "confidence": 98.51445893161548,
+          "confidence": 98.75269099432131,
           "result": "South Carolina 57-0 Kent State",
-          "correct": true
-        },
-        {
-          "gameId": 401864496,
-          "matchup": "Duquesne @ Air Force",
-          "pick": "Air Force",
-          "confidence": 82.15557487149118,
-          "result": "Air Force 34-0 Duquesne",
           "correct": true
         },
         {
@@ -669,6 +661,14 @@
           "pick": "Iowa State",
           "confidence": 87.22748417844905,
           "result": "Iowa State 38-10 Southeast Missouri State",
+          "correct": true
+        },
+        {
+          "gameId": 401864496,
+          "matchup": "Duquesne @ Air Force",
+          "pick": "Air Force",
+          "confidence": 82.15557487149118,
+          "result": "Air Force 34-0 Duquesne",
           "correct": true
         },
         {
@@ -699,32 +699,16 @@
           "gameId": 401856667,
           "matchup": "Texas State @ Texas",
           "pick": "Texas",
-          "confidence": 94.84395553280524,
+          "confidence": 95.20573787405134,
           "result": "Texas 59-7 Texas State",
           "correct": true
         },
         {
-          "gameId": 401856666,
-          "matchup": "Furman @ Tennessee",
-          "pick": "Tennessee",
-          "confidence": 84.03186870128093,
-          "result": "Tennessee 56-9 Furman",
-          "correct": true
-        },
-        {
-          "gameId": 401858209,
-          "matchup": "Tulane @ Duke",
-          "pick": "Duke",
-          "confidence": 81.10913068054262,
-          "result": "Duke 17-3 Tulane",
-          "correct": true
-        },
-        {
-          "gameId": 401866627,
-          "matchup": "Maine @ App State",
-          "pick": "App State",
-          "confidence": 79.53998646304815,
-          "result": "App State 55-3 Maine",
+          "gameId": 401856777,
+          "matchup": "Boston College @ Cincinnati",
+          "pick": "Cincinnati",
+          "confidence": 79.69240155497825,
+          "result": "Cincinnati 34-15 Boston College",
           "correct": true
         },
         {
@@ -736,6 +720,30 @@
           "correct": true
         },
         {
+          "gameId": 401856636,
+          "matchup": "Baylor @ Auburn",
+          "pick": "Auburn",
+          "confidence": 57.967930143952074,
+          "result": "Auburn 17-16 Baylor",
+          "correct": true
+        },
+        {
+          "gameId": 401866627,
+          "matchup": "Maine @ App State",
+          "pick": "App State",
+          "confidence": 79.53998646304815,
+          "result": "App State 55-3 Maine",
+          "correct": true
+        },
+        {
+          "gameId": 401856666,
+          "matchup": "Furman @ Tennessee",
+          "pick": "Tennessee",
+          "confidence": 84.03186870128093,
+          "result": "Tennessee 56-9 Furman",
+          "correct": true
+        },
+        {
           "gameId": 401862700,
           "matchup": "UT Rio Grande Valley @ UTSA",
           "pick": "UTSA",
@@ -744,35 +752,11 @@
           "correct": true
         },
         {
-          "gameId": 401858434,
-          "matchup": "Marshall @ Penn State",
-          "pick": "Penn State",
-          "confidence": 94.6922762356557,
-          "result": "Penn State 45-0 Marshall",
-          "correct": true
-        },
-        {
-          "gameId": 401856777,
-          "matchup": "Boston College @ Cincinnati",
-          "pick": "Cincinnati",
-          "confidence": 80.44112391291729,
-          "result": "Cincinnati 34-15 Boston College",
-          "correct": true
-        },
-        {
-          "gameId": 401856636,
-          "matchup": "Baylor @ Auburn",
-          "pick": "Auburn",
-          "confidence": 64.52555839937753,
-          "result": "Auburn 17-16 Baylor",
-          "correct": true
-        },
-        {
-          "gameId": 401862696,
-          "matchup": "Towson @ Navy",
-          "pick": "Navy",
-          "confidence": 82.57028287496122,
-          "result": "Navy 42-15 Towson",
+          "gameId": 401858209,
+          "matchup": "Tulane @ Duke",
+          "pick": "Duke",
+          "confidence": 80.85129364330751,
+          "result": "Duke 17-3 Tulane",
           "correct": true
         },
         {
@@ -784,18 +768,34 @@
           "correct": false
         },
         {
+          "gameId": 401858434,
+          "matchup": "Marshall @ Penn State",
+          "pick": "Penn State",
+          "confidence": 93.40766970128705,
+          "result": "Penn State 45-0 Marshall",
+          "correct": true
+        },
+        {
           "gameId": 401858433,
           "matchup": "Boise State @ Oregon",
           "pick": "Oregon",
-          "confidence": 92.85115140476347,
+          "confidence": 90.77610329775811,
           "result": "Oregon 34-27 Boise State",
+          "correct": true
+        },
+        {
+          "gameId": 401862696,
+          "matchup": "Towson @ Navy",
+          "pick": "Navy",
+          "confidence": 82.57028287496122,
+          "result": "Navy 42-15 Towson",
           "correct": true
         },
         {
           "gameId": 401856772,
           "matchup": "Oklahoma State @ Tulsa",
           "pick": "Oklahoma State",
-          "confidence": 82.6421120260901,
+          "confidence": 84.5269893616792,
           "result": "Tulsa 24-10 Oklahoma State",
           "correct": false
         },
@@ -811,7 +811,7 @@
           "gameId": 401858426,
           "matchup": "Northern Illinois @ Iowa",
           "pick": "Iowa",
-          "confidence": 98.20838073619609,
+          "confidence": 98.15155105971924,
           "result": "Iowa 40-0 Northern Illinois",
           "correct": true
         },
@@ -824,35 +824,19 @@
           "correct": true
         },
         {
+          "gameId": 401860878,
+          "matchup": "Wyoming @ Colorado State",
+          "pick": "Colorado State",
+          "confidence": 70.41449073738228,
+          "result": "Colorado State 35-13 Wyoming",
+          "correct": true
+        },
+        {
           "gameId": 401867973,
           "matchup": "Norfolk State @ Old Dominion",
           "pick": "Old Dominion",
           "confidence": 84.24525016014594,
           "result": "Old Dominion 31-10 Norfolk State",
-          "correct": true
-        },
-        {
-          "gameId": 401860878,
-          "matchup": "Wyoming @ Colorado State",
-          "pick": "Colorado State",
-          "confidence": 68.80239766329775,
-          "result": "Colorado State 35-13 Wyoming",
-          "correct": true
-        },
-        {
-          "gameId": 401868316,
-          "matchup": "SE Louisiana @ South Alabama",
-          "pick": "South Alabama",
-          "confidence": 77.04806478574557,
-          "result": "South Alabama 39-14 SE Louisiana",
-          "correct": true
-        },
-        {
-          "gameId": 401856771,
-          "matchup": "Nicholls @ Kansas State",
-          "pick": "Kansas State",
-          "confidence": 89.01315991368696,
-          "result": "Kansas State 71-3 Nicholls",
           "correct": true
         },
         {
@@ -864,28 +848,12 @@
           "correct": true
         },
         {
-          "gameId": 401856668,
-          "matchup": "Missouri State @ Texas A&M",
-          "pick": "Texas A&M",
-          "confidence": 98.21966269596804,
-          "result": "Texas A&M 50-0 Missouri State",
-          "correct": true
-        },
-        {
-          "gameId": 401862695,
-          "matchup": "Arkansas State @ Memphis",
-          "pick": "Memphis",
-          "confidence": 83.19607061052164,
-          "result": "Memphis 42-24 Arkansas State",
-          "correct": true
-        },
-        {
-          "gameId": 401862699,
-          "matchup": "Florida International @ South Florida",
-          "pick": "South Florida",
-          "confidence": 86.92589090397988,
-          "result": "South Florida 19-9 Florida International",
-          "correct": true
+          "gameId": 401860880,
+          "matchup": "Idaho State @ Utah State",
+          "pick": "Utah State",
+          "confidence": 83.11119785418524,
+          "result": "Utah State 17-29 Idaho State",
+          "correct": false
         },
         {
           "gameId": 401867866,
@@ -896,19 +864,27 @@
           "correct": true
         },
         {
-          "gameId": 401870763,
-          "matchup": "Sam Houston @ Troy",
-          "pick": "Troy",
-          "confidence": 80.5771595674582,
-          "result": "Troy 24-21 Sam Houston",
+          "gameId": 401856668,
+          "matchup": "Missouri State @ Texas A&M",
+          "pick": "Texas A&M",
+          "confidence": 98.25569348881115,
+          "result": "Texas A&M 50-0 Missouri State",
           "correct": true
         },
         {
-          "gameId": 401856669,
-          "matchup": "Austin Peay @ Vanderbilt",
-          "pick": "Vanderbilt",
-          "confidence": 82.3740697827422,
-          "result": "Vanderbilt 28-9 Austin Peay",
+          "gameId": 401862699,
+          "matchup": "Florida International @ South Florida",
+          "pick": "South Florida",
+          "confidence": 84.45932534890203,
+          "result": "South Florida 19-9 Florida International",
+          "correct": true
+        },
+        {
+          "gameId": 401870763,
+          "matchup": "Sam Houston @ Troy",
+          "pick": "Troy",
+          "confidence": 86.08144116367338,
+          "result": "Troy 24-21 Sam Houston",
           "correct": true
         },
         {
@@ -920,22 +896,6 @@
           "correct": true
         },
         {
-          "gameId": 401868140,
-          "matchup": "Eastern Kentucky @ Jacksonville State",
-          "pick": "Jacksonville State",
-          "confidence": 80.23277267676801,
-          "result": "Jacksonville State 49-7 Eastern Kentucky",
-          "correct": true
-        },
-        {
-          "gameId": 401860880,
-          "matchup": "Idaho State @ Utah State",
-          "pick": "Utah State",
-          "confidence": 83.11119785418524,
-          "result": "Utah State 17-29 Idaho State",
-          "correct": false
-        },
-        {
           "gameId": 401862697,
           "matchup": "Houston Christian @ Rice",
           "pick": "Rice",
@@ -944,10 +904,66 @@
           "correct": true
         },
         {
+          "gameId": 401856771,
+          "matchup": "Nicholls @ Kansas State",
+          "pick": "Kansas State",
+          "confidence": 89.01315991368696,
+          "result": "Kansas State 71-3 Nicholls",
+          "correct": true
+        },
+        {
+          "gameId": 401856669,
+          "matchup": "Austin Peay @ Vanderbilt",
+          "pick": "Vanderbilt",
+          "confidence": 82.3740697827422,
+          "result": "Vanderbilt 28-9 Austin Peay",
+          "correct": true
+        },
+        {
+          "gameId": 401868140,
+          "matchup": "Eastern Kentucky @ Jacksonville State",
+          "pick": "Jacksonville State",
+          "confidence": 80.23277267676801,
+          "result": "Jacksonville State 49-7 Eastern Kentucky",
+          "correct": true
+        },
+        {
+          "gameId": 401868316,
+          "matchup": "SE Louisiana @ South Alabama",
+          "pick": "South Alabama",
+          "confidence": 77.04806478574557,
+          "result": "South Alabama 39-14 SE Louisiana",
+          "correct": true
+        },
+        {
+          "gameId": 401862695,
+          "matchup": "Arkansas State @ Memphis",
+          "pick": "Memphis",
+          "confidence": 83.79132578983919,
+          "result": "Memphis 42-24 Arkansas State",
+          "correct": true
+        },
+        {
+          "gameId": 401856660,
+          "matchup": "Clemson @ LSU",
+          "pick": "LSU",
+          "confidence": 84.72466316526936,
+          "result": "LSU 51-10 Clemson",
+          "correct": true
+        },
+        {
+          "gameId": 401858211,
+          "matchup": "VMI @ Virginia Tech",
+          "pick": "Virginia Tech",
+          "confidence": 84.12742809601008,
+          "result": "Virginia Tech 73-3 VMI",
+          "correct": true
+        },
+        {
           "gameId": 401856662,
           "matchup": "UL Monroe @ Mississippi State",
           "pick": "Mississippi State",
-          "confidence": 97.78367511964329,
+          "confidence": 97.70587859006324,
           "result": "Mississippi State 62-13 UL Monroe",
           "correct": true
         },
@@ -963,31 +979,15 @@
           "gameId": 401858428,
           "matchup": "Western Michigan @ Michigan",
           "pick": "Michigan",
-          "confidence": 96.35325144992704,
+          "confidence": 95.02817983794067,
           "result": "Michigan 13-12 Western Michigan",
-          "correct": true
-        },
-        {
-          "gameId": 401858211,
-          "matchup": "VMI @ Virginia Tech",
-          "pick": "Virginia Tech",
-          "confidence": 84.12742809601008,
-          "result": "Virginia Tech 73-3 VMI",
-          "correct": true
-        },
-        {
-          "gameId": 401856660,
-          "matchup": "Clemson @ LSU",
-          "pick": "LSU",
-          "confidence": 83.93419280953513,
-          "result": "LSU 51-10 Clemson",
           "correct": true
         },
         {
           "gameId": 401856637,
           "matchup": "Florida Atlantic @ Florida",
           "pick": "Florida",
-          "confidence": 96.14256311592264,
+          "confidence": 93.0956212548346,
           "result": "Florida 66-21 Florida Atlantic",
           "correct": true
         },
@@ -997,6 +997,14 @@
           "pick": "Northwestern",
           "confidence": 74.67607400196606,
           "result": "Northwestern 34-18 South Dakota State",
+          "correct": true
+        },
+        {
+          "gameId": 401869142,
+          "matchup": "Lamar @ Louisiana",
+          "pick": "Louisiana",
+          "confidence": 79.28565189434583,
+          "result": "Louisiana 38-7 Lamar",
           "correct": true
         },
         {
@@ -1016,19 +1024,19 @@
           "correct": true
         },
         {
-          "gameId": 401869142,
-          "matchup": "Lamar @ Louisiana",
-          "pick": "Louisiana",
-          "confidence": 79.28565189434583,
-          "result": "Louisiana 38-7 Lamar",
-          "correct": true
-        },
-        {
           "gameId": 401870790,
           "matchup": "Mercyhurst @ New Mexico State",
           "pick": "New Mexico State",
           "confidence": 82.3740697827422,
           "result": "New Mexico State 51-14 Mercyhurst",
+          "correct": true
+        },
+        {
+          "gameId": 401856773,
+          "matchup": "Northern Arizona @ Arizona",
+          "pick": "Arizona",
+          "confidence": 85.77457145249797,
+          "result": "Arizona 35-7 Northern Arizona",
           "correct": true
         },
         {
@@ -1040,11 +1048,19 @@
           "correct": true
         },
         {
-          "gameId": 401856773,
-          "matchup": "Northern Arizona @ Arizona",
-          "pick": "Arizona",
-          "confidence": 85.77457145249797,
-          "result": "Arizona 35-7 Northern Arizona",
+          "gameId": 401864498,
+          "matchup": "Central Michigan @ New Mexico",
+          "pick": "New Mexico",
+          "confidence": 86.45976622574,
+          "result": "New Mexico 38-7 Central Michigan",
+          "correct": true
+        },
+        {
+          "gameId": 401866411,
+          "matchup": "Mississippi Valley State @ Sacramento State",
+          "pick": "Sacramento State",
+          "confidence": 83.5595716282527,
+          "result": "Sacramento State 52-0 Mississippi Valley State",
           "correct": true
         },
         {
@@ -1059,31 +1075,15 @@
           "gameId": 401864497,
           "matchup": "UNLV @ Hawai'i",
           "pick": "UNLV",
-          "confidence": 66.43346039707762,
+          "confidence": 67.61867748985577,
           "result": "Hawai'i 6-21 UNLV",
-          "correct": true
-        },
-        {
-          "gameId": 401866411,
-          "matchup": "Mississippi Valley State @ Sacramento State",
-          "pick": "Sacramento State",
-          "confidence": 83.5595716282527,
-          "result": "Sacramento State 52-0 Mississippi Valley State",
-          "correct": true
-        },
-        {
-          "gameId": 401864498,
-          "matchup": "Central Michigan @ New Mexico",
-          "pick": "New Mexico",
-          "confidence": 86.31703634694904,
-          "result": "New Mexico 38-7 Central Michigan",
           "correct": true
         },
         {
           "gameId": 401858210,
           "matchup": "UCLA @ California",
           "pick": "UCLA",
-          "confidence": 67.96453500786535,
+          "confidence": 67.28550470596,
           "result": "California 24-45 UCLA",
           "correct": true
         },
@@ -1091,7 +1091,7 @@
           "gameId": 401864432,
           "matchup": "Western Kentucky @ Nevada",
           "pick": "Nevada",
-          "confidence": 59.611809479443046,
+          "confidence": 58.81595564739752,
           "result": "Nevada 49-14 Western Kentucky",
           "correct": true
         },
@@ -1099,7 +1099,7 @@
           "gameId": 401858437,
           "matchup": "Washington State @ Washington",
           "pick": "Washington",
-          "confidence": 94.26625771434401,
+          "confidence": 94.04450923120974,
           "result": "Washington 24-10 Washington State",
           "correct": true
         },
@@ -1107,7 +1107,7 @@
           "gameId": 401858438,
           "matchup": "Wisconsin @ Notre Dame",
           "pick": "Notre Dame",
-          "confidence": 93.73739001081336,
+          "confidence": 93.21622730577539,
           "result": "Notre Dame 41-13 Wisconsin",
           "correct": true
         },
@@ -1115,7 +1115,7 @@
           "gameId": 401856661,
           "matchup": "Louisville @ Ole Miss",
           "pick": "Ole Miss",
-          "confidence": 67.53833662329353,
+          "confidence": 68.76892780882147,
           "result": "Ole Miss 41-38 Louisville",
           "correct": true
         },
@@ -1123,7 +1123,7 @@
           "gameId": 401858212,
           "matchup": "SMU @ Florida State",
           "pick": "SMU",
-          "confidence": 62.84318879030746,
+          "confidence": 61.53854863612518,
           "result": "Florida State 24-27 SMU",
           "correct": true
         }
@@ -1152,14 +1152,6 @@
           "correct": true
         },
         {
-          "gameId": 401858220,
-          "matchup": "Norfolk State @ Virginia",
-          "pick": "Virginia",
-          "confidence": 97.4716205420125,
-          "result": "Virginia 59-3 Norfolk State",
-          "correct": true
-        },
-        {
           "gameId": 401858215,
           "matchup": "Villanova @ Louisville",
           "pick": "Louisville",
@@ -1168,10 +1160,18 @@
           "correct": true
         },
         {
+          "gameId": 401858220,
+          "matchup": "Norfolk State @ Virginia",
+          "pick": "Virginia",
+          "confidence": 97.4716205420125,
+          "result": "Virginia 59-3 Norfolk State",
+          "correct": true
+        },
+        {
           "gameId": 401858214,
           "matchup": "Rutgers @ Boston College",
           "pick": "Boston College",
-          "confidence": 53.56878751224037,
+          "confidence": 56.37326572318666,
           "result": "Boston College 28-21 Rutgers",
           "correct": true
         },
@@ -1179,64 +1179,8 @@
           "gameId": 401856678,
           "matchup": "Missouri @ Kansas",
           "pick": "Missouri",
-          "confidence": 61.42274913618786,
+          "confidence": 59.314624664146876,
           "result": "Kansas 21-38 Missouri",
-          "correct": true
-        },
-        {
-          "gameId": 401858218,
-          "matchup": "East Tennessee State @ North Carolina",
-          "pick": "North Carolina",
-          "confidence": 84.89590276047188,
-          "result": "North Carolina 35-3 East Tennessee State",
-          "correct": true
-        },
-        {
-          "gameId": 401856781,
-          "matchup": "Washington State @ Kansas State",
-          "pick": "Kansas State",
-          "confidence": 93.19691849106148,
-          "result": "Kansas State 34-7 Washington State",
-          "correct": true
-        },
-        {
-          "gameId": 401856782,
-          "matchup": "Oregon @ Oklahoma State",
-          "pick": "Oregon",
-          "confidence": 92.9413808350346,
-          "result": "Oklahoma State 39-31 Oregon",
-          "correct": false
-        },
-        {
-          "gameId": 401858224,
-          "matchup": "Wake Forest @ Purdue",
-          "pick": "Wake Forest",
-          "confidence": 56.29498749822417,
-          "result": "Purdue 36-38 Wake Forest",
-          "correct": true
-        },
-        {
-          "gameId": 401862702,
-          "matchup": "South Florida @ Army",
-          "pick": "Army",
-          "confidence": 61.249716255877715,
-          "result": "Army 24-28 South Florida",
-          "correct": false
-        },
-        {
-          "gameId": 401866416,
-          "matchup": "Wofford @ Kent State",
-          "pick": "Kent State",
-          "confidence": 71.57797384958644,
-          "result": "Kent State 36-15 Wofford",
-          "correct": true
-        },
-        {
-          "gameId": 401867929,
-          "matchup": "Wagner @ James Madison",
-          "pick": "James Madison",
-          "confidence": 83.96422574083397,
-          "result": "James Madison 87-3 Wagner",
           "correct": true
         },
         {
@@ -1248,11 +1192,59 @@
           "correct": true
         },
         {
+          "gameId": 401856679,
+          "matchup": "Oklahoma @ Michigan",
+          "pick": "Oklahoma",
+          "confidence": 71.4065337114045,
+          "result": "Michigan 17-10 Oklahoma",
+          "correct": false
+        },
+        {
           "gameId": 401864571,
           "matchup": "App State @ East Carolina",
           "pick": "App State",
-          "confidence": 56.441370068083515,
+          "confidence": 55.37429601464062,
           "result": "East Carolina 24-27 App State",
+          "correct": true
+        },
+        {
+          "gameId": 401856683,
+          "matchup": "Arizona State @ Texas A&M",
+          "pick": "Texas A&M",
+          "confidence": 81.74012784461193,
+          "result": "Texas A&M 48-20 Arizona State",
+          "correct": true
+        },
+        {
+          "gameId": 401858218,
+          "matchup": "East Tennessee State @ North Carolina",
+          "pick": "North Carolina",
+          "confidence": 84.89590276047188,
+          "result": "North Carolina 35-3 East Tennessee State",
+          "correct": true
+        },
+        {
+          "gameId": 401856782,
+          "matchup": "Oregon @ Oklahoma State",
+          "pick": "Oregon",
+          "confidence": 90.36630477358081,
+          "result": "Oklahoma State 39-31 Oregon",
+          "correct": false
+        },
+        {
+          "gameId": 401866416,
+          "matchup": "Wofford @ Kent State",
+          "pick": "Kent State",
+          "confidence": 71.57797384958644,
+          "result": "Kent State 36-15 Wofford",
+          "correct": true
+        },
+        {
+          "gameId": 401858221,
+          "matchup": "Old Dominion @ Virginia Tech",
+          "pick": "Virginia Tech",
+          "confidence": 93.0962938630764,
+          "result": "Virginia Tech 44-21 Old Dominion",
           "correct": true
         },
         {
@@ -1264,51 +1256,59 @@
           "correct": true
         },
         {
-          "gameId": 401858221,
-          "matchup": "Old Dominion @ Virginia Tech",
-          "pick": "Virginia Tech",
-          "confidence": 93.0744016837992,
-          "result": "Virginia Tech 44-21 Old Dominion",
-          "correct": true
-        },
-        {
-          "gameId": 401856683,
-          "matchup": "Arizona State @ Texas A&M",
-          "pick": "Texas A&M",
-          "confidence": 84.09902897948183,
-          "result": "Texas A&M 48-20 Arizona State",
-          "correct": true
-        },
-        {
-          "gameId": 401856679,
-          "matchup": "Oklahoma @ Michigan",
-          "pick": "Oklahoma",
-          "confidence": 70.3275339732676,
-          "result": "Michigan 17-10 Oklahoma",
-          "correct": false
-        },
-        {
           "gameId": 401858442,
           "matchup": "Penn State @ Temple",
           "pick": "Penn State",
-          "confidence": 92.84277276425898,
+          "confidence": 90.4017473023162,
           "result": "Temple 9-27 Penn State",
           "correct": true
+        },
+        {
+          "gameId": 401867929,
+          "matchup": "Wagner @ James Madison",
+          "pick": "James Madison",
+          "confidence": 83.96422574083397,
+          "result": "James Madison 87-3 Wagner",
+          "correct": true
+        },
+        {
+          "gameId": 401856781,
+          "matchup": "Washington State @ Kansas State",
+          "pick": "Kansas State",
+          "confidence": 93.19911365893859,
+          "result": "Kansas State 34-7 Washington State",
+          "correct": true
+        },
+        {
+          "gameId": 401858224,
+          "matchup": "Wake Forest @ Purdue",
+          "pick": "Wake Forest",
+          "confidence": 55.849895923344775,
+          "result": "Purdue 36-38 Wake Forest",
+          "correct": true
+        },
+        {
+          "gameId": 401862702,
+          "matchup": "South Florida @ Army",
+          "pick": "Army",
+          "confidence": 66.12819679251768,
+          "result": "Army 24-28 South Florida",
+          "correct": false
         },
         {
           "gameId": 401856673,
           "matchup": "Western Kentucky @ Georgia",
           "pick": "Georgia",
-          "confidence": 99.45497127559308,
+          "confidence": 99.45140667925527,
           "result": "Georgia 70-20 Western Kentucky",
           "correct": true
         },
         {
-          "gameId": 401856791,
-          "matchup": "UT Martin @ West Virginia",
-          "pick": "West Virginia",
-          "confidence": 83.75506495586238,
-          "result": "West Virginia 52-7 UT Martin",
+          "gameId": 401866415,
+          "matchup": "Colgate @ Central Michigan",
+          "pick": "Central Michigan",
+          "confidence": 78.13887770663531,
+          "result": "Central Michigan 13-10 Colgate",
           "correct": true
         },
         {
@@ -1320,11 +1320,11 @@
           "correct": true
         },
         {
-          "gameId": 401866415,
-          "matchup": "Colgate @ Central Michigan",
-          "pick": "Central Michigan",
-          "confidence": 78.13887770663531,
-          "result": "Central Michigan 13-10 Colgate",
+          "gameId": 401856791,
+          "matchup": "UT Martin @ West Virginia",
+          "pick": "West Virginia",
+          "confidence": 83.75506495586238,
+          "result": "West Virginia 52-7 UT Martin",
           "correct": true
         },
         {
@@ -1339,41 +1339,33 @@
           "gameId": 401856790,
           "matchup": "UCF @ Pittsburgh",
           "pick": "Pittsburgh",
-          "confidence": 69.29131538876338,
+          "confidence": 68.57792438610441,
           "result": "Pittsburgh 12-7 UCF",
+          "correct": true
+        },
+        {
+          "gameId": 401859184,
+          "matchup": "Rice @ Notre Dame",
+          "pick": "Notre Dame",
+          "confidence": 99.539696722769,
+          "result": "Notre Dame 52-0 Rice",
+          "correct": true
+        },
+        {
+          "gameId": 401856674,
+          "matchup": "Alabama @ Kentucky",
+          "pick": "Alabama",
+          "confidence": 76.57422240765224,
+          "result": "Kentucky 17-45 Alabama",
           "correct": true
         },
         {
           "gameId": 401856677,
           "matchup": "Mississippi State @ Minnesota",
           "pick": "Mississippi State",
-          "confidence": 61.93645261705514,
+          "confidence": 63.923409235583705,
           "result": "Minnesota 13-38 Mississippi State",
           "correct": true
-        },
-        {
-          "gameId": 401862708,
-          "matchup": "UL Monroe @ UAB",
-          "pick": "UAB",
-          "confidence": 80.86741992920953,
-          "result": "UAB 26-20 UL Monroe",
-          "correct": true
-        },
-        {
-          "gameId": 401860884,
-          "matchup": "UTSA @ Texas State",
-          "pick": "UTSA",
-          "confidence": 63.29499682682956,
-          "result": "Texas State 26-31 UTSA",
-          "correct": true
-        },
-        {
-          "gameId": 401858216,
-          "matchup": "California @ Syracuse",
-          "pick": "Syracuse",
-          "confidence": 76.99110822330212,
-          "result": "Syracuse 18-21 California",
-          "correct": false
         },
         {
           "gameId": 401866419,
@@ -1392,54 +1384,6 @@
           "correct": true
         },
         {
-          "gameId": 401859184,
-          "matchup": "Rice @ Notre Dame",
-          "pick": "Notre Dame",
-          "confidence": 99.52970642870528,
-          "result": "Notre Dame 52-0 Rice",
-          "correct": true
-        },
-        {
-          "gameId": 401858444,
-          "matchup": "Maryland @ UConn",
-          "pick": "Maryland",
-          "confidence": 83.22434133007263,
-          "result": "UConn 14-38 Maryland",
-          "correct": true
-        },
-        {
-          "gameId": 401856810,
-          "matchup": "Arizona @ BYU",
-          "pick": "BYU",
-          "confidence": 80.3291161602422,
-          "result": "BYU 28-17 Arizona",
-          "correct": true
-        },
-        {
-          "gameId": 401858440,
-          "matchup": "Eastern Michigan @ Michigan State",
-          "pick": "Michigan State",
-          "confidence": 91.37742337245174,
-          "result": "Michigan State 35-7 Eastern Michigan",
-          "correct": true
-        },
-        {
-          "gameId": 401858217,
-          "matchup": "Duke @ Illinois",
-          "pick": "Illinois",
-          "confidence": 68.11496933157719,
-          "result": "Illinois 27-31 Duke",
-          "correct": false
-        },
-        {
-          "gameId": 401858446,
-          "matchup": "Utah State @ Washington",
-          "pick": "Washington",
-          "confidence": 97.71457519589445,
-          "result": "Washington 16-14 Utah State",
-          "correct": true
-        },
-        {
           "gameId": 401866412,
           "matchup": "Robert Morris @ Akron",
           "pick": "Akron",
@@ -1448,12 +1392,52 @@
           "correct": true
         },
         {
-          "gameId": 401856674,
-          "matchup": "Alabama @ Kentucky",
-          "pick": "Alabama",
-          "confidence": 77.11072868724436,
-          "result": "Kentucky 17-45 Alabama",
+          "gameId": 401858444,
+          "matchup": "Maryland @ UConn",
+          "pick": "Maryland",
+          "confidence": 77.87487043510524,
+          "result": "UConn 14-38 Maryland",
           "correct": true
+        },
+        {
+          "gameId": 401858440,
+          "matchup": "Eastern Michigan @ Michigan State",
+          "pick": "Michigan State",
+          "confidence": 88.56174886333089,
+          "result": "Michigan State 35-7 Eastern Michigan",
+          "correct": true
+        },
+        {
+          "gameId": 401860884,
+          "matchup": "UTSA @ Texas State",
+          "pick": "UTSA",
+          "confidence": 63.0543190985557,
+          "result": "Texas State 26-31 UTSA",
+          "correct": true
+        },
+        {
+          "gameId": 401856810,
+          "matchup": "Arizona @ BYU",
+          "pick": "BYU",
+          "confidence": 80.05897252361758,
+          "result": "BYU 28-17 Arizona",
+          "correct": true
+        },
+        {
+          "gameId": 401862708,
+          "matchup": "UL Monroe @ UAB",
+          "pick": "UAB",
+          "confidence": 80.29144578862734,
+          "result": "UAB 26-20 UL Monroe",
+          "correct": true
+        },
+        {
+          "gameId": 401858217,
+          "matchup": "Duke @ Illinois",
+          "pick": "Illinois",
+          "confidence": 67.48370940805562,
+          "result": "Illinois 27-31 Duke",
+          "correct": false
         },
         {
           "gameId": 401856785,
@@ -1464,12 +1448,36 @@
           "correct": true
         },
         {
+          "gameId": 401858216,
+          "matchup": "California @ Syracuse",
+          "pick": "Syracuse",
+          "confidence": 77.05210885519551,
+          "result": "Syracuse 18-21 California",
+          "correct": false
+        },
+        {
+          "gameId": 401858446,
+          "matchup": "Utah State @ Washington",
+          "pick": "Washington",
+          "confidence": 97.59629849392078,
+          "result": "Washington 16-14 Utah State",
+          "correct": true
+        },
+        {
           "gameId": 401862705,
           "matchup": "UNLV @ North Texas",
           "pick": "UNLV",
-          "confidence": 67.50138726347217,
+          "confidence": 64.06542751073803,
           "result": "North Texas 44-6 UNLV",
           "correct": false
+        },
+        {
+          "gameId": 401858223,
+          "matchup": "UC Davis @ SMU",
+          "pick": "SMU",
+          "confidence": 81.23469326961825,
+          "result": "SMU 56-10 UC Davis",
+          "correct": true
         },
         {
           "gameId": 401868326,
@@ -1488,14 +1496,6 @@
           "correct": true
         },
         {
-          "gameId": 401858223,
-          "matchup": "UC Davis @ SMU",
-          "pick": "SMU",
-          "confidence": 81.23469326961825,
-          "result": "SMU 56-10 UC Davis",
-          "correct": true
-        },
-        {
           "gameId": 401865252,
           "matchup": "Mercyhurst @ New Mexico",
           "pick": "New Mexico",
@@ -1507,7 +1507,7 @@
           "gameId": 401856684,
           "matchup": "Delaware @ Vanderbilt",
           "pick": "Vanderbilt",
-          "confidence": 89.48413784455262,
+          "confidence": 87.96347876099178,
           "result": "Vanderbilt 35-26 Delaware",
           "correct": true
         },
@@ -1520,18 +1520,10 @@
           "correct": true
         },
         {
-          "gameId": 401866414,
-          "matchup": "Buffalo @ Florida International",
-          "pick": "Florida International",
-          "confidence": 65.61087277224861,
-          "result": "Florida International 33-20 Buffalo",
-          "correct": true
-        },
-        {
           "gameId": 401860881,
           "matchup": "Memphis @ Boise State",
           "pick": "Boise State",
-          "confidence": 64.72758673105527,
+          "confidence": 61.79934303763495,
           "result": "Boise State 38-20 Memphis",
           "correct": true
         },
@@ -1539,9 +1531,17 @@
           "gameId": 401866418,
           "matchup": "Jacksonville State @ Ohio",
           "pick": "Jacksonville State",
-          "confidence": 60.69655311562872,
+          "confidence": 58.943503289810096,
           "result": "Ohio 29-27 Jacksonville State",
           "correct": false
+        },
+        {
+          "gameId": 401866414,
+          "matchup": "Buffalo @ Florida International",
+          "pick": "Florida International",
+          "confidence": 63.829551466445224,
+          "result": "Florida International 33-20 Buffalo",
+          "correct": true
         },
         {
           "gameId": 401866421,
@@ -1552,26 +1552,26 @@
           "correct": true
         },
         {
-          "gameId": 401856680,
-          "matchup": "Towson @ South Carolina",
-          "pick": "South Carolina",
-          "confidence": 98.30854480591323,
-          "result": "South Carolina 45-9 Towson",
+          "gameId": 401871045,
+          "matchup": "Middle Tennessee @ Marshall",
+          "pick": "Marshall",
+          "confidence": 57.5307619228582,
+          "result": "Marshall 28-26 Middle Tennessee",
           "correct": true
         },
         {
-          "gameId": 401869955,
-          "matchup": "Georgia State @ Kennesaw State",
-          "pick": "Kennesaw State",
-          "confidence": 62.49548190889378,
-          "result": "Kennesaw State 17-31 Georgia State",
-          "correct": false
+          "gameId": 401862707,
+          "matchup": "Tulsa @ Sam Houston",
+          "pick": "Tulsa",
+          "confidence": 84.64091189688487,
+          "result": "Sam Houston 17-23 Tulsa",
+          "correct": true
         },
         {
           "gameId": 401856681,
           "matchup": "Tennessee @ Georgia Tech",
           "pick": "Tennessee",
-          "confidence": 86.43097629586508,
+          "confidence": 85.68819616608901,
           "result": "Georgia Tech 24-45 Tennessee",
           "correct": true
         },
@@ -1584,10 +1584,34 @@
           "correct": true
         },
         {
+          "gameId": 401864575,
+          "matchup": "South Alabama @ Tulane",
+          "pick": "Tulane",
+          "confidence": 52.38010088731308,
+          "result": "Tulane 28-24 South Alabama",
+          "correct": true
+        },
+        {
+          "gameId": 401864503,
+          "matchup": "Illinois State @ Northern Illinois",
+          "pick": "Northern Illinois",
+          "confidence": 53.04418567083309,
+          "result": "Northern Illinois 24-28 Illinois State",
+          "correct": false
+        },
+        {
+          "gameId": 401856786,
+          "matchup": "Western Carolina @ Cincinnati",
+          "pick": "Cincinnati",
+          "confidence": 83.38750704738706,
+          "result": "Cincinnati 62-10 Western Carolina",
+          "correct": true
+        },
+        {
           "gameId": 401858441,
           "matchup": "Bowling Green @ Nebraska",
           "pick": "Nebraska",
-          "confidence": 98.31015911691777,
+          "confidence": 98.26679482943477,
           "result": "Nebraska 56-7 Bowling Green",
           "correct": true
         },
@@ -1600,20 +1624,12 @@
           "correct": true
         },
         {
-          "gameId": 401864503,
-          "matchup": "Illinois State @ Northern Illinois",
-          "pick": "Northern Illinois",
-          "confidence": 53.04418567083309,
-          "result": "Northern Illinois 24-28 Illinois State",
+          "gameId": 401869955,
+          "matchup": "Georgia State @ Kennesaw State",
+          "pick": "Kennesaw State",
+          "confidence": 57.47153819700064,
+          "result": "Kennesaw State 17-31 Georgia State",
           "correct": false
-        },
-        {
-          "gameId": 401871045,
-          "matchup": "Middle Tennessee @ Marshall",
-          "pick": "Marshall",
-          "confidence": 55.5778824917336,
-          "result": "Marshall 28-26 Middle Tennessee",
-          "correct": true
         },
         {
           "gameId": 401871046,
@@ -1624,27 +1640,11 @@
           "correct": true
         },
         {
-          "gameId": 401856786,
-          "matchup": "Western Carolina @ Cincinnati",
-          "pick": "Cincinnati",
-          "confidence": 83.38750704738706,
-          "result": "Cincinnati 62-10 Western Carolina",
-          "correct": true
-        },
-        {
-          "gameId": 401864575,
-          "matchup": "South Alabama @ Tulane",
-          "pick": "Tulane",
-          "confidence": 58.727643644273165,
-          "result": "Tulane 28-24 South Alabama",
-          "correct": true
-        },
-        {
-          "gameId": 401862707,
-          "matchup": "Tulsa @ Sam Houston",
-          "pick": "Tulsa",
-          "confidence": 83.61745686795568,
-          "result": "Sam Houston 17-23 Tulsa",
+          "gameId": 401856680,
+          "matchup": "Towson @ South Carolina",
+          "pick": "South Carolina",
+          "confidence": 98.30854480591323,
+          "result": "South Carolina 45-9 Towson",
           "correct": true
         },
         {
@@ -1656,14 +1656,6 @@
           "correct": true
         },
         {
-          "gameId": 401858443,
-          "matchup": "San Diego State @ UCLA",
-          "pick": "UCLA",
-          "confidence": 88.72039134819103,
-          "result": "UCLA 28-10 San Diego State",
-          "correct": true
-        },
-        {
           "gameId": 401858447,
           "matchup": "Western Illinois @ Wisconsin",
           "pick": "Wisconsin",
@@ -1672,43 +1664,19 @@
           "correct": true
         },
         {
-          "gameId": 401858219,
-          "matchup": "Georgia Southern @ Clemson",
-          "pick": "Clemson",
-          "confidence": 64.6139045100391,
-          "result": "Clemson 22-7 Georgia Southern",
+          "gameId": 401858443,
+          "matchup": "San Diego State @ UCLA",
+          "pick": "UCLA",
+          "confidence": 88.95542835114708,
+          "result": "UCLA 28-10 San Diego State",
           "correct": true
         },
         {
-          "gameId": 401856783,
-          "matchup": "Texas Tech @ Oregon State",
-          "pick": "Texas Tech",
-          "confidence": 94.75234796712034,
-          "result": "Oregon State 24-35 Texas Tech",
-          "correct": true
-        },
-        {
-          "gameId": 401862703,
-          "matchup": "Navy @ Florida Atlantic",
-          "pick": "Navy",
-          "confidence": 73.2400818325141,
-          "result": "Florida Atlantic 38-30 Navy",
-          "correct": false
-        },
-        {
-          "gameId": 401856788,
-          "matchup": "Iowa State @ Iowa",
-          "pick": "Iowa",
-          "confidence": 85.05876885783096,
-          "result": "Iowa 16-13 Iowa State",
-          "correct": true
-        },
-        {
-          "gameId": 401867796,
-          "matchup": "Louisiana Tech @ LSU",
-          "pick": "LSU",
-          "confidence": 96.39394659081375,
-          "result": "LSU 45-14 Louisiana Tech",
+          "gameId": 401856682,
+          "matchup": "Ohio State @ Texas",
+          "pick": "Texas",
+          "confidence": 52.55710334622869,
+          "result": "Texas 24-23 Ohio State",
           "correct": true
         },
         {
@@ -1720,27 +1688,59 @@
           "correct": true
         },
         {
-          "gameId": 401856682,
-          "matchup": "Ohio State @ Texas",
-          "pick": "Texas",
-          "confidence": 50.87624121932104,
-          "result": "Texas 24-23 Ohio State",
+          "gameId": 401856788,
+          "matchup": "Iowa State @ Iowa",
+          "pick": "Iowa",
+          "confidence": 85.0800985631052,
+          "result": "Iowa 16-13 Iowa State",
+          "correct": true
+        },
+        {
+          "gameId": 401867796,
+          "matchup": "Louisiana Tech @ LSU",
+          "pick": "LSU",
+          "confidence": 95.11742038838389,
+          "result": "LSU 45-14 Louisiana Tech",
+          "correct": true
+        },
+        {
+          "gameId": 401858219,
+          "matchup": "Georgia Southern @ Clemson",
+          "pick": "Clemson",
+          "confidence": 59.77794950537423,
+          "result": "Clemson 22-7 Georgia Southern",
+          "correct": true
+        },
+        {
+          "gameId": 401856783,
+          "matchup": "Texas Tech @ Oregon State",
+          "pick": "Texas Tech",
+          "confidence": 92.50372327331979,
+          "result": "Oregon State 24-35 Texas Tech",
+          "correct": true
+        },
+        {
+          "gameId": 401862703,
+          "matchup": "Navy @ Florida Atlantic",
+          "pick": "Navy",
+          "confidence": 72.64680968195769,
+          "result": "Florida Atlantic 38-30 Navy",
+          "correct": false
+        },
+        {
+          "gameId": 401856676,
+          "matchup": "Charlotte @ Ole Miss",
+          "pick": "Ole Miss",
+          "confidence": 99.59613375675235,
+          "result": "Ole Miss 41-9 Charlotte",
           "correct": true
         },
         {
           "gameId": 401856671,
           "matchup": "Southern Miss @ Auburn",
           "pick": "Auburn",
-          "confidence": 90.10203622924999,
+          "confidence": 88.08218115965725,
           "result": "Auburn 43-8 Southern Miss",
-          "correct": true
-        },
-        {
-          "gameId": 401856676,
-          "matchup": "Charlotte @ Ole Miss",
-          "pick": "Ole Miss",
-          "confidence": 99.53954777416345,
-          "result": "Ole Miss 41-9 Charlotte",
           "correct": true
         },
         {
@@ -1760,14 +1760,6 @@
           "correct": true
         },
         {
-          "gameId": 401864504,
-          "matchup": "Cal Poly @ San José State",
-          "pick": "San José State",
-          "confidence": 87.59252945622175,
-          "result": "San José State 30-20 Cal Poly",
-          "correct": true
-        },
-        {
           "gameId": 401864505,
           "matchup": "Texas Southern @ UTEP",
           "pick": "UTEP",
@@ -1776,10 +1768,18 @@
           "correct": true
         },
         {
+          "gameId": 401864504,
+          "matchup": "Cal Poly @ San José State",
+          "pick": "San José State",
+          "confidence": 87.59252945622175,
+          "result": "San José State 30-20 Cal Poly",
+          "correct": true
+        },
+        {
           "gameId": 401864502,
           "matchup": "North Dakota State @ Air Force",
           "pick": "North Dakota State",
-          "confidence": 58.55336528006979,
+          "confidence": 53.56433599720789,
           "result": "Air Force 32-38 North Dakota State",
           "correct": true
         },
@@ -1787,16 +1787,8 @@
           "gameId": 401856670,
           "matchup": "Arkansas @ Utah",
           "pick": "Utah",
-          "confidence": 89.5131913341823,
+          "confidence": 89.71951111525351,
           "result": "Utah 43-10 Arkansas",
-          "correct": true
-        },
-        {
-          "gameId": 401860883,
-          "matchup": "Sacramento State @ Fresno State",
-          "pick": "Fresno State",
-          "confidence": 86.21906566164823,
-          "result": "Fresno State 49-3 Sacramento State",
           "correct": true
         },
         {
@@ -1808,10 +1800,18 @@
           "correct": true
         },
         {
+          "gameId": 401860883,
+          "matchup": "Sacramento State @ Fresno State",
+          "pick": "Fresno State",
+          "confidence": 89.47737467823433,
+          "result": "Fresno State 49-3 Sacramento State",
+          "correct": true
+        },
+        {
           "gameId": 401858445,
           "matchup": "Louisiana @ USC",
           "pick": "USC",
-          "confidence": 96.43698822213945,
+          "confidence": 94.74014571536516,
           "result": "USC 49-30 Louisiana",
           "correct": true
         },
@@ -1819,7 +1819,7 @@
           "gameId": 401864578,
           "matchup": "New Mexico State @ Hawai'i",
           "pick": "Hawai'i",
-          "confidence": 62.03714054173241,
+          "confidence": 57.50877344924166,
           "result": "Hawai'i 29-19 New Mexico State",
           "correct": true
         }
@@ -1828,14 +1828,14 @@
     {
       "columnId": "2026-week-w3",
       "label": "Week 3",
-      "runningSU": "231-29",
-      "runningATS": "146-110",
+      "runningSU": "232-28",
+      "runningATS": "147-109",
       "games": [
         {
           "gameId": 401858225,
           "matchup": "Syracuse @ Pittsburgh",
           "pick": "Pittsburgh",
-          "confidence": 84.45143410108943,
+          "confidence": 81.6990853208422,
           "result": "Pittsburgh 27-13 Syracuse",
           "correct": true
         },
@@ -1843,7 +1843,7 @@
           "gameId": 401858226,
           "matchup": "Miami @ Wake Forest",
           "pick": "Miami",
-          "confidence": 93.02645821703003,
+          "confidence": 92.21604781792706,
           "result": "Wake Forest 20-33 Miami",
           "correct": true
         },
@@ -1851,7 +1851,7 @@
           "gameId": 401856811,
           "matchup": "Houston @ Texas Tech",
           "pick": "Texas Tech",
-          "confidence": 67.66501660885238,
+          "confidence": 65.55308186724697,
           "result": "Texas Tech 28-26 Houston",
           "correct": true
         },
@@ -1867,41 +1867,25 @@
           "gameId": 401869940,
           "matchup": "Coastal Carolina @ Delaware",
           "pick": "Delaware",
-          "confidence": 59.01725916610088,
+          "confidence": 55.70164812502594,
           "result": "Delaware 22-14 Coastal Carolina",
           "correct": true
         },
         {
-          "gameId": 401856812,
-          "matchup": "Arizona State @ Kansas",
-          "pick": "Arizona State",
-          "confidence": 58.81996049185221,
-          "result": "Kansas 17-24 Arizona State",
+          "gameId": 401858451,
+          "matchup": "Akron @ Minnesota",
+          "pick": "Minnesota",
+          "confidence": 94.62731462561673,
+          "result": "Minnesota 41-7 Akron",
           "correct": true
         },
         {
           "gameId": 401858229,
           "matchup": "North Carolina @ Clemson",
-          "pick": "Clemson",
-          "confidence": 50.498321120843336,
+          "pick": "North Carolina",
+          "confidence": 54.52798493261704,
           "result": "Clemson 28-20 North Carolina",
-          "correct": true
-        },
-        {
-          "gameId": 401856792,
-          "matchup": "Tulane @ Kansas State",
-          "pick": "Kansas State",
-          "confidence": 94.72582420220223,
-          "result": "Kansas State 31-20 Tulane",
-          "correct": true
-        },
-        {
-          "gameId": 401856686,
-          "matchup": "Georgia @ Arkansas",
-          "pick": "Georgia",
-          "confidence": 96.30255906709286,
-          "result": "Arkansas 17-45 Georgia",
-          "correct": true
+          "correct": false
         },
         {
           "gameId": 401858228,
@@ -1912,18 +1896,42 @@
           "correct": true
         },
         {
-          "gameId": 401858451,
-          "matchup": "Akron @ Minnesota",
-          "pick": "Minnesota",
-          "confidence": 95.24628381380403,
-          "result": "Minnesota 41-7 Akron",
+          "gameId": 401856798,
+          "matchup": "Bowling Green @ Iowa State",
+          "pick": "Iowa State",
+          "confidence": 95.74629011826477,
+          "result": "Iowa State 55-7 Bowling Green",
+          "correct": true
+        },
+        {
+          "gameId": 401856686,
+          "matchup": "Georgia @ Arkansas",
+          "pick": "Georgia",
+          "confidence": 96.30949093988936,
+          "result": "Arkansas 17-45 Georgia",
+          "correct": true
+        },
+        {
+          "gameId": 401856812,
+          "matchup": "Arizona State @ Kansas",
+          "pick": "Arizona State",
+          "confidence": 53.16231483551495,
+          "result": "Kansas 17-24 Arizona State",
+          "correct": true
+        },
+        {
+          "gameId": 401856792,
+          "matchup": "Tulane @ Kansas State",
+          "pick": "Kansas State",
+          "confidence": 94.64491262619052,
+          "result": "Kansas State 31-20 Tulane",
           "correct": true
         },
         {
           "gameId": 401860889,
           "matchup": "North Texas @ Texas State",
           "pick": "North Texas",
-          "confidence": 50.0805981068283,
+          "confidence": 53.958982258234926,
           "result": "Texas State 49-35 North Texas",
           "correct": false
         },
@@ -1931,7 +1939,7 @@
           "gameId": 401858454,
           "matchup": "Kent State @ Ohio State",
           "pick": "Ohio State",
-          "confidence": 99.85003016840139,
+          "confidence": 99.8517457756214,
           "result": "Ohio State 59-3 Kent State",
           "correct": true
         },
@@ -1939,23 +1947,15 @@
           "gameId": 401858456,
           "matchup": "Buffalo @ Penn State",
           "pick": "Penn State",
-          "confidence": 99.34213715971707,
+          "confidence": 99.24647205808449,
           "result": "Penn State 55-13 Buffalo",
-          "correct": true
-        },
-        {
-          "gameId": 401856798,
-          "matchup": "Bowling Green @ Iowa State",
-          "pick": "Iowa State",
-          "confidence": 96.05281674834023,
-          "result": "Iowa State 55-7 Bowling Green",
           "correct": true
         },
         {
           "gameId": 401858460,
           "matchup": "Eastern Michigan @ Wisconsin",
           "pick": "Wisconsin",
-          "confidence": 95.26975813180172,
+          "confidence": 94.59644335194311,
           "result": "Wisconsin 54-10 Eastern Michigan",
           "correct": true
         },
@@ -1963,24 +1963,16 @@
           "gameId": 401856695,
           "matchup": "NC State @ Vanderbilt",
           "pick": "Vanderbilt",
-          "confidence": 62.55539692988774,
+          "confidence": 61.87817238996174,
           "result": "Vanderbilt 35-31 NC State",
           "correct": true
         },
         {
           "gameId": 401864508,
           "matchup": "Wyoming @ Central Michigan",
-          "pick": "Wyoming",
-          "confidence": 54.13544339380394,
+          "pick": "Central Michigan",
+          "confidence": 51.75596805520093,
           "result": "Central Michigan 24-10 Wyoming",
-          "correct": false
-        },
-        {
-          "gameId": 401858227,
-          "matchup": "Maine @ Boston College",
-          "pick": "Boston College",
-          "confidence": 95.2391734751827,
-          "result": "Boston College 22-16 Maine",
           "correct": true
         },
         {
@@ -1992,67 +1984,19 @@
           "correct": true
         },
         {
+          "gameId": 401858227,
+          "matchup": "Maine @ Boston College",
+          "pick": "Boston College",
+          "confidence": 95.2391734751827,
+          "result": "Boston College 22-16 Maine",
+          "correct": true
+        },
+        {
           "gameId": 401862774,
           "matchup": "Temple @ Toledo",
           "pick": "Toledo",
-          "confidence": 69.61194975951422,
+          "confidence": 67.97611084229864,
           "result": "Toledo 49-48 Temple",
-          "correct": true
-        },
-        {
-          "gameId": 401856801,
-          "matchup": "Utah State @ Utah",
-          "pick": "Utah",
-          "confidence": 97.37257095326552,
-          "result": "Utah 33-0 Utah State",
-          "correct": true
-        },
-        {
-          "gameId": 401856797,
-          "matchup": "Miami (OH) @ Cincinnati",
-          "pick": "Cincinnati",
-          "confidence": 90.27444165208895,
-          "result": "Cincinnati 35-31 Miami (OH)",
-          "correct": true
-        },
-        {
-          "gameId": 401856685,
-          "matchup": "Florida State @ Alabama",
-          "pick": "Alabama",
-          "confidence": 91.62131445839437,
-          "result": "Alabama 50-36 Florida State",
-          "correct": true
-        },
-        {
-          "gameId": 401856694,
-          "matchup": "Kentucky @ Texas A&M",
-          "pick": "Texas A&M",
-          "confidence": 87.79300862940376,
-          "result": "Texas A&M 21-31 Kentucky",
-          "correct": false
-        },
-        {
-          "gameId": 401858230,
-          "matchup": "SMU @ Louisville",
-          "pick": "Louisville",
-          "confidence": 56.7284853709917,
-          "result": "Louisville 41-31 SMU",
-          "correct": true
-        },
-        {
-          "gameId": 401858233,
-          "matchup": "Wagner @ California",
-          "pick": "California",
-          "confidence": 98.05344723365843,
-          "result": "California 49-7 Wagner",
-          "correct": true
-        },
-        {
-          "gameId": 401866424,
-          "matchup": "Stonehill @ Massachusetts",
-          "pick": "Massachusetts",
-          "confidence": 82.57028287496122,
-          "result": "Massachusetts 36-14 Stonehill",
           "correct": true
         },
         {
@@ -2064,42 +2008,98 @@
           "correct": true
         },
         {
-          "gameId": 401858450,
-          "matchup": "UTEP @ Michigan",
-          "pick": "Michigan",
-          "confidence": 98.6008668986045,
-          "result": "Michigan 52-17 UTEP",
+          "gameId": 401858230,
+          "matchup": "SMU @ Louisville",
+          "pick": "Louisville",
+          "confidence": 62.1851549483778,
+          "result": "Louisville 41-31 SMU",
+          "correct": true
+        },
+        {
+          "gameId": 401856801,
+          "matchup": "Utah State @ Utah",
+          "pick": "Utah",
+          "confidence": 97.3824917753957,
+          "result": "Utah 33-0 Utah State",
           "correct": true
         },
         {
           "gameId": 401858457,
           "matchup": "USC @ Rutgers",
           "pick": "USC",
-          "confidence": 94.07098410657542,
+          "confidence": 94.02044755934578,
           "result": "Rutgers 35-42 USC",
           "correct": true
         },
         {
-          "gameId": 401858231,
-          "matchup": "Stanford @ Duke",
-          "pick": "Duke",
-          "confidence": 83.7593361263469,
-          "result": "Duke 35-7 Stanford",
+          "gameId": 401856797,
+          "matchup": "Miami (OH) @ Cincinnati",
+          "pick": "Cincinnati",
+          "confidence": 90.1590631803336,
+          "result": "Cincinnati 35-31 Miami (OH)",
+          "correct": true
+        },
+        {
+          "gameId": 401856694,
+          "matchup": "Kentucky @ Texas A&M",
+          "pick": "Texas A&M",
+          "confidence": 85.94070032563046,
+          "result": "Texas A&M 21-31 Kentucky",
+          "correct": false
+        },
+        {
+          "gameId": 401858450,
+          "matchup": "UTEP @ Michigan",
+          "pick": "Michigan",
+          "confidence": 98.56412893668653,
+          "result": "Michigan 52-17 UTEP",
+          "correct": true
+        },
+        {
+          "gameId": 401858233,
+          "matchup": "Wagner @ California",
+          "pick": "California",
+          "confidence": 98.05344723365843,
+          "result": "California 49-7 Wagner",
+          "correct": true
+        },
+        {
+          "gameId": 401856685,
+          "matchup": "Florida State @ Alabama",
+          "pick": "Alabama",
+          "confidence": 91.65682496239921,
+          "result": "Alabama 50-36 Florida State",
+          "correct": true
+        },
+        {
+          "gameId": 401866424,
+          "matchup": "Stonehill @ Massachusetts",
+          "pick": "Massachusetts",
+          "confidence": 82.57028287496122,
+          "result": "Massachusetts 36-14 Stonehill",
           "correct": true
         },
         {
           "gameId": 401866422,
           "matchup": "Ball State @ Liberty",
           "pick": "Liberty",
-          "confidence": 90.16235483826604,
+          "confidence": 90.40021510416456,
           "result": "Liberty 51-15 Ball State",
+          "correct": true
+        },
+        {
+          "gameId": 401867804,
+          "matchup": "Louisiana Tech @ Baylor",
+          "pick": "Baylor",
+          "confidence": 89.93567490654557,
+          "result": "Baylor 36-19 Louisiana Tech",
           "correct": true
         },
         {
           "gameId": 401858449,
           "matchup": "Western Kentucky @ Indiana",
           "pick": "Indiana",
-          "confidence": 99.65004048406966,
+          "confidence": 99.64656790746656,
           "result": "Indiana 38-0 Western Kentucky",
           "correct": true
         },
@@ -2112,18 +2112,18 @@
           "correct": true
         },
         {
-          "gameId": 401867804,
-          "matchup": "Louisiana Tech @ Baylor",
-          "pick": "Baylor",
-          "confidence": 90.18636331799065,
-          "result": "Baylor 36-19 Louisiana Tech",
+          "gameId": 401858231,
+          "matchup": "Stanford @ Duke",
+          "pick": "Duke",
+          "confidence": 84.43571797685625,
+          "result": "Duke 35-7 Stanford",
           "correct": true
         },
         {
           "gameId": 401856691,
           "matchup": "Mississippi State @ South Carolina",
           "pick": "South Carolina",
-          "confidence": 52.385731103467556,
+          "confidence": 57.881215405475025,
           "result": "South Carolina 34-41 Mississippi State",
           "correct": false
         },
@@ -2136,26 +2136,26 @@
           "correct": false
         },
         {
-          "gameId": 401862771,
-          "matchup": "Florida International @ Florida Atlantic",
-          "pick": "Florida Atlantic",
-          "confidence": 71.97140904095195,
-          "result": "Florida Atlantic 16-10 Florida International",
-          "correct": true
-        },
-        {
           "gameId": 401864574,
           "matchup": "Charlotte @ App State",
           "pick": "App State",
-          "confidence": 91.98203744271171,
+          "confidence": 91.9227980002147,
           "result": "App State 26-21 Charlotte",
+          "correct": true
+        },
+        {
+          "gameId": 401862771,
+          "matchup": "Florida International @ Florida Atlantic",
+          "pick": "Florida Atlantic",
+          "confidence": 73.91789523514376,
+          "result": "Florida Atlantic 16-10 Florida International",
           "correct": true
         },
         {
           "gameId": 401862710,
           "matchup": "East Carolina @ Old Dominion",
           "pick": "Old Dominion",
-          "confidence": 59.22208422148832,
+          "confidence": 55.5881627060633,
           "result": "Old Dominion 17-20 East Carolina",
           "correct": false
         },
@@ -2163,16 +2163,16 @@
           "gameId": 401871047,
           "matchup": "Marshall @ Missouri State",
           "pick": "Marshall",
-          "confidence": 55.22988430585593,
+          "confidence": 56.64578886768818,
           "result": "Missouri State 24-30 Marshall",
           "correct": true
         },
         {
-          "gameId": 401856689,
-          "matchup": "Troy @ Missouri",
-          "pick": "Missouri",
-          "confidence": 96.86213410643165,
-          "result": "Missouri 27-17 Troy",
+          "gameId": 401869948,
+          "matchup": "Georgia Southern @ Jacksonville State",
+          "pick": "Jacksonville State",
+          "confidence": 59.15240737207337,
+          "result": "Jacksonville State 31-27 Georgia Southern",
           "correct": true
         },
         {
@@ -2184,67 +2184,11 @@
           "correct": true
         },
         {
-          "gameId": 401869948,
-          "matchup": "Georgia Southern @ Jacksonville State",
-          "pick": "Jacksonville State",
-          "confidence": 64.34574511046847,
-          "result": "Jacksonville State 31-27 Georgia Southern",
-          "correct": true
-        },
-        {
-          "gameId": 401862772,
-          "matchup": "UT Martin @ Memphis",
-          "pick": "Memphis",
-          "confidence": 94.74417547103408,
-          "result": "Memphis 45-21 UT Martin",
-          "correct": true
-        },
-        {
-          "gameId": 401856800,
-          "matchup": "Georgia State @ UCF",
-          "pick": "UCF",
-          "confidence": 88.89699894289483,
-          "result": "UCF 44-30 Georgia State",
-          "correct": true
-        },
-        {
-          "gameId": 401856687,
-          "matchup": "Florida @ Auburn",
-          "pick": "Florida",
-          "confidence": 69.43855611573674,
-          "result": "Auburn 39-44 Florida",
-          "correct": true
-        },
-        {
-          "gameId": 401861963,
-          "matchup": "UConn @ Southern Miss",
-          "pick": "UConn",
-          "confidence": 63.550791064934266,
-          "result": "Southern Miss 20-48 UConn",
-          "correct": true
-        },
-        {
-          "gameId": 401862773,
-          "matchup": "Western Michigan @ Rice",
-          "pick": "Western Michigan",
-          "confidence": 76.8317337116261,
-          "result": "Rice 21-28 Western Michigan",
-          "correct": true
-        },
-        {
-          "gameId": 401864443,
-          "matchup": "Nevada @ Middle Tennessee",
-          "pick": "Nevada",
-          "confidence": 58.28120330474965,
-          "result": "Middle Tennessee 27-20 Nevada",
-          "correct": false
-        },
-        {
-          "gameId": 401866423,
-          "matchup": "Ohio @ South Alabama",
-          "pick": "South Alabama",
-          "confidence": 71.42951100770993,
-          "result": "South Alabama 41-36 Ohio",
+          "gameId": 401856689,
+          "matchup": "Troy @ Missouri",
+          "pick": "Missouri",
+          "confidence": 96.86749771635972,
+          "result": "Missouri 27-17 Troy",
           "correct": true
         },
         {
@@ -2256,11 +2200,67 @@
           "correct": true
         },
         {
+          "gameId": 401861963,
+          "matchup": "UConn @ Southern Miss",
+          "pick": "UConn",
+          "confidence": 65.65152265710678,
+          "result": "Southern Miss 20-48 UConn",
+          "correct": true
+        },
+        {
+          "gameId": 401856687,
+          "matchup": "Florida @ Auburn",
+          "pick": "Florida",
+          "confidence": 65.75592293178565,
+          "result": "Auburn 39-44 Florida",
+          "correct": true
+        },
+        {
           "gameId": 401856803,
           "matchup": "Murray State @ Oklahoma State",
           "pick": "Oklahoma State",
           "confidence": 88.02195960514155,
           "result": "Oklahoma State 59-0 Murray State",
+          "correct": true
+        },
+        {
+          "gameId": 401862773,
+          "matchup": "Western Michigan @ Rice",
+          "pick": "Western Michigan",
+          "confidence": 78.97929081558779,
+          "result": "Rice 21-28 Western Michigan",
+          "correct": true
+        },
+        {
+          "gameId": 401856800,
+          "matchup": "Georgia State @ UCF",
+          "pick": "UCF",
+          "confidence": 82.25714303765794,
+          "result": "UCF 44-30 Georgia State",
+          "correct": true
+        },
+        {
+          "gameId": 401862772,
+          "matchup": "UT Martin @ Memphis",
+          "pick": "Memphis",
+          "confidence": 94.74417547103408,
+          "result": "Memphis 45-21 UT Martin",
+          "correct": true
+        },
+        {
+          "gameId": 401864443,
+          "matchup": "Nevada @ Middle Tennessee",
+          "pick": "Nevada",
+          "confidence": 63.91925575495343,
+          "result": "Middle Tennessee 27-20 Nevada",
+          "correct": false
+        },
+        {
+          "gameId": 401866423,
+          "matchup": "Ohio @ South Alabama",
+          "pick": "South Alabama",
+          "confidence": 74.46246373743459,
+          "result": "South Alabama 41-36 Ohio",
           "correct": true
         },
         {
@@ -2280,67 +2280,83 @@
           "correct": true
         },
         {
-          "gameId": 401856688,
-          "matchup": "LSU @ Ole Miss",
-          "pick": "LSU",
-          "confidence": 62.8057014932912,
-          "result": "Ole Miss 32-24 LSU",
-          "correct": false
-        },
-        {
-          "gameId": 401856796,
-          "matchup": "Colorado @ Northwestern",
-          "pick": "Northwestern",
-          "confidence": 71.92980414018729,
-          "result": "Northwestern 41-7 Colorado",
-          "correct": true
-        },
-        {
-          "gameId": 401858232,
-          "matchup": "Virginia Tech @ Maryland",
-          "pick": "Maryland",
-          "confidence": 51.01359046436777,
-          "result": "Maryland 26-35 Virginia Tech",
+          "gameId": 401856802,
+          "matchup": "West Virginia @ Virginia",
+          "pick": "Virginia",
+          "confidence": 77.0462753497148,
+          "result": "Virginia 27-38 West Virginia",
           "correct": false
         },
         {
           "gameId": 401856690,
           "matchup": "New Mexico @ Oklahoma",
           "pick": "Oklahoma",
-          "confidence": 66.35691019319691,
+          "confidence": 62.36853927508243,
           "result": "Oklahoma 14-6 New Mexico",
           "correct": true
-        },
-        {
-          "gameId": 401856802,
-          "matchup": "West Virginia @ Virginia",
-          "pick": "Virginia",
-          "confidence": 81.03291129372757,
-          "result": "Virginia 27-38 West Virginia",
-          "correct": false
         },
         {
           "gameId": 401856795,
           "matchup": "BYU @ Colorado State",
           "pick": "BYU",
-          "confidence": 87.59209999993205,
+          "confidence": 88.93949890818227,
           "result": "Colorado State 23-41 BYU",
           "correct": true
+        },
+        {
+          "gameId": 401856796,
+          "matchup": "Colorado @ Northwestern",
+          "pick": "Northwestern",
+          "confidence": 75.13351609351359,
+          "result": "Northwestern 41-7 Colorado",
+          "correct": true
+        },
+        {
+          "gameId": 401856688,
+          "matchup": "LSU @ Ole Miss",
+          "pick": "LSU",
+          "confidence": 59.427576457352906,
+          "result": "Ole Miss 32-24 LSU",
+          "correct": false
         },
         {
           "gameId": 401858453,
           "matchup": "Michigan State @ Notre Dame",
           "pick": "Notre Dame",
-          "confidence": 97.69536187529047,
+          "confidence": 97.74597270837077,
           "result": "Notre Dame 27-10 Michigan State",
+          "correct": true
+        },
+        {
+          "gameId": 401858232,
+          "matchup": "Virginia Tech @ Maryland",
+          "pick": "Virginia Tech",
+          "confidence": 52.30746997558189,
+          "result": "Maryland 26-35 Virginia Tech",
           "correct": true
         },
         {
           "gameId": 401856692,
           "matchup": "Kennesaw State @ Tennessee",
           "pick": "Tennessee",
-          "confidence": 98.64292164117087,
+          "confidence": 98.43097840645979,
           "result": "Tennessee 42-9 Kennesaw State",
+          "correct": true
+        },
+        {
+          "gameId": 401856799,
+          "matchup": "Arkansas State @ TCU",
+          "pick": "TCU",
+          "confidence": 89.76128928014339,
+          "result": "TCU 31-7 Arkansas State",
+          "correct": true
+        },
+        {
+          "gameId": 401862776,
+          "matchup": "UAB @ Louisiana",
+          "pick": "Louisiana",
+          "confidence": 80.02441209256959,
+          "result": "Louisiana 21-14 UAB",
           "correct": true
         },
         {
@@ -2355,24 +2371,8 @@
           "gameId": 401856693,
           "matchup": "UTSA @ Texas",
           "pick": "Texas",
-          "confidence": 96.53263093659868,
+          "confidence": 96.81851233886724,
           "result": "Texas 30-6 UTSA",
-          "correct": true
-        },
-        {
-          "gameId": 401862776,
-          "matchup": "UAB @ Louisiana",
-          "pick": "Louisiana",
-          "confidence": 79.89796402759832,
-          "result": "Louisiana 21-14 UAB",
-          "correct": true
-        },
-        {
-          "gameId": 401856799,
-          "matchup": "Arkansas State @ TCU",
-          "pick": "TCU",
-          "confidence": 91.06720639316713,
-          "result": "TCU 31-7 Arkansas State",
           "correct": true
         },
         {
@@ -2387,7 +2387,7 @@
           "gameId": 401860887,
           "matchup": "James Madison @ San Diego State",
           "pick": "James Madison",
-          "confidence": 62.130708211330386,
+          "confidence": 62.631746377732014,
           "result": "San Diego State 13-26 James Madison",
           "correct": true
         },
@@ -2395,7 +2395,7 @@
           "gameId": 401864507,
           "matchup": "North Dakota State @ Sacramento State",
           "pick": "North Dakota State",
-          "confidence": 96.68471136566798,
+          "confidence": 96.70634163788773,
           "result": "Sacramento State 10-31 North Dakota State",
           "correct": true
         },
@@ -2403,23 +2403,15 @@
           "gameId": 401856793,
           "matchup": "Northern Illinois @ Arizona",
           "pick": "Arizona",
-          "confidence": 98.76485205168932,
+          "confidence": 98.83791800667309,
           "result": "Arizona 42-17 Northern Illinois",
-          "correct": true
-        },
-        {
-          "gameId": 401860888,
-          "matchup": "Fresno State @ San José State",
-          "pick": "Fresno State",
-          "confidence": 68.29688496176826,
-          "result": "San José State 10-26 Fresno State",
           "correct": true
         },
         {
           "gameId": 401858458,
           "matchup": "Purdue @ UCLA",
           "pick": "UCLA",
-          "confidence": 87.92197152053278,
+          "confidence": 85.5502306846846,
           "result": "UCLA 52-38 Purdue",
           "correct": true
         },
@@ -2429,6 +2421,14 @@
           "pick": "Oregon State",
           "confidence": 77.48125297109098,
           "result": "Oregon State 52-17 Montana",
+          "correct": true
+        },
+        {
+          "gameId": 401860888,
+          "matchup": "Fresno State @ San José State",
+          "pick": "Fresno State",
+          "confidence": 70.29554013885357,
+          "result": "San José State 10-26 Fresno State",
           "correct": true
         }
       ]
@@ -2443,7 +2443,7 @@
           "gameId": 401869941,
           "matchup": "Liberty @ Coastal Carolina",
           "pick": "Liberty",
-          "confidence": 63.82763634983382,
+          "confidence": 66.84760397074257,
           "result": "Coastal Carolina 17-34 Liberty",
           "correct": true
         },
@@ -2451,9 +2451,17 @@
           "gameId": 401862779,
           "matchup": "Army @ Temple",
           "pick": "Army",
-          "confidence": 67.24151376999681,
+          "confidence": 68.87719919063518,
           "result": "Temple 17-21 Army",
           "correct": true
+        },
+        {
+          "gameId": 401862778,
+          "matchup": "Navy @ UAB",
+          "pick": "Navy",
+          "confidence": 75.88703077289729,
+          "result": "UAB 24-20 Navy",
+          "correct": false
         },
         {
           "gameId": 401858468,
@@ -2464,43 +2472,59 @@
           "correct": true
         },
         {
-          "gameId": 401862778,
-          "matchup": "Navy @ UAB",
-          "pick": "Navy",
-          "confidence": 75.2289488674148,
-          "result": "UAB 24-20 Navy",
-          "correct": false
-        },
-        {
           "gameId": 401858461,
           "matchup": "Northwestern @ Indiana",
           "pick": "Indiana",
-          "confidence": 93.85427561855609,
+          "confidence": 91.08965463771203,
           "result": "Indiana 29-23 Northwestern",
           "correct": true
         },
         {
           "gameId": 401858234,
           "matchup": "Clemson @ California",
-          "pick": "Clemson",
-          "confidence": 51.83938589317489,
+          "pick": "California",
+          "confidence": 52.152714564864276,
           "result": "California 10-24 Clemson",
+          "correct": false
+        },
+        {
+          "gameId": 401858242,
+          "matchup": "Virginia Tech @ Boston College",
+          "pick": "Virginia Tech",
+          "confidence": 88.11446336530547,
+          "result": "Boston College 14-21 Virginia Tech",
           "correct": true
         },
         {
           "gameId": 401864512,
           "matchup": "UNLV @ Akron",
           "pick": "UNLV",
-          "confidence": 84.77363568703994,
+          "confidence": 84.1452560679734,
           "result": "Akron 10-38 UNLV",
           "correct": true
         },
         {
-          "gameId": 401856813,
-          "matchup": "Colorado @ Baylor",
-          "pick": "Baylor",
-          "confidence": 80.36814987388354,
-          "result": "Baylor 23-13 Colorado",
+          "gameId": 401860893,
+          "matchup": "San Diego State @ Toledo",
+          "pick": "Toledo",
+          "confidence": 69.37137200199757,
+          "result": "Toledo 41-16 San Diego State",
+          "correct": true
+        },
+        {
+          "gameId": 401858243,
+          "matchup": "Wake Forest @ Louisville",
+          "pick": "Louisville",
+          "confidence": 82.49988167158536,
+          "result": "Louisville 27-30 Wake Forest",
+          "correct": false
+        },
+        {
+          "gameId": 401856704,
+          "matchup": "Texas @ Tennessee",
+          "pick": "Texas",
+          "confidence": 60.679279100747905,
+          "result": "Tennessee 17-20 Texas",
           "correct": true
         },
         {
@@ -2512,42 +2536,18 @@
           "correct": true
         },
         {
-          "gameId": 401856704,
-          "matchup": "Texas @ Tennessee",
-          "pick": "Texas",
-          "confidence": 56.45177094804974,
-          "result": "Tennessee 17-20 Texas",
+          "gameId": 401860896,
+          "matchup": "Colorado State @ UTSA",
+          "pick": "UTSA",
+          "confidence": 76.73971892835449,
+          "result": "UTSA 59-45 Colorado State",
           "correct": true
-        },
-        {
-          "gameId": 401856805,
-          "matchup": "Sam Houston @ Texas Tech",
-          "pick": "Texas Tech",
-          "confidence": 98.48488663881419,
-          "result": "Texas Tech 49-14 Sam Houston",
-          "correct": true
-        },
-        {
-          "gameId": 401858242,
-          "matchup": "Virginia Tech @ Boston College",
-          "pick": "Virginia Tech",
-          "confidence": 88.3565674487343,
-          "result": "Boston College 14-21 Virginia Tech",
-          "correct": true
-        },
-        {
-          "gameId": 401858243,
-          "matchup": "Wake Forest @ Louisville",
-          "pick": "Louisville",
-          "confidence": 83.9738220265856,
-          "result": "Louisville 27-30 Wake Forest",
-          "correct": false
         },
         {
           "gameId": 401858465,
           "matchup": "Illinois @ Ohio State",
           "pick": "Ohio State",
-          "confidence": 95.32093535816719,
+          "confidence": 95.80091561075102,
           "result": "Ohio State 42-19 Illinois",
           "correct": true
         },
@@ -2555,31 +2555,31 @@
           "gameId": 401866425,
           "matchup": "Ball State @ Kent State",
           "pick": "Kent State",
-          "confidence": 54.467321954388325,
+          "confidence": 52.435913717097115,
           "result": "Kent State 26-13 Ball State",
           "correct": true
         },
         {
-          "gameId": 401860893,
-          "matchup": "San Diego State @ Toledo",
-          "pick": "Toledo",
-          "confidence": 70.09901502047515,
-          "result": "Toledo 41-16 San Diego State",
+          "gameId": 401856805,
+          "matchup": "Sam Houston @ Texas Tech",
+          "pick": "Texas Tech",
+          "confidence": 98.62505075201467,
+          "result": "Texas Tech 49-14 Sam Houston",
           "correct": true
         },
         {
-          "gameId": 401860896,
-          "matchup": "Colorado State @ UTSA",
-          "pick": "UTSA",
-          "confidence": 77.58243511561689,
-          "result": "UTSA 59-45 Colorado State",
+          "gameId": 401856813,
+          "matchup": "Colorado @ Baylor",
+          "pick": "Baylor",
+          "confidence": 81.95257462272707,
+          "result": "Baylor 23-13 Colorado",
           "correct": true
         },
         {
           "gameId": 401864576,
           "matchup": "South Alabama @ Kentucky",
           "pick": "Kentucky",
-          "confidence": 92.29595140925251,
+          "confidence": 90.31133423100202,
           "result": "Kentucky 45-21 South Alabama",
           "correct": true
         },
@@ -2595,31 +2595,31 @@
           "gameId": 401858462,
           "matchup": "UCLA @ Maryland",
           "pick": "UCLA",
-          "confidence": 62.01589861614445,
+          "confidence": 66.40213616571273,
           "result": "Maryland 3-54 UCLA",
-          "correct": true
-        },
-        {
-          "gameId": 401858467,
-          "matchup": "Notre Dame @ Purdue",
-          "pick": "Notre Dame",
-          "confidence": 97.22371736731766,
-          "result": "Purdue 10-49 Notre Dame",
           "correct": true
         },
         {
           "gameId": 401864511,
           "matchup": "Northern Illinois @ Georgia State",
           "pick": "Georgia State",
-          "confidence": 83.08474412524882,
+          "confidence": 83.64960168145063,
           "result": "Georgia State 35-14 Northern Illinois",
+          "correct": true
+        },
+        {
+          "gameId": 401858467,
+          "matchup": "Notre Dame @ Purdue",
+          "pick": "Notre Dame",
+          "confidence": 97.00135522978185,
+          "result": "Purdue 10-49 Notre Dame",
           "correct": true
         },
         {
           "gameId": 401864510,
           "matchup": "Hawai'i @ Wyoming",
           "pick": "Hawai'i",
-          "confidence": 59.57157104984814,
+          "confidence": 59.804327578590666,
           "result": "Wyoming 27-10 Hawai'i",
           "correct": false
         },
@@ -2632,66 +2632,42 @@
           "correct": true
         },
         {
-          "gameId": 401856815,
-          "matchup": "TCU @ UCF",
-          "pick": "TCU",
-          "confidence": 50.831775058633475,
-          "result": "UCF 21-13 TCU",
-          "correct": false
-        },
-        {
-          "gameId": 401858244,
-          "matchup": "William & Mary @ Duke",
-          "pick": "Duke",
-          "confidence": 83.85311914647147,
-          "result": "Duke 62-7 William & Mary",
+          "gameId": 401860897,
+          "matchup": "Boise State @ Western Michigan",
+          "pick": "Boise State",
+          "confidence": 74.05344665490742,
+          "result": "Western Michigan 7-32 Boise State",
           "correct": true
         },
         {
-          "gameId": 401856699,
-          "matchup": "Ole Miss @ Florida",
-          "pick": "Florida",
-          "confidence": 72.41318499719982,
-          "result": "Florida 52-28 Ole Miss",
-          "correct": true
-        },
-        {
-          "gameId": 401868188,
-          "matchup": "Gardner-Webb @ Marshall",
-          "pick": "Marshall",
-          "confidence": 82.42637361068186,
-          "result": "Marshall 36-35 Gardner-Webb",
+          "gameId": 401856700,
+          "matchup": "Oklahoma @ Georgia",
+          "pick": "Georgia",
+          "confidence": 87.24679783940947,
+          "result": "Georgia 41-13 Oklahoma",
           "correct": true
         },
         {
           "gameId": 401861970,
           "matchup": "UConn @ Miami (OH)",
-          "pick": "Miami (OH)",
-          "confidence": 50.301306052030384,
+          "pick": "UConn",
+          "confidence": 56.26637710411928,
           "result": "Miami (OH) 24-21 UConn",
-          "correct": true
-        },
-        {
-          "gameId": 401858463,
-          "matchup": "Iowa @ Michigan",
-          "pick": "Michigan",
-          "confidence": 56.65802000293082,
-          "result": "Michigan 19-20 Iowa",
           "correct": false
         },
         {
-          "gameId": 401860897,
-          "matchup": "Boise State @ Western Michigan",
-          "pick": "Boise State",
-          "confidence": 75.41516114022674,
-          "result": "Western Michigan 7-32 Boise State",
+          "gameId": 401856699,
+          "matchup": "Ole Miss @ Florida",
+          "pick": "Florida",
+          "confidence": 62.309198074089764,
+          "result": "Florida 52-28 Ole Miss",
           "correct": true
         },
         {
           "gameId": 401864579,
           "matchup": "New Mexico @ New Mexico State",
           "pick": "New Mexico",
-          "confidence": 85.66666567714083,
+          "confidence": 85.90966119725714,
           "result": "New Mexico State 18-42 New Mexico",
           "correct": true
         },
@@ -2712,28 +2688,44 @@
           "correct": true
         },
         {
-          "gameId": 401856700,
-          "matchup": "Oklahoma @ Georgia",
-          "pick": "Georgia",
-          "confidence": 87.32986269848291,
-          "result": "Georgia 41-13 Oklahoma",
+          "gameId": 401858244,
+          "matchup": "William & Mary @ Duke",
+          "pick": "Duke",
+          "confidence": 83.85311914647147,
+          "result": "Duke 62-7 William & Mary",
           "correct": true
+        },
+        {
+          "gameId": 401856815,
+          "matchup": "TCU @ UCF",
+          "pick": "TCU",
+          "confidence": 54.257669000194575,
+          "result": "UCF 21-13 TCU",
+          "correct": false
         },
         {
           "gameId": 401856816,
           "matchup": "Utah @ Iowa State",
           "pick": "Utah",
-          "confidence": 78.24155885592046,
+          "confidence": 79.27832338773871,
           "result": "Iowa State 17-31 Utah",
           "correct": true
         },
         {
-          "gameId": 401856806,
-          "matchup": "Houston @ Georgia Southern",
-          "pick": "Houston",
-          "confidence": 90.578348322658,
-          "result": "Georgia Southern 28-42 Houston",
+          "gameId": 401868188,
+          "matchup": "Gardner-Webb @ Marshall",
+          "pick": "Marshall",
+          "confidence": 82.42637361068186,
+          "result": "Marshall 36-35 Gardner-Webb",
           "correct": true
+        },
+        {
+          "gameId": 401858463,
+          "matchup": "Iowa @ Michigan",
+          "pick": "Michigan",
+          "confidence": 55.0839625090989,
+          "result": "Michigan 19-20 Iowa",
+          "correct": false
         },
         {
           "gameId": 401862781,
@@ -2744,44 +2736,44 @@
           "correct": true
         },
         {
-          "gameId": 401856698,
-          "matchup": "Vanderbilt @ Auburn",
-          "pick": "Auburn",
-          "confidence": 70.2261814156463,
-          "result": "Auburn 21-15 Vanderbilt",
+          "gameId": 401856806,
+          "matchup": "Houston @ Georgia Southern",
+          "pick": "Houston",
+          "confidence": 90.01789035673383,
+          "result": "Georgia Southern 28-42 Houston",
           "correct": true
         },
         {
-          "gameId": 401858464,
-          "matchup": "Nebraska @ Michigan State",
-          "pick": "Nebraska",
-          "confidence": 76.68948777255761,
-          "result": "Michigan State 13-31 Nebraska",
+          "gameId": 401856698,
+          "matchup": "Vanderbilt @ Auburn",
+          "pick": "Auburn",
+          "confidence": 74.76518896119556,
+          "result": "Auburn 21-15 Vanderbilt",
           "correct": true
         },
         {
           "gameId": 401862785,
           "matchup": "South Florida @ Bowling Green",
           "pick": "South Florida",
-          "confidence": 92.39373841444247,
+          "confidence": 91.95696858383143,
           "result": "Bowling Green 6-14 South Florida",
+          "correct": true
+        },
+        {
+          "gameId": 401858464,
+          "matchup": "Nebraska @ Michigan State",
+          "pick": "Nebraska",
+          "confidence": 76.88521172756975,
+          "result": "Michigan State 13-31 Nebraska",
           "correct": true
         },
         {
           "gameId": 401858466,
           "matchup": "Wisconsin @ Penn State",
           "pick": "Penn State",
-          "confidence": 83.45693238338907,
+          "confidence": 79.63010513294341,
           "result": "Penn State 20-24 Wisconsin",
           "correct": false
-        },
-        {
-          "gameId": 401867909,
-          "matchup": "Long Island University @ Florida International",
-          "pick": "Florida International",
-          "confidence": 94.71538659382044,
-          "result": "Florida International 20-3 Long Island University",
-          "correct": true
         },
         {
           "gameId": 401860892,
@@ -2795,15 +2787,23 @@
           "gameId": 401869961,
           "matchup": "James Madison @ Old Dominion",
           "pick": "James Madison",
-          "confidence": 79.54001819277194,
+          "confidence": 79.937040656674,
           "result": "Old Dominion 20-46 James Madison",
+          "correct": true
+        },
+        {
+          "gameId": 401867909,
+          "matchup": "Long Island University @ Florida International",
+          "pick": "Florida International",
+          "confidence": 94.71538659382044,
+          "result": "Florida International 20-3 Long Island University",
           "correct": true
         },
         {
           "gameId": 401858239,
           "matchup": "Delaware @ Virginia",
           "pick": "Virginia",
-          "confidence": 93.47624497915643,
+          "confidence": 93.06823175560311,
           "result": "Virginia 42-3 Delaware",
           "correct": true
         },
@@ -2811,7 +2811,7 @@
           "gameId": 401858238,
           "matchup": "Central Michigan @ Miami",
           "pick": "Miami",
-          "confidence": 99.48991768628771,
+          "confidence": 99.48700385828087,
           "result": "Miami 52-3 Central Michigan",
           "correct": true
         },
@@ -2819,8 +2819,48 @@
           "gameId": 401862780,
           "matchup": "Louisiana @ Charlotte",
           "pick": "Louisiana",
-          "confidence": 82.91464044855196,
+          "confidence": 83.2038495935011,
           "result": "Charlotte 7-34 Louisiana",
+          "correct": true
+        },
+        {
+          "gameId": 401871048,
+          "matchup": "Middle Tennessee @ Jacksonville State",
+          "pick": "Jacksonville State",
+          "confidence": 78.53927344956352,
+          "result": "Jacksonville State 23-13 Middle Tennessee",
+          "correct": true
+        },
+        {
+          "gameId": 401862784,
+          "matchup": "Southern Miss @ Tulane",
+          "pick": "Tulane",
+          "confidence": 83.60474981112134,
+          "result": "Tulane 24-21 Southern Miss",
+          "correct": true
+        },
+        {
+          "gameId": 401856696,
+          "matchup": "South Carolina @ Alabama",
+          "pick": "Alabama",
+          "confidence": 85.64264873883782,
+          "result": "Alabama 49-18 South Carolina",
+          "correct": true
+        },
+        {
+          "gameId": 401856814,
+          "matchup": "Kansas State @ Cincinnati",
+          "pick": "Kansas State",
+          "confidence": 65.8006347082178,
+          "result": "Cincinnati 31-26 Kansas State",
+          "correct": false
+        },
+        {
+          "gameId": 401856881,
+          "matchup": "Oklahoma State @ West Virginia",
+          "pick": "Oklahoma State",
+          "confidence": 50.32066470520176,
+          "result": "West Virginia 24-41 Oklahoma State",
           "correct": true
         },
         {
@@ -2835,72 +2875,8 @@
           "gameId": 401869931,
           "matchup": "Kennesaw State @ Arkansas State",
           "pick": "Arkansas State",
-          "confidence": 70.30611565227886,
+          "confidence": 71.44628425490933,
           "result": "Arkansas State 17-14 Kennesaw State",
-          "correct": true
-        },
-        {
-          "gameId": 401856696,
-          "matchup": "South Carolina @ Alabama",
-          "pick": "Alabama",
-          "confidence": 86.50661201064342,
-          "result": "Alabama 49-18 South Carolina",
-          "correct": true
-        },
-        {
-          "gameId": 401871048,
-          "matchup": "Middle Tennessee @ Jacksonville State",
-          "pick": "Jacksonville State",
-          "confidence": 76.86625073804323,
-          "result": "Jacksonville State 23-13 Middle Tennessee",
-          "correct": true
-        },
-        {
-          "gameId": 401862784,
-          "matchup": "Southern Miss @ Tulane",
-          "pick": "Tulane",
-          "confidence": 85.64470388611849,
-          "result": "Tulane 24-21 Southern Miss",
-          "correct": true
-        },
-        {
-          "gameId": 401856881,
-          "matchup": "Oklahoma State @ West Virginia",
-          "pick": "West Virginia",
-          "confidence": 53.83809008189857,
-          "result": "West Virginia 24-41 Oklahoma State",
-          "correct": false
-        },
-        {
-          "gameId": 401856814,
-          "matchup": "Kansas State @ Cincinnati",
-          "pick": "Kansas State",
-          "confidence": 64.19663624442336,
-          "result": "Cincinnati 31-26 Kansas State",
-          "correct": false
-        },
-        {
-          "gameId": 401858469,
-          "matchup": "Oregon @ USC",
-          "pick": "Oregon",
-          "confidence": 60.33534431733647,
-          "result": "USC 27-41 Oregon",
-          "correct": true
-        },
-        {
-          "gameId": 401864572,
-          "matchup": "App State @ NC State",
-          "pick": "NC State",
-          "confidence": 77.2487593066605,
-          "result": "NC State 41-31 App State",
-          "correct": true
-        },
-        {
-          "gameId": 401856804,
-          "matchup": "Arizona @ Washington State",
-          "pick": "Arizona",
-          "confidence": 84.08730379701232,
-          "result": "Washington State 24-34 Arizona",
           "correct": true
         },
         {
@@ -2912,26 +2888,50 @@
           "correct": true
         },
         {
+          "gameId": 401860894,
+          "matchup": "Troy @ Utah State",
+          "pick": "Troy",
+          "confidence": 56.0813972439884,
+          "result": "Utah State 21-10 Troy",
+          "correct": false
+        },
+        {
+          "gameId": 401858469,
+          "matchup": "Oregon @ USC",
+          "pick": "Oregon",
+          "confidence": 62.77660100086086,
+          "result": "USC 27-41 Oregon",
+          "correct": true
+        },
+        {
           "gameId": 401856702,
           "matchup": "Texas A&M @ LSU",
           "pick": "LSU",
-          "confidence": 76.08694368571057,
+          "confidence": 78.47136575325338,
           "result": "LSU 35-6 Texas A&M",
           "correct": true
         },
         {
-          "gameId": 401860894,
-          "matchup": "Troy @ Utah State",
-          "pick": "Troy",
-          "confidence": 52.355929446639024,
-          "result": "Utah State 21-10 Troy",
-          "correct": false
+          "gameId": 401864572,
+          "matchup": "App State @ NC State",
+          "pick": "NC State",
+          "confidence": 76.1365156372311,
+          "result": "NC State 41-31 App State",
+          "correct": true
+        },
+        {
+          "gameId": 401856804,
+          "matchup": "Arizona @ Washington State",
+          "pick": "Arizona",
+          "confidence": 85.71569159702607,
+          "result": "Washington State 24-34 Arizona",
+          "correct": true
         },
         {
           "gameId": 401856703,
           "matchup": "Missouri @ Mississippi State",
           "pick": "Mississippi State",
-          "confidence": 62.96701816613576,
+          "confidence": 56.543059261579785,
           "result": "Mississippi State 31-24 Missouri",
           "correct": true
         },
@@ -2939,7 +2939,7 @@
           "gameId": 401862782,
           "matchup": "Florida Atlantic @ UL Monroe",
           "pick": "Florida Atlantic",
-          "confidence": 85.25576765630846,
+          "confidence": 85.50947866911422,
           "result": "UL Monroe 17-45 Florida Atlantic",
           "correct": true
         },
@@ -2947,7 +2947,7 @@
           "gameId": 401856697,
           "matchup": "Tulsa @ Arkansas",
           "pick": "Arkansas",
-          "confidence": 57.596489423062756,
+          "confidence": 55.192761090929544,
           "result": "Arkansas 34-6 Tulsa",
           "correct": true
         },
@@ -2955,31 +2955,31 @@
           "gameId": 401866429,
           "matchup": "Massachusetts @ Sacramento State",
           "pick": "Massachusetts",
-          "confidence": 77.79713688944794,
+          "confidence": 77.52031375919778,
           "result": "Sacramento State 6-35 Massachusetts",
-          "correct": true
-        },
-        {
-          "gameId": 401860895,
-          "matchup": "Oregon State @ UTEP",
-          "pick": "Oregon State",
-          "confidence": 84.93536244941478,
-          "result": "UTEP 7-33 Oregon State",
           "correct": true
         },
         {
           "gameId": 401858241,
           "matchup": "Missouri State @ SMU",
           "pick": "SMU",
-          "confidence": 97.91331879404368,
+          "confidence": 97.9629061188504,
           "result": "SMU 34-24 Missouri State",
+          "correct": true
+        },
+        {
+          "gameId": 401860895,
+          "matchup": "Oregon State @ UTEP",
+          "pick": "Oregon State",
+          "confidence": 86.07475724992493,
+          "result": "UTEP 7-33 Oregon State",
           "correct": true
         },
         {
           "gameId": 401860891,
           "matchup": "Rice @ Fresno State",
           "pick": "Fresno State",
-          "confidence": 87.03977710374835,
+          "confidence": 87.85134293838331,
           "result": "Fresno State 38-24 Rice",
           "correct": true
         },
@@ -2987,7 +2987,7 @@
           "gameId": 401864509,
           "matchup": "Air Force @ Nevada",
           "pick": "Air Force",
-          "confidence": 69.10783300556643,
+          "confidence": 70.4742144502609,
           "result": "Nevada 33-36 Air Force",
           "correct": true
         },
@@ -2995,7 +2995,7 @@
           "gameId": 401858240,
           "matchup": "Georgia Tech @ Stanford",
           "pick": "Georgia Tech",
-          "confidence": 64.01324122685634,
+          "confidence": 69.4637574285406,
           "result": "Stanford 34-27 Georgia Tech",
           "correct": false
         },
@@ -3003,7 +3003,7 @@
           "gameId": 401858470,
           "matchup": "Minnesota @ Washington",
           "pick": "Washington",
-          "confidence": 79.79670200155137,
+          "confidence": 79.65398280806703,
           "result": "Washington 24-27 Minnesota",
           "correct": false
         }
@@ -3012,14 +3012,14 @@
     {
       "columnId": "2026-week-w5",
       "label": "Week 5",
-      "runningSU": "335-55",
-      "runningATS": "213-170",
+      "runningSU": "336-54",
+      "runningATS": "214-169",
       "games": [
         {
           "gameId": 401871049,
           "matchup": "Western Kentucky @ New Mexico State",
           "pick": "New Mexico State",
-          "confidence": 58.93563456062644,
+          "confidence": 58.71231762868177,
           "result": "New Mexico State 34-13 Western Kentucky",
           "correct": true
         },
@@ -3027,7 +3027,7 @@
           "gameId": 401862786,
           "matchup": "North Texas @ Tulsa",
           "pick": "North Texas",
-          "confidence": 54.59083196048806,
+          "confidence": 59.712386613411816,
           "result": "Tulsa 44-45 North Texas",
           "correct": true
         },
@@ -3035,7 +3035,7 @@
           "gameId": 401871050,
           "matchup": "Liberty @ Delaware",
           "pick": "Liberty",
-          "confidence": 73.70165714246947,
+          "confidence": 77.23452101488051,
           "result": "Delaware 14-30 Liberty",
           "correct": true
         },
@@ -3043,111 +3043,111 @@
           "gameId": 401858245,
           "matchup": "Pittsburgh @ Virginia Tech",
           "pick": "Virginia Tech",
-          "confidence": 54.24104539113203,
+          "confidence": 56.30876141387928,
           "result": "Virginia Tech 33-35 Pittsburgh",
           "correct": false
         },
         {
           "gameId": 401858476,
           "matchup": "Penn State @ Northwestern",
-          "pick": "Penn State",
-          "confidence": 66.7786855912657,
+          "pick": "Northwestern",
+          "confidence": 50.3842103775709,
           "result": "Northwestern 34-13 Penn State",
-          "correct": false
+          "correct": true
         },
         {
           "gameId": 401862787,
           "matchup": "Memphis @ Charlotte",
           "pick": "Memphis",
-          "confidence": 92.9393524771626,
+          "confidence": 93.08099467779844,
           "result": "Charlotte 8-59 Memphis",
-          "correct": true
-        },
-        {
-          "gameId": 401856807,
-          "matchup": "Middle Tennessee @ Kansas",
-          "pick": "Kansas",
-          "confidence": 90.37444059446706,
-          "result": "Kansas 55-0 Middle Tennessee",
-          "correct": true
-        },
-        {
-          "gameId": 401856819,
-          "matchup": "UCF @ Houston",
-          "pick": "Houston",
-          "confidence": 76.70058164936306,
-          "result": "Houston 27-17 UCF",
-          "correct": true
-        },
-        {
-          "gameId": 401856707,
-          "matchup": "Alabama @ Mississippi State",
-          "pick": "Alabama",
-          "confidence": 69.80489581762063,
-          "result": "Mississippi State 23-56 Alabama",
-          "correct": true
-        },
-        {
-          "gameId": 401856822,
-          "matchup": "West Virginia @ Iowa State",
-          "pick": "Iowa State",
-          "confidence": 57.83291620817443,
-          "result": "Iowa State 45-42 West Virginia",
-          "correct": true
-        },
-        {
-          "gameId": 401858250,
-          "matchup": "Notre Dame @ North Carolina",
-          "pick": "Notre Dame",
-          "confidence": 93.98735077886953,
-          "result": "North Carolina 26-37 Notre Dame",
-          "correct": true
-        },
-        {
-          "gameId": 401862791,
-          "matchup": "Navy @ Air Force",
-          "pick": "Air Force",
-          "confidence": 64.88945975691131,
-          "result": "Air Force 14-9 Navy",
           "correct": true
         },
         {
           "gameId": 401858246,
           "matchup": "Boston College @ SMU",
           "pick": "SMU",
-          "confidence": 93.83049520852447,
+          "confidence": 93.83613545351281,
           "result": "SMU 25-16 Boston College",
-          "correct": true
-        },
-        {
-          "gameId": 401858251,
-          "matchup": "Stanford @ Wake Forest",
-          "pick": "Wake Forest",
-          "confidence": 86.87851984534063,
-          "result": "Wake Forest 57-3 Stanford",
-          "correct": true
-        },
-        {
-          "gameId": 401858252,
-          "matchup": "Syracuse @ UConn",
-          "pick": "Syracuse",
-          "confidence": 60.89897942300391,
-          "result": "UConn 41-42 Syracuse",
           "correct": true
         },
         {
           "gameId": 401858474,
           "matchup": "Michigan @ Minnesota",
           "pick": "Michigan",
-          "confidence": 63.26179605307849,
+          "confidence": 65.34548848857452,
           "result": "Minnesota 20-14 Michigan",
           "correct": false
+        },
+        {
+          "gameId": 401858252,
+          "matchup": "Syracuse @ UConn",
+          "pick": "Syracuse",
+          "confidence": 58.86489362974757,
+          "result": "UConn 41-42 Syracuse",
+          "correct": true
+        },
+        {
+          "gameId": 401856707,
+          "matchup": "Alabama @ Mississippi State",
+          "pick": "Alabama",
+          "confidence": 71.25513140658146,
+          "result": "Mississippi State 23-56 Alabama",
+          "correct": true
+        },
+        {
+          "gameId": 401856819,
+          "matchup": "UCF @ Houston",
+          "pick": "Houston",
+          "confidence": 80.91371297593697,
+          "result": "Houston 27-17 UCF",
+          "correct": true
+        },
+        {
+          "gameId": 401856807,
+          "matchup": "Middle Tennessee @ Kansas",
+          "pick": "Kansas",
+          "confidence": 93.43846060780815,
+          "result": "Kansas 55-0 Middle Tennessee",
+          "correct": true
+        },
+        {
+          "gameId": 401862791,
+          "matchup": "Navy @ Air Force",
+          "pick": "Air Force",
+          "confidence": 65.73947219991516,
+          "result": "Air Force 14-9 Navy",
+          "correct": true
+        },
+        {
+          "gameId": 401858250,
+          "matchup": "Notre Dame @ North Carolina",
+          "pick": "Notre Dame",
+          "confidence": 93.7192344684221,
+          "result": "North Carolina 26-37 Notre Dame",
+          "correct": true
+        },
+        {
+          "gameId": 401858251,
+          "matchup": "Stanford @ Wake Forest",
+          "pick": "Wake Forest",
+          "confidence": 89.93305345135519,
+          "result": "Wake Forest 57-3 Stanford",
+          "correct": true
+        },
+        {
+          "gameId": 401856822,
+          "matchup": "West Virginia @ Iowa State",
+          "pick": "Iowa State",
+          "confidence": 56.81722153110109,
+          "result": "Iowa State 45-42 West Virginia",
+          "correct": true
         },
         {
           "gameId": 401858479,
           "matchup": "Michigan State @ Wisconsin",
           "pick": "Wisconsin",
-          "confidence": 77.35786868793535,
+          "confidence": 79.81346841490506,
           "result": "Wisconsin 31-3 Michigan State",
           "correct": true
         },
@@ -3155,7 +3155,7 @@
           "gameId": 401856705,
           "matchup": "Vanderbilt @ Georgia",
           "pick": "Georgia",
-          "confidence": 96.81843050547842,
+          "confidence": 96.9080454713075,
           "result": "Georgia 38-14 Vanderbilt",
           "correct": true
         },
@@ -3163,7 +3163,7 @@
           "gameId": 401866432,
           "matchup": "Western Michigan @ Buffalo",
           "pick": "Western Michigan",
-          "confidence": 83.12194028039063,
+          "confidence": 84.07255763273326,
           "result": "Buffalo 17-20 Western Michigan",
           "correct": true
         },
@@ -3171,7 +3171,7 @@
           "gameId": 401866431,
           "matchup": "Toledo @ Ball State",
           "pick": "Toledo",
-          "confidence": 93.59597249740212,
+          "confidence": 93.08948636544602,
           "result": "Ball State 24-39 Toledo",
           "correct": true
         },
@@ -3179,96 +3179,48 @@
           "gameId": 401866477,
           "matchup": "Bowling Green @ Miami (OH)",
           "pick": "Miami (OH)",
-          "confidence": 88.01219300004642,
+          "confidence": 86.82373017787188,
           "result": "Miami (OH) 20-24 Bowling Green",
           "correct": false
         },
         {
-          "gameId": 401856710,
-          "matchup": "Auburn @ Tennessee",
-          "pick": "Tennessee",
-          "confidence": 75.87175372905959,
-          "result": "Tennessee 24-14 Auburn",
+          "gameId": 401866434,
+          "matchup": "Ohio @ Kent State",
+          "pick": "Ohio",
+          "confidence": 71.63330249755131,
+          "result": "Kent State 10-13 Ohio",
           "correct": true
         },
         {
-          "gameId": 401856708,
-          "matchup": "Florida @ Missouri",
-          "pick": "Florida",
-          "confidence": 69.67093121070084,
-          "result": "Missouri 45-17 Florida",
-          "correct": false
-        },
-        {
-          "gameId": 401858473,
-          "matchup": "Ohio State @ Iowa",
-          "pick": "Ohio State",
-          "confidence": 86.5550115883359,
-          "result": "Iowa 14-31 Ohio State",
-          "correct": true
-        },
-        {
-          "gameId": 401869956,
-          "matchup": "Old Dominion @ Georgia State",
-          "pick": "Georgia State",
-          "confidence": 65.85889037491204,
-          "result": "Georgia State 42-10 Old Dominion",
+          "gameId": 401858247,
+          "matchup": "California @ UNLV",
+          "pick": "UNLV",
+          "confidence": 58.96477016782322,
+          "result": "UNLV 39-31 California",
           "correct": true
         },
         {
           "gameId": 401858248,
           "matchup": "Louisville @ NC State",
           "pick": "Louisville",
-          "confidence": 66.49065630717203,
+          "confidence": 72.79672130704971,
           "result": "NC State 31-28 Louisville",
           "correct": false
         },
         {
-          "gameId": 401858247,
-          "matchup": "California @ UNLV",
-          "pick": "UNLV",
-          "confidence": 60.45235445903563,
-          "result": "UNLV 39-31 California",
-          "correct": true
-        },
-        {
-          "gameId": 401866434,
-          "matchup": "Ohio @ Kent State",
-          "pick": "Ohio",
-          "confidence": 69.9827996832926,
-          "result": "Kent State 10-13 Ohio",
-          "correct": true
-        },
-        {
-          "gameId": 401866433,
-          "matchup": "Eastern Michigan @ Massachusetts",
-          "pick": "Massachusetts",
-          "confidence": 79.05893337584,
-          "result": "Massachusetts 14-38 Eastern Michigan",
+          "gameId": 401856708,
+          "matchup": "Florida @ Missouri",
+          "pick": "Florida",
+          "confidence": 57.919748425451004,
+          "result": "Missouri 45-17 Florida",
           "correct": false
         },
         {
-          "gameId": 401864515,
-          "matchup": "Wyoming @ North Dakota State",
-          "pick": "North Dakota State",
-          "confidence": 92.86434465992322,
-          "result": "North Dakota State 28-0 Wyoming",
-          "correct": true
-        },
-        {
-          "gameId": 401858253,
-          "matchup": "Virginia @ Florida State",
-          "pick": "Virginia",
-          "confidence": 63.72906303976749,
-          "result": "Florida State 38-7 Virginia",
-          "correct": false
-        },
-        {
-          "gameId": 401866430,
-          "matchup": "Akron @ Central Michigan",
-          "pick": "Central Michigan",
-          "confidence": 70.17087149659564,
-          "result": "Central Michigan 41-17 Akron",
+          "gameId": 401856710,
+          "matchup": "Auburn @ Tennessee",
+          "pick": "Tennessee",
+          "confidence": 75.29732166810066,
+          "result": "Tennessee 24-14 Auburn",
           "correct": true
         },
         {
@@ -3280,10 +3232,58 @@
           "correct": true
         },
         {
+          "gameId": 401869956,
+          "matchup": "Old Dominion @ Georgia State",
+          "pick": "Georgia State",
+          "confidence": 70.4007302153077,
+          "result": "Georgia State 42-10 Old Dominion",
+          "correct": true
+        },
+        {
+          "gameId": 401864515,
+          "matchup": "Wyoming @ North Dakota State",
+          "pick": "North Dakota State",
+          "confidence": 92.90483126639398,
+          "result": "North Dakota State 28-0 Wyoming",
+          "correct": true
+        },
+        {
+          "gameId": 401858253,
+          "matchup": "Virginia @ Florida State",
+          "pick": "Virginia",
+          "confidence": 58.51535061476708,
+          "result": "Florida State 38-7 Virginia",
+          "correct": false
+        },
+        {
+          "gameId": 401866430,
+          "matchup": "Akron @ Central Michigan",
+          "pick": "Central Michigan",
+          "confidence": 71.882621478772,
+          "result": "Central Michigan 41-17 Akron",
+          "correct": true
+        },
+        {
+          "gameId": 401866433,
+          "matchup": "Eastern Michigan @ Massachusetts",
+          "pick": "Massachusetts",
+          "confidence": 75.53115304394842,
+          "result": "Massachusetts 14-38 Eastern Michigan",
+          "correct": false
+        },
+        {
+          "gameId": 401858473,
+          "matchup": "Ohio State @ Iowa",
+          "pick": "Ohio State",
+          "confidence": 86.95137069964038,
+          "result": "Iowa 14-31 Ohio State",
+          "correct": true
+        },
+        {
           "gameId": 401869962,
           "matchup": "Marshall @ James Madison",
           "pick": "James Madison",
-          "confidence": 90.06353903888619,
+          "confidence": 90.22672087522227,
           "result": "James Madison 45-17 Marshall",
           "correct": true
         },
@@ -3291,7 +3291,7 @@
           "gameId": 401858475,
           "matchup": "Maryland @ Nebraska",
           "pick": "Nebraska",
-          "confidence": 90.26680977200192,
+          "confidence": 90.9030180674247,
           "result": "Nebraska 48-23 Maryland",
           "correct": true
         },
@@ -3299,31 +3299,31 @@
           "gameId": 401864514,
           "matchup": "UTEP @ New Mexico",
           "pick": "New Mexico",
-          "confidence": 96.29551053448797,
+          "confidence": 96.34795393277813,
           "result": "New Mexico 61-7 UTEP",
           "correct": true
-        },
-        {
-          "gameId": 401856709,
-          "matchup": "Kentucky @ South Carolina",
-          "pick": "South Carolina",
-          "confidence": 57.44426880388404,
-          "result": "South Carolina 34-35 Kentucky",
-          "correct": false
         },
         {
           "gameId": 401858472,
           "matchup": "Purdue @ Illinois",
           "pick": "Illinois",
-          "confidence": 83.0680951727657,
+          "confidence": 77.89327565085217,
           "result": "Illinois 17-24 Purdue",
+          "correct": false
+        },
+        {
+          "gameId": 401856709,
+          "matchup": "Kentucky @ South Carolina",
+          "pick": "South Carolina",
+          "confidence": 59.45492425439812,
+          "result": "South Carolina 34-35 Kentucky",
           "correct": false
         },
         {
           "gameId": 401860899,
           "matchup": "Oregon State @ Colorado State",
           "pick": "Oregon State",
-          "confidence": 64.06210876740623,
+          "confidence": 70.69026849753101,
           "result": "Colorado State 26-56 Oregon State",
           "correct": true
         },
@@ -3336,26 +3336,26 @@
           "correct": true
         },
         {
-          "gameId": 401862788,
-          "matchup": "UTSA @ Rice",
-          "pick": "UTSA",
-          "confidence": 84.9174873805636,
-          "result": "Rice 14-16 UTSA",
+          "gameId": 401871089,
+          "matchup": "UL Monroe @ South Alabama",
+          "pick": "South Alabama",
+          "confidence": 88.16953974481916,
+          "result": "South Alabama 52-35 UL Monroe",
           "correct": true
         },
         {
-          "gameId": 401856711,
-          "matchup": "Arkansas @ Texas A&M",
-          "pick": "Texas A&M",
-          "confidence": 84.72225482473038,
-          "result": "Texas A&M 34-7 Arkansas",
+          "gameId": 401862788,
+          "matchup": "UTSA @ Rice",
+          "pick": "UTSA",
+          "confidence": 84.97892339936963,
+          "result": "Rice 14-16 UTSA",
           "correct": true
         },
         {
           "gameId": 401869942,
           "matchup": "Georgia Southern @ Coastal Carolina",
           "pick": "Georgia Southern",
-          "confidence": 51.93059847543275,
+          "confidence": 56.98208196159792,
           "result": "Coastal Carolina 24-31 Georgia Southern",
           "correct": true
         },
@@ -3363,23 +3363,47 @@
           "gameId": 401856818,
           "matchup": "BYU @ TCU",
           "pick": "BYU",
-          "confidence": 68.69815991573049,
+          "confidence": 71.9626230099979,
           "result": "TCU 10-17 BYU",
           "correct": true
         },
         {
-          "gameId": 401871089,
-          "matchup": "UL Monroe @ South Alabama",
-          "pick": "South Alabama",
-          "confidence": 87.6787484534524,
-          "result": "South Alabama 52-35 UL Monroe",
+          "gameId": 401856711,
+          "matchup": "Arkansas @ Texas A&M",
+          "pick": "Texas A&M",
+          "confidence": 85.0131884193301,
+          "result": "Texas A&M 34-7 Arkansas",
           "correct": true
+        },
+        {
+          "gameId": 401858249,
+          "matchup": "Miami @ Clemson",
+          "pick": "Miami",
+          "confidence": 88.91618522905878,
+          "result": "Clemson 13-41 Miami",
+          "correct": true
+        },
+        {
+          "gameId": 401858478,
+          "matchup": "Washington @ USC",
+          "pick": "USC",
+          "confidence": 74.84863108070411,
+          "result": "USC 25-21 Washington",
+          "correct": true
+        },
+        {
+          "gameId": 401862792,
+          "matchup": "Temple @ South Florida",
+          "pick": "South Florida",
+          "confidence": 73.68723206073435,
+          "result": "South Florida 13-17 Temple",
+          "correct": false
         },
         {
           "gameId": 401869842,
           "matchup": "Army @ Louisiana Tech",
           "pick": "Army",
-          "confidence": 56.07159246627599,
+          "confidence": 51.563486999800276,
           "result": "Louisiana Tech 31-29 Army",
           "correct": false
         },
@@ -3387,40 +3411,16 @@
           "gameId": 401860898,
           "matchup": "Utah State @ Boise State",
           "pick": "Boise State",
-          "confidence": 94.03384818358109,
+          "confidence": 94.15366327638488,
           "result": "Boise State 37-18 Utah State",
           "correct": true
-        },
-        {
-          "gameId": 401858249,
-          "matchup": "Miami @ Clemson",
-          "pick": "Miami",
-          "confidence": 88.53812536945458,
-          "result": "Clemson 13-41 Miami",
-          "correct": true
-        },
-        {
-          "gameId": 401862792,
-          "matchup": "Temple @ South Florida",
-          "pick": "South Florida",
-          "confidence": 75.19773106501285,
-          "result": "South Florida 13-17 Temple",
-          "correct": false
         },
         {
           "gameId": 401856821,
           "matchup": "Texas Tech @ Colorado",
           "pick": "Texas Tech",
-          "confidence": 87.39269159575284,
+          "confidence": 87.45421267200389,
           "result": "Colorado 7-29 Texas Tech",
-          "correct": true
-        },
-        {
-          "gameId": 401858478,
-          "matchup": "Washington @ USC",
-          "pick": "USC",
-          "confidence": 74.75255534435401,
-          "result": "USC 25-21 Washington",
           "correct": true
         },
         {
@@ -3435,7 +3435,7 @@
           "gameId": 401869932,
           "matchup": "Arkansas State @ Louisiana",
           "pick": "Louisiana",
-          "confidence": 71.71007135851495,
+          "confidence": 70.6740787987391,
           "result": "Louisiana 23-20 Arkansas State",
           "correct": true
         },
@@ -3443,7 +3443,7 @@
           "gameId": 401858477,
           "matchup": "Indiana @ Rutgers",
           "pick": "Indiana",
-          "confidence": 95.4948753799161,
+          "confidence": 95.74039807851857,
           "result": "Rutgers 15-47 Indiana",
           "correct": true
         },
@@ -3451,7 +3451,7 @@
           "gameId": 401860921,
           "matchup": "Fresno State @ Washington State",
           "pick": "Fresno State",
-          "confidence": 59.53494200309112,
+          "confidence": 62.564023904860974,
           "result": "Washington State 6-26 Fresno State",
           "correct": true
         },
@@ -3459,7 +3459,7 @@
           "gameId": 401856817,
           "matchup": "Baylor @ Arizona State",
           "pick": "Arizona State",
-          "confidence": 54.78419442668143,
+          "confidence": 50.452967226479764,
           "result": "Arizona State 19-55 Baylor",
           "correct": false
         },
@@ -3467,7 +3467,7 @@
           "gameId": 401860900,
           "matchup": "Texas State @ San Diego State",
           "pick": "Texas State",
-          "confidence": 77.93288892142203,
+          "confidence": 79.42925258004377,
           "result": "San Diego State 31-29 Texas State",
           "correct": false
         },
@@ -3475,7 +3475,7 @@
           "gameId": 401856820,
           "matchup": "Cincinnati @ Arizona",
           "pick": "Arizona",
-          "confidence": 58.21878401468219,
+          "confidence": 68.9272346714871,
           "result": "Arizona 34-7 Cincinnati",
           "correct": true
         },
@@ -3483,7 +3483,7 @@
           "gameId": 401864513,
           "matchup": "San José State @ Hawai'i",
           "pick": "Hawai'i",
-          "confidence": 59.644872332611044,
+          "confidence": 55.79985435448294,
           "result": "Hawai'i 16-20 San José State",
           "correct": false
         }
@@ -3492,14 +3492,14 @@
     {
       "columnId": "2026-week-w6",
       "label": "Week 6",
-      "runningSU": "343-59",
-      "runningATS": "219-176",
+      "runningSU": "377-71",
+      "runningATS": "240-201",
       "games": [
         {
           "gameId": 401871090,
           "matchup": "Southern Miss @ Troy",
           "pick": "Troy",
-          "confidence": 77.87467324240768,
+          "confidence": 79.44635428361015,
           "result": "Troy 55-34 Southern Miss",
           "correct": true
         },
@@ -3507,7 +3507,7 @@
           "gameId": 401871051,
           "matchup": "Jacksonville State @ Kennesaw State",
           "pick": "Jacksonville State",
-          "confidence": 68.14044713058183,
+          "confidence": 66.83208137355194,
           "result": "Kennesaw State 26-27 Jacksonville State",
           "correct": true
         },
@@ -3515,63 +3515,63 @@
           "gameId": 401871066,
           "matchup": "New Mexico State @ Florida International",
           "pick": "Florida International",
-          "confidence": 73.05660286774571,
+          "confidence": 71.8694748299933,
           "result": "Florida International 22-3 New Mexico State",
           "correct": true
-        },
-        {
-          "gameId": 401871052,
-          "matchup": "Missouri State @ Western Kentucky",
-          "pick": "Missouri State",
-          "confidence": 53.35945497240382,
-          "result": "Western Kentucky 34-13 Missouri State",
-          "correct": false
         },
         {
           "gameId": 401870766,
           "matchup": "Sam Houston @ Liberty",
           "pick": "Liberty",
-          "confidence": 87.12612074027486,
+          "confidence": 88.67268435302591,
           "result": "Liberty 35-3 Sam Houston",
+          "correct": true
+        },
+        {
+          "gameId": 401871052,
+          "matchup": "Missouri State @ Western Kentucky",
+          "pick": "Western Kentucky",
+          "confidence": 51.87349941296262,
+          "result": "Western Kentucky 34-13 Missouri State",
+          "correct": true
+        },
+        {
+          "gameId": 401862794,
+          "matchup": "South Florida @ UTSA",
+          "pick": "UTSA",
+          "confidence": 68.06700526558245,
+          "result": "UTSA 31-24 South Florida",
           "correct": true
         },
         {
           "gameId": 401869933,
           "matchup": "South Alabama @ Arkansas State",
           "pick": "Arkansas State",
-          "confidence": 58.90901248353283,
+          "confidence": 54.917591340536966,
           "result": "Arkansas State 49-56 South Alabama",
           "correct": false
-        },
-        {
-          "gameId": 401862794,
-          "matchup": "South Florida @ UTSA",
-          "pick": "UTSA",
-          "confidence": 63.79136391326605,
-          "result": "UTSA 31-24 South Florida",
-          "correct": true
         },
         {
           "gameId": 401858254,
           "matchup": "Florida State @ Louisville",
           "pick": "Louisville",
-          "confidence": 67.03864650652443,
+          "confidence": 70.07418756179457,
           "result": "Louisville 44-20 Florida State",
           "correct": true
         },
         {
           "gameId": 401858487,
           "matchup": "Iowa @ Washington",
-          "pick": "Washington",
-          "confidence": 51.85533429023022,
+          "pick": "Iowa",
+          "confidence": 51.77333433837838,
           "result": "Washington 24-41 Iowa",
-          "correct": false
+          "correct": true
         },
         {
           "gameId": 401860922,
           "matchup": "Washington State @ Utah State",
           "pick": "Utah State",
-          "confidence": 57.44965357521933,
+          "confidence": 60.871658922033255,
           "result": "Utah State 17-16 Washington State",
           "correct": true
         },
@@ -3579,7 +3579,7 @@
           "gameId": 401864519,
           "matchup": "Wyoming @ San José State",
           "pick": "San José State",
-          "confidence": 66.5694438158154,
+          "confidence": 68.90878937559022,
           "result": "San José State 13-16 Wyoming",
           "correct": false
         },
@@ -3587,8 +3587,376 @@
           "gameId": 401856826,
           "matchup": "Iowa State @ BYU",
           "pick": "BYU",
-          "confidence": 83.64074604106857,
+          "confidence": 85.3490387024039,
           "result": "BYU 24-10 Iowa State",
+          "correct": true
+        },
+        {
+          "gameId": 401866436,
+          "matchup": "Sacramento State @ Bowling Green",
+          "pick": "Bowling Green",
+          "confidence": 73.09314698215688,
+          "result": "Bowling Green 38-10 Sacramento State",
+          "correct": true
+        },
+        {
+          "gameId": 401858481,
+          "matchup": "Indiana @ Nebraska",
+          "pick": "Indiana",
+          "confidence": 72.00214618556254,
+          "result": "Nebraska 17-20 Indiana",
+          "correct": true
+        },
+        {
+          "gameId": 401858260,
+          "matchup": "Wake Forest @ NC State",
+          "pick": "Wake Forest",
+          "confidence": 64.28557374661669,
+          "result": "NC State 14-38 Wake Forest",
+          "correct": true
+        },
+        {
+          "gameId": 401856824,
+          "matchup": "UCF @ Oklahoma State",
+          "pick": "Oklahoma State",
+          "confidence": 74.977365865631,
+          "result": "Oklahoma State 42-28 UCF",
+          "correct": true
+        },
+        {
+          "gameId": 401856716,
+          "matchup": "Texas A&M @ Missouri",
+          "pick": "Missouri",
+          "confidence": 68.83361234775252,
+          "result": "Missouri 27-6 Texas A&M",
+          "correct": true
+        },
+        {
+          "gameId": 401862795,
+          "matchup": "Tulane @ Army",
+          "pick": "Army",
+          "confidence": 74.90147528495021,
+          "result": "Army 20-17 Tulane",
+          "correct": true
+        },
+        {
+          "gameId": 401858256,
+          "matchup": "North Carolina @ Pittsburgh",
+          "pick": "Pittsburgh",
+          "confidence": 71.87592455197709,
+          "result": "Pittsburgh 17-21 North Carolina",
+          "correct": false
+        },
+        {
+          "gameId": 401856823,
+          "matchup": "Arizona @ West Virginia",
+          "pick": "Arizona",
+          "confidence": 65.14983296501606,
+          "result": "West Virginia 31-52 Arizona",
+          "correct": true
+        },
+        {
+          "gameId": 401858482,
+          "matchup": "Ball State @ Northwestern",
+          "pick": "Northwestern",
+          "confidence": 98.94082593164185,
+          "result": "Northwestern 45-14 Ball State",
+          "correct": true
+        },
+        {
+          "gameId": 401856714,
+          "matchup": "South Carolina @ Florida",
+          "pick": "Florida",
+          "confidence": 78.65503111095128,
+          "result": "Florida 19-38 South Carolina",
+          "correct": false
+        },
+        {
+          "gameId": 401869843,
+          "matchup": "Old Dominion @ App State",
+          "pick": "App State",
+          "confidence": 82.44309974852526,
+          "result": "App State 3-10 Old Dominion",
+          "correct": false
+        },
+        {
+          "gameId": 401862797,
+          "matchup": "Rice @ East Carolina",
+          "pick": "East Carolina",
+          "confidence": 81.93852326845773,
+          "result": "East Carolina 28-12 Rice",
+          "correct": true
+        },
+        {
+          "gameId": 401866440,
+          "matchup": "Miami (OH) @ Massachusetts",
+          "pick": "Miami (OH)",
+          "confidence": 52.32344063410363,
+          "result": "Massachusetts 19-20 Miami (OH)",
+          "correct": true
+        },
+        {
+          "gameId": 401858484,
+          "matchup": "UCLA @ Oregon",
+          "pick": "Oregon",
+          "confidence": 75.71684867434375,
+          "result": "Oregon 15-17 UCLA",
+          "correct": false
+        },
+        {
+          "gameId": 401866439,
+          "matchup": "Kent State @ Western Michigan",
+          "pick": "Western Michigan",
+          "confidence": 89.67208413848682,
+          "result": "Western Michigan 38-7 Kent State",
+          "correct": true
+        },
+        {
+          "gameId": 401866435,
+          "matchup": "Eastern Michigan @ Akron",
+          "pick": "Eastern Michigan",
+          "confidence": 71.59098749869554,
+          "result": "Akron 23-25 Eastern Michigan",
+          "correct": true
+        },
+        {
+          "gameId": 401856825,
+          "matchup": "Houston @ Kansas State",
+          "pick": "Kansas State",
+          "confidence": 57.3083986860387,
+          "result": "Kansas State 16-35 Houston",
+          "correct": false
+        },
+        {
+          "gameId": 401858259,
+          "matchup": "Virginia Tech @ California",
+          "pick": "Virginia Tech",
+          "confidence": 78.72997110137159,
+          "result": "California 25-20 Virginia Tech",
+          "correct": false
+        },
+        {
+          "gameId": 401858480,
+          "matchup": "Illinois @ Michigan State",
+          "pick": "Illinois",
+          "confidence": 64.99304182133804,
+          "result": "Michigan State 37-38 Illinois",
+          "correct": true
+        },
+        {
+          "gameId": 401866437,
+          "matchup": "Buffalo @ Toledo",
+          "pick": "Toledo",
+          "confidence": 92.4536466896938,
+          "result": "Toledo 8-23 Buffalo",
+          "correct": false
+        },
+        {
+          "gameId": 401858257,
+          "matchup": "Stanford @ Notre Dame",
+          "pick": "Notre Dame",
+          "confidence": 99.37652309285689,
+          "result": "Notre Dame 58-7 Stanford",
+          "correct": true
+        },
+        {
+          "gameId": 401856717,
+          "matchup": "Texas @ Oklahoma",
+          "pick": "Texas",
+          "confidence": 79.06289551522303,
+          "result": "Oklahoma 27-24 Texas",
+          "correct": false
+        },
+        {
+          "gameId": 401862796,
+          "matchup": "Charlotte @ North Texas",
+          "pick": "North Texas",
+          "confidence": 97.61494889797034,
+          "result": "North Texas 50-10 Charlotte",
+          "correct": true
+        },
+        {
+          "gameId": 401862799,
+          "matchup": "Tulsa @ Navy",
+          "pick": "Navy",
+          "confidence": 63.58628795807307,
+          "result": "Navy 34-26 Tulsa",
+          "correct": true
+        },
+        {
+          "gameId": 401858255,
+          "matchup": "Duke @ Georgia Tech",
+          "pick": "Duke",
+          "confidence": 69.98217388257446,
+          "result": "Georgia Tech 28-25 Duke",
+          "correct": false
+        },
+        {
+          "gameId": 401856718,
+          "matchup": "Ole Miss @ Vanderbilt",
+          "pick": "Ole Miss",
+          "confidence": 79.77989740623687,
+          "result": "Vanderbilt 17-52 Ole Miss",
+          "correct": true
+        },
+        {
+          "gameId": 401866438,
+          "matchup": "Central Michigan @ Ohio",
+          "pick": "Ohio",
+          "confidence": 69.44986867272101,
+          "result": "Ohio 31-14 Central Michigan",
+          "correct": true
+        },
+        {
+          "gameId": 401861964,
+          "matchup": "UConn @ Temple",
+          "pick": "Temple",
+          "confidence": 55.20703729885912,
+          "result": "Temple 20-34 UConn",
+          "correct": false
+        },
+        {
+          "gameId": 401856713,
+          "matchup": "Tennessee @ Arkansas",
+          "pick": "Tennessee",
+          "confidence": 86.86824618960398,
+          "result": "Arkansas 17-24 Tennessee",
+          "correct": true
+        },
+        {
+          "gameId": 401858483,
+          "matchup": "Maryland @ Ohio State",
+          "pick": "Ohio State",
+          "confidence": 98.28055913698348,
+          "result": "Ohio State 45-16 Maryland",
+          "correct": true
+        },
+        {
+          "gameId": 401860902,
+          "matchup": "San Diego State @ Oregon State",
+          "pick": "Oregon State",
+          "confidence": 89.83513223434775,
+          "result": "Oregon State 66-14 San Diego State",
+          "correct": true
+        },
+        {
+          "gameId": 401856715,
+          "matchup": "LSU @ Kentucky",
+          "pick": "LSU",
+          "confidence": 72.99229996572063,
+          "result": "Kentucky 35-34 LSU",
+          "correct": false
+        },
+        {
+          "gameId": 401864518,
+          "matchup": "North Dakota State @ UNLV",
+          "pick": "North Dakota State",
+          "confidence": 66.50119295940668,
+          "result": "UNLV 13-7 North Dakota State",
+          "correct": false
+        },
+        {
+          "gameId": 401869943,
+          "matchup": "Coastal Carolina @ Marshall",
+          "pick": "Marshall",
+          "confidence": 56.76717768048864,
+          "result": "Marshall 21-27 Coastal Carolina",
+          "correct": false
+        },
+        {
+          "gameId": 401862798,
+          "matchup": "UAB @ Memphis",
+          "pick": "Memphis",
+          "confidence": 91.14585019681446,
+          "result": "Memphis 38-13 UAB",
+          "correct": true
+        },
+        {
+          "gameId": 401864517,
+          "matchup": "Nevada @ UTEP",
+          "pick": "Nevada",
+          "confidence": 83.02121170417728,
+          "result": "UTEP 13-30 Nevada",
+          "correct": true
+        },
+        {
+          "gameId": 401869949,
+          "matchup": "James Madison @ Georgia Southern",
+          "pick": "James Madison",
+          "confidence": 77.01856389280809,
+          "result": "Georgia Southern 24-27 James Madison",
+          "correct": true
+        },
+        {
+          "gameId": 401858485,
+          "matchup": "USC @ Penn State",
+          "pick": "USC",
+          "confidence": 55.03545003488246,
+          "result": "Penn State 23-31 USC",
+          "correct": true
+        },
+        {
+          "gameId": 401858258,
+          "matchup": "Syracuse @ Virginia",
+          "pick": "Virginia",
+          "confidence": 84.45972964083015,
+          "result": "Virginia 28-25 Syracuse",
+          "correct": true
+        },
+        {
+          "gameId": 401864516,
+          "matchup": "Air Force @ Northern Illinois",
+          "pick": "Air Force",
+          "confidence": 79.64962277820898,
+          "result": "Northern Illinois 7-28 Air Force",
+          "correct": true
+        },
+        {
+          "gameId": 401869965,
+          "matchup": "Louisiana @ Louisiana Tech",
+          "pick": "Louisiana Tech",
+          "confidence": 54.5233806821085,
+          "result": "Louisiana Tech 32-31 Louisiana",
+          "correct": true
+        },
+        {
+          "gameId": 401856712,
+          "matchup": "Georgia @ Alabama",
+          "pick": "Alabama",
+          "confidence": 52.281196050080005,
+          "result": "Alabama 17-20 Georgia",
+          "correct": false
+        },
+        {
+          "gameId": 401856827,
+          "matchup": "Kansas @ Utah",
+          "pick": "Utah",
+          "confidence": 90.4851387328155,
+          "result": "Utah 41-24 Kansas",
+          "correct": true
+        },
+        {
+          "gameId": 401858486,
+          "matchup": "Minnesota @ Purdue",
+          "pick": "Minnesota",
+          "confidence": 54.02114634790869,
+          "result": "Purdue 41-13 Minnesota",
+          "correct": false
+        },
+        {
+          "gameId": 401856808,
+          "matchup": "Hawai'i @ Arizona State",
+          "pick": "Arizona State",
+          "confidence": 92.39568294590542,
+          "result": "Arizona State 30-12 Hawai'i",
+          "correct": true
+        },
+        {
+          "gameId": 401860901,
+          "matchup": "Boise State @ Fresno State",
+          "pick": "Boise State",
+          "confidence": 70.839679763929,
+          "result": "Fresno State 31-38 Boise State",
           "correct": true
         }
       ]
