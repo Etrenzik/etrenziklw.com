@@ -5,9 +5,16 @@
 /**
  * Weight given to the market-implied probability in the final blend.
  * (1 - BLEND_MARKET_WEIGHT) goes to the matchup-strength model.
- * Spec default: 60% market / 40% matchup.
+ *
+ * Was 0.6 (the original spec default), chosen against a backtest that fed the
+ * model end-of-season SP+ ratings — i.e. ratings that already reflected the
+ * games being predicted. Replaying 2022-2024 with prior-season SP+ (what's
+ * actually knowable before kickoff), the matchup model alone hit 70-72% vs.
+ * 74-77% for simply taking the Vegas favorite, and SU accuracy rose steadily
+ * with market weight up to ~0.9, flat beyond. So the market dominates; the
+ * matchup model is left as a small nudge for near-pick'em games.
  */
-export const BLEND_MARKET_WEIGHT = 0.6;
+export const BLEND_MARKET_WEIGHT = 0.9;
 
 /** Home field advantage, in points added to the home side's implied margin. */
 export const HOME_FIELD_POINTS = 2.5;

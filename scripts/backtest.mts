@@ -11,11 +11,28 @@
 import "dotenv/config";
 import fs from "node:fs";
 import path from "node:path";
+import { getSPRatings } from "../lib/cfbd/client";
 import { BACKTEST_SEASONS } from "../lib/model/config";
 import { computeSeasonAccuracy } from "../lib/model/accuracy";
-import type { CalibrationFit, GamePick, SeasonAccuracy, Team } from "../lib/types";
+import type { CalibrationFit, GamePick, SeasonAccuracy, SPRating, Team } from "../lib/types";
 import { fetchSeasonRawData, hasRawData, readSeasonRawData, writeSeasonRawData } from "./lib/fetchSeason";
+import { normalizeSPRating } from "./lib/normalize";
 import { simulateSeason } from "./lib/simulateSeason";
+
+/**
+ * CFBD's /ratings/sp only serves end-of-season ratings, which already reflect
+ * the games being backtested — feeding those in made the matchup model look
+ * ~2-5 points better than it really is. The prior season's final SP+ is what
+ * was actually knowable before a season kicked off, so the backtest uses that.
+ */
+async function priorSeasonSPRatings(year: number): Promise<SPRating[]> {
+  const file = path.join(process.cwd(), "data", "raw", String(year - 1), "sp-ratings.json");
+  if (fs.existsSync(file)) return JSON.parse(fs.readFileSync(file, "utf8"));
+  const ratings = (await getSPRatings(year - 1)).map(normalizeSPRating);
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, JSON.stringify(ratings, null, 2));
+  return ratings;
+}
 
 function loadCalibration(): CalibrationFit {
   const p = path.join(process.cwd(), "data", "calibration.json");
@@ -45,7 +62,7 @@ async function main() {
   const headToHeadGames = Array.from(rawBySeason.values()).flatMap((r) => r.games);
 
   for (const year of BACKTEST_SEASONS) {
-    const raw = rawBySeason.get(year)!;
+    const raw = { ...rawBySeason.get(year)!, spRatings: await priorSeasonSPRatings(year) };
     const picks = simulateSeason({ raw, fit, headToHeadGames });
     allPicks.push(...picks);
     for (const t of raw.teams) allTeamsByName.set(t.school, t);

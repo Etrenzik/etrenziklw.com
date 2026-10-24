@@ -17,6 +17,49 @@ import { useMyPicks } from "./useMyPicks";
 
 const WEEKLY_PICK_TARGET = 15;
 
+interface WinLoss {
+  right: number;
+  wrong: number;
+}
+
+function emptyRecord(): WinLoss {
+  return { right: 0, wrong: 0 };
+}
+
+function pctOf(r: WinLoss): number | null {
+  const n = r.right + r.wrong;
+  return n === 0 ? null : (100 * r.right) / n;
+}
+
+function RecordBadge({
+  record,
+  className = "",
+  neutral = false,
+}: {
+  record: WinLoss;
+  className?: string;
+  /** Skip the straight-up color thresholds (e.g. for ATS, where ~52% is normal). */
+  neutral?: boolean;
+}) {
+  const pct = pctOf(record);
+  if (pct === null) return null;
+  const tone = neutral
+    ? "text-neutral-300"
+    : pct >= 75
+      ? "text-emerald-400"
+      : pct >= 60
+        ? "text-neutral-300"
+        : "text-rose-400";
+  return (
+    <span className={`tabular-nums ${className}`}>
+      <span className="text-neutral-500">
+        {record.right}-{record.wrong}
+      </span>{" "}
+      <span className={tone}>{Math.round(pct)}%</span>
+    </span>
+  );
+}
+
 export function GridView({ grid }: { grid: SeasonGrid }) {
   const [search, setSearch] = useState("");
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
@@ -38,6 +81,46 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
   }, [myPicks, gamesById]);
 
   const totalPicks = Object.keys(myPicks).length;
+
+  const modelRecords = useMemo(() => {
+    const overall = emptyRecord();
+    const ats = emptyRecord();
+    const byColumn = new Map<string, WinLoss>();
+    for (const g of grid.games) {
+      if (g.suCorrect === null) continue;
+      const col = byColumn.get(g.columnId) ?? emptyRecord();
+      if (g.suCorrect) {
+        overall.right++;
+        col.right++;
+      } else {
+        overall.wrong++;
+        col.wrong++;
+      }
+      byColumn.set(g.columnId, col);
+      if (g.atsCorrect === true) ats.right++;
+      else if (g.atsCorrect === false) ats.wrong++;
+    }
+    return { overall, ats, byColumn };
+  }, [grid.games]);
+
+  const myRecords = useMemo(() => {
+    const overall = emptyRecord();
+    const byColumn = new Map<string, WinLoss>();
+    for (const [gameIdStr, pickedTeam] of Object.entries(myPicks)) {
+      const g = gamesById.get(Number(gameIdStr));
+      if (!g || !g.completed || g.actualWinner === null) continue;
+      const col = byColumn.get(g.columnId) ?? emptyRecord();
+      if (g.actualWinner === pickedTeam) {
+        overall.right++;
+        col.right++;
+      } else {
+        overall.wrong++;
+        col.wrong++;
+      }
+      byColumn.set(g.columnId, col);
+    }
+    return { overall, byColumn };
+  }, [myPicks, gamesById]);
 
   const filteredGroups = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -67,6 +150,18 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
         <h1 className="text-lg font-semibold">
           {grid.season} Season Grid
         </h1>
+        <div className="flex items-center gap-4 text-sm">
+          <span title="Model's straight-up picks on completed games">
+            <span className="text-neutral-400">Model </span>
+            <RecordBadge record={modelRecords.overall} />
+          </span>
+          {pctOf(modelRecords.ats) !== null && (
+            <span className="text-xs" title="Model's picks against the spread on completed games">
+              <span className="text-neutral-500">ATS </span>
+              <RecordBadge record={modelRecords.ats} neutral />
+            </span>
+          )}
+        </div>
         <input
           type="text"
           placeholder="Search team or conference…"
@@ -82,6 +177,7 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
         </div>
         <div className="flex items-center gap-2 text-xs w-full sm:w-auto">
           <span className="text-amber-400">★ My picks: {totalPicks}</span>
+          <RecordBadge record={myRecords.overall} />
           {totalPicks > 0 && (
             <button
               onClick={() => {
@@ -104,10 +200,18 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
               </th>
               {grid.columns.map((col) => {
                 const count = pickCountByColumn.get(col.id) ?? 0;
+                const modelWeek = modelRecords.byColumn.get(col.id);
+                const myWeek = myRecords.byColumn.get(col.id);
                 return (
                   <Fragment key={col.id}>
                     <th className="sticky top-0 z-20 bg-neutral-950 border-b border-neutral-800 px-2 py-2 text-center font-medium whitespace-nowrap min-w-32">
                       {col.label}
+                      {modelWeek && (
+                        <RecordBadge
+                          record={modelWeek}
+                          className="block text-[11px] font-normal"
+                        />
+                      )}
                     </th>
                     <th
                       className="sticky top-0 z-20 bg-neutral-950 border-b border-l border-neutral-800 px-1 py-2 text-center font-medium whitespace-nowrap w-14 min-w-14"
@@ -127,6 +231,9 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
                       >
                         {count}/{WEEKLY_PICK_TARGET}
                       </span>
+                      {myWeek && (
+                        <RecordBadge record={myWeek} className="block text-[10px] font-normal" />
+                      )}
                     </th>
                   </Fragment>
                 );

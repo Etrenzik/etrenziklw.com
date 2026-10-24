@@ -1,7 +1,12 @@
 name: Refresh data & deploy
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      rebuild_backtest:
+        description: "Re-run the historical backtest (after a model change)"
+        type: boolean
+        default: false
   schedule:
     # NOTE: an earlier version of this polled every 3 hours on game days. CFBD's
     # free API key has a MONTHLY call quota, and that cadence burned through it
@@ -45,11 +50,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Bootstrap calibration + backtest (first run only)
+      - name: Calibration + backtest (first run, or on request)
         run: |
           if [ ! -f data/calibration.json ]; then
             echo "No calibration on disk yet — fitting the market model and running the backtest."
             npm run calibrate
+            npm run backtest
+          elif [ "${{ inputs.rebuild_backtest }}" = "true" ]; then
+            echo "Rebuilding the backtest on request."
             npm run backtest
           else
             echo "data/calibration.json already present, skipping calibrate+backtest."
