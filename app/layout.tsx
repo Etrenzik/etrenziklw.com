@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
 import "./globals.css";
+import { LeagueNav } from "@/components/nav/LeagueNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Spread — CFB Predictor",
-  description: "A college football win-probability model and season grid, backed by CFBD data.",
+  title: "The Spread — CFB & NFL Predictor",
+  description:
+    "College and pro football win-probability models and season grids, backed by CollegeFootballData and nflverse.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -26,24 +27,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-neutral-950 text-neutral-100">
         <header className="border-b border-neutral-800 bg-neutral-950/95 backdrop-blur sticky top-0 z-40">
-          <div className="mx-auto max-w-[1600px] px-4 py-4 flex items-center gap-8">
-            <span className="font-semibold tracking-tight text-xl">
-              The Spread <span className="text-neutral-500 font-normal">CFB</span>
-            </span>
-            <nav className="flex gap-5 text-base">
-              <Link href="/grid" className="text-neutral-300 hover:text-white transition-colors">
-                Season Grid
-              </Link>
-              <Link href="/dashboard" className="text-neutral-300 hover:text-white transition-colors">
-                History &amp; Accuracy
-              </Link>
-            </nav>
-          </div>
+          <LeagueNav />
         </header>
         <main className="flex-1 flex flex-col">{children}</main>
         <footer className="border-t border-neutral-800 px-4 py-3 text-xs text-neutral-500">
-          Model output for personal reference only. Data from CollegeFootballData.com. Not affiliated
-          with picks.cbssports.com.
+          Model output for personal reference only. College data from
+          CollegeFootballData.com; NFL data from nflverse. Not affiliated with
+          picks.cbssports.com.
         </footer>
       </body>
     </html>

@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import type { SeasonAccuracy } from "@/lib/types";
 import type { BacktestSummary } from "@/lib/data/read";
+import { leagueMeta, type League } from "@/lib/leagues";
 import { CalibrationChart } from "./CalibrationChart";
 
 function pct(n: number, d: number): string {
@@ -126,14 +127,17 @@ function WeekLog({ acc }: { acc: SeasonAccuracy }) {
 }
 
 export function DashboardView({
+  league = "cfb",
   currentSeason,
   current,
   backtest,
 }: {
+  league?: League;
   currentSeason: number;
   current: SeasonAccuracy | null;
   backtest: BacktestSummary | null;
 }) {
+  const meta = leagueMeta(league);
   const options = useMemo(() => {
     const opts: { key: string; label: string; acc: SeasonAccuracy }[] = [];
     if (current) opts.push({ key: String(currentSeason), label: `${currentSeason} (current)`, acc: current });
@@ -202,7 +206,7 @@ export function DashboardView({
           }))}
         />
         <BreakdownTable
-          title="By conference (picked team)"
+          title={`By ${meta.groupNoun.toLowerCase()} (picked team)`}
           rows={active.acc.byConference.map((r) => ({
             key: r.key,
             label: r.label,

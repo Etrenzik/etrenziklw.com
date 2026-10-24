@@ -58,21 +58,43 @@ jobs:
       - name: Calibration + backtest (first run, or on request)
         run: |
           if [ ! -f data/calibration.json ]; then
-            echo "No calibration on disk yet — fitting the market model and running the backtest."
+            echo "No CFB calibration on disk yet — fitting the market model and running the backtest."
             npm run calibrate
             npm run backtest
           elif [ "${{ inputs.rebuild_backtest }}" = "true" ]; then
-            echo "Rebuilding the backtest on request."
+            echo "Rebuilding the CFB backtest on request."
             npm run backtest
           else
-            echo "data/calibration.json already present, skipping calibrate+backtest."
+            echo "data/calibration.json already present, skipping CFB calibrate+backtest."
           fi
 
-      - name: Fetch current season data
+      - name: NFL calibration + backtest (first run, or on request)
+        run: |
+          if [ ! -f data/nfl/calibration.json ]; then
+            echo "No NFL calibration on disk yet — fitting the market model and running the backtest."
+            npm run calibrate:nfl
+            npm run backtest:nfl
+          elif [ "${{ inputs.rebuild_backtest }}" = "true" ]; then
+            echo "Rebuilding the NFL backtest on request."
+            npm run backtest:nfl
+          else
+            echo "data/nfl/calibration.json already present, skipping NFL calibrate+backtest."
+          fi
+
+      - name: Fetch current season data (CFB)
         run: npm run fetch
 
-      - name: Compute picks + dashboard stats
+      - name: Compute picks + dashboard stats (CFB)
         run: npm run compute
+
+      # nflverse is a static CSV on GitHub with no API key and no call quota, so
+      # unlike the CFB fetch this has no quota-exhaustion path to tolerate. A
+      # failure here is a real failure and should surface.
+      - name: Fetch current season data (NFL)
+        run: npm run fetch:nfl
+
+      - name: Compute picks + dashboard stats (NFL)
+        run: npm run compute:nfl
 
       - name: Commit refreshed data
         run: |
@@ -82,7 +104,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else
-            git commit -m "chore: refresh CFBD data [skip ci]"
+            git commit -m "chore: refresh CFB + NFL data [skip ci]"
             git fetch origin main
             git rebase origin/main
             git push

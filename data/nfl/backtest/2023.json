@@ -1,0 +1,2742 @@
+{
+  "league": "nfl",
+  "season": 2023,
+  "n": 285,
+  "suWins": 191,
+  "suLosses": 94,
+  "atsWins": 140,
+  "atsLosses": 131,
+  "atsPushes": 14,
+  "confidenceBuckets": [
+    {
+      "bucket": "50-55",
+      "min": 50,
+      "max": 55,
+      "n": 20,
+      "suWins": 10,
+      "suLosses": 10,
+      "suWinPct": 0.5,
+      "avgPredictedProb": 52.95742611682924,
+      "actualWinRate": 0.5
+    },
+    {
+      "bucket": "55-60",
+      "min": 55,
+      "max": 60,
+      "n": 74,
+      "suWins": 47,
+      "suLosses": 27,
+      "suWinPct": 0.6351351351351351,
+      "avgPredictedProb": 57.89541361749096,
+      "actualWinRate": 0.6351351351351351
+    },
+    {
+      "bucket": "60-65",
+      "min": 60,
+      "max": 65,
+      "n": 74,
+      "suWins": 52,
+      "suLosses": 22,
+      "suWinPct": 0.7027027027027027,
+      "avgPredictedProb": 62.32210835949863,
+      "actualWinRate": 0.7027027027027027
+    },
+    {
+      "bucket": "65-70",
+      "min": 65,
+      "max": 70,
+      "n": 26,
+      "suWins": 14,
+      "suLosses": 12,
+      "suWinPct": 0.5384615384615384,
+      "avgPredictedProb": 67.62720027463727,
+      "actualWinRate": 0.5384615384615384
+    },
+    {
+      "bucket": "70-75",
+      "min": 70,
+      "max": 75,
+      "n": 32,
+      "suWins": 23,
+      "suLosses": 9,
+      "suWinPct": 0.71875,
+      "avgPredictedProb": 72.10684824505316,
+      "actualWinRate": 0.71875
+    },
+    {
+      "bucket": "75-80",
+      "min": 75,
+      "max": 80,
+      "n": 22,
+      "suWins": 13,
+      "suLosses": 9,
+      "suWinPct": 0.5909090909090909,
+      "avgPredictedProb": 76.98170445927279,
+      "actualWinRate": 0.5909090909090909
+    },
+    {
+      "bucket": "80-85",
+      "min": 80,
+      "max": 85,
+      "n": 18,
+      "suWins": 15,
+      "suLosses": 3,
+      "suWinPct": 0.8333333333333334,
+      "avgPredictedProb": 81.88308221764714,
+      "actualWinRate": 0.8333333333333334
+    },
+    {
+      "bucket": "85-90",
+      "min": 85,
+      "max": 90,
+      "n": 16,
+      "suWins": 14,
+      "suLosses": 2,
+      "suWinPct": 0.875,
+      "avgPredictedProb": 87.76306226826154,
+      "actualWinRate": 0.875
+    },
+    {
+      "bucket": "90-95",
+      "min": 90,
+      "max": 95,
+      "n": 3,
+      "suWins": 3,
+      "suLosses": 0,
+      "suWinPct": 1,
+      "avgPredictedProb": 91.21137642996837,
+      "actualWinRate": 1
+    },
+    {
+      "bucket": "95-100",
+      "min": 95,
+      "max": 100,
+      "n": 0,
+      "suWins": 0,
+      "suLosses": 0,
+      "suWinPct": 0,
+      "avgPredictedProb": 0,
+      "actualWinRate": 0
+    }
+  ],
+  "byConference": [
+    {
+      "key": "AFC North",
+      "label": "AFC North",
+      "n": 45,
+      "suWins": 31,
+      "suLosses": 14,
+      "suWinPct": 0.6888888888888889,
+      "atsWins": 25,
+      "atsLosses": 17,
+      "atsPushes": 3,
+      "atsWinPct": 0.5952380952380952
+    },
+    {
+      "key": "AFC West",
+      "label": "AFC West",
+      "n": 41,
+      "suWins": 24,
+      "suLosses": 17,
+      "suWinPct": 0.5853658536585366,
+      "atsWins": 19,
+      "atsLosses": 19,
+      "atsPushes": 3,
+      "atsWinPct": 0.5
+    },
+    {
+      "key": "NFC West",
+      "label": "NFC West",
+      "n": 38,
+      "suWins": 29,
+      "suLosses": 9,
+      "suWinPct": 0.7631578947368421,
+      "atsWins": 18,
+      "atsLosses": 18,
+      "atsPushes": 2,
+      "atsWinPct": 0.5
+    },
+    {
+      "key": "AFC East",
+      "label": "AFC East",
+      "n": 35,
+      "suWins": 24,
+      "suLosses": 11,
+      "suWinPct": 0.6857142857142857,
+      "atsWins": 17,
+      "atsLosses": 17,
+      "atsPushes": 1,
+      "atsWinPct": 0.5
+    },
+    {
+      "key": "NFC North",
+      "label": "NFC North",
+      "n": 34,
+      "suWins": 23,
+      "suLosses": 11,
+      "suWinPct": 0.6764705882352942,
+      "atsWins": 18,
+      "atsLosses": 14,
+      "atsPushes": 2,
+      "atsWinPct": 0.5625
+    },
+    {
+      "key": "NFC East",
+      "label": "NFC East",
+      "n": 34,
+      "suWins": 24,
+      "suLosses": 10,
+      "suWinPct": 0.7058823529411765,
+      "atsWins": 16,
+      "atsLosses": 16,
+      "atsPushes": 2,
+      "atsWinPct": 0.5
+    },
+    {
+      "key": "NFC South",
+      "label": "NFC South",
+      "n": 30,
+      "suWins": 16,
+      "suLosses": 14,
+      "suWinPct": 0.5333333333333333,
+      "atsWins": 10,
+      "atsLosses": 19,
+      "atsPushes": 1,
+      "atsWinPct": 0.3448275862068966
+    },
+    {
+      "key": "AFC South",
+      "label": "AFC South",
+      "n": 28,
+      "suWins": 20,
+      "suLosses": 8,
+      "suWinPct": 0.7142857142857143,
+      "atsWins": 17,
+      "atsLosses": 11,
+      "atsPushes": 0,
+      "atsWinPct": 0.6071428571428571
+    }
+  ],
+  "byFavoriteUnderdog": [
+    {
+      "key": "favorite",
+      "label": "Picked the favorite",
+      "n": 284,
+      "suWins": 191,
+      "suLosses": 93,
+      "suWinPct": 0.6725352112676056,
+      "atsWins": 140,
+      "atsLosses": 130,
+      "atsPushes": 14,
+      "atsWinPct": 0.5185185185185185
+    },
+    {
+      "key": "underdog",
+      "label": "Picked the underdog",
+      "n": 1,
+      "suWins": 0,
+      "suLosses": 1,
+      "suWinPct": 0,
+      "atsWins": 0,
+      "atsLosses": 1,
+      "atsPushes": 0,
+      "atsWinPct": 0
+    }
+  ],
+  "bySite": [
+    {
+      "key": "home",
+      "label": "Picked home team",
+      "n": 172,
+      "suWins": 119,
+      "suLosses": 53,
+      "suWinPct": 0.6918604651162791,
+      "atsWins": 84,
+      "atsLosses": 81,
+      "atsPushes": 7,
+      "atsWinPct": 0.509090909090909
+    },
+    {
+      "key": "away",
+      "label": "Picked away team",
+      "n": 107,
+      "suWins": 68,
+      "suLosses": 39,
+      "suWinPct": 0.6355140186915887,
+      "atsWins": 52,
+      "atsLosses": 48,
+      "atsPushes": 7,
+      "atsWinPct": 0.52
+    },
+    {
+      "key": "neutral",
+      "label": "Neutral site",
+      "n": 6,
+      "suWins": 4,
+      "suLosses": 2,
+      "suWinPct": 0.6666666666666666,
+      "atsWins": 4,
+      "atsLosses": 2,
+      "atsPushes": 0,
+      "atsWinPct": 0.6666666666666666
+    }
+  ],
+  "weekLog": [
+    {
+      "columnId": "2023-week-w1",
+      "label": "Week 1",
+      "runningSU": "8-8",
+      "runningATS": "6-10",
+      "games": [
+        {
+          "gameId": 2251220767,
+          "matchup": "Detroit Lions @ Kansas City Chiefs",
+          "pick": "Kansas City Chiefs",
+          "confidence": 62.51525172608591,
+          "result": "Kansas City Chiefs 20-21 Detroit Lions",
+          "correct": false
+        },
+        {
+          "gameId": 1634552599,
+          "matchup": "Carolina Panthers @ Atlanta Falcons",
+          "pick": "Atlanta Falcons",
+          "confidence": 61.0783991428713,
+          "result": "Atlanta Falcons 24-10 Carolina Panthers",
+          "correct": true
+        },
+        {
+          "gameId": 783820561,
+          "matchup": "Houston Texans @ Baltimore Ravens",
+          "pick": "Baltimore Ravens",
+          "confidence": 78.97534055496727,
+          "result": "Baltimore Ravens 25-9 Houston Texans",
+          "correct": true
+        },
+        {
+          "gameId": 2976569678,
+          "matchup": "Cincinnati Bengals @ Cleveland Browns",
+          "pick": "Cincinnati Bengals",
+          "confidence": 53.40421647465179,
+          "result": "Cleveland Browns 24-3 Cincinnati Bengals",
+          "correct": false
+        },
+        {
+          "gameId": 1440159800,
+          "matchup": "Jacksonville Jaguars @ Indianapolis Colts",
+          "pick": "Jacksonville Jaguars",
+          "confidence": 63.66025609867091,
+          "result": "Indianapolis Colts 21-31 Jacksonville Jaguars",
+          "correct": true
+        },
+        {
+          "gameId": 3709170074,
+          "matchup": "Tampa Bay Buccaneers @ Minnesota Vikings",
+          "pick": "Minnesota Vikings",
+          "confidence": 60.792081222251994,
+          "result": "Minnesota Vikings 17-20 Tampa Bay Buccaneers",
+          "correct": false
+        },
+        {
+          "gameId": 1412495572,
+          "matchup": "Tennessee Titans @ New Orleans Saints",
+          "pick": "New Orleans Saints",
+          "confidence": 59.41439139380543,
+          "result": "New Orleans Saints 16-15 Tennessee Titans",
+          "correct": true
+        },
+        {
+          "gameId": 2562489744,
+          "matchup": "San Francisco 49ers @ Pittsburgh Steelers",
+          "pick": "San Francisco 49ers",
+          "confidence": 55.99479823587181,
+          "result": "Pittsburgh Steelers 7-30 San Francisco 49ers",
+          "correct": true
+        },
+        {
+          "gameId": 1487500701,
+          "matchup": "Arizona Cardinals @ Washington Commanders",
+          "pick": "Washington Commanders",
+          "confidence": 70.78381532775086,
+          "result": "Washington Commanders 20-16 Arizona Cardinals",
+          "correct": true
+        },
+        {
+          "gameId": 3005826407,
+          "matchup": "Green Bay Packers @ Chicago Bears",
+          "pick": "Chicago Bears",
+          "confidence": 51.387674157795246,
+          "result": "Chicago Bears 20-38 Green Bay Packers",
+          "correct": false
+        },
+        {
+          "gameId": 1149338745,
+          "matchup": "Las Vegas Raiders @ Denver Broncos",
+          "pick": "Denver Broncos",
+          "confidence": 57.85120992202085,
+          "result": "Denver Broncos 16-17 Las Vegas Raiders",
+          "correct": false
+        },
+        {
+          "gameId": 238290535,
+          "matchup": "Miami Dolphins @ Los Angeles Chargers",
+          "pick": "Los Angeles Chargers",
+          "confidence": 59.62246490362772,
+          "result": "Los Angeles Chargers 34-36 Miami Dolphins",
+          "correct": false
+        },
+        {
+          "gameId": 199026758,
+          "matchup": "Philadelphia Eagles @ New England Patriots",
+          "pick": "Philadelphia Eagles",
+          "confidence": 61.06866752330763,
+          "result": "New England Patriots 20-25 Philadelphia Eagles",
+          "correct": true
+        },
+        {
+          "gameId": 875471576,
+          "matchup": "Los Angeles Rams @ Seattle Seahawks",
+          "pick": "Seattle Seahawks",
+          "confidence": 63.0600814126541,
+          "result": "Seattle Seahawks 13-30 Los Angeles Rams",
+          "correct": false
+        },
+        {
+          "gameId": 3616707413,
+          "matchup": "Dallas Cowboys @ New York Giants",
+          "pick": "Dallas Cowboys",
+          "confidence": 63.010183472404755,
+          "result": "New York Giants 0-40 Dallas Cowboys",
+          "correct": true
+        },
+        {
+          "gameId": 1668243002,
+          "matchup": "Buffalo Bills @ New York Jets",
+          "pick": "Buffalo Bills",
+          "confidence": 59.83850399201085,
+          "result": "New York Jets 22-16 Buffalo Bills",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w2",
+      "label": "Week 2",
+      "runningSU": "19-13",
+      "runningATS": "12-18",
+      "games": [
+        {
+          "gameId": 4083848140,
+          "matchup": "Minnesota Vikings @ Philadelphia Eagles",
+          "pick": "Philadelphia Eagles",
+          "confidence": 71.53869725231513,
+          "result": "Philadelphia Eagles 34-28 Minnesota Vikings",
+          "correct": true
+        },
+        {
+          "gameId": 1979675633,
+          "matchup": "Green Bay Packers @ Atlanta Falcons",
+          "pick": "Atlanta Falcons",
+          "confidence": 56.08928455835082,
+          "result": "Atlanta Falcons 25-24 Green Bay Packers",
+          "correct": true
+        },
+        {
+          "gameId": 1102101944,
+          "matchup": "Las Vegas Raiders @ Buffalo Bills",
+          "pick": "Buffalo Bills",
+          "confidence": 73.31604609009253,
+          "result": "Buffalo Bills 38-10 Las Vegas Raiders",
+          "correct": true
+        },
+        {
+          "gameId": 321019586,
+          "matchup": "Baltimore Ravens @ Cincinnati Bengals",
+          "pick": "Cincinnati Bengals",
+          "confidence": 55.982016029042214,
+          "result": "Cincinnati Bengals 24-27 Baltimore Ravens",
+          "correct": false
+        },
+        {
+          "gameId": 3537507641,
+          "matchup": "Seattle Seahawks @ Detroit Lions",
+          "pick": "Detroit Lions",
+          "confidence": 66.71843492261581,
+          "result": "Detroit Lions 31-37 Seattle Seahawks",
+          "correct": false
+        },
+        {
+          "gameId": 3813531142,
+          "matchup": "Indianapolis Colts @ Houston Texans",
+          "pick": "Indianapolis Colts",
+          "confidence": 55.79653768912145,
+          "result": "Houston Texans 20-31 Indianapolis Colts",
+          "correct": true
+        },
+        {
+          "gameId": 2562514350,
+          "matchup": "Kansas City Chiefs @ Jacksonville Jaguars",
+          "pick": "Kansas City Chiefs",
+          "confidence": 61.30114322418474,
+          "result": "Jacksonville Jaguars 9-17 Kansas City Chiefs",
+          "correct": true
+        },
+        {
+          "gameId": 3147577233,
+          "matchup": "Chicago Bears @ Tampa Bay Buccaneers",
+          "pick": "Tampa Bay Buccaneers",
+          "confidence": 61.19843194653043,
+          "result": "Tampa Bay Buccaneers 27-17 Chicago Bears",
+          "correct": true
+        },
+        {
+          "gameId": 1091247196,
+          "matchup": "Los Angeles Chargers @ Tennessee Titans",
+          "pick": "Los Angeles Chargers",
+          "confidence": 59.230860030694245,
+          "result": "Tennessee Titans 27-24 Los Angeles Chargers",
+          "correct": false
+        },
+        {
+          "gameId": 1746596431,
+          "matchup": "New York Giants @ Arizona Cardinals",
+          "pick": "New York Giants",
+          "confidence": 62.80130460647546,
+          "result": "Arizona Cardinals 28-31 New York Giants",
+          "correct": true
+        },
+        {
+          "gameId": 895117401,
+          "matchup": "San Francisco 49ers @ Los Angeles Rams",
+          "pick": "San Francisco 49ers",
+          "confidence": 76.84679853327097,
+          "result": "Los Angeles Rams 23-30 San Francisco 49ers",
+          "correct": true
+        },
+        {
+          "gameId": 2529665795,
+          "matchup": "New York Jets @ Dallas Cowboys",
+          "pick": "Dallas Cowboys",
+          "confidence": 78.18356161703434,
+          "result": "Dallas Cowboys 30-10 New York Jets",
+          "correct": true
+        },
+        {
+          "gameId": 2189567729,
+          "matchup": "Washington Commanders @ Denver Broncos",
+          "pick": "Denver Broncos",
+          "confidence": 59.60442154823311,
+          "result": "Denver Broncos 33-35 Washington Commanders",
+          "correct": false
+        },
+        {
+          "gameId": 3336424631,
+          "matchup": "Miami Dolphins @ New England Patriots",
+          "pick": "Miami Dolphins",
+          "confidence": 59.515880719829454,
+          "result": "New England Patriots 17-24 Miami Dolphins",
+          "correct": true
+        },
+        {
+          "gameId": 755246290,
+          "matchup": "New Orleans Saints @ Carolina Panthers",
+          "pick": "New Orleans Saints",
+          "confidence": 64.09147953074337,
+          "result": "Carolina Panthers 17-20 New Orleans Saints",
+          "correct": true
+        },
+        {
+          "gameId": 4214465792,
+          "matchup": "Cleveland Browns @ Pittsburgh Steelers",
+          "pick": "Cleveland Browns",
+          "confidence": 63.800561694111934,
+          "result": "Pittsburgh Steelers 26-22 Cleveland Browns",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w3",
+      "label": "Week 3",
+      "runningSU": "29-19",
+      "runningATS": "21-24",
+      "games": [
+        {
+          "gameId": 2123055931,
+          "matchup": "New York Giants @ San Francisco 49ers",
+          "pick": "San Francisco 49ers",
+          "confidence": 83.07450540621166,
+          "result": "San Francisco 49ers 30-12 New York Giants",
+          "correct": true
+        },
+        {
+          "gameId": 3771021806,
+          "matchup": "Indianapolis Colts @ Baltimore Ravens",
+          "pick": "Baltimore Ravens",
+          "confidence": 75.73188211463656,
+          "result": "Baltimore Ravens 19-22 Indianapolis Colts",
+          "correct": false
+        },
+        {
+          "gameId": 566516785,
+          "matchup": "Tennessee Titans @ Cleveland Browns",
+          "pick": "Cleveland Browns",
+          "confidence": 61.170328725745414,
+          "result": "Cleveland Browns 27-3 Tennessee Titans",
+          "correct": true
+        },
+        {
+          "gameId": 180523526,
+          "matchup": "Atlanta Falcons @ Detroit Lions",
+          "pick": "Detroit Lions",
+          "confidence": 57.4441644348467,
+          "result": "Detroit Lions 20-6 Atlanta Falcons",
+          "correct": true
+        },
+        {
+          "gameId": 624632382,
+          "matchup": "New Orleans Saints @ Green Bay Packers",
+          "pick": "New Orleans Saints",
+          "confidence": 55.55747206019224,
+          "result": "Green Bay Packers 18-17 New Orleans Saints",
+          "correct": false
+        },
+        {
+          "gameId": 249047207,
+          "matchup": "Houston Texans @ Jacksonville Jaguars",
+          "pick": "Jacksonville Jaguars",
+          "confidence": 75.64512414969407,
+          "result": "Jacksonville Jaguars 17-37 Houston Texans",
+          "correct": false
+        },
+        {
+          "gameId": 4139845186,
+          "matchup": "Denver Broncos @ Miami Dolphins",
+          "pick": "Miami Dolphins",
+          "confidence": 71.20370661174368,
+          "result": "Miami Dolphins 70-20 Denver Broncos",
+          "correct": true
+        },
+        {
+          "gameId": 57112516,
+          "matchup": "Los Angeles Chargers @ Minnesota Vikings",
+          "pick": "Minnesota Vikings",
+          "confidence": 53.931544308400305,
+          "result": "Minnesota Vikings 24-28 Los Angeles Chargers",
+          "correct": false
+        },
+        {
+          "gameId": 3500182826,
+          "matchup": "New England Patriots @ New York Jets",
+          "pick": "New England Patriots",
+          "confidence": 59.23138738189866,
+          "result": "New York Jets 10-15 New England Patriots",
+          "correct": true
+        },
+        {
+          "gameId": 2185687120,
+          "matchup": "Buffalo Bills @ Washington Commanders",
+          "pick": "Buffalo Bills",
+          "confidence": 72.29720137676709,
+          "result": "Washington Commanders 3-37 Buffalo Bills",
+          "correct": true
+        },
+        {
+          "gameId": 1807204401,
+          "matchup": "Carolina Panthers @ Seattle Seahawks",
+          "pick": "Seattle Seahawks",
+          "confidence": 67.35527475868541,
+          "result": "Seattle Seahawks 37-27 Carolina Panthers",
+          "correct": true
+        },
+        {
+          "gameId": 1577484175,
+          "matchup": "Dallas Cowboys @ Arizona Cardinals",
+          "pick": "Dallas Cowboys",
+          "confidence": 86.10868781392772,
+          "result": "Arizona Cardinals 28-16 Dallas Cowboys",
+          "correct": false
+        },
+        {
+          "gameId": 2517379732,
+          "matchup": "Chicago Bears @ Kansas City Chiefs",
+          "pick": "Kansas City Chiefs",
+          "confidence": 87.43086088491287,
+          "result": "Kansas City Chiefs 41-10 Chicago Bears",
+          "correct": true
+        },
+        {
+          "gameId": 1087350133,
+          "matchup": "Pittsburgh Steelers @ Las Vegas Raiders",
+          "pick": "Las Vegas Raiders",
+          "confidence": 56.45193522545906,
+          "result": "Las Vegas Raiders 18-23 Pittsburgh Steelers",
+          "correct": false
+        },
+        {
+          "gameId": 626991991,
+          "matchup": "Philadelphia Eagles @ Tampa Bay Buccaneers",
+          "pick": "Philadelphia Eagles",
+          "confidence": 70.76043339370256,
+          "result": "Tampa Bay Buccaneers 11-25 Philadelphia Eagles",
+          "correct": true
+        },
+        {
+          "gameId": 3284977743,
+          "matchup": "Los Angeles Rams @ Cincinnati Bengals",
+          "pick": "Cincinnati Bengals",
+          "confidence": 55.569776182948296,
+          "result": "Cincinnati Bengals 19-16 Los Angeles Rams",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w4",
+      "label": "Week 4",
+      "runningSU": "42-22",
+      "runningATS": "30-29",
+      "games": [
+        {
+          "gameId": 3540898045,
+          "matchup": "Detroit Lions @ Green Bay Packers",
+          "pick": "Detroit Lions",
+          "confidence": 59.552373705265026,
+          "result": "Green Bay Packers 20-34 Detroit Lions",
+          "correct": true
+        },
+        {
+          "gameId": 1680399621,
+          "matchup": "Atlanta Falcons @ Jacksonville Jaguars",
+          "pick": "Jacksonville Jaguars",
+          "confidence": 58.49995355249128,
+          "result": "Jacksonville Jaguars 23-7 Atlanta Falcons",
+          "correct": true
+        },
+        {
+          "gameId": 3235851809,
+          "matchup": "Miami Dolphins @ Buffalo Bills",
+          "pick": "Buffalo Bills",
+          "confidence": 59.500760456311916,
+          "result": "Buffalo Bills 48-20 Miami Dolphins",
+          "correct": true
+        },
+        {
+          "gameId": 831692303,
+          "matchup": "Minnesota Vikings @ Carolina Panthers",
+          "pick": "Minnesota Vikings",
+          "confidence": 66.91823870862707,
+          "result": "Carolina Panthers 13-21 Minnesota Vikings",
+          "correct": true
+        },
+        {
+          "gameId": 3434287324,
+          "matchup": "Denver Broncos @ Chicago Bears",
+          "pick": "Denver Broncos",
+          "confidence": 61.88069808333682,
+          "result": "Chicago Bears 28-31 Denver Broncos",
+          "correct": true
+        },
+        {
+          "gameId": 3744474704,
+          "matchup": "Baltimore Ravens @ Cleveland Browns",
+          "pick": "Baltimore Ravens",
+          "confidence": 56.50058612398925,
+          "result": "Cleveland Browns 3-28 Baltimore Ravens",
+          "correct": true
+        },
+        {
+          "gameId": 2450868800,
+          "matchup": "Pittsburgh Steelers @ Houston Texans",
+          "pick": "Pittsburgh Steelers",
+          "confidence": 63.52720418393558,
+          "result": "Houston Texans 30-6 Pittsburgh Steelers",
+          "correct": false
+        },
+        {
+          "gameId": 292023207,
+          "matchup": "Los Angeles Rams @ Indianapolis Colts",
+          "pick": "Los Angeles Rams",
+          "confidence": 55.6686963251892,
+          "result": "Indianapolis Colts 23-29 Los Angeles Rams",
+          "correct": true
+        },
+        {
+          "gameId": 3120096782,
+          "matchup": "Tampa Bay Buccaneers @ New Orleans Saints",
+          "pick": "New Orleans Saints",
+          "confidence": 63.48940812063491,
+          "result": "New Orleans Saints 9-26 Tampa Bay Buccaneers",
+          "correct": false
+        },
+        {
+          "gameId": 4083323523,
+          "matchup": "Washington Commanders @ Philadelphia Eagles",
+          "pick": "Philadelphia Eagles",
+          "confidence": 80.46102370437862,
+          "result": "Philadelphia Eagles 34-31 Washington Commanders",
+          "correct": true
+        },
+        {
+          "gameId": 42758096,
+          "matchup": "Cincinnati Bengals @ Tennessee Titans",
+          "pick": "Cincinnati Bengals",
+          "confidence": 62.287373935628,
+          "result": "Tennessee Titans 27-3 Cincinnati Bengals",
+          "correct": false
+        },
+        {
+          "gameId": 3574090375,
+          "matchup": "Las Vegas Raiders @ Los Angeles Chargers",
+          "pick": "Los Angeles Chargers",
+          "confidence": 72.86211821845997,
+          "result": "Los Angeles Chargers 24-17 Las Vegas Raiders",
+          "correct": true
+        },
+        {
+          "gameId": 1271432169,
+          "matchup": "New England Patriots @ Dallas Cowboys",
+          "pick": "Dallas Cowboys",
+          "confidence": 72.74780753494576,
+          "result": "Dallas Cowboys 38-3 New England Patriots",
+          "correct": true
+        },
+        {
+          "gameId": 733114688,
+          "matchup": "Arizona Cardinals @ San Francisco 49ers",
+          "pick": "San Francisco 49ers",
+          "confidence": 90.04880748099951,
+          "result": "San Francisco 49ers 35-16 Arizona Cardinals",
+          "correct": true
+        },
+        {
+          "gameId": 3529165610,
+          "matchup": "Kansas City Chiefs @ New York Jets",
+          "pick": "Kansas City Chiefs",
+          "confidence": 81.90816764333984,
+          "result": "New York Jets 20-23 Kansas City Chiefs",
+          "correct": true
+        },
+        {
+          "gameId": 4191042924,
+          "matchup": "Seattle Seahawks @ New York Giants",
+          "pick": "Seattle Seahawks",
+          "confidence": 61.09370182797724,
+          "result": "New York Giants 3-24 Seattle Seahawks",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w5",
+      "label": "Week 5",
+      "runningSU": "50-28",
+      "runningATS": "37-36",
+      "games": [
+        {
+          "gameId": 214370501,
+          "matchup": "Chicago Bears @ Washington Commanders",
+          "pick": "Washington Commanders",
+          "confidence": 71.15959405646743,
+          "result": "Washington Commanders 20-40 Chicago Bears",
+          "correct": false
+        },
+        {
+          "gameId": 401357828,
+          "matchup": "Jacksonville Jaguars @ Buffalo Bills",
+          "pick": "Buffalo Bills",
+          "confidence": 70.0298989102595,
+          "result": "Buffalo Bills 20-25 Jacksonville Jaguars",
+          "correct": false
+        },
+        {
+          "gameId": 1681008233,
+          "matchup": "Houston Texans @ Atlanta Falcons",
+          "pick": "Atlanta Falcons",
+          "confidence": 53.6258250173276,
+          "result": "Atlanta Falcons 21-19 Houston Texans",
+          "correct": true
+        },
+        {
+          "gameId": 1176593365,
+          "matchup": "Carolina Panthers @ Detroit Lions",
+          "pick": "Detroit Lions",
+          "confidence": 80.11662678098006,
+          "result": "Detroit Lions 42-24 Carolina Panthers",
+          "correct": true
+        },
+        {
+          "gameId": 2061544676,
+          "matchup": "Tennessee Titans @ Indianapolis Colts",
+          "pick": "Tennessee Titans",
+          "confidence": 58.25523965119491,
+          "result": "Indianapolis Colts 23-16 Tennessee Titans",
+          "correct": false
+        },
+        {
+          "gameId": 1458032765,
+          "matchup": "New York Giants @ Miami Dolphins",
+          "pick": "Miami Dolphins",
+          "confidence": 85.76983596408225,
+          "result": "Miami Dolphins 31-16 New York Giants",
+          "correct": true
+        },
+        {
+          "gameId": 671214328,
+          "matchup": "New Orleans Saints @ New England Patriots",
+          "pick": "New England Patriots",
+          "confidence": 56.13954545838605,
+          "result": "New England Patriots 0-34 New Orleans Saints",
+          "correct": false
+        },
+        {
+          "gameId": 3519163752,
+          "matchup": "Baltimore Ravens @ Pittsburgh Steelers",
+          "pick": "Baltimore Ravens",
+          "confidence": 69.32374154743044,
+          "result": "Pittsburgh Steelers 17-10 Baltimore Ravens",
+          "correct": false
+        },
+        {
+          "gameId": 2932216226,
+          "matchup": "Cincinnati Bengals @ Arizona Cardinals",
+          "pick": "Cincinnati Bengals",
+          "confidence": 61.29275622026324,
+          "result": "Arizona Cardinals 20-34 Cincinnati Bengals",
+          "correct": true
+        },
+        {
+          "gameId": 4000177360,
+          "matchup": "Philadelphia Eagles @ Los Angeles Rams",
+          "pick": "Philadelphia Eagles",
+          "confidence": 63.98145075241428,
+          "result": "Los Angeles Rams 14-23 Philadelphia Eagles",
+          "correct": true
+        },
+        {
+          "gameId": 3415556248,
+          "matchup": "New York Jets @ Denver Broncos",
+          "pick": "Denver Broncos",
+          "confidence": 54.06079405809386,
+          "result": "Denver Broncos 21-31 New York Jets",
+          "correct": false
+        },
+        {
+          "gameId": 3815340658,
+          "matchup": "Kansas City Chiefs @ Minnesota Vikings",
+          "pick": "Kansas City Chiefs",
+          "confidence": 66.1268975862638,
+          "result": "Minnesota Vikings 20-27 Kansas City Chiefs",
+          "correct": true
+        },
+        {
+          "gameId": 2340861664,
+          "matchup": "Dallas Cowboys @ San Francisco 49ers",
+          "pick": "San Francisco 49ers",
+          "confidence": 61.57583991633771,
+          "result": "San Francisco 49ers 42-10 Dallas Cowboys",
+          "correct": true
+        },
+        {
+          "gameId": 4260240145,
+          "matchup": "Green Bay Packers @ Las Vegas Raiders",
+          "pick": "Las Vegas Raiders",
+          "confidence": 50.1102367186523,
+          "result": "Las Vegas Raiders 17-13 Green Bay Packers",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w6",
+      "label": "Week 6",
+      "runningSU": "61-32",
+      "runningATS": "47-41",
+      "games": [
+        {
+          "gameId": 4277434558,
+          "matchup": "Denver Broncos @ Kansas City Chiefs",
+          "pick": "Kansas City Chiefs",
+          "confidence": 83.03376416906768,
+          "result": "Kansas City Chiefs 19-8 Denver Broncos",
+          "correct": true
+        },
+        {
+          "gameId": 2939583971,
+          "matchup": "Baltimore Ravens @ Tennessee Titans",
+          "pick": "Baltimore Ravens",
+          "confidence": 71.51607722035027,
+          "result": "Tennessee Titans 16-24 Baltimore Ravens",
+          "correct": true
+        },
+        {
+          "gameId": 1094328133,
+          "matchup": "Washington Commanders @ Atlanta Falcons",
+          "pick": "Atlanta Falcons",
+          "confidence": 56.795163596362116,
+          "result": "Atlanta Falcons 16-24 Washington Commanders",
+          "correct": false
+        },
+        {
+          "gameId": 3512581801,
+          "matchup": "Minnesota Vikings @ Chicago Bears",
+          "pick": "Minnesota Vikings",
+          "confidence": 63.60225003802711,
+          "result": "Chicago Bears 13-19 Minnesota Vikings",
+          "correct": true
+        },
+        {
+          "gameId": 717029746,
+          "matchup": "Seattle Seahawks @ Cincinnati Bengals",
+          "pick": "Cincinnati Bengals",
+          "confidence": 57.54170822720972,
+          "result": "Cincinnati Bengals 17-13 Seattle Seahawks",
+          "correct": true
+        },
+        {
+          "gameId": 892455452,
+          "matchup": "San Francisco 49ers @ Cleveland Browns",
+          "pick": "San Francisco 49ers",
+          "confidence": 82.20386028394712,
+          "result": "Cleveland Browns 19-17 San Francisco 49ers",
+          "correct": false
+        },
+        {
+          "gameId": 3416220392,
+          "matchup": "New Orleans Saints @ Houston Texans",
+          "pick": "New Orleans Saints",
+          "confidence": 57.462417428839196,
+          "result": "Houston Texans 20-13 New Orleans Saints",
+          "correct": false
+        },
+        {
+          "gameId": 31915737,
+          "matchup": "Indianapolis Colts @ Jacksonville Jaguars",
+          "pick": "Jacksonville Jaguars",
+          "confidence": 63.730379691866915,
+          "result": "Jacksonville Jaguars 37-20 Indianapolis Colts",
+          "correct": true
+        },
+        {
+          "gameId": 2342191808,
+          "matchup": "Carolina Panthers @ Miami Dolphins",
+          "pick": "Miami Dolphins",
+          "confidence": 88.73284804818344,
+          "result": "Miami Dolphins 42-21 Carolina Panthers",
+          "correct": true
+        },
+        {
+          "gameId": 3326599632,
+          "matchup": "New England Patriots @ Las Vegas Raiders",
+          "pick": "Las Vegas Raiders",
+          "confidence": 59.37879402785127,
+          "result": "Las Vegas Raiders 21-17 New England Patriots",
+          "correct": true
+        },
+        {
+          "gameId": 968732892,
+          "matchup": "Arizona Cardinals @ Los Angeles Rams",
+          "pick": "Los Angeles Rams",
+          "confidence": 73.96040251025471,
+          "result": "Los Angeles Rams 26-9 Arizona Cardinals",
+          "correct": true
+        },
+        {
+          "gameId": 590268805,
+          "matchup": "Philadelphia Eagles @ New York Jets",
+          "pick": "Philadelphia Eagles",
+          "confidence": 75.05061840934263,
+          "result": "New York Jets 20-14 Philadelphia Eagles",
+          "correct": false
+        },
+        {
+          "gameId": 3531537076,
+          "matchup": "Detroit Lions @ Tampa Bay Buccaneers",
+          "pick": "Detroit Lions",
+          "confidence": 59.06182342143948,
+          "result": "Tampa Bay Buccaneers 6-20 Detroit Lions",
+          "correct": true
+        },
+        {
+          "gameId": 730040344,
+          "matchup": "New York Giants @ Buffalo Bills",
+          "pick": "Buffalo Bills",
+          "confidence": 90.87644399802348,
+          "result": "Buffalo Bills 14-9 New York Giants",
+          "correct": true
+        },
+        {
+          "gameId": 2052337734,
+          "matchup": "Dallas Cowboys @ Los Angeles Chargers",
+          "pick": "Dallas Cowboys",
+          "confidence": 58.13892627699574,
+          "result": "Los Angeles Chargers 17-20 Dallas Cowboys",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w7",
+      "label": "Week 7",
+      "runningSU": "66-40",
+      "runningATS": "51-50",
+      "games": [
+        {
+          "gameId": 1046966490,
+          "matchup": "Jacksonville Jaguars @ New Orleans Saints",
+          "pick": "New Orleans Saints",
+          "confidence": 55.81576782763405,
+          "result": "New Orleans Saints 24-31 Jacksonville Jaguars",
+          "correct": false
+        },
+        {
+          "gameId": 1217155694,
+          "matchup": "Detroit Lions @ Baltimore Ravens",
+          "pick": "Baltimore Ravens",
+          "confidence": 59.05373362869866,
+          "result": "Baltimore Ravens 38-6 Detroit Lions",
+          "correct": true
+        },
+        {
+          "gameId": 4111077018,
+          "matchup": "Las Vegas Raiders @ Chicago Bears",
+          "pick": "Las Vegas Raiders",
+          "confidence": 59.05981531314771,
+          "result": "Chicago Bears 30-12 Las Vegas Raiders",
+          "correct": false
+        },
+        {
+          "gameId": 3806383763,
+          "matchup": "Cleveland Browns @ Indianapolis Colts",
+          "pick": "Cleveland Browns",
+          "confidence": 64.91588042426186,
+          "result": "Indianapolis Colts 38-39 Cleveland Browns",
+          "correct": true
+        },
+        {
+          "gameId": 2331125278,
+          "matchup": "Buffalo Bills @ New England Patriots",
+          "pick": "Buffalo Bills",
+          "confidence": 77.97935934601581,
+          "result": "New England Patriots 29-25 Buffalo Bills",
+          "correct": false
+        },
+        {
+          "gameId": 31638791,
+          "matchup": "Washington Commanders @ New York Giants",
+          "pick": "Washington Commanders",
+          "confidence": 60.26530776009136,
+          "result": "New York Giants 14-7 Washington Commanders",
+          "correct": false
+        },
+        {
+          "gameId": 345907787,
+          "matchup": "Atlanta Falcons @ Tampa Bay Buccaneers",
+          "pick": "Tampa Bay Buccaneers",
+          "confidence": 60.84049444982773,
+          "result": "Tampa Bay Buccaneers 13-16 Atlanta Falcons",
+          "correct": false
+        },
+        {
+          "gameId": 1915340516,
+          "matchup": "Pittsburgh Steelers @ Los Angeles Rams",
+          "pick": "Los Angeles Rams",
+          "confidence": 60.22929760754888,
+          "result": "Los Angeles Rams 17-24 Pittsburgh Steelers",
+          "correct": false
+        },
+        {
+          "gameId": 1750463485,
+          "matchup": "Arizona Cardinals @ Seattle Seahawks",
+          "pick": "Seattle Seahawks",
+          "confidence": 79.8171588060528,
+          "result": "Seattle Seahawks 20-10 Arizona Cardinals",
+          "correct": true
+        },
+        {
+          "gameId": 3700271324,
+          "matchup": "Green Bay Packers @ Denver Broncos",
+          "pick": "Green Bay Packers",
+          "confidence": 50.27232533325141,
+          "result": "Denver Broncos 19-17 Green Bay Packers",
+          "correct": false
+        },
+        {
+          "gameId": 66012762,
+          "matchup": "Los Angeles Chargers @ Kansas City Chiefs",
+          "pick": "Kansas City Chiefs",
+          "confidence": 69.9155097805506,
+          "result": "Kansas City Chiefs 31-17 Los Angeles Chargers",
+          "correct": true
+        },
+        {
+          "gameId": 2691489866,
+          "matchup": "Miami Dolphins @ Philadelphia Eagles",
+          "pick": "Philadelphia Eagles",
+          "confidence": 58.76718190456969,
+          "result": "Philadelphia Eagles 31-17 Miami Dolphins",
+          "correct": true
+        },
+        {
+          "gameId": 1351736911,
+          "matchup": "San Francisco 49ers @ Minnesota Vikings",
+          "pick": "San Francisco 49ers",
+          "confidence": 76.45789357212868,
+          "result": "Minnesota Vikings 22-17 San Francisco 49ers",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w8",
+      "label": "Week 8",
+      "runningSU": "78-44",
+      "runningATS": "58-56",
+      "games": [
+        {
+          "gameId": 2839251434,
+          "matchup": "Tampa Bay Buccaneers @ Buffalo Bills",
+          "pick": "Buffalo Bills",
+          "confidence": 80.79150931630795,
+          "result": "Buffalo Bills 24-18 Tampa Bay Buccaneers",
+          "correct": true
+        },
+        {
+          "gameId": 3164816335,
+          "matchup": "Houston Texans @ Carolina Panthers",
+          "pick": "Houston Texans",
+          "confidence": 63.987095907802086,
+          "result": "Carolina Panthers 15-13 Houston Texans",
+          "correct": false
+        },
+        {
+          "gameId": 1419793271,
+          "matchup": "Los Angeles Rams @ Dallas Cowboys",
+          "pick": "Dallas Cowboys",
+          "confidence": 72.08811063782562,
+          "result": "Dallas Cowboys 43-20 Los Angeles Rams",
+          "correct": true
+        },
+        {
+          "gameId": 2079844578,
+          "matchup": "Minnesota Vikings @ Green Bay Packers",
+          "pick": "Minnesota Vikings",
+          "confidence": 55.58568263596444,
+          "result": "Green Bay Packers 10-24 Minnesota Vikings",
+          "correct": true
+        },
+        {
+          "gameId": 542474867,
+          "matchup": "New Orleans Saints @ Indianapolis Colts",
+          "pick": "New Orleans Saints",
+          "confidence": 59.75375137630561,
+          "result": "Indianapolis Colts 27-38 New Orleans Saints",
+          "correct": true
+        },
+        {
+          "gameId": 4126702357,
+          "matchup": "New England Patriots @ Miami Dolphins",
+          "pick": "Miami Dolphins",
+          "confidence": 74.85706234908976,
+          "result": "Miami Dolphins 31-17 New England Patriots",
+          "correct": true
+        },
+        {
+          "gameId": 4288092642,
+          "matchup": "New York Jets @ New York Giants",
+          "pick": "New York Jets",
+          "confidence": 63.93738753257872,
+          "result": "New York Giants 10-13 New York Jets",
+          "correct": true
+        },
+        {
+          "gameId": 662384219,
+          "matchup": "Jacksonville Jaguars @ Pittsburgh Steelers",
+          "pick": "Jacksonville Jaguars",
+          "confidence": 59.00648049189825,
+          "result": "Pittsburgh Steelers 10-20 Jacksonville Jaguars",
+          "correct": true
+        },
+        {
+          "gameId": 1460876857,
+          "matchup": "Atlanta Falcons @ Tennessee Titans",
+          "pick": "Atlanta Falcons",
+          "confidence": 55.87832034372716,
+          "result": "Tennessee Titans 28-23 Atlanta Falcons",
+          "correct": false
+        },
+        {
+          "gameId": 365944267,
+          "matchup": "Philadelphia Eagles @ Washington Commanders",
+          "pick": "Philadelphia Eagles",
+          "confidence": 76.4889829559749,
+          "result": "Washington Commanders 31-38 Philadelphia Eagles",
+          "correct": true
+        },
+        {
+          "gameId": 2215925820,
+          "matchup": "Cleveland Browns @ Seattle Seahawks",
+          "pick": "Seattle Seahawks",
+          "confidence": 62.17484883715591,
+          "result": "Seattle Seahawks 24-20 Cleveland Browns",
+          "correct": true
+        },
+        {
+          "gameId": 3866244948,
+          "matchup": "Baltimore Ravens @ Arizona Cardinals",
+          "pick": "Baltimore Ravens",
+          "confidence": 82.33267960312067,
+          "result": "Arizona Cardinals 24-31 Baltimore Ravens",
+          "correct": true
+        },
+        {
+          "gameId": 997985396,
+          "matchup": "Kansas City Chiefs @ Denver Broncos",
+          "pick": "Kansas City Chiefs",
+          "confidence": 76.8307376763669,
+          "result": "Denver Broncos 24-9 Kansas City Chiefs",
+          "correct": false
+        },
+        {
+          "gameId": 249128772,
+          "matchup": "Cincinnati Bengals @ San Francisco 49ers",
+          "pick": "San Francisco 49ers",
+          "confidence": 65.49184859524784,
+          "result": "San Francisco 49ers 17-31 Cincinnati Bengals",
+          "correct": false
+        },
+        {
+          "gameId": 1539274903,
+          "matchup": "Chicago Bears @ Los Angeles Chargers",
+          "pick": "Los Angeles Chargers",
+          "confidence": 78.61447512277617,
+          "result": "Los Angeles Chargers 30-13 Chicago Bears",
+          "correct": true
+        },
+        {
+          "gameId": 3583772462,
+          "matchup": "Las Vegas Raiders @ Detroit Lions",
+          "pick": "Detroit Lions",
+          "confidence": 74.18272390298326,
+          "result": "Detroit Lions 26-14 Las Vegas Raiders",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w9",
+      "label": "Week 9",
+      "runningSU": "90-46",
+      "runningATS": "68-60",
+      "games": [
+        {
+          "gameId": 3550227408,
+          "matchup": "Tennessee Titans @ Pittsburgh Steelers",
+          "pick": "Pittsburgh Steelers",
+          "confidence": 61.24523082734802,
+          "result": "Pittsburgh Steelers 20-16 Tennessee Titans",
+          "correct": true
+        },
+        {
+          "gameId": 1386920947,
+          "matchup": "Miami Dolphins @ Kansas City Chiefs",
+          "pick": "Kansas City Chiefs",
+          "confidence": 54.3203247706311,
+          "result": "Kansas City Chiefs 21-14 Miami Dolphins",
+          "correct": true
+        },
+        {
+          "gameId": 2342750861,
+          "matchup": "Minnesota Vikings @ Atlanta Falcons",
+          "pick": "Atlanta Falcons",
+          "confidence": 57.6870267110602,
+          "result": "Atlanta Falcons 28-31 Minnesota Vikings",
+          "correct": false
+        },
+        {
+          "gameId": 2498791826,
+          "matchup": "Seattle Seahawks @ Baltimore Ravens",
+          "pick": "Baltimore Ravens",
+          "confidence": 71.17390016514496,
+          "result": "Baltimore Ravens 37-3 Seattle Seahawks",
+          "correct": true
+        },
+        {
+          "gameId": 2419348550,
+          "matchup": "Arizona Cardinals @ Cleveland Browns",
+          "pick": "Cleveland Browns",
+          "confidence": 85.90544856161695,
+          "result": "Cleveland Browns 27-0 Arizona Cardinals",
+          "correct": true
+        },
+        {
+          "gameId": 1956513352,
+          "matchup": "Los Angeles Rams @ Green Bay Packers",
+          "pick": "Green Bay Packers",
+          "confidence": 60.282384635009,
+          "result": "Green Bay Packers 20-3 Los Angeles Rams",
+          "correct": true
+        },
+        {
+          "gameId": 1456082574,
+          "matchup": "Tampa Bay Buccaneers @ Houston Texans",
+          "pick": "Houston Texans",
+          "confidence": 59.48896542201678,
+          "result": "Houston Texans 39-37 Tampa Bay Buccaneers",
+          "correct": true
+        },
+        {
+          "gameId": 3696331592,
+          "matchup": "Washington Commanders @ New England Patriots",
+          "pick": "New England Patriots",
+          "confidence": 59.33017431210155,
+          "result": "New England Patriots 17-20 Washington Commanders",
+          "correct": false
+        },
+        {
+          "gameId": 4090478235,
+          "matchup": "Chicago Bears @ New Orleans Saints",
+          "pick": "New Orleans Saints",
+          "confidence": 78.2669545219575,
+          "result": "New Orleans Saints 24-17 Chicago Bears",
+          "correct": true
+        },
+        {
+          "gameId": 433555829,
+          "matchup": "Indianapolis Colts @ Carolina Panthers",
+          "pick": "Indianapolis Colts",
+          "confidence": 59.70755525310722,
+          "result": "Carolina Panthers 13-27 Indianapolis Colts",
+          "correct": true
+        },
+        {
+          "gameId": 2325751510,
+          "matchup": "New York Giants @ Las Vegas Raiders",
+          "pick": "Las Vegas Raiders",
+          "confidence": 51.6866335674954,
+          "result": "Las Vegas Raiders 30-6 New York Giants",
+          "correct": true
+        },
+        {
+          "gameId": 2515326596,
+          "matchup": "Dallas Cowboys @ Philadelphia Eagles",
+          "pick": "Philadelphia Eagles",
+          "confidence": 59.94935379468672,
+          "result": "Philadelphia Eagles 28-23 Dallas Cowboys",
+          "correct": true
+        },
+        {
+          "gameId": 3926392809,
+          "matchup": "Buffalo Bills @ Cincinnati Bengals",
+          "pick": "Cincinnati Bengals",
+          "confidence": 54.08346523766413,
+          "result": "Cincinnati Bengals 24-18 Buffalo Bills",
+          "correct": true
+        },
+        {
+          "gameId": 463296939,
+          "matchup": "Los Angeles Chargers @ New York Jets",
+          "pick": "Los Angeles Chargers",
+          "confidence": 61.01523586015005,
+          "result": "New York Jets 6-27 Los Angeles Chargers",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w10",
+      "label": "Week 10",
+      "runningSU": "98-52",
+      "runningATS": "74-67",
+      "games": [
+        {
+          "gameId": 265921904,
+          "matchup": "Carolina Panthers @ Chicago Bears",
+          "pick": "Chicago Bears",
+          "confidence": 61.189244344284674,
+          "result": "Chicago Bears 16-13 Carolina Panthers",
+          "correct": true
+        },
+        {
+          "gameId": 768094726,
+          "matchup": "Indianapolis Colts @ New England Patriots",
+          "pick": "Indianapolis Colts",
+          "confidence": 55.693066163270785,
+          "result": "New England Patriots 6-10 Indianapolis Colts",
+          "correct": true
+        },
+        {
+          "gameId": 1013473505,
+          "matchup": "Cleveland Browns @ Baltimore Ravens",
+          "pick": "Baltimore Ravens",
+          "confidence": 70.98749686237302,
+          "result": "Baltimore Ravens 31-33 Cleveland Browns",
+          "correct": false
+        },
+        {
+          "gameId": 1148733090,
+          "matchup": "Houston Texans @ Cincinnati Bengals",
+          "pick": "Cincinnati Bengals",
+          "confidence": 68.87355342770948,
+          "result": "Cincinnati Bengals 27-30 Houston Texans",
+          "correct": false
+        },
+        {
+          "gameId": 3411774976,
+          "matchup": "San Francisco 49ers @ Jacksonville Jaguars",
+          "pick": "San Francisco 49ers",
+          "confidence": 62.22591782484951,
+          "result": "Jacksonville Jaguars 3-34 San Francisco 49ers",
+          "correct": true
+        },
+        {
+          "gameId": 4060249417,
+          "matchup": "New Orleans Saints @ Minnesota Vikings",
+          "pick": "New Orleans Saints",
+          "confidence": 60.32184398049401,
+          "result": "Minnesota Vikings 27-19 New Orleans Saints",
+          "correct": false
+        },
+        {
+          "gameId": 2188576790,
+          "matchup": "Green Bay Packers @ Pittsburgh Steelers",
+          "pick": "Pittsburgh Steelers",
+          "confidence": 58.79651487900269,
+          "result": "Pittsburgh Steelers 23-19 Green Bay Packers",
+          "correct": true
+        },
+        {
+          "gameId": 1325553143,
+          "matchup": "Tennessee Titans @ Tampa Bay Buccaneers",
+          "pick": "Tampa Bay Buccaneers",
+          "confidence": 56.00382802378292,
+          "result": "Tampa Bay Buccaneers 20-6 Tennessee Titans",
+          "correct": true
+        },
+        {
+          "gameId": 102801925,
+          "matchup": "Atlanta Falcons @ Arizona Cardinals",
+          "pick": "Atlanta Falcons",
+          "confidence": 60.9779987236063,
+          "result": "Arizona Cardinals 25-23 Atlanta Falcons",
+          "correct": false
+        },
+        {
+          "gameId": 571299481,
+          "matchup": "Detroit Lions @ Los Angeles Chargers",
+          "pick": "Detroit Lions",
+          "confidence": 60.494403331076086,
+          "result": "Los Angeles Chargers 38-41 Detroit Lions",
+          "correct": true
+        },
+        {
+          "gameId": 109111531,
+          "matchup": "New York Giants @ Dallas Cowboys",
+          "pick": "Dallas Cowboys",
+          "confidence": 92.70887781088213,
+          "result": "Dallas Cowboys 49-17 New York Giants",
+          "correct": true
+        },
+        {
+          "gameId": 2016070446,
+          "matchup": "Washington Commanders @ Seattle Seahawks",
+          "pick": "Seattle Seahawks",
+          "confidence": 70.14592027780967,
+          "result": "Seattle Seahawks 29-26 Washington Commanders",
+          "correct": true
+        },
+        {
+          "gameId": 3964950457,
+          "matchup": "New York Jets @ Las Vegas Raiders",
+          "pick": "New York Jets",
+          "confidence": 54.40096388366502,
+          "result": "Las Vegas Raiders 16-12 New York Jets",
+          "correct": false
+        },
+        {
+          "gameId": 3719790806,
+          "matchup": "Denver Broncos @ Buffalo Bills",
+          "pick": "Buffalo Bills",
+          "confidence": 75.57799604338281,
+          "result": "Buffalo Bills 22-24 Denver Broncos",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w11",
+      "label": "Week 11",
+      "runningSU": "109-55",
+      "runningATS": "79-76",
+      "games": [
+        {
+          "gameId": 2014223990,
+          "matchup": "Cincinnati Bengals @ Baltimore Ravens",
+          "pick": "Baltimore Ravens",
+          "confidence": 64.32742533988868,
+          "result": "Baltimore Ravens 34-20 Cincinnati Bengals",
+          "correct": true
+        },
+        {
+          "gameId": 971157984,
+          "matchup": "Dallas Cowboys @ Carolina Panthers",
+          "pick": "Dallas Cowboys",
+          "confidence": 84.73201889125038,
+          "result": "Carolina Panthers 10-33 Dallas Cowboys",
+          "correct": true
+        },
+        {
+          "gameId": 1090275288,
+          "matchup": "Pittsburgh Steelers @ Cleveland Browns",
+          "pick": "Cleveland Browns",
+          "confidence": 58.82350269198251,
+          "result": "Cleveland Browns 13-10 Pittsburgh Steelers",
+          "correct": true
+        },
+        {
+          "gameId": 2068844688,
+          "matchup": "Chicago Bears @ Detroit Lions",
+          "pick": "Detroit Lions",
+          "confidence": 76.44536651492768,
+          "result": "Detroit Lions 31-26 Chicago Bears",
+          "correct": true
+        },
+        {
+          "gameId": 4185433412,
+          "matchup": "Los Angeles Chargers @ Green Bay Packers",
+          "pick": "Los Angeles Chargers",
+          "confidence": 63.41420128586546,
+          "result": "Green Bay Packers 23-20 Los Angeles Chargers",
+          "correct": false
+        },
+        {
+          "gameId": 2480706681,
+          "matchup": "Arizona Cardinals @ Houston Texans",
+          "pick": "Houston Texans",
+          "confidence": 67.72178438783413,
+          "result": "Houston Texans 21-16 Arizona Cardinals",
+          "correct": true
+        },
+        {
+          "gameId": 1145453443,
+          "matchup": "Tennessee Titans @ Jacksonville Jaguars",
+          "pick": "Jacksonville Jaguars",
+          "confidence": 71.20355799338782,
+          "result": "Jacksonville Jaguars 34-14 Tennessee Titans",
+          "correct": true
+        },
+        {
+          "gameId": 854911196,
+          "matchup": "Las Vegas Raiders @ Miami Dolphins",
+          "pick": "Miami Dolphins",
+          "confidence": 87.21118906794865,
+          "result": "Miami Dolphins 20-13 Las Vegas Raiders",
+          "correct": true
+        },
+        {
+          "gameId": 1589909004,
+          "matchup": "New York Giants @ Washington Commanders",
+          "pick": "Washington Commanders",
+          "confidence": 73.57659949118785,
+          "result": "Washington Commanders 19-31 New York Giants",
+          "correct": false
+        },
+        {
+          "gameId": 3770802034,
+          "matchup": "Tampa Bay Buccaneers @ San Francisco 49ers",
+          "pick": "San Francisco 49ers",
+          "confidence": 87.58212524818045,
+          "result": "San Francisco 49ers 27-14 Tampa Bay Buccaneers",
+          "correct": true
+        },
+        {
+          "gameId": 3238628063,
+          "matchup": "New York Jets @ Buffalo Bills",
+          "pick": "Buffalo Bills",
+          "confidence": 75.70552179608467,
+          "result": "Buffalo Bills 32-6 New York Jets",
+          "correct": true
+        },
+        {
+          "gameId": 3714386739,
+          "matchup": "Seattle Seahawks @ Los Angeles Rams",
+          "pick": "Los Angeles Rams",
+          "confidence": 56.67892514919588,
+          "result": "Los Angeles Rams 17-16 Seattle Seahawks",
+          "correct": true
+        },
+        {
+          "gameId": 3290172332,
+          "matchup": "Minnesota Vikings @ Denver Broncos",
+          "pick": "Denver Broncos",
+          "confidence": 53.86687597141335,
+          "result": "Denver Broncos 21-20 Minnesota Vikings",
+          "correct": true
+        },
+        {
+          "gameId": 1744211790,
+          "matchup": "Philadelphia Eagles @ Kansas City Chiefs",
+          "pick": "Kansas City Chiefs",
+          "confidence": 58.20468180246906,
+          "result": "Kansas City Chiefs 17-21 Philadelphia Eagles",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w12",
+      "label": "Week 12",
+      "runningSU": "121-59",
+      "runningATS": "91-80",
+      "games": [
+        {
+          "gameId": 2926040568,
+          "matchup": "Green Bay Packers @ Detroit Lions",
+          "pick": "Detroit Lions",
+          "confidence": 76.23755391884954,
+          "result": "Detroit Lions 22-29 Green Bay Packers",
+          "correct": false
+        },
+        {
+          "gameId": 1016466938,
+          "matchup": "Washington Commanders @ Dallas Cowboys",
+          "pick": "Dallas Cowboys",
+          "confidence": 87.23436417170977,
+          "result": "Dallas Cowboys 45-10 Washington Commanders",
+          "correct": true
+        },
+        {
+          "gameId": 774875566,
+          "matchup": "San Francisco 49ers @ Seattle Seahawks",
+          "pick": "San Francisco 49ers",
+          "confidence": 75.33455783559863,
+          "result": "Seattle Seahawks 13-31 San Francisco 49ers",
+          "correct": true
+        },
+        {
+          "gameId": 2634739046,
+          "matchup": "Miami Dolphins @ New York Jets",
+          "pick": "Miami Dolphins",
+          "confidence": 80.76663183963726,
+          "result": "New York Jets 13-34 Miami Dolphins",
+          "correct": true
+        },
+        {
+          "gameId": 3924981212,
+          "matchup": "New Orleans Saints @ Atlanta Falcons",
+          "pick": "New Orleans Saints",
+          "confidence": 59.18699690928084,
+          "result": "Atlanta Falcons 24-15 New Orleans Saints",
+          "correct": false
+        },
+        {
+          "gameId": 4266289105,
+          "matchup": "Pittsburgh Steelers @ Cincinnati Bengals",
+          "pick": "Pittsburgh Steelers",
+          "confidence": 55.996361489098746,
+          "result": "Cincinnati Bengals 10-16 Pittsburgh Steelers",
+          "correct": true
+        },
+        {
+          "gameId": 1375998473,
+          "matchup": "Jacksonville Jaguars @ Houston Texans",
+          "pick": "Jacksonville Jaguars",
+          "confidence": 55.04151884894279,
+          "result": "Houston Texans 21-24 Jacksonville Jaguars",
+          "correct": true
+        },
+        {
+          "gameId": 2200835359,
+          "matchup": "Tampa Bay Buccaneers @ Indianapolis Colts",
+          "pick": "Indianapolis Colts",
+          "confidence": 56.82062728314368,
+          "result": "Indianapolis Colts 27-20 Tampa Bay Buccaneers",
+          "correct": true
+        },
+        {
+          "gameId": 2342651887,
+          "matchup": "New England Patriots @ New York Giants",
+          "pick": "New England Patriots",
+          "confidence": 68.16509564614294,
+          "result": "New York Giants 10-7 New England Patriots",
+          "correct": false
+        },
+        {
+          "gameId": 1165911251,
+          "matchup": "Carolina Panthers @ Tennessee Titans",
+          "pick": "Tennessee Titans",
+          "confidence": 61.676474360715495,
+          "result": "Tennessee Titans 17-10 Carolina Panthers",
+          "correct": true
+        },
+        {
+          "gameId": 16411933,
+          "matchup": "Los Angeles Rams @ Arizona Cardinals",
+          "pick": "Los Angeles Rams",
+          "confidence": 63.482698894880066,
+          "result": "Arizona Cardinals 14-37 Los Angeles Rams",
+          "correct": true
+        },
+        {
+          "gameId": 641016899,
+          "matchup": "Cleveland Browns @ Denver Broncos",
+          "pick": "Denver Broncos",
+          "confidence": 51.05961624704025,
+          "result": "Denver Broncos 29-12 Cleveland Browns",
+          "correct": true
+        },
+        {
+          "gameId": 1926862332,
+          "matchup": "Kansas City Chiefs @ Las Vegas Raiders",
+          "pick": "Kansas City Chiefs",
+          "confidence": 80.63344331029722,
+          "result": "Las Vegas Raiders 17-31 Kansas City Chiefs",
+          "correct": true
+        },
+        {
+          "gameId": 641743248,
+          "matchup": "Buffalo Bills @ Philadelphia Eagles",
+          "pick": "Philadelphia Eagles",
+          "confidence": 59.80947797146723,
+          "result": "Philadelphia Eagles 37-34 Buffalo Bills",
+          "correct": true
+        },
+        {
+          "gameId": 1115496981,
+          "matchup": "Baltimore Ravens @ Los Angeles Chargers",
+          "pick": "Baltimore Ravens",
+          "confidence": 64.71355340498998,
+          "result": "Los Angeles Chargers 10-20 Baltimore Ravens",
+          "correct": true
+        },
+        {
+          "gameId": 1765560456,
+          "matchup": "Chicago Bears @ Minnesota Vikings",
+          "pick": "Minnesota Vikings",
+          "confidence": 62.11655658377235,
+          "result": "Minnesota Vikings 10-12 Chicago Bears",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w13",
+      "label": "Week 13",
+      "runningSU": "131-62",
+      "runningATS": "99-85",
+      "games": [
+        {
+          "gameId": 2306247175,
+          "matchup": "Seattle Seahawks @ Dallas Cowboys",
+          "pick": "Dallas Cowboys",
+          "confidence": 80.52260683090047,
+          "result": "Dallas Cowboys 41-35 Seattle Seahawks",
+          "correct": true
+        },
+        {
+          "gameId": 3633664178,
+          "matchup": "Denver Broncos @ Houston Texans",
+          "pick": "Houston Texans",
+          "confidence": 58.88935772940529,
+          "result": "Houston Texans 22-17 Denver Broncos",
+          "correct": true
+        },
+        {
+          "gameId": 1981483478,
+          "matchup": "Los Angeles Chargers @ New England Patriots",
+          "pick": "Los Angeles Chargers",
+          "confidence": 65.84433009580174,
+          "result": "New England Patriots 0-6 Los Angeles Chargers",
+          "correct": true
+        },
+        {
+          "gameId": 529691691,
+          "matchup": "Detroit Lions @ New Orleans Saints",
+          "pick": "Detroit Lions",
+          "confidence": 64.1758468411352,
+          "result": "New Orleans Saints 28-33 Detroit Lions",
+          "correct": true
+        },
+        {
+          "gameId": 3983132999,
+          "matchup": "Atlanta Falcons @ New York Jets",
+          "pick": "Atlanta Falcons",
+          "confidence": 59.79526852410638,
+          "result": "New York Jets 8-13 Atlanta Falcons",
+          "correct": true
+        },
+        {
+          "gameId": 727420154,
+          "matchup": "Arizona Cardinals @ Pittsburgh Steelers",
+          "pick": "Pittsburgh Steelers",
+          "confidence": 71.56328647181593,
+          "result": "Pittsburgh Steelers 10-24 Arizona Cardinals",
+          "correct": false
+        },
+        {
+          "gameId": 4157273459,
+          "matchup": "Indianapolis Colts @ Tennessee Titans",
+          "pick": "Indianapolis Colts",
+          "confidence": 56.9792808438286,
+          "result": "Tennessee Titans 28-31 Indianapolis Colts",
+          "correct": true
+        },
+        {
+          "gameId": 168933965,
+          "matchup": "Miami Dolphins @ Washington Commanders",
+          "pick": "Miami Dolphins",
+          "confidence": 79.24906326554336,
+          "result": "Washington Commanders 15-45 Miami Dolphins",
+          "correct": true
+        },
+        {
+          "gameId": 2410371399,
+          "matchup": "Carolina Panthers @ Tampa Bay Buccaneers",
+          "pick": "Tampa Bay Buccaneers",
+          "confidence": 64.96596864204062,
+          "result": "Tampa Bay Buccaneers 21-18 Carolina Panthers",
+          "correct": true
+        },
+        {
+          "gameId": 713170342,
+          "matchup": "Cleveland Browns @ Los Angeles Rams",
+          "pick": "Los Angeles Rams",
+          "confidence": 58.738141403702585,
+          "result": "Los Angeles Rams 36-19 Cleveland Browns",
+          "correct": true
+        },
+        {
+          "gameId": 171324923,
+          "matchup": "San Francisco 49ers @ Philadelphia Eagles",
+          "pick": "San Francisco 49ers",
+          "confidence": 60.33812870567483,
+          "result": "Philadelphia Eagles 19-42 San Francisco 49ers",
+          "correct": true
+        },
+        {
+          "gameId": 3958502196,
+          "matchup": "Kansas City Chiefs @ Green Bay Packers",
+          "pick": "Kansas City Chiefs",
+          "confidence": 69.87268324570167,
+          "result": "Green Bay Packers 27-19 Kansas City Chiefs",
+          "correct": false
+        },
+        {
+          "gameId": 2838676692,
+          "matchup": "Cincinnati Bengals @ Jacksonville Jaguars",
+          "pick": "Jacksonville Jaguars",
+          "confidence": 78.7798855976639,
+          "result": "Jacksonville Jaguars 31-34 Cincinnati Bengals",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w14",
+      "label": "Week 14",
+      "runningSU": "138-70",
+      "runningATS": "103-95",
+      "games": [
+        {
+          "gameId": 1357035890,
+          "matchup": "New England Patriots @ Pittsburgh Steelers",
+          "pick": "Pittsburgh Steelers",
+          "confidence": 69.67369147261643,
+          "result": "Pittsburgh Steelers 18-21 New England Patriots",
+          "correct": false
+        },
+        {
+          "gameId": 3527087539,
+          "matchup": "Tampa Bay Buccaneers @ Atlanta Falcons",
+          "pick": "Atlanta Falcons",
+          "confidence": 53.15406990122589,
+          "result": "Atlanta Falcons 25-29 Tampa Bay Buccaneers",
+          "correct": false
+        },
+        {
+          "gameId": 33511026,
+          "matchup": "Los Angeles Rams @ Baltimore Ravens",
+          "pick": "Baltimore Ravens",
+          "confidence": 75.94011206559524,
+          "result": "Baltimore Ravens 37-31 Los Angeles Rams",
+          "correct": true
+        },
+        {
+          "gameId": 2934300179,
+          "matchup": "Detroit Lions @ Chicago Bears",
+          "pick": "Detroit Lions",
+          "confidence": 63.8339376672097,
+          "result": "Chicago Bears 28-13 Detroit Lions",
+          "correct": false
+        },
+        {
+          "gameId": 2328463811,
+          "matchup": "Indianapolis Colts @ Cincinnati Bengals",
+          "pick": "Cincinnati Bengals",
+          "confidence": 60.11032370844247,
+          "result": "Cincinnati Bengals 34-14 Indianapolis Colts",
+          "correct": true
+        },
+        {
+          "gameId": 2747415293,
+          "matchup": "Jacksonville Jaguars @ Cleveland Browns",
+          "pick": "Cleveland Browns",
+          "confidence": 57.17831504293205,
+          "result": "Cleveland Browns 31-27 Jacksonville Jaguars",
+          "correct": true
+        },
+        {
+          "gameId": 3330956541,
+          "matchup": "Carolina Panthers @ New Orleans Saints",
+          "pick": "New Orleans Saints",
+          "confidence": 69.43849924808035,
+          "result": "New Orleans Saints 28-6 Carolina Panthers",
+          "correct": true
+        },
+        {
+          "gameId": 2576690357,
+          "matchup": "Houston Texans @ New York Jets",
+          "pick": "Houston Texans",
+          "confidence": 65.44937869459237,
+          "result": "New York Jets 30-6 Houston Texans",
+          "correct": false
+        },
+        {
+          "gameId": 3425948882,
+          "matchup": "Minnesota Vikings @ Las Vegas Raiders",
+          "pick": "Minnesota Vikings",
+          "confidence": 62.96967394682989,
+          "result": "Las Vegas Raiders 0-3 Minnesota Vikings",
+          "correct": true
+        },
+        {
+          "gameId": 3449826716,
+          "matchup": "Seattle Seahawks @ San Francisco 49ers",
+          "pick": "San Francisco 49ers",
+          "confidence": 89.400805798074,
+          "result": "San Francisco 49ers 28-16 Seattle Seahawks",
+          "correct": true
+        },
+        {
+          "gameId": 1188837593,
+          "matchup": "Buffalo Bills @ Kansas City Chiefs",
+          "pick": "Kansas City Chiefs",
+          "confidence": 54.93282361455278,
+          "result": "Kansas City Chiefs 17-20 Buffalo Bills",
+          "correct": false
+        },
+        {
+          "gameId": 360098335,
+          "matchup": "Denver Broncos @ Los Angeles Chargers",
+          "pick": "Los Angeles Chargers",
+          "confidence": 59.27480762656781,
+          "result": "Los Angeles Chargers 7-24 Denver Broncos",
+          "correct": false
+        },
+        {
+          "gameId": 1765007054,
+          "matchup": "Philadelphia Eagles @ Dallas Cowboys",
+          "pick": "Dallas Cowboys",
+          "confidence": 63.26094284354505,
+          "result": "Dallas Cowboys 33-13 Philadelphia Eagles",
+          "correct": true
+        },
+        {
+          "gameId": 3890140382,
+          "matchup": "Tennessee Titans @ Miami Dolphins",
+          "pick": "Miami Dolphins",
+          "confidence": 87.63056994877962,
+          "result": "Miami Dolphins 27-28 Tennessee Titans",
+          "correct": false
+        },
+        {
+          "gameId": 654449637,
+          "matchup": "Green Bay Packers @ New York Giants",
+          "pick": "Green Bay Packers",
+          "confidence": 73.05523329864124,
+          "result": "New York Giants 24-22 Green Bay Packers",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w15",
+      "label": "Week 15",
+      "runningSU": "150-74",
+      "runningATS": "112-99",
+      "games": [
+        {
+          "gameId": 337680571,
+          "matchup": "Los Angeles Chargers @ Las Vegas Raiders",
+          "pick": "Las Vegas Raiders",
+          "confidence": 58.0268119359177,
+          "result": "Las Vegas Raiders 63-21 Los Angeles Chargers",
+          "correct": true
+        },
+        {
+          "gameId": 908681417,
+          "matchup": "Minnesota Vikings @ Cincinnati Bengals",
+          "pick": "Cincinnati Bengals",
+          "confidence": 59.7486129229121,
+          "result": "Cincinnati Bengals 27-24 Minnesota Vikings",
+          "correct": true
+        },
+        {
+          "gameId": 445798383,
+          "matchup": "Pittsburgh Steelers @ Indianapolis Colts",
+          "pick": "Indianapolis Colts",
+          "confidence": 54.03595775332164,
+          "result": "Indianapolis Colts 30-13 Pittsburgh Steelers",
+          "correct": true
+        },
+        {
+          "gameId": 2153371365,
+          "matchup": "Denver Broncos @ Detroit Lions",
+          "pick": "Detroit Lions",
+          "confidence": 64.38007621354252,
+          "result": "Detroit Lions 42-17 Denver Broncos",
+          "correct": true
+        },
+        {
+          "gameId": 2183697722,
+          "matchup": "Atlanta Falcons @ Carolina Panthers",
+          "pick": "Atlanta Falcons",
+          "confidence": 64.1257914539129,
+          "result": "Carolina Panthers 9-7 Atlanta Falcons",
+          "correct": false
+        },
+        {
+          "gameId": 3236601691,
+          "matchup": "Chicago Bears @ Cleveland Browns",
+          "pick": "Cleveland Browns",
+          "confidence": 61.98306996514654,
+          "result": "Cleveland Browns 20-17 Chicago Bears",
+          "correct": true
+        },
+        {
+          "gameId": 183948006,
+          "matchup": "Tampa Bay Buccaneers @ Green Bay Packers",
+          "pick": "Green Bay Packers",
+          "confidence": 61.811834553173426,
+          "result": "Green Bay Packers 20-34 Tampa Bay Buccaneers",
+          "correct": false
+        },
+        {
+          "gameId": 127170415,
+          "matchup": "New York Jets @ Miami Dolphins",
+          "pick": "Miami Dolphins",
+          "confidence": 75.43855368613703,
+          "result": "Miami Dolphins 30-0 New York Jets",
+          "correct": true
+        },
+        {
+          "gameId": 2057529782,
+          "matchup": "Kansas City Chiefs @ New England Patriots",
+          "pick": "Kansas City Chiefs",
+          "confidence": 82.0095673274981,
+          "result": "New England Patriots 17-27 Kansas City Chiefs",
+          "correct": true
+        },
+        {
+          "gameId": 1556132620,
+          "matchup": "New York Giants @ New Orleans Saints",
+          "pick": "New Orleans Saints",
+          "confidence": 70.28069603909563,
+          "result": "New Orleans Saints 24-6 New York Giants",
+          "correct": true
+        },
+        {
+          "gameId": 1361255476,
+          "matchup": "Houston Texans @ Tennessee Titans",
+          "pick": "Tennessee Titans",
+          "confidence": 58.301613525871446,
+          "result": "Tennessee Titans 16-19 Houston Texans",
+          "correct": false
+        },
+        {
+          "gameId": 2805177500,
+          "matchup": "San Francisco 49ers @ Arizona Cardinals",
+          "pick": "San Francisco 49ers",
+          "confidence": 87.74937403191603,
+          "result": "Arizona Cardinals 29-45 San Francisco 49ers",
+          "correct": true
+        },
+        {
+          "gameId": 3441301397,
+          "matchup": "Washington Commanders @ Los Angeles Rams",
+          "pick": "Los Angeles Rams",
+          "confidence": 73.23871295752747,
+          "result": "Los Angeles Rams 28-20 Washington Commanders",
+          "correct": true
+        },
+        {
+          "gameId": 3697779019,
+          "matchup": "Dallas Cowboys @ Buffalo Bills",
+          "pick": "Buffalo Bills",
+          "confidence": 53.41464076055386,
+          "result": "Buffalo Bills 31-10 Dallas Cowboys",
+          "correct": true
+        },
+        {
+          "gameId": 3866115499,
+          "matchup": "Baltimore Ravens @ Jacksonville Jaguars",
+          "pick": "Baltimore Ravens",
+          "confidence": 67.54779409090615,
+          "result": "Jacksonville Jaguars 7-23 Baltimore Ravens",
+          "correct": true
+        },
+        {
+          "gameId": 136421035,
+          "matchup": "Philadelphia Eagles @ Seattle Seahawks",
+          "pick": "Philadelphia Eagles",
+          "confidence": 68.02101662172979,
+          "result": "Seattle Seahawks 20-17 Philadelphia Eagles",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w16",
+      "label": "Week 16",
+      "runningSU": "161-79",
+      "runningATS": "118-108",
+      "games": [
+        {
+          "gameId": 2222494562,
+          "matchup": "New Orleans Saints @ Los Angeles Rams",
+          "pick": "Los Angeles Rams",
+          "confidence": 63.43112030255311,
+          "result": "Los Angeles Rams 30-22 New Orleans Saints",
+          "correct": true
+        },
+        {
+          "gameId": 526387481,
+          "matchup": "Cincinnati Bengals @ Pittsburgh Steelers",
+          "pick": "Cincinnati Bengals",
+          "confidence": 63.54620372580103,
+          "result": "Pittsburgh Steelers 34-11 Cincinnati Bengals",
+          "correct": false
+        },
+        {
+          "gameId": 4236615231,
+          "matchup": "Buffalo Bills @ Los Angeles Chargers",
+          "pick": "Buffalo Bills",
+          "confidence": 87.66593954655336,
+          "result": "Los Angeles Chargers 22-24 Buffalo Bills",
+          "correct": true
+        },
+        {
+          "gameId": 2520134676,
+          "matchup": "Indianapolis Colts @ Atlanta Falcons",
+          "pick": "Atlanta Falcons",
+          "confidence": 57.617942946816356,
+          "result": "Atlanta Falcons 29-10 Indianapolis Colts",
+          "correct": true
+        },
+        {
+          "gameId": 4221683075,
+          "matchup": "Green Bay Packers @ Carolina Panthers",
+          "pick": "Green Bay Packers",
+          "confidence": 65.98651113954595,
+          "result": "Carolina Panthers 30-33 Green Bay Packers",
+          "correct": true
+        },
+        {
+          "gameId": 2841699592,
+          "matchup": "Cleveland Browns @ Houston Texans",
+          "pick": "Cleveland Browns",
+          "confidence": 61.90352608815801,
+          "result": "Houston Texans 22-36 Cleveland Browns",
+          "correct": true
+        },
+        {
+          "gameId": 759611271,
+          "matchup": "Detroit Lions @ Minnesota Vikings",
+          "pick": "Detroit Lions",
+          "confidence": 59.25758115578266,
+          "result": "Minnesota Vikings 24-30 Detroit Lions",
+          "correct": true
+        },
+        {
+          "gameId": 1106316950,
+          "matchup": "Washington Commanders @ New York Jets",
+          "pick": "New York Jets",
+          "confidence": 61.97819668586659,
+          "result": "New York Jets 30-28 Washington Commanders",
+          "correct": true
+        },
+        {
+          "gameId": 3290484386,
+          "matchup": "Seattle Seahawks @ Tennessee Titans",
+          "pick": "Seattle Seahawks",
+          "confidence": 60.148130200127795,
+          "result": "Tennessee Titans 17-20 Seattle Seahawks",
+          "correct": true
+        },
+        {
+          "gameId": 1322466749,
+          "matchup": "Jacksonville Jaguars @ Tampa Bay Buccaneers",
+          "pick": "Jacksonville Jaguars",
+          "confidence": 56.004327597247205,
+          "result": "Tampa Bay Buccaneers 30-12 Jacksonville Jaguars",
+          "correct": false
+        },
+        {
+          "gameId": 3352239018,
+          "matchup": "Arizona Cardinals @ Chicago Bears",
+          "pick": "Chicago Bears",
+          "confidence": 65.01912355897998,
+          "result": "Chicago Bears 27-16 Arizona Cardinals",
+          "correct": true
+        },
+        {
+          "gameId": 4105138114,
+          "matchup": "Dallas Cowboys @ Miami Dolphins",
+          "pick": "Miami Dolphins",
+          "confidence": 51.17895595401703,
+          "result": "Miami Dolphins 22-20 Dallas Cowboys",
+          "correct": true
+        },
+        {
+          "gameId": 1856803326,
+          "matchup": "New England Patriots @ Denver Broncos",
+          "pick": "Denver Broncos",
+          "confidence": 72.83237412899204,
+          "result": "Denver Broncos 23-26 New England Patriots",
+          "correct": false
+        },
+        {
+          "gameId": 73852236,
+          "matchup": "Las Vegas Raiders @ Kansas City Chiefs",
+          "pick": "Kansas City Chiefs",
+          "confidence": 82.75901770549548,
+          "result": "Kansas City Chiefs 14-20 Las Vegas Raiders",
+          "correct": false
+        },
+        {
+          "gameId": 3754906455,
+          "matchup": "New York Giants @ Philadelphia Eagles",
+          "pick": "Philadelphia Eagles",
+          "confidence": 87.88170836651041,
+          "result": "Philadelphia Eagles 33-25 New York Giants",
+          "correct": true
+        },
+        {
+          "gameId": 377315622,
+          "matchup": "Baltimore Ravens @ San Francisco 49ers",
+          "pick": "San Francisco 49ers",
+          "confidence": 70.92494018235476,
+          "result": "San Francisco 49ers 19-33 Baltimore Ravens",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w17",
+      "label": "Week 17",
+      "runningSU": "173-83",
+      "runningATS": "126-116",
+      "games": [
+        {
+          "gameId": 3068303106,
+          "matchup": "New York Jets @ Cleveland Browns",
+          "pick": "Cleveland Browns",
+          "confidence": 71.98659686811382,
+          "result": "Cleveland Browns 37-20 New York Jets",
+          "correct": true
+        },
+        {
+          "gameId": 3828078761,
+          "matchup": "Detroit Lions @ Dallas Cowboys",
+          "pick": "Dallas Cowboys",
+          "confidence": 68.85668992049072,
+          "result": "Dallas Cowboys 20-19 Detroit Lions",
+          "correct": true
+        },
+        {
+          "gameId": 2387553991,
+          "matchup": "Miami Dolphins @ Baltimore Ravens",
+          "pick": "Baltimore Ravens",
+          "confidence": 61.31457605216673,
+          "result": "Baltimore Ravens 56-19 Miami Dolphins",
+          "correct": true
+        },
+        {
+          "gameId": 597317349,
+          "matchup": "New England Patriots @ Buffalo Bills",
+          "pick": "Buffalo Bills",
+          "confidence": 89.71350846853251,
+          "result": "Buffalo Bills 27-21 New England Patriots",
+          "correct": true
+        },
+        {
+          "gameId": 1816002148,
+          "matchup": "Atlanta Falcons @ Chicago Bears",
+          "pick": "Chicago Bears",
+          "confidence": 58.56554269820642,
+          "result": "Chicago Bears 37-17 Atlanta Falcons",
+          "correct": true
+        },
+        {
+          "gameId": 2533968966,
+          "matchup": "Tennessee Titans @ Houston Texans",
+          "pick": "Houston Texans",
+          "confidence": 64.11208907798361,
+          "result": "Houston Texans 26-3 Tennessee Titans",
+          "correct": true
+        },
+        {
+          "gameId": 2482922238,
+          "matchup": "Las Vegas Raiders @ Indianapolis Colts",
+          "pick": "Indianapolis Colts",
+          "confidence": 60.26196216957271,
+          "result": "Indianapolis Colts 23-20 Las Vegas Raiders",
+          "correct": true
+        },
+        {
+          "gameId": 635384180,
+          "matchup": "Carolina Panthers @ Jacksonville Jaguars",
+          "pick": "Jacksonville Jaguars",
+          "confidence": 62.5448052259321,
+          "result": "Jacksonville Jaguars 26-0 Carolina Panthers",
+          "correct": true
+        },
+        {
+          "gameId": 2392396508,
+          "matchup": "Los Angeles Rams @ New York Giants",
+          "pick": "Los Angeles Rams",
+          "confidence": 73.33538039093175,
+          "result": "New York Giants 25-26 Los Angeles Rams",
+          "correct": true
+        },
+        {
+          "gameId": 630416680,
+          "matchup": "Arizona Cardinals @ Philadelphia Eagles",
+          "pick": "Philadelphia Eagles",
+          "confidence": 84.5662408944973,
+          "result": "Philadelphia Eagles 31-35 Arizona Cardinals",
+          "correct": false
+        },
+        {
+          "gameId": 3486636932,
+          "matchup": "New Orleans Saints @ Tampa Bay Buccaneers",
+          "pick": "Tampa Bay Buccaneers",
+          "confidence": 58.10288665780645,
+          "result": "Tampa Bay Buccaneers 13-23 New Orleans Saints",
+          "correct": false
+        },
+        {
+          "gameId": 3887299081,
+          "matchup": "San Francisco 49ers @ Washington Commanders",
+          "pick": "San Francisco 49ers",
+          "confidence": 89.89033409453083,
+          "result": "Washington Commanders 10-27 San Francisco 49ers",
+          "correct": true
+        },
+        {
+          "gameId": 1089018831,
+          "matchup": "Pittsburgh Steelers @ Seattle Seahawks",
+          "pick": "Seattle Seahawks",
+          "confidence": 63.305753680511415,
+          "result": "Seattle Seahawks 23-30 Pittsburgh Steelers",
+          "correct": false
+        },
+        {
+          "gameId": 4278552582,
+          "matchup": "Los Angeles Chargers @ Denver Broncos",
+          "pick": "Denver Broncos",
+          "confidence": 61.513966672833995,
+          "result": "Denver Broncos 16-9 Los Angeles Chargers",
+          "correct": true
+        },
+        {
+          "gameId": 1571109783,
+          "matchup": "Cincinnati Bengals @ Kansas City Chiefs",
+          "pick": "Kansas City Chiefs",
+          "confidence": 73.2438798716647,
+          "result": "Kansas City Chiefs 25-17 Cincinnati Bengals",
+          "correct": true
+        },
+        {
+          "gameId": 937922264,
+          "matchup": "Green Bay Packers @ Minnesota Vikings",
+          "pick": "Minnesota Vikings",
+          "confidence": 51.725139268485684,
+          "result": "Minnesota Vikings 10-33 Green Bay Packers",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "columnId": "2023-week-w18",
+      "label": "Week 18",
+      "runningSU": "184-88",
+      "runningATS": "136-122",
+      "games": [
+        {
+          "gameId": 429877258,
+          "matchup": "Pittsburgh Steelers @ Baltimore Ravens",
+          "pick": "Pittsburgh Steelers",
+          "confidence": 56.37649311502433,
+          "result": "Baltimore Ravens 10-17 Pittsburgh Steelers",
+          "correct": true
+        },
+        {
+          "gameId": 3870869617,
+          "matchup": "Houston Texans @ Indianapolis Colts",
+          "pick": "Houston Texans",
+          "confidence": 55.37646981658928,
+          "result": "Indianapolis Colts 19-23 Houston Texans",
+          "correct": true
+        },
+        {
+          "gameId": 4176987106,
+          "matchup": "Tampa Bay Buccaneers @ Carolina Panthers",
+          "pick": "Tampa Bay Buccaneers",
+          "confidence": 70.80856217903231,
+          "result": "Carolina Panthers 0-9 Tampa Bay Buccaneers",
+          "correct": true
+        },
+        {
+          "gameId": 3638637916,
+          "matchup": "Cleveland Browns @ Cincinnati Bengals",
+          "pick": "Cincinnati Bengals",
+          "confidence": 69.88447455191863,
+          "result": "Cincinnati Bengals 31-14 Cleveland Browns",
+          "correct": true
+        },
+        {
+          "gameId": 574085885,
+          "matchup": "Minnesota Vikings @ Detroit Lions",
+          "pick": "Detroit Lions",
+          "confidence": 62.62014304490816,
+          "result": "Detroit Lions 30-20 Minnesota Vikings",
+          "correct": true
+        },
+        {
+          "gameId": 3759383894,
+          "matchup": "New York Jets @ New England Patriots",
+          "pick": "New England Patriots",
+          "confidence": 59.32993628967156,
+          "result": "New England Patriots 3-17 New York Jets",
+          "correct": false
+        },
+        {
+          "gameId": 839376694,
+          "matchup": "Atlanta Falcons @ New Orleans Saints",
+          "pick": "New Orleans Saints",
+          "confidence": 62.718665138250664,
+          "result": "New Orleans Saints 48-17 Atlanta Falcons",
+          "correct": true
+        },
+        {
+          "gameId": 929397176,
+          "matchup": "Jacksonville Jaguars @ Tennessee Titans",
+          "pick": "Jacksonville Jaguars",
+          "confidence": 63.778419205458746,
+          "result": "Tennessee Titans 28-20 Jacksonville Jaguars",
+          "correct": false
+        },
+        {
+          "gameId": 3573918941,
+          "matchup": "Seattle Seahawks @ Arizona Cardinals",
+          "pick": "Seattle Seahawks",
+          "confidence": 61.20548363413143,
+          "result": "Arizona Cardinals 20-21 Seattle Seahawks",
+          "correct": true
+        },
+        {
+          "gameId": 1207515955,
+          "matchup": "Chicago Bears @ Green Bay Packers",
+          "pick": "Green Bay Packers",
+          "confidence": 58.64431596878753,
+          "result": "Green Bay Packers 17-9 Chicago Bears",
+          "correct": true
+        },
+        {
+          "gameId": 2338285896,
+          "matchup": "Kansas City Chiefs @ Los Angeles Chargers",
+          "pick": "Los Angeles Chargers",
+          "confidence": 56.87077465711617,
+          "result": "Los Angeles Chargers 12-13 Kansas City Chiefs",
+          "correct": false
+        },
+        {
+          "gameId": 3327667899,
+          "matchup": "Denver Broncos @ Las Vegas Raiders",
+          "pick": "Las Vegas Raiders",
+          "confidence": 62.021376888842774,
+          "result": "Las Vegas Raiders 27-14 Denver Broncos",
+          "correct": true
+        },
+        {
+          "gameId": 3105618665,
+          "matchup": "Philadelphia Eagles @ New York Giants",
+          "pick": "Philadelphia Eagles",
+          "confidence": 68.22347364872753,
+          "result": "New York Giants 27-10 Philadelphia Eagles",
+          "correct": false
+        },
+        {
+          "gameId": 1345321242,
+          "matchup": "Los Angeles Rams @ San Francisco 49ers",
+          "pick": "San Francisco 49ers",
+          "confidence": 69.79600467578652,
+          "result": "San Francisco 49ers 20-21 Los Angeles Rams",
+          "correct": false
+        },
+        {
+          "gameId": 3927657668,
+          "matchup": "Dallas Cowboys @ Washington Commanders",
+          "pick": "Dallas Cowboys",
+          "confidence": 88.301396276726,
+          "result": "Washington Commanders 10-38 Dallas Cowboys",
+          "correct": true
+        },
+        {
+          "gameId": 990685108,
+          "matchup": "Buffalo Bills @ Miami Dolphins",
+          "pick": "Buffalo Bills",
+          "confidence": 61.67921122234332,
+          "result": "Miami Dolphins 14-21 Buffalo Bills",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "columnId": "2023-nfl-wild-card",
+      "label": "Wild Card",
+      "runningSU": "187-91",
+      "runningATS": "138-126",
+      "games": [
+        {
+          "gameId": 668801057,
+          "matchup": "Cleveland Browns @ Houston Texans",
+          "pick": "Cleveland Browns",
+          "confidence": 61.498404564087906,
+          "result": "Houston Texans 45-14 Cleveland Browns",
+          "correct": false
+        },
+        {
+          "gameId": 322616836,
+          "matchup": "Miami Dolphins @ Kansas City Chiefs",
+          "pick": "Kansas City Chiefs",
+          "confidence": 65.51380849910439,
+          "result": "Kansas City Chiefs 26-7 Miami Dolphins",
+          "correct": true
+        },
+        {
+          "gameId": 2146912743,
+          "matchup": "Green Bay Packers @ Dallas Cowboys",
+          "pick": "Dallas Cowboys",
+          "confidence": 72.02554875704337,
+          "result": "Dallas Cowboys 32-48 Green Bay Packers",
+          "correct": false
+        },
+        {
+          "gameId": 140292537,
+          "matchup": "Los Angeles Rams @ Detroit Lions",
+          "pick": "Detroit Lions",
+          "confidence": 60.45567547006001,
+          "result": "Detroit Lions 24-23 Los Angeles Rams",
+          "correct": true
+        },
+        {
+          "gameId": 2054246595,
+          "matchup": "Pittsburgh Steelers @ Buffalo Bills",
+          "pick": "Buffalo Bills",
+          "confidence": 80.99710272705379,
+          "result": "Buffalo Bills 31-17 Pittsburgh Steelers",
+          "correct": true
+        },
+        {
+          "gameId": 225876922,
+          "matchup": "Philadelphia Eagles @ Tampa Bay Buccaneers",
+          "pick": "Philadelphia Eagles",
+          "confidence": 56.89964104026408,
+          "result": "Tampa Bay Buccaneers 32-9 Philadelphia Eagles",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "columnId": "2023-nfl-divisional",
+      "label": "Divisional",
+      "runningSU": "190-92",
+      "runningATS": "140-128",
+      "games": [
+        {
+          "gameId": 1353843460,
+          "matchup": "Houston Texans @ Baltimore Ravens",
+          "pick": "Baltimore Ravens",
+          "confidence": 81.65054310015796,
+          "result": "Baltimore Ravens 34-10 Houston Texans",
+          "correct": true
+        },
+        {
+          "gameId": 685256551,
+          "matchup": "Green Bay Packers @ San Francisco 49ers",
+          "pick": "San Francisco 49ers",
+          "confidence": 81.33617038350714,
+          "result": "San Francisco 49ers 24-21 Green Bay Packers",
+          "correct": true
+        },
+        {
+          "gameId": 3907167972,
+          "matchup": "Tampa Bay Buccaneers @ Detroit Lions",
+          "pick": "Detroit Lions",
+          "confidence": 67.03232797560689,
+          "result": "Detroit Lions 31-23 Tampa Bay Buccaneers",
+          "correct": true
+        },
+        {
+          "gameId": 794197600,
+          "matchup": "Kansas City Chiefs @ Buffalo Bills",
+          "pick": "Buffalo Bills",
+          "confidence": 58.45208340974186,
+          "result": "Buffalo Bills 24-27 Kansas City Chiefs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "columnId": "2023-nfl-conference",
+      "label": "Conf Champ",
+      "runningSU": "191-93",
+      "runningATS": "140-130",
+      "games": [
+        {
+          "gameId": 558255455,
+          "matchup": "Kansas City Chiefs @ Baltimore Ravens",
+          "pick": "Baltimore Ravens",
+          "confidence": 65.53702033987237,
+          "result": "Baltimore Ravens 10-17 Kansas City Chiefs",
+          "correct": false
+        },
+        {
+          "gameId": 4091938870,
+          "matchup": "Detroit Lions @ San Francisco 49ers",
+          "pick": "San Francisco 49ers",
+          "confidence": 73.73276251357615,
+          "result": "San Francisco 49ers 34-31 Detroit Lions",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "columnId": "2023-nfl-super-bowl",
+      "label": "Bowl Season",
+      "runningSU": "191-94",
+      "runningATS": "140-131",
+      "games": [
+        {
+          "gameId": 3985149686,
+          "matchup": "San Francisco 49ers @ Kansas City Chiefs",
+          "pick": "San Francisco 49ers",
+          "confidence": 54.4964393383461,
+          "result": "Kansas City Chiefs 25-22 San Francisco 49ers",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

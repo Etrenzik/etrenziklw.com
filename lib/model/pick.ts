@@ -1,4 +1,4 @@
-import { BLEND_MARKET_WEIGHT, UPSET_ALERT_PROB_GAP } from "./config";
+import type { ModelConfig } from "./config";
 import { marketWinProbability, probabilityToMargin, type LogisticFit } from "./market";
 import { matchupImpliedMargin } from "./matchup";
 import type { GamePick, MatchupFeatures, RawGame, RawLine, SiteType } from "../types";
@@ -9,6 +9,7 @@ export interface ComputePickInput {
   line: RawLine | null;
   features: MatchupFeatures;
   fit: LogisticFit;
+  config: ModelConfig;
   /** Fallback combined-points estimate (avg of both teams' recent game totals) for
    * when no market over/under exists yet — see scripts/lib/simulateSeason.ts. */
   fallbackTotal: number | null;
@@ -27,8 +28,9 @@ function buildExplanation(params: {
   features: MatchupFeatures;
   pMarket: number | null;
   pMatchup: number;
+  ratingLabel: string;
 }): string {
-  const { predictedWinner, confidence, spread, features, pMarket, pMatchup } = params;
+  const { predictedWinner, confidence, spread, features, pMarket, pMatchup, ratingLabel } = params;
   const bits: string[] = [];
 
   if (spread !== null) {
@@ -44,7 +46,7 @@ function buildExplanation(params: {
 
   if (features.spOverallDiff !== null) {
     const sign = features.spOverallDiff >= 0 ? params.homeTeam : params.awayTeam;
-    bits.push(`SP+ favors ${sign} by ${Math.abs(features.spOverallDiff).toFixed(1)} pts`);
+    bits.push(`${ratingLabel} favors ${sign} by ${Math.abs(features.spOverallDiff).toFixed(1)} pts`);
   }
   if (features.recentFormMarginDiff !== null && Math.abs(features.recentFormMarginDiff) > 3) {
     const sign = features.recentFormMarginDiff >= 0 ? params.homeTeam : params.awayTeam;
@@ -64,25 +66,28 @@ function buildExplanation(params: {
 }
 
 export function computeGamePick(input: ComputePickInput): GamePick {
-  const { game, columnId, line, features, fit, fallbackTotal } = input;
+  const { game, columnId, line, features, fit, config, fallbackTotal } = input;
 
   const spread = line?.spread ?? null; // already normalized: positive = home favored
   const spreadFavorite: "home" | "away" | null =
     spread === null ? null : spread > 0 ? "home" : spread < 0 ? "away" : null;
 
   const pMarket = spread === null ? null : marketWinProbability(spread, fit);
-  const matchupMargin = matchupImpliedMargin(features);
+  const matchupMargin = matchupImpliedMargin(features, config);
   const pMatchup = marketWinProbability(matchupMargin, fit);
 
   const pFinal =
-    pMarket === null ? pMatchup : BLEND_MARKET_WEIGHT * pMarket + (1 - BLEND_MARKET_WEIGHT) * pMatchup;
+    pMarket === null
+      ? pMatchup
+      : config.blendMarketWeight * pMarket + (1 - config.blendMarketWeight) * pMatchup;
 
   const predictedMarginMarket = spread;
   const predictedMarginMatchup = matchupMargin;
   const predictedMargin =
     predictedMarginMarket === null
       ? predictedMarginMatchup
-      : BLEND_MARKET_WEIGHT * predictedMarginMarket + (1 - BLEND_MARKET_WEIGHT) * predictedMarginMatchup;
+      : config.blendMarketWeight * predictedMarginMarket +
+        (1 - config.blendMarketWeight) * predictedMarginMatchup;
 
   const predictedWinner = pFinal >= 0.5 ? game.homeTeam : game.awayTeam;
   const confidence = (pFinal >= 0.5 ? pFinal : 1 - pFinal) * 100;
@@ -106,7 +111,7 @@ export function computeGamePick(input: ComputePickInput): GamePick {
     if (modelFavorite !== spreadFavorite) {
       upsetAlert = true;
       upsetReason = `Model picks ${predictedWinner} against the spread favorite.`;
-    } else if (Math.abs(pFinal - 0.5) < UPSET_ALERT_PROB_GAP) {
+    } else if (Math.abs(pFinal - 0.5) < config.upsetAlertProbGap) {
       upsetAlert = true;
       upsetReason = "Model agrees with the spread favorite but calls it a near toss-up.";
     }
@@ -146,6 +151,7 @@ export function computeGamePick(input: ComputePickInput): GamePick {
     features,
     pMarket,
     pMatchup,
+    ratingLabel: config.ratingLabel,
   });
 
   return {

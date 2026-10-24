@@ -1,23 +1,47 @@
-# The Spread — CFB Predictor & Season Grid
+# The Spread — CFB & NFL Predictor & Season Grid
 
-A personal college football win-probability model, season grid, and
-accuracy dashboard. Built to support a CBS Sports Pick'em confidence pool
+Personal college and pro football win-probability models, season grids, and
+accuracy dashboards. Built to support a CBS Sports Pick'em confidence pool
 ("The Spread") — this app does **not** scrape or automate
 picks.cbssports.com. It's a standalone predictor backed by
-[CollegeFootballData.com](https://collegefootballdata.com) (CFBD) data.
+[CollegeFootballData.com](https://collegefootballdata.com) (CFBD) for college
+and [nflverse](https://github.com/nflverse/nfldata) for the NFL.
+
+## Two leagues, one model
+
+Both leagues run the same blending model, grid and dashboard; see
+[`lib/leagues.ts`](lib/leagues.ts) for everything that differs.
+
+| | CFB | NFL |
+| --- | --- | --- |
+| Routes | `/`, `/grid`, `/dashboard` | `/nfl`, `/nfl/grid`, `/nfl/dashboard` |
+| Data on disk | `data/` | `data/nfl/` |
+| Source | CFBD (API key, monthly quota) | nflverse CSV (no key, no quota) |
+| Power rating | SP+, published by CFBD | SRS, computed from scores ([`lib/model/srs.ts`](lib/model/srs.ts)) |
+| Grid row groups | Conference | Division |
+| Home field | 2.5 pts | 1.8 pts (1.4 in division) |
+| Postseason columns | Conf champs, bowls, CFP rounds | Wild Card → Super Bowl |
+
+One sign-convention trap worth knowing: this codebase uses **positive =
+home favored** throughout. CFBD publishes the opposite (negative = home
+favored) and is negated once in
+[`scripts/lib/normalize.ts`](scripts/lib/normalize.ts); nflverse's
+`spread_line` already matches and must **not** be negated. See the comment
+on `normalizeNflLine` for the empirical check.
 
 ## What it does
 
-1. **Prediction model** — for every FBS game, blends a market-calibrated
+1. **Prediction model** — for every FBS and NFL game, blends a market-calibrated
    win probability (from the closing spread) with a matchup-strength model
    (SP+ ratings, recent form, turnover margin, home field, rest/travel,
    head-to-head) into one win probability, predicted margin, and an
    "upset alert" flag. See [`lib/model`](lib/model).
-2. **Season grid** — every FBS team × every week (Week 0 through bowls and
-   the CFP championship), with the pick, spread, and result per cell. See
+2. **Season grid** — every team × every week (CFB: Week 0 through bowls and
+   the CFP championship; NFL: Week 1 through the Super Bowl), with the pick,
+   spread, and result per cell. See
    [`app/grid`](app/grid) and [`components/grid`](components/grid).
 3. **History dashboard** — straight-up (SU) and against-the-spread (ATS)
-   accuracy, broken out by confidence bucket, conference, favorite/underdog,
+   accuracy, broken out by confidence bucket, conference/division, favorite/underdog,
    and site, plus a calibration chart and week-by-week log. See
    [`app/dashboard`](app/dashboard) and [`components/dashboard`](components/dashboard).
 
@@ -48,6 +72,13 @@ data/picks/<year>.json    # full season grid: every game + pick
 data/dashboard/<year>.json# current-season accuracy breakdown
 data/backtest/<year>.json # per-season backtest accuracy
 data/backtest/summary.json# combined backtest accuracy across all seasons
+
+data/nfl/                 # the same tree again for the NFL
+data/nfl/raw/<year>/      # normalized nflverse snapshots (teams, games, lines)
+data/nfl/calibration.json
+data/nfl/picks/<year>.json
+data/nfl/dashboard/<year>.json
+data/nfl/backtest/
 ```
 
 Scripts (run with `tsx`, see `package.json`):
@@ -59,6 +90,16 @@ Scripts (run with `tsx`, see `package.json`):
 | `npm run fetch` | Pulls the current season from CFBD into `data/raw/<year>/` |
 | `npm run compute` | Runs the model over the current season, writes `data/picks` + `data/dashboard` |
 | `npm run refresh` | `fetch` + `compute` (what the scheduled job runs) |
+| `npm run calibrate:nfl` | NFL calibration → `data/nfl/calibration.json` |
+| `npm run backtest:nfl` | NFL backtest → `data/nfl/backtest/*` |
+| `npm run fetch:nfl` | Pulls every needed season from nflverse into `data/nfl/raw/<year>/` |
+| `npm run compute:nfl` | Scores the current NFL season |
+| `npm run refresh:nfl` | `fetch:nfl` + `compute:nfl` |
+| `npm run refresh:all` | Both leagues |
+
+Every shared script takes `-- --league=nfl`; the `:nfl` entries above are
+just shorthand. With no flag they default to CFB, so the original commands
+behave exactly as they did before the NFL model was added.
 
 ## Local development
 
@@ -67,11 +108,16 @@ cp .env.example .env.local   # then paste your CFBD_API_KEY (get one free at col
 npm install
 npm run calibrate && npm run backtest   # one-time, seeds calibration + history
 npm run fetch && npm run compute        # pulls + scores the current season
+
+npm run calibrate:nfl && npm run backtest:nfl   # same, for the NFL
+npm run refresh:nfl                             # pulls + scores the current NFL season
+
 npm run dev
 ```
 
 `CFBD_API_KEY` is never committed — it's read from `.env.local` locally
-and from a GitHub Actions secret in CI.
+and from a GitHub Actions secret in CI. The NFL pipeline needs no key at
+all, so `npm run refresh:nfl` works on a fresh clone.
 
 ## Deploy
 
