@@ -55,7 +55,7 @@ function RecordBadge({
       <span className="text-neutral-500">
         {record.right}-{record.wrong}
       </span>{" "}
-      <span className={tone}>{Math.round(pct)}%</span>
+      <span className={`font-semibold ${tone}`}>{Math.round(pct)}%</span>
     </span>
   );
 }
@@ -146,17 +146,17 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
 
   return (
     <div className="flex-1 flex flex-col min-h-0">
-      <div className="px-4 py-3 border-b border-neutral-800 flex flex-wrap items-center gap-3">
-        <h1 className="text-lg font-semibold">
+      <div className="px-4 py-4 border-b border-neutral-800 flex flex-wrap items-center gap-4">
+        <h1 className="text-2xl font-semibold">
           {grid.season} Season Grid
         </h1>
-        <div className="flex items-center gap-4 text-sm">
+        <div className="flex items-center gap-5 text-base">
           <span title="Model's straight-up picks on completed games">
             <span className="text-neutral-400">Model </span>
             <RecordBadge record={modelRecords.overall} />
           </span>
           {pctOf(modelRecords.ats) !== null && (
-            <span className="text-xs" title="Model's picks against the spread on completed games">
+            <span title="Model's picks against the spread on completed games">
               <span className="text-neutral-500">ATS </span>
               <RecordBadge record={modelRecords.ats} neutral />
             </span>
@@ -167,15 +167,15 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
           placeholder="Search team or conference…"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="ml-auto w-64 rounded-md border border-neutral-700 bg-neutral-900 px-3 py-1.5 text-sm outline-none focus:border-neutral-500"
+          className="ml-auto w-64 rounded-md border border-neutral-700 bg-neutral-900 px-3 py-2 text-base outline-none focus:border-neutral-500"
         />
-        <div className="flex items-center gap-2 text-xs text-neutral-400">
+        <div className="flex items-center gap-3 text-sm text-neutral-400">
           <LegendSwatch className="bg-emerald-950/70 border border-emerald-800" label="Correct" />
           <LegendSwatch className="bg-rose-950/70 border border-rose-800" label="Wrong" />
           <LegendSwatch className="bg-neutral-900 border-2 border-amber-500" label="Upset alert" />
           <LegendSwatch className="bg-neutral-900/60 border border-neutral-700" label="Not played" />
         </div>
-        <div className="flex items-center gap-2 text-xs w-full sm:w-auto">
+        <div className="flex items-center gap-2 text-sm w-full sm:w-auto">
           <span className="text-amber-400">★ My picks: {totalPicks}</span>
           <RecordBadge record={myRecords.overall} />
           {totalPicks > 0 && (
@@ -192,7 +192,7 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
       </div>
 
       <div className="flex-1 min-h-0 overflow-auto">
-        <table className="border-separate border-spacing-0 text-xs">
+        <table className="border-separate border-spacing-0 text-sm">
           <thead>
             <tr>
               <th className="sticky left-0 top-0 z-30 bg-neutral-950 border-b border-r border-neutral-800 px-3 py-2 text-left w-48 min-w-48">
@@ -209,7 +209,7 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
                       {modelWeek && (
                         <RecordBadge
                           record={modelWeek}
-                          className="block text-[11px] font-normal"
+                          className="block text-xs font-normal"
                         />
                       )}
                     </th>
@@ -232,7 +232,7 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
                         {count}/{WEEKLY_PICK_TARGET}
                       </span>
                       {myWeek && (
-                        <RecordBadge record={myWeek} className="block text-[10px] font-normal" />
+                        <RecordBadge record={myWeek} className="block text-xs font-normal" />
                       )}
                     </th>
                   </Fragment>
@@ -363,19 +363,23 @@ function GridCell({ cell, onSelect }: { cell: TeamGameCell; onSelect: () => void
   return (
     <button
       onClick={onSelect}
-      className={`w-full h-full min-h-12 rounded px-1.5 py-1 text-left transition-colors ${cellColorClasses(cell)} ${
+      className={`w-full h-full min-h-16 rounded px-2 py-1.5 text-left transition-colors ${cellColorClasses(cell)} ${
         game.upsetAlert ? "ring-2 ring-amber-500 ring-inset" : ""
       }`}
     >
       <div className="truncate font-medium">{opponentLabel(cell)}</div>
-      <div className="flex items-center justify-between text-[11px] text-neutral-400">
-        <span>{spread ?? "—"}</span>
-        <span className={pick.isThisTeam ? "text-neutral-200" : "text-neutral-500"}>
+      <div className="flex items-center justify-between gap-1 text-sm text-neutral-300">
+        <span className="tabular-nums">{spread ?? "—"}</span>
+        <span
+          className={`font-semibold tabular-nums ${
+            pick.isThisTeam ? "text-neutral-100" : "text-neutral-400"
+          }`}
+        >
           {Math.round(pick.confidence)}%
         </span>
       </div>
       {game.completed && game.homePoints !== null && game.awayPoints !== null && (
-        <div className="text-[11px] text-neutral-400">
+        <div className="text-xs text-neutral-400 tabular-nums">
           {cell.isHome ? `${game.homePoints}-${game.awayPoints}` : `${game.awayPoints}-${game.homePoints}`}
         </div>
       )}
