@@ -26,11 +26,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-neutral-950 text-neutral-100">
         <header className="border-b border-neutral-800 bg-neutral-950/95 backdrop-blur sticky top-0 z-40">
-          <div className="mx-auto max-w-[1600px] px-4 py-3 flex items-center gap-6">
-            <span className="font-semibold tracking-tight text-lg">
+          <div className="mx-auto max-w-[1600px] px-4 py-4 flex items-center gap-8">
+            <span className="font-semibold tracking-tight text-xl">
               The Spread <span className="text-neutral-500 font-normal">CFB</span>
             </span>
-            <nav className="flex gap-4 text-sm">
+            <nav className="flex gap-5 text-base">
               <Link href="/grid" className="text-neutral-300 hover:text-white transition-colors">
                 Season Grid
               </Link>
