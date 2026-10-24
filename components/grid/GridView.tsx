@@ -5,17 +5,24 @@ import type { GamePick, SeasonGrid } from "@/lib/types";
 import {
   buildGameIndex,
   cellColorClasses,
-  groupTeamsByConference,
+  groupTeamsForGrid,
   opponentLabel,
   pickLabel,
   spreadLabel,
   type TeamGameCell,
 } from "./gridUtils";
+import { leagueMeta, type League } from "@/lib/leagues";
 import { MatchupDetailModal } from "./MatchupDetailModal";
 import { TiebreakerPredictor } from "./TiebreakerPredictor";
 import { useMyPicks } from "./useMyPicks";
 
-const WEEKLY_PICK_TARGET = 15;
+/**
+ * How many games a weekly pick'em entry asks for. CBS Sports' college pool
+ * takes 15; an NFL pool normally covers the full slate, which is 13-16 games
+ * depending on byes. These drive only the star-column counter, so a pool with
+ * different rules just reads the target as advisory.
+ */
+const WEEKLY_PICK_TARGET: Record<League, number> = { cfb: 15, nfl: 16 };
 
 interface WinLoss {
   right: number;
@@ -61,13 +68,15 @@ function RecordBadge({
 }
 
 export function GridView({ grid }: { grid: SeasonGrid }) {
+  const meta = leagueMeta(grid.league);
+  const weeklyPickTarget = WEEKLY_PICK_TARGET[grid.league];
   const [search, setSearch] = useState("");
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
   const [selectedGame, setSelectedGame] = useState<GamePick | null>(null);
   const { picks: myPicks, togglePick, clearAll } = useMyPicks(grid.season);
 
   const gameIndex = useMemo(() => buildGameIndex(grid.games), [grid.games]);
-  const groups = useMemo(() => groupTeamsByConference(grid), [grid]);
+  const groups = useMemo(() => groupTeamsForGrid(grid), [grid]);
   const gamesById = useMemo(() => new Map(grid.games.map((g) => [g.gameId, g])), [grid.games]);
 
   const pickCountByColumn = useMemo(() => {
@@ -164,7 +173,7 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
         </div>
         <input
           type="text"
-          placeholder="Search team or conference…"
+          placeholder={`Search team or ${meta.groupNoun.toLowerCase()}…`}
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="ml-auto w-64 rounded-md border border-neutral-700 bg-neutral-900 px-3 py-2 text-base outline-none focus:border-neutral-500"
@@ -222,14 +231,14 @@ export function GridView({ grid }: { grid: SeasonGrid }) {
                         className={
                           count === 0
                             ? "block text-neutral-600"
-                            : count > WEEKLY_PICK_TARGET
+                            : count > weeklyPickTarget
                               ? "block text-rose-400"
-                              : count === WEEKLY_PICK_TARGET
+                              : count === weeklyPickTarget
                                 ? "block text-emerald-400"
                                 : "block text-neutral-400"
                         }
                       >
-                        {count}/{WEEKLY_PICK_TARGET}
+                        {count}/{weeklyPickTarget}
                       </span>
                       {myWeek && (
                         <RecordBadge record={myWeek} className="block text-xs font-normal" />

@@ -1,4 +1,5 @@
 import { labelForColumnId } from "../data/columns";
+import type { League } from "../leagues";
 import type { BreakdownStat, ConfidenceBucketStat, GamePick, SeasonAccuracy, Team } from "../types";
 
 function emptyBreakdown(key: string, label: string): BreakdownStat {
@@ -50,10 +51,14 @@ function bucketKeyFor(confidence: number): string {
 export function computeSeasonAccuracy(
   season: number,
   allPicks: GamePick[],
-  teams: Team[]
+  teams: Team[],
+  league: League = "cfb"
 ): SeasonAccuracy {
   const played = allPicks.filter((p) => p.completed && p.suCorrect !== null);
-  const teamConference = new Map(teams.map((t) => [t.school, t.conference]));
+  // Break results down by the same grouping the grid uses for its row sections:
+  // conferences in college, divisions in the NFL (8 groups of 4 is a far more
+  // useful breakdown than AFC vs NFC).
+  const teamConference = new Map(teams.map((t) => [t.school, t.group ?? t.conference]));
 
   let suWins = 0;
   let suLosses = 0;
@@ -83,7 +88,7 @@ export function computeSeasonAccuracy(
   const byFavoriteUnderdog = new Map<string, BreakdownStat>();
   const bySite = new Map<string, BreakdownStat>();
 
-  let probSumByBucket = new Map<string, number>();
+  const probSumByBucket = new Map<string, number>();
 
   for (const pick of played) {
     if (pick.suCorrect) suWins++;
@@ -197,6 +202,7 @@ export function computeSeasonAccuracy(
   });
 
   return {
+    league,
     season,
     n: played.length,
     suWins,

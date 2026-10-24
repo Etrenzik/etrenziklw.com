@@ -20,6 +20,9 @@ export function normalizeTeam(t: CfbdTeam): Team {
     abbreviation: t.abbreviation,
     conference: t.conference,
     division: t.division ?? null,
+    // CFB groups the grid by conference, so `group` stays null and the grid
+    // falls back to `conference`. The NFL sets it to the division instead.
+    group: null,
     classification: t.classification,
     color: t.color,
     altColor: t.alt_color ?? t.alternateColor ?? null,

@@ -1,14 +1,26 @@
-// Shared domain types for The Spread — CFB predictor & season grid.
+// Shared domain types for The Spread — predictor & season grid.
+// Both leagues (CFB and NFL) use these same shapes; see lib/leagues.ts.
+
+import type { League } from "./leagues";
 
 export type SeasonType = "regular" | "postseason";
 
 export interface Team {
   id: number;
+  /** Team name. CFB: the school ("Ohio State"). NFL: the full club name ("Chicago Bears"). */
   school: string;
   mascot: string | null;
   abbreviation: string | null;
+  /** CFB: conference ("SEC"). NFL: "AFC" or "NFC". */
   conference: string | null;
+  /** CFB: intra-conference division when one exists. NFL: "AFC East" etc. */
   division: string | null;
+  /**
+   * Which grid section this team's row belongs under. CFB leaves this null and
+   * falls back to `conference`; the NFL sets it to the division, since 8 groups
+   * of 4 reads far better in the grid than 2 groups of 16.
+   */
+  group: string | null;
   classification: string | null;
   color: string | null;
   altColor: string | null;
@@ -45,7 +57,11 @@ export interface CalendarWeek {
   lastGameStart: string | null;
 }
 
-/** A synthetic "week" for grid columns that don't map 1:1 to a CFBD calendar week. */
+/**
+ * A synthetic "week" for grid columns that don't map 1:1 to a numbered
+ * calendar week. The first group is college-only (bowls and the CFP), the
+ * second is NFL-only (the four playoff rounds).
+ */
 export type GridColumnKind =
   | "week"
   | "conf-champ"
@@ -53,7 +69,11 @@ export type GridColumnKind =
   | "cfp-first-round"
   | "cfp-quarterfinal"
   | "cfp-semifinal"
-  | "cfp-championship";
+  | "cfp-championship"
+  | "nfl-wild-card"
+  | "nfl-divisional"
+  | "nfl-conference"
+  | "nfl-super-bowl";
 
 export interface GridColumn {
   id: string; // e.g. "2026-regular-1", "2026-postseason-cfp-semifinal"
@@ -84,6 +104,17 @@ export interface RawGame {
   awayPoints: number | null;
   venue: string | null;
   notes: string | null;
+
+  /**
+   * Days of rest going into this game. nflverse publishes these directly, which
+   * is strictly better than deriving them from kickoff dates — it gets byes and
+   * international-series scheduling right. CFB leaves them null and
+   * scripts/lib/simulateSeason.ts derives rest from the previous game's date.
+   */
+  homeRestDays?: number | null;
+  awayRestDays?: number | null;
+  /** NFL: an in-division matchup. CFB leaves this undefined. */
+  divisionGame?: boolean;
 }
 
 export interface RawLine {
@@ -105,7 +136,19 @@ export interface RestTravelFlags {
 }
 
 export interface MatchupFeatures {
-  spOverallDiff: number | null; // home - away
+  /**
+   * Power-rating difference, home minus away, in points of expected margin.
+   * CFB fills this from CFBD's SP+ overall rating; the NFL fills it from the
+   * SRS computed in lib/model/srs.ts. The field name predates the NFL model
+   * and is kept because it is persisted in data/**\/picks/*.json — see
+   * `ratingLabel` on ModelConfig for what to call it in the UI.
+   */
+  spOverallDiff: number | null;
+  /**
+   * Cross term (home offense vs away defense, less the reverse). CFB only:
+   * the NFL's score-derived SRS has no offense/defense split, so this stays
+   * null there and drops out of the margin sum.
+   */
   spOffenseVsDefenseDiff: number | null;
   recentFormWinPctDiff: number | null;
   recentFormMarginDiff: number | null;
@@ -160,6 +203,7 @@ export interface GamePick {
 }
 
 export interface SeasonGrid {
+  league: League;
   season: number;
   generatedAt: string;
   columns: GridColumn[];
@@ -202,6 +246,7 @@ export interface BreakdownStat {
 }
 
 export interface SeasonAccuracy {
+  league: League;
   season: number;
   n: number;
   suWins: number;

@@ -1,4 +1,4 @@
-import { MATCHUP_WEIGHTS, HOME_FIELD_POINTS, SHORT_WEEK_MAX_DAYS, BYE_WEEK_MIN_DAYS } from "./config";
+import type { ModelConfig } from "./config";
 import type { MatchupFeatures } from "../types";
 
 export interface RecentGameResult {
@@ -10,7 +10,9 @@ export interface RecentGameResult {
 }
 
 export interface TeamSeasonContext {
+  /** Power rating: SP+ overall for CFB, SRS for the NFL. */
   spOverall: number | null;
+  /** CFB only — the NFL's score-derived SRS has no offense/defense split. */
   spOffense: number | null;
   spDefense: number | null;
   /** This team's completed games this season, strictly before the game being evaluated, chronological. */
@@ -53,29 +55,39 @@ export function seasonTurnoverMarginPerGame(ctx: TeamSeasonContext): number | nu
   return avg(known.map((g) => g.turnoverMargin));
 }
 
-export function isShortWeek(ctx: TeamSeasonContext): boolean {
-  return ctx.daysSinceLastGame !== null && ctx.daysSinceLastGame <= SHORT_WEEK_MAX_DAYS;
+export function isShortWeek(ctx: TeamSeasonContext, config: ModelConfig): boolean {
+  return ctx.daysSinceLastGame !== null && ctx.daysSinceLastGame <= config.shortWeekMaxDays;
 }
 
-export function isOffBye(ctx: TeamSeasonContext): boolean {
-  return ctx.daysSinceLastGame !== null && ctx.daysSinceLastGame >= BYE_WEEK_MIN_DAYS;
+export function isOffBye(ctx: TeamSeasonContext, config: ModelConfig): boolean {
+  return ctx.daysSinceLastGame !== null && ctx.daysSinceLastGame >= config.byeWeekMinDays;
 }
 
 export interface BuildFeaturesInput {
   home: TeamSeasonContext;
   away: TeamSeasonContext;
   neutralSite: boolean;
-  crossConferenceRoadGame: boolean; // away team on a true road, different-conference trip (mileage proxy)
+  /** Away team on a true road, different-conference trip (a mileage proxy for CFB). */
+  crossConferenceRoadGame: boolean;
+  /** NFL: an in-division matchup, which carries a reduced home-field edge. */
+  divisionGame?: boolean;
   headToHeadMarginDiffForHome: number | null; // avg historical margin from home team's perspective
 }
 
-export function buildMatchupFeatures(input: BuildFeaturesInput): MatchupFeatures {
+export function buildMatchupFeatures(
+  input: BuildFeaturesInput,
+  config: ModelConfig
+): MatchupFeatures {
   const { home, away } = input;
 
   const spOverallDiff =
     home.spOverall !== null && away.spOverall !== null ? home.spOverall - away.spOverall : null;
 
+  // Only meaningful when the league's rating carries an offense/defense split
+  // (CFB's SP+). With the weight at 0 the term would cancel anyway, but
+  // returning null keeps the persisted feature honest about being absent.
   const spOffenseVsDefenseDiff =
+    config.matchupWeights.offenseVsDefense !== 0 &&
     home.spOffense !== null &&
     home.spDefense !== null &&
     away.spOffense !== null &&
@@ -95,14 +107,18 @@ export function buildMatchupFeatures(input: BuildFeaturesInput): MatchupFeatures
   const awayTO = seasonTurnoverMarginPerGame(away);
   const turnoverMarginDiff = homeTO !== null && awayTO !== null ? homeTO - awayTO : null;
 
-  const homeFieldPoints = input.neutralSite ? 0 : HOME_FIELD_POINTS;
+  const homeFieldPoints = input.neutralSite
+    ? 0
+    : input.divisionGame
+      ? config.divisionalHomeFieldPoints
+      : config.homeFieldPoints;
 
   let restTravelPoints = 0;
-  const w = MATCHUP_WEIGHTS.restTravel;
-  const homeShort = isShortWeek(home);
-  const awayShort = isShortWeek(away);
-  const homeBye = isOffBye(home);
-  const awayBye = isOffBye(away);
+  const w = config.matchupWeights.restTravel;
+  const homeShort = isShortWeek(home, config);
+  const awayShort = isShortWeek(away, config);
+  const homeBye = isOffBye(home, config);
+  const awayBye = isOffBye(away, config);
   if (homeShort && !awayShort) restTravelPoints -= w;
   if (awayShort && !homeShort) restTravelPoints += w;
   if (homeBye && !awayBye) restTravelPoints += w;

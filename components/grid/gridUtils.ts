@@ -15,10 +15,16 @@ export function buildGameIndex(games: GamePick[]): Map<string, TeamGameCell> {
   return idx;
 }
 
-export function groupTeamsByConference(grid: SeasonGrid) {
+/**
+ * Splits the grid's rows into labelled sections: conferences for college,
+ * divisions for the NFL (8 groups of 4 reads far better than AFC vs NFC, and
+ * matches how standings are actually presented). Teams carry the section name
+ * in `group`; CFB leaves it null and falls back to the conference.
+ */
+export function groupTeamsForGrid(grid: SeasonGrid) {
   const groups = new Map<string, SeasonGrid["teams"]>();
   for (const team of grid.teams) {
-    const key = team.conference ?? "Independents";
+    const key = team.group ?? team.conference ?? "Independents";
     const list = groups.get(key) ?? [];
     list.push(team);
     groups.set(key, list);

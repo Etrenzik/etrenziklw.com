@@ -11,7 +11,13 @@
     "calibrate": "tsx scripts/calibrate-market.mts",
     "compute": "tsx scripts/compute-picks.mts",
     "backtest": "tsx scripts/backtest.mts",
-    "refresh": "npm run fetch && npm run compute"
+    "refresh": "npm run fetch && npm run compute",
+    "fetch:nfl": "tsx scripts/fetch-nfl-data.mts",
+    "calibrate:nfl": "tsx scripts/calibrate-market.mts --league=nfl",
+    "compute:nfl": "tsx scripts/compute-picks.mts --league=nfl",
+    "backtest:nfl": "tsx scripts/backtest.mts --league=nfl",
+    "refresh:nfl": "npm run fetch:nfl && npm run compute:nfl",
+    "refresh:all": "npm run refresh && npm run refresh:nfl"
   },
   "dependencies": {
     "next": "16.3.4",

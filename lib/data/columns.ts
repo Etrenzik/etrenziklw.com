@@ -1,3 +1,4 @@
+import type { League } from "../leagues";
 import type { GridColumn, GridColumnKind, RawGame } from "../types";
 
 /**
@@ -13,8 +14,22 @@ import type { GridColumn, GridColumnKind, RawGame } from "../types";
  * Anything postseason that matches no specific pattern falls back to
  * plain "Bowl Season" rather than blocking the grid.
  */
-export function classifyGame(game: Pick<RawGame, "seasonType" | "notes">): GridColumnKind {
+export function classifyGame(
+  game: Pick<RawGame, "seasonType" | "notes">,
+  league: League = "cfb"
+): GridColumnKind {
   const text = (game.notes ?? "").toLowerCase();
+
+  // The NFL postseason is a fixed four-round bracket, and scripts/lib/normalizeNfl.ts
+  // writes the round name into `notes`, so classification is an exact lookup
+  // rather than the fuzzy text matching college bowl/CFP naming requires.
+  if (league === "nfl") {
+    if (text.includes("super bowl")) return "nfl-super-bowl";
+    if (text.includes("conference championship")) return "nfl-conference";
+    if (text.includes("divisional")) return "nfl-divisional";
+    if (text.includes("wild card")) return "nfl-wild-card";
+    return "week";
+  }
 
   if (text.includes("national championship") || text.includes("cfp championship")) {
     return "cfp-championship";
@@ -40,6 +55,10 @@ const KIND_LABELS: Record<GridColumnKind, string> = {
   "cfp-quarterfinal": "CFP Quarterfinal",
   "cfp-semifinal": "CFP Semifinal",
   "cfp-championship": "CFP Championship",
+  "nfl-wild-card": "Wild Card",
+  "nfl-divisional": "Divisional",
+  "nfl-conference": "Conf Champ",
+  "nfl-super-bowl": "Super Bowl",
 };
 
 const NON_WEEK_KIND_ORDER: GridColumnKind[] = [
@@ -49,6 +68,10 @@ const NON_WEEK_KIND_ORDER: GridColumnKind[] = [
   "cfp-quarterfinal",
   "cfp-semifinal",
   "cfp-championship",
+  "nfl-wild-card",
+  "nfl-divisional",
+  "nfl-conference",
+  "nfl-super-bowl",
 ];
 
 /** Parses a column id (as produced by columnIdFor/buildGridColumns) back into a display label. */
@@ -64,21 +87,21 @@ export function labelForColumnId(columnId: string): string {
   return columnId;
 }
 
-export function columnIdFor(game: RawGame): string {
-  const kind = classifyGame(game);
+export function columnIdFor(game: RawGame, league: League = "cfb"): string {
+  const kind = classifyGame(game, league);
   if (kind === "week") return `${game.season}-week-w${game.week}`;
   return `${game.season}-${kind}`;
 }
 
 /** Builds the ordered set of grid columns present in a set of raw games for one season. */
-export function buildGridColumns(games: RawGame[]): GridColumn[] {
+export function buildGridColumns(games: RawGame[], league: League = "cfb"): GridColumn[] {
   const regularWeeks = new Set<number>();
   const otherKinds = new Set<GridColumnKind>();
   let season = games[0]?.season ?? 0;
 
   for (const g of games) {
     season = g.season;
-    const kind = classifyGame(g);
+    const kind = classifyGame(g, league);
     if (kind === "week") regularWeeks.add(g.week);
     else otherKinds.add(kind);
   }
@@ -107,6 +130,9 @@ export function buildGridColumns(games: RawGame[]): GridColumn[] {
       season,
       // Conference championships are CFBD seasonType "regular" (the final regular-season
       // week); everything else in this bucket (bowls, CFP rounds) is "postseason".
+      // CFB conference championships are CFBD seasonType "regular" (the final
+      // regular-season week); every other non-week column in both leagues is
+      // genuine postseason.
       seasonType: kind === "conf-champ" ? "regular" : "postseason",
       week: null,
       order: order++,
