@@ -40,6 +40,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # Check out main's tip as of when the job starts, not the commit the run
+          # was queued from — otherwise a run queued behind another (concurrency
+          # serializes them) regenerates data on a stale base and its commit
+          # conflicts with the data the earlier run just pushed.
+          ref: main
           fetch-depth: 0
 
       - uses: actions/setup-node@v4
