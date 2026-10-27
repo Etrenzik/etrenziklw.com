@@ -1,10 +1,10 @@
 {
   "league": "nfl",
   "season": 2026,
-  "n": 105,
-  "suWins": 66,
+  "n": 106,
+  "suWins": 67,
   "suLosses": 39,
-  "atsWins": 45,
+  "atsWins": 46,
   "atsLosses": 54,
   "atsPushes": 6,
   "confidenceBuckets": [
@@ -45,12 +45,12 @@
       "bucket": "65-70",
       "min": 65,
       "max": 70,
-      "n": 13,
-      "suWins": 10,
+      "n": 14,
+      "suWins": 11,
       "suLosses": 3,
-      "suWinPct": 0.7692307692307693,
-      "avgPredictedProb": 67.56603282501982,
-      "actualWinRate": 0.7692307692307693
+      "suWinPct": 0.7857142857142857,
+      "avgPredictedProb": 67.40555291783802,
+      "actualWinRate": 0.7857142857142857
     },
     {
       "bucket": "70-75",
@@ -193,6 +193,18 @@
       "atsWinPct": 0.6
     },
     {
+      "key": "NFC East",
+      "label": "NFC East",
+      "n": 9,
+      "suWins": 5,
+      "suLosses": 4,
+      "suWinPct": 0.5555555555555556,
+      "atsWins": 3,
+      "atsLosses": 6,
+      "atsPushes": 0,
+      "atsWinPct": 0.3333333333333333
+    },
+    {
       "key": "NFC South",
       "label": "NFC South",
       "n": 9,
@@ -203,32 +215,20 @@
       "atsLosses": 6,
       "atsPushes": 0,
       "atsWinPct": 0.3333333333333333
-    },
-    {
-      "key": "NFC East",
-      "label": "NFC East",
-      "n": 8,
-      "suWins": 4,
-      "suLosses": 4,
-      "suWinPct": 0.5,
-      "atsWins": 2,
-      "atsLosses": 6,
-      "atsPushes": 0,
-      "atsWinPct": 0.25
     }
   ],
   "byFavoriteUnderdog": [
     {
       "key": "favorite",
       "label": "Picked the favorite",
-      "n": 104,
-      "suWins": 66,
+      "n": 105,
+      "suWins": 67,
       "suLosses": 38,
-      "suWinPct": 0.6346153846153846,
-      "atsWins": 45,
+      "suWinPct": 0.638095238095238,
+      "atsWins": 46,
       "atsLosses": 53,
       "atsPushes": 6,
-      "atsWinPct": 0.45918367346938777
+      "atsWinPct": 0.46464646464646464
     },
     {
       "key": "underdog",
@@ -271,14 +271,14 @@
     {
       "key": "away",
       "label": "Picked away team",
-      "n": 41,
-      "suWins": 26,
+      "n": 42,
+      "suWins": 27,
       "suLosses": 15,
-      "suWinPct": 0.6341463414634146,
-      "atsWins": 20,
+      "suWinPct": 0.6428571428571429,
+      "atsWins": 21,
       "atsLosses": 19,
       "atsPushes": 2,
-      "atsWinPct": 0.5128205128205128
+      "atsWinPct": 0.525
     }
   ],
   "weekLog": [
@@ -1077,8 +1077,8 @@
     {
       "columnId": "2026-week-w7",
       "label": "Week 7",
-      "runningSU": "66-39",
-      "runningATS": "45-55",
+      "runningSU": "67-39",
+      "runningATS": "46-55",
       "games": [
         {
           "gameId": 2313932130,
@@ -1182,6 +1182,14 @@
           "pick": "Seattle Seahawks",
           "confidence": 57.16578936116944,
           "result": "Seattle Seahawks 20-3 Kansas City Chiefs",
+          "correct": true
+        },
+        {
+          "gameId": 2609205131,
+          "matchup": "Dallas Cowboys @ Philadelphia Eagles",
+          "pick": "Dallas Cowboys",
+          "confidence": 65.3193141244746,
+          "result": "Philadelphia Eagles 21-38 Dallas Cowboys",
           "correct": true
         }
       ]
