@@ -1193,8 +1193,8 @@
       "gameId": 3850277814,
       "homeTeam": "Buffalo Bills",
       "awayTeam": "Baltimore Ravens",
-      "spread": 3.5,
-      "overUnder": 53.5,
+      "spread": 3,
+      "overUnder": 54.5,
       "provider": "nflverse consensus"
     }
   ],
@@ -1215,7 +1215,7 @@
       "gameId": 1463867427,
       "homeTeam": "Dallas Cowboys",
       "awayTeam": "Arizona Cardinals",
-      "spread": 6,
+      "spread": 7,
       "overUnder": 54.5,
       "provider": "nflverse consensus"
     }
@@ -1237,7 +1237,7 @@
       "gameId": 2961941862,
       "homeTeam": "Jacksonville Jaguars",
       "awayTeam": "Indianapolis Colts",
-      "spread": 7.5,
+      "spread": 9.5,
       "overUnder": 46.5,
       "provider": "nflverse consensus"
     }
@@ -1248,7 +1248,7 @@
       "gameId": 1659032725,
       "homeTeam": "New York Jets",
       "awayTeam": "Las Vegas Raiders",
-      "spread": -1.5,
+      "spread": 1.5,
       "overUnder": 45.5,
       "provider": "nflverse consensus"
     }
@@ -1271,7 +1271,7 @@
       "homeTeam": "Tampa Bay Buccaneers",
       "awayTeam": "Atlanta Falcons",
       "spread": 2.5,
-      "overUnder": 46.5,
+      "overUnder": 45.5,
       "provider": "nflverse consensus"
     }
   ],
@@ -1282,7 +1282,7 @@
       "homeTeam": "Los Angeles Rams",
       "awayTeam": "Los Angeles Chargers",
       "spread": 6.5,
-      "overUnder": 44.5,
+      "overUnder": 45.5,
       "provider": "nflverse consensus"
     }
   ],
@@ -1303,8 +1303,8 @@
       "gameId": 4181102078,
       "homeTeam": "Miami Dolphins",
       "awayTeam": "New England Patriots",
-      "spread": -7.5,
-      "overUnder": 44.5,
+      "spread": -7,
+      "overUnder": 43.5,
       "provider": "nflverse consensus"
     }
   ],
@@ -1314,7 +1314,7 @@
       "gameId": 1221666858,
       "homeTeam": "Washington Commanders",
       "awayTeam": "Philadelphia Eagles",
-      "spread": 4.5,
+      "spread": 5.5,
       "overUnder": 40.5,
       "provider": "nflverse consensus"
     }
@@ -1325,8 +1325,173 @@
       "gameId": 2913976193,
       "homeTeam": "Seattle Seahawks",
       "awayTeam": "Chicago Bears",
-      "spread": 3.5,
+      "spread": 3,
       "overUnder": 46.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    1205553851,
+    {
+      "gameId": 1205553851,
+      "homeTeam": "Baltimore Ravens",
+      "awayTeam": "Jacksonville Jaguars",
+      "spread": 2.5,
+      "overUnder": 48.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    2990135410,
+    {
+      "gameId": 2990135410,
+      "homeTeam": "Atlanta Falcons",
+      "awayTeam": "Cincinnati Bengals",
+      "spread": -3,
+      "overUnder": 49.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    1879460782,
+    {
+      "gameId": 1879460782,
+      "homeTeam": "Carolina Panthers",
+      "awayTeam": "Denver Broncos",
+      "spread": -2.5,
+      "overUnder": 44.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    1559619379,
+    {
+      "gameId": 1559619379,
+      "homeTeam": "Indianapolis Colts",
+      "awayTeam": "Dallas Cowboys",
+      "spread": -3.5,
+      "overUnder": 51.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    2879604328,
+    {
+      "gameId": 2879604328,
+      "homeTeam": "Kansas City Chiefs",
+      "awayTeam": "New York Jets",
+      "spread": 9.5,
+      "overUnder": 43.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    4084676731,
+    {
+      "gameId": 4084676731,
+      "homeTeam": "Miami Dolphins",
+      "awayTeam": "Detroit Lions",
+      "spread": -7,
+      "overUnder": 47.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    266344568,
+    {
+      "gameId": 266344568,
+      "homeTeam": "New Orleans Saints",
+      "awayTeam": "Cleveland Browns",
+      "spread": 2.5,
+      "overUnder": 43.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    1068730562,
+    {
+      "gameId": 1068730562,
+      "homeTeam": "Philadelphia Eagles",
+      "awayTeam": "New York Giants",
+      "spread": -1.5,
+      "overUnder": 40.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    1625649533,
+    {
+      "gameId": 1625649533,
+      "homeTeam": "Washington Commanders",
+      "awayTeam": "Los Angeles Rams",
+      "spread": -5.5,
+      "overUnder": 48.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    2300451055,
+    {
+      "gameId": 2300451055,
+      "homeTeam": "Los Angeles Chargers",
+      "awayTeam": "Houston Texans",
+      "spread": -3,
+      "overUnder": 42.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    2925447306,
+    {
+      "gameId": 2925447306,
+      "homeTeam": "San Francisco 49ers",
+      "awayTeam": "Las Vegas Raiders",
+      "spread": 9.5,
+      "overUnder": 48.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    2234398015,
+    {
+      "gameId": 2234398015,
+      "homeTeam": "New England Patriots",
+      "awayTeam": "Green Bay Packers",
+      "spread": 3,
+      "overUnder": 47.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    3588358090,
+    {
+      "gameId": 3588358090,
+      "homeTeam": "Seattle Seahawks",
+      "awayTeam": "Arizona Cardinals",
+      "spread": 10.5,
+      "overUnder": 44.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    882897895,
+    {
+      "gameId": 882897895,
+      "homeTeam": "Chicago Bears",
+      "awayTeam": "Tampa Bay Buccaneers",
+      "spread": 6,
+      "overUnder": 47.5,
+      "provider": "nflverse consensus"
+    }
+  ],
+  [
+    2487022226,
+    {
+      "gameId": 2487022226,
+      "homeTeam": "Minnesota Vikings",
+      "awayTeam": "Buffalo Bills",
+      "spread": -2.5,
+      "overUnder": 47.5,
       "provider": "nflverse consensus"
     }
   ]
