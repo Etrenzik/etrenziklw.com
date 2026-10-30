@@ -1,10 +1,10 @@
 {
   "league": "nfl",
   "season": 2026,
-  "n": 106,
-  "suWins": 67,
+  "n": 107,
+  "suWins": 68,
   "suLosses": 39,
-  "atsWins": 46,
+  "atsWins": 47,
   "atsLosses": 54,
   "atsPushes": 6,
   "confidenceBuckets": [
@@ -34,12 +34,12 @@
       "bucket": "60-65",
       "min": 60,
       "max": 65,
-      "n": 31,
-      "suWins": 17,
+      "n": 32,
+      "suWins": 18,
       "suLosses": 14,
-      "suWinPct": 0.5483870967741935,
-      "avgPredictedProb": 61.901598547210725,
-      "actualWinRate": 0.5483870967741935
+      "suWinPct": 0.5625,
+      "avgPredictedProb": 61.90364073499461,
+      "actualWinRate": 0.5625
     },
     {
       "bucket": "65-70",
@@ -135,14 +135,14 @@
     {
       "key": "NFC North",
       "label": "NFC North",
-      "n": 19,
-      "suWins": 15,
+      "n": 20,
+      "suWins": 16,
       "suLosses": 4,
-      "suWinPct": 0.7894736842105263,
-      "atsWins": 8,
+      "suWinPct": 0.8,
+      "atsWins": 9,
       "atsLosses": 9,
       "atsPushes": 2,
-      "atsWinPct": 0.47058823529411764
+      "atsWinPct": 0.5
     },
     {
       "key": "AFC North",
@@ -221,14 +221,14 @@
     {
       "key": "favorite",
       "label": "Picked the favorite",
-      "n": 105,
-      "suWins": 67,
+      "n": 106,
+      "suWins": 68,
       "suLosses": 38,
-      "suWinPct": 0.638095238095238,
-      "atsWins": 46,
+      "suWinPct": 0.6415094339622641,
+      "atsWins": 47,
       "atsLosses": 53,
       "atsPushes": 6,
-      "atsWinPct": 0.46464646464646464
+      "atsWinPct": 0.47
     },
     {
       "key": "underdog",
@@ -247,14 +247,14 @@
     {
       "key": "home",
       "label": "Picked home team",
-      "n": 58,
-      "suWins": 36,
+      "n": 59,
+      "suWins": 37,
       "suLosses": 22,
-      "suWinPct": 0.6206896551724138,
-      "atsWins": 23,
+      "suWinPct": 0.6271186440677966,
+      "atsWins": 24,
       "atsLosses": 32,
       "atsPushes": 3,
-      "atsWinPct": 0.41818181818181815
+      "atsWinPct": 0.42857142857142855
     },
     {
       "key": "neutral",
@@ -1190,6 +1190,22 @@
           "pick": "Dallas Cowboys",
           "confidence": 65.3193141244746,
           "result": "Philadelphia Eagles 21-38 Dallas Cowboys",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "columnId": "2026-week-w8",
+      "label": "Week 8",
+      "runningSU": "68-39",
+      "runningATS": "47-55",
+      "games": [
+        {
+          "gameId": 4046890259,
+          "matchup": "Carolina Panthers @ Green Bay Packers",
+          "pick": "Green Bay Packers",
+          "confidence": 61.966948556295065,
+          "result": "Green Bay Packers 27-19 Carolina Panthers",
           "correct": true
         }
       ]
