@@ -1,11 +1,11 @@
 {
   "league": "nfl",
   "season": 2026,
-  "n": 119,
+  "n": 120,
   "suWins": 78,
-  "suLosses": 41,
+  "suLosses": 42,
   "atsWins": 55,
-  "atsLosses": 58,
+  "atsLosses": 59,
   "atsPushes": 6,
   "confidenceBuckets": [
     {
@@ -23,12 +23,12 @@
       "bucket": "55-60",
       "min": 55,
       "max": 60,
-      "n": 26,
+      "n": 27,
       "suWins": 17,
-      "suLosses": 9,
-      "suWinPct": 0.6538461538461539,
-      "avgPredictedProb": 57.945976841368164,
-      "actualWinRate": 0.6538461538461539
+      "suLosses": 10,
+      "suWinPct": 0.6296296296296297,
+      "avgPredictedProb": 58.02046419138381,
+      "actualWinRate": 0.6296296296296297
     },
     {
       "bucket": "60-65",
@@ -123,14 +123,14 @@
     {
       "key": "NFC West",
       "label": "NFC West",
-      "n": 21,
+      "n": 22,
       "suWins": 12,
-      "suLosses": 9,
-      "suWinPct": 0.5714285714285714,
+      "suLosses": 10,
+      "suWinPct": 0.5454545454545454,
       "atsWins": 8,
-      "atsLosses": 11,
+      "atsLosses": 12,
       "atsPushes": 2,
-      "atsWinPct": 0.42105263157894735
+      "atsWinPct": 0.4
     },
     {
       "key": "NFC North",
@@ -221,14 +221,14 @@
     {
       "key": "favorite",
       "label": "Picked the favorite",
-      "n": 118,
+      "n": 119,
       "suWins": 78,
-      "suLosses": 40,
-      "suWinPct": 0.6610169491525424,
+      "suLosses": 41,
+      "suWinPct": 0.6554621848739496,
       "atsWins": 55,
-      "atsLosses": 57,
+      "atsLosses": 58,
       "atsPushes": 6,
-      "atsWinPct": 0.49107142857142855
+      "atsWinPct": 0.48672566371681414
     },
     {
       "key": "underdog",
@@ -247,14 +247,14 @@
     {
       "key": "home",
       "label": "Picked home team",
-      "n": 70,
+      "n": 71,
       "suWins": 46,
-      "suLosses": 24,
-      "suWinPct": 0.6571428571428571,
+      "suLosses": 25,
+      "suWinPct": 0.647887323943662,
       "atsWins": 32,
-      "atsLosses": 35,
+      "atsLosses": 36,
       "atsPushes": 3,
-      "atsWinPct": 0.47761194029850745
+      "atsWinPct": 0.47058823529411764
     },
     {
       "key": "neutral",
@@ -1197,8 +1197,8 @@
     {
       "columnId": "2026-week-w8",
       "label": "Week 8",
-      "runningSU": "78-41",
-      "runningATS": "55-59",
+      "runningSU": "78-42",
+      "runningATS": "55-60",
       "games": [
         {
           "gameId": 4046890259,
@@ -1303,6 +1303,14 @@
           "confidence": 67.10556106592843,
           "result": "Washington Commanders 27-10 Philadelphia Eagles",
           "correct": true
+        },
+        {
+          "gameId": 2913976193,
+          "matchup": "Chicago Bears @ Seattle Seahawks",
+          "pick": "Seattle Seahawks",
+          "confidence": 59.95713529179051,
+          "result": "Seattle Seahawks 17-34 Chicago Bears",
+          "correct": false
         }
       ]
     }
