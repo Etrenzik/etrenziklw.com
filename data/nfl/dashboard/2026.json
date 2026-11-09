@@ -1,11 +1,11 @@
 {
   "league": "nfl",
   "season": 2026,
-  "n": 121,
-  "suWins": 79,
-  "suLosses": 42,
-  "atsWins": 56,
-  "atsLosses": 59,
+  "n": 134,
+  "suWins": 91,
+  "suLosses": 43,
+  "atsWins": 65,
+  "atsLosses": 63,
   "atsPushes": 6,
   "confidenceBuckets": [
     {
@@ -23,56 +23,56 @@
       "bucket": "55-60",
       "min": 55,
       "max": 60,
-      "n": 27,
+      "n": 28,
       "suWins": 17,
-      "suLosses": 10,
-      "suWinPct": 0.6296296296296297,
-      "avgPredictedProb": 58.02046419138381,
-      "actualWinRate": 0.6296296296296297
+      "suLosses": 11,
+      "suWinPct": 0.6071428571428571,
+      "avgPredictedProb": 58.08803655297123,
+      "actualWinRate": 0.6071428571428571
     },
     {
       "bucket": "60-65",
       "min": 60,
       "max": 65,
-      "n": 34,
-      "suWins": 20,
+      "n": 38,
+      "suWins": 24,
       "suLosses": 14,
-      "suWinPct": 0.5882352941176471,
-      "avgPredictedProb": 61.90043653558987,
-      "actualWinRate": 0.5882352941176471
+      "suWinPct": 0.631578947368421,
+      "avgPredictedProb": 62.07643465021956,
+      "actualWinRate": 0.631578947368421
     },
     {
       "bucket": "65-70",
       "min": 65,
       "max": 70,
-      "n": 15,
-      "suWins": 12,
+      "n": 18,
+      "suWins": 15,
       "suLosses": 3,
-      "suWinPct": 0.8,
-      "avgPredictedProb": 67.38555346104405,
-      "actualWinRate": 0.8
+      "suWinPct": 0.8333333333333334,
+      "avgPredictedProb": 67.56757212381716,
+      "actualWinRate": 0.8333333333333334
     },
     {
       "bucket": "70-75",
       "min": 70,
       "max": 75,
-      "n": 15,
-      "suWins": 11,
+      "n": 17,
+      "suWins": 13,
       "suLosses": 4,
-      "suWinPct": 0.7333333333333333,
-      "avgPredictedProb": 72.91627032525305,
-      "actualWinRate": 0.7333333333333333
+      "suWinPct": 0.7647058823529411,
+      "avgPredictedProb": 72.95018524903386,
+      "actualWinRate": 0.7647058823529411
     },
     {
       "bucket": "75-80",
       "min": 75,
       "max": 80,
-      "n": 12,
-      "suWins": 9,
+      "n": 15,
+      "suWins": 12,
       "suLosses": 3,
-      "suWinPct": 0.75,
-      "avgPredictedProb": 76.76732682579201,
-      "actualWinRate": 0.75
+      "suWinPct": 0.8,
+      "avgPredictedProb": 77.18481280693132,
+      "actualWinRate": 0.8
     },
     {
       "bucket": "80-85",
@@ -123,112 +123,112 @@
     {
       "key": "NFC West",
       "label": "NFC West",
-      "n": 22,
-      "suWins": 12,
+      "n": 25,
+      "suWins": 15,
       "suLosses": 10,
-      "suWinPct": 0.5454545454545454,
-      "atsWins": 8,
+      "suWinPct": 0.6,
+      "atsWins": 11,
       "atsLosses": 12,
       "atsPushes": 2,
-      "atsWinPct": 0.4
+      "atsWinPct": 0.4782608695652174
     },
     {
       "key": "NFC North",
       "label": "NFC North",
-      "n": 21,
-      "suWins": 17,
+      "n": 23,
+      "suWins": 19,
       "suLosses": 4,
-      "suWinPct": 0.8095238095238095,
-      "atsWins": 10,
-      "atsLosses": 9,
+      "suWinPct": 0.8260869565217391,
+      "atsWins": 11,
+      "atsLosses": 10,
       "atsPushes": 2,
-      "atsWinPct": 0.5263157894736842
+      "atsWinPct": 0.5238095238095238
     },
     {
       "key": "AFC North",
       "label": "AFC North",
-      "n": 18,
-      "suWins": 13,
+      "n": 19,
+      "suWins": 14,
       "suLosses": 5,
-      "suWinPct": 0.7222222222222222,
-      "atsWins": 9,
+      "suWinPct": 0.7368421052631579,
+      "atsWins": 10,
       "atsLosses": 7,
       "atsPushes": 2,
-      "atsWinPct": 0.5625
+      "atsWinPct": 0.5882352941176471
     },
     {
       "key": "AFC South",
       "label": "AFC South",
-      "n": 14,
-      "suWins": 7,
+      "n": 15,
+      "suWins": 8,
       "suLosses": 7,
-      "suWinPct": 0.5,
-      "atsWins": 6,
+      "suWinPct": 0.5333333333333333,
+      "atsWins": 7,
       "atsLosses": 8,
       "atsPushes": 0,
-      "atsWinPct": 0.42857142857142855
+      "atsWinPct": 0.4666666666666667
     },
     {
       "key": "AFC East",
       "label": "AFC East",
-      "n": 13,
+      "n": 14,
       "suWins": 10,
-      "suLosses": 3,
-      "suWinPct": 0.7692307692307693,
+      "suLosses": 4,
+      "suWinPct": 0.7142857142857143,
       "atsWins": 7,
-      "atsLosses": 6,
+      "atsLosses": 7,
       "atsPushes": 0,
-      "atsWinPct": 0.5384615384615384
+      "atsWinPct": 0.5
     },
     {
       "key": "AFC West",
       "label": "AFC West",
-      "n": 12,
-      "suWins": 10,
+      "n": 14,
+      "suWins": 12,
       "suLosses": 2,
-      "suWinPct": 0.8333333333333334,
-      "atsWins": 8,
+      "suWinPct": 0.8571428571428571,
+      "atsWins": 10,
       "atsLosses": 4,
       "atsPushes": 0,
-      "atsWinPct": 0.6666666666666666
+      "atsWinPct": 0.7142857142857143
     },
     {
       "key": "NFC East",
       "label": "NFC East",
-      "n": 11,
-      "suWins": 6,
+      "n": 13,
+      "suWins": 8,
       "suLosses": 5,
-      "suWinPct": 0.5454545454545454,
-      "atsWins": 4,
-      "atsLosses": 7,
+      "suWinPct": 0.6153846153846154,
+      "atsWins": 5,
+      "atsLosses": 8,
       "atsPushes": 0,
-      "atsWinPct": 0.36363636363636365
+      "atsWinPct": 0.38461538461538464
     },
     {
       "key": "NFC South",
       "label": "NFC South",
-      "n": 10,
-      "suWins": 4,
+      "n": 11,
+      "suWins": 5,
       "suLosses": 6,
-      "suWinPct": 0.4,
+      "suWinPct": 0.45454545454545453,
       "atsWins": 4,
-      "atsLosses": 6,
+      "atsLosses": 7,
       "atsPushes": 0,
-      "atsWinPct": 0.4
+      "atsWinPct": 0.36363636363636365
     }
   ],
   "byFavoriteUnderdog": [
     {
       "key": "favorite",
       "label": "Picked the favorite",
-      "n": 120,
-      "suWins": 79,
-      "suLosses": 41,
-      "suWinPct": 0.6583333333333333,
-      "atsWins": 56,
-      "atsLosses": 58,
+      "n": 133,
+      "suWins": 91,
+      "suLosses": 42,
+      "suWinPct": 0.6842105263157895,
+      "atsWins": 65,
+      "atsLosses": 62,
       "atsPushes": 6,
-      "atsWinPct": 0.49122807017543857
+      "atsWinPct": 0.5118110236220472
     },
     {
       "key": "underdog",
@@ -247,38 +247,38 @@
     {
       "key": "home",
       "label": "Picked home team",
-      "n": 71,
-      "suWins": 46,
-      "suLosses": 25,
-      "suWinPct": 0.647887323943662,
-      "atsWins": 32,
-      "atsLosses": 36,
+      "n": 77,
+      "suWins": 51,
+      "suLosses": 26,
+      "suWinPct": 0.6623376623376623,
+      "atsWins": 35,
+      "atsLosses": 39,
       "atsPushes": 3,
-      "atsWinPct": 0.47058823529411764
+      "atsWinPct": 0.47297297297297297
     },
     {
       "key": "neutral",
       "label": "Neutral site",
-      "n": 6,
-      "suWins": 4,
+      "n": 7,
+      "suWins": 5,
       "suLosses": 2,
-      "suWinPct": 0.6666666666666666,
-      "atsWins": 2,
+      "suWinPct": 0.7142857142857143,
+      "atsWins": 3,
       "atsLosses": 3,
       "atsPushes": 1,
-      "atsWinPct": 0.4
+      "atsWinPct": 0.5
     },
     {
       "key": "away",
       "label": "Picked away team",
-      "n": 44,
-      "suWins": 29,
+      "n": 50,
+      "suWins": 35,
       "suLosses": 15,
-      "suWinPct": 0.6590909090909091,
-      "atsWins": 22,
-      "atsLosses": 20,
+      "suWinPct": 0.7,
+      "atsWins": 27,
+      "atsLosses": 21,
       "atsPushes": 2,
-      "atsWinPct": 0.5238095238095238
+      "atsWinPct": 0.5625
     }
   ],
   "weekLog": [
@@ -1317,8 +1317,8 @@
     {
       "columnId": "2026-week-w9",
       "label": "Week 9",
-      "runningSU": "79-42",
-      "runningATS": "56-60",
+      "runningSU": "91-43",
+      "runningATS": "65-64",
       "games": [
         {
           "gameId": 1205553851,
@@ -1326,6 +1326,110 @@
           "pick": "Jacksonville Jaguars",
           "confidence": 79.45167255845024,
           "result": "Baltimore Ravens 10-33 Jacksonville Jaguars",
+          "correct": true
+        },
+        {
+          "gameId": 2990135410,
+          "matchup": "Cincinnati Bengals @ Atlanta Falcons",
+          "pick": "Cincinnati Bengals",
+          "confidence": 63.96570808097195,
+          "result": "Atlanta Falcons 17-34 Cincinnati Bengals",
+          "correct": true
+        },
+        {
+          "gameId": 1879460782,
+          "matchup": "Denver Broncos @ Carolina Panthers",
+          "pick": "Denver Broncos",
+          "confidence": 63.166631749850524,
+          "result": "Carolina Panthers 21-26 Denver Broncos",
+          "correct": true
+        },
+        {
+          "gameId": 1559619379,
+          "matchup": "Dallas Cowboys @ Indianapolis Colts",
+          "pick": "Dallas Cowboys",
+          "confidence": 68.56047354081126,
+          "result": "Indianapolis Colts 23-27 Dallas Cowboys",
+          "correct": true
+        },
+        {
+          "gameId": 2879604328,
+          "matchup": "New York Jets @ Kansas City Chiefs",
+          "pick": "Kansas City Chiefs",
+          "confidence": 79.98137093853157,
+          "result": "Kansas City Chiefs 35-12 New York Jets",
+          "correct": true
+        },
+        {
+          "gameId": 4084676731,
+          "matchup": "Detroit Lions @ Miami Dolphins",
+          "pick": "Detroit Lions",
+          "confidence": 74.26990660433957,
+          "result": "Miami Dolphins 9-19 Detroit Lions",
+          "correct": true
+        },
+        {
+          "gameId": 266344568,
+          "matchup": "Cleveland Browns @ New Orleans Saints",
+          "pick": "New Orleans Saints",
+          "confidence": 64.84372560759944,
+          "result": "New Orleans Saints 23-22 Cleveland Browns",
+          "correct": true
+        },
+        {
+          "gameId": 1068730562,
+          "matchup": "New York Giants @ Philadelphia Eagles",
+          "pick": "New York Giants",
+          "confidence": 62.313609059865605,
+          "result": "Philadelphia Eagles 11-19 New York Giants",
+          "correct": true
+        },
+        {
+          "gameId": 1625649533,
+          "matchup": "Los Angeles Rams @ Washington Commanders",
+          "pick": "Los Angeles Rams",
+          "confidence": 69.23858393711723,
+          "result": "Washington Commanders 13-20 Los Angeles Rams",
+          "correct": true
+        },
+        {
+          "gameId": 2300451055,
+          "matchup": "Houston Texans @ Los Angeles Chargers",
+          "pick": "Houston Texans",
+          "confidence": 72.13918775044019,
+          "result": "Los Angeles Chargers 22-44 Houston Texans",
+          "correct": true
+        },
+        {
+          "gameId": 2925447306,
+          "matchup": "Las Vegas Raiders @ San Francisco 49ers",
+          "pick": "San Francisco 49ers",
+          "confidence": 78.32549995360193,
+          "result": "San Francisco 49ers 38-17 Las Vegas Raiders",
+          "correct": true
+        },
+        {
+          "gameId": 2234398015,
+          "matchup": "Green Bay Packers @ New England Patriots",
+          "pick": "New England Patriots",
+          "confidence": 59.912490315831725,
+          "result": "New England Patriots 27-45 Green Bay Packers",
+          "correct": false
+        },
+        {
+          "gameId": 3588358090,
+          "matchup": "Arizona Cardinals @ Seattle Seahawks",
+          "pick": "Seattle Seahawks",
+          "confidence": 78.25739930233195,
+          "result": "Seattle Seahawks 17-3 Arizona Cardinals",
+          "correct": true
+        },
+        {
+          "gameId": 882897895,
+          "matchup": "Tampa Bay Buccaneers @ Chicago Bears",
+          "pick": "Chicago Bears",
+          "confidence": 67.63393883511951,
+          "result": "Chicago Bears 27-24 Tampa Bay Buccaneers",
           "correct": true
         }
       ]
