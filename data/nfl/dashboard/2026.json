@@ -1,10 +1,10 @@
 {
   "league": "nfl",
   "season": 2026,
-  "n": 134,
-  "suWins": 91,
+  "n": 135,
+  "suWins": 92,
   "suLosses": 43,
-  "atsWins": 65,
+  "atsWins": 66,
   "atsLosses": 63,
   "atsPushes": 6,
   "confidenceBuckets": [
@@ -34,12 +34,12 @@
       "bucket": "60-65",
       "min": 60,
       "max": 65,
-      "n": 38,
-      "suWins": 24,
+      "n": 39,
+      "suWins": 25,
       "suLosses": 14,
-      "suWinPct": 0.631578947368421,
-      "avgPredictedProb": 62.07643465021956,
-      "actualWinRate": 0.631578947368421
+      "suWinPct": 0.6410256410256411,
+      "avgPredictedProb": 62.04477933713722,
+      "actualWinRate": 0.6410256410256411
     },
     {
       "bucket": "65-70",
@@ -157,6 +157,18 @@
       "atsWinPct": 0.5882352941176471
     },
     {
+      "key": "AFC East",
+      "label": "AFC East",
+      "n": 15,
+      "suWins": 11,
+      "suLosses": 4,
+      "suWinPct": 0.7333333333333333,
+      "atsWins": 8,
+      "atsLosses": 7,
+      "atsPushes": 0,
+      "atsWinPct": 0.5333333333333333
+    },
+    {
       "key": "AFC South",
       "label": "AFC South",
       "n": 15,
@@ -167,18 +179,6 @@
       "atsLosses": 8,
       "atsPushes": 0,
       "atsWinPct": 0.4666666666666667
-    },
-    {
-      "key": "AFC East",
-      "label": "AFC East",
-      "n": 14,
-      "suWins": 10,
-      "suLosses": 4,
-      "suWinPct": 0.7142857142857143,
-      "atsWins": 7,
-      "atsLosses": 7,
-      "atsPushes": 0,
-      "atsWinPct": 0.5
     },
     {
       "key": "AFC West",
@@ -221,14 +221,14 @@
     {
       "key": "favorite",
       "label": "Picked the favorite",
-      "n": 133,
-      "suWins": 91,
+      "n": 134,
+      "suWins": 92,
       "suLosses": 42,
-      "suWinPct": 0.6842105263157895,
-      "atsWins": 65,
+      "suWinPct": 0.6865671641791045,
+      "atsWins": 66,
       "atsLosses": 62,
       "atsPushes": 6,
-      "atsWinPct": 0.5118110236220472
+      "atsWinPct": 0.515625
     },
     {
       "key": "underdog",
@@ -271,14 +271,14 @@
     {
       "key": "away",
       "label": "Picked away team",
-      "n": 50,
-      "suWins": 35,
+      "n": 51,
+      "suWins": 36,
       "suLosses": 15,
-      "suWinPct": 0.7,
-      "atsWins": 27,
+      "suWinPct": 0.7058823529411765,
+      "atsWins": 28,
       "atsLosses": 21,
       "atsPushes": 2,
-      "atsWinPct": 0.5625
+      "atsWinPct": 0.5714285714285714
     }
   ],
   "weekLog": [
@@ -1317,8 +1317,8 @@
     {
       "columnId": "2026-week-w9",
       "label": "Week 9",
-      "runningSU": "91-43",
-      "runningATS": "65-64",
+      "runningSU": "92-43",
+      "runningATS": "66-64",
       "games": [
         {
           "gameId": 1205553851,
@@ -1430,6 +1430,14 @@
           "pick": "Chicago Bears",
           "confidence": 67.63393883511951,
           "result": "Chicago Bears 27-24 Tampa Bay Buccaneers",
+          "correct": true
+        },
+        {
+          "gameId": 2487022226,
+          "matchup": "Buffalo Bills @ Minnesota Vikings",
+          "pick": "Buffalo Bills",
+          "confidence": 60.84187744000824,
+          "result": "Minnesota Vikings 6-23 Buffalo Bills",
           "correct": true
         }
       ]
