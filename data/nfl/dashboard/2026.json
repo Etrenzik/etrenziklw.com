@@ -1,11 +1,11 @@
 {
   "league": "nfl",
   "season": 2026,
-  "n": 135,
+  "n": 136,
   "suWins": 92,
-  "suLosses": 43,
+  "suLosses": 44,
   "atsWins": 66,
-  "atsLosses": 63,
+  "atsLosses": 64,
   "atsPushes": 6,
   "confidenceBuckets": [
     {
@@ -23,12 +23,12 @@
       "bucket": "55-60",
       "min": 55,
       "max": 60,
-      "n": 28,
+      "n": 29,
       "suWins": 17,
-      "suLosses": 11,
-      "suWinPct": 0.6071428571428571,
-      "avgPredictedProb": 58.08803655297123,
-      "actualWinRate": 0.6071428571428571
+      "suLosses": 12,
+      "suWinPct": 0.5862068965517241,
+      "avgPredictedProb": 58.017934483488546,
+      "actualWinRate": 0.5862068965517241
     },
     {
       "bucket": "60-65",
@@ -195,14 +195,14 @@
     {
       "key": "NFC East",
       "label": "NFC East",
-      "n": 13,
+      "n": 14,
       "suWins": 8,
-      "suLosses": 5,
-      "suWinPct": 0.6153846153846154,
+      "suLosses": 6,
+      "suWinPct": 0.5714285714285714,
       "atsWins": 5,
-      "atsLosses": 8,
+      "atsLosses": 9,
       "atsPushes": 0,
-      "atsWinPct": 0.38461538461538464
+      "atsWinPct": 0.35714285714285715
     },
     {
       "key": "NFC South",
@@ -221,14 +221,14 @@
     {
       "key": "favorite",
       "label": "Picked the favorite",
-      "n": 134,
+      "n": 135,
       "suWins": 92,
-      "suLosses": 42,
-      "suWinPct": 0.6865671641791045,
+      "suLosses": 43,
+      "suWinPct": 0.6814814814814815,
       "atsWins": 66,
-      "atsLosses": 62,
+      "atsLosses": 63,
       "atsPushes": 6,
-      "atsWinPct": 0.515625
+      "atsWinPct": 0.5116279069767442
     },
     {
       "key": "underdog",
@@ -247,14 +247,14 @@
     {
       "key": "home",
       "label": "Picked home team",
-      "n": 77,
+      "n": 78,
       "suWins": 51,
-      "suLosses": 26,
-      "suWinPct": 0.6623376623376623,
+      "suLosses": 27,
+      "suWinPct": 0.6538461538461539,
       "atsWins": 35,
-      "atsLosses": 39,
+      "atsLosses": 40,
       "atsPushes": 3,
-      "atsWinPct": 0.47297297297297297
+      "atsWinPct": 0.4666666666666667
     },
     {
       "key": "neutral",
@@ -1439,6 +1439,22 @@
           "confidence": 60.84187744000824,
           "result": "Minnesota Vikings 6-23 Buffalo Bills",
           "correct": true
+        }
+      ]
+    },
+    {
+      "columnId": "2026-week-w10",
+      "label": "Week 10",
+      "runningSU": "92-44",
+      "runningATS": "66-65",
+      "games": [
+        {
+          "gameId": 3278847114,
+          "matchup": "Washington Commanders @ New York Giants",
+          "pick": "New York Giants",
+          "confidence": 56.05507653797335,
+          "result": "New York Giants 21-24 Washington Commanders",
+          "correct": false
         }
       ]
     }
