@@ -1,11 +1,11 @@
 {
   "league": "nfl",
   "season": 2026,
-  "n": 148,
+  "n": 149,
   "suWins": 101,
-  "suLosses": 47,
+  "suLosses": 48,
   "atsWins": 74,
-  "atsLosses": 68,
+  "atsLosses": 69,
   "atsPushes": 6,
   "confidenceBuckets": [
     {
@@ -45,12 +45,12 @@
       "bucket": "65-70",
       "min": 65,
       "max": 70,
-      "n": 20,
+      "n": 21,
       "suWins": 16,
-      "suLosses": 4,
-      "suWinPct": 0.8,
-      "avgPredictedProb": 67.55817060024857,
-      "actualWinRate": 0.8
+      "suLosses": 5,
+      "suWinPct": 0.7619047619047619,
+      "avgPredictedProb": 67.49714615276953,
+      "actualWinRate": 0.7619047619047619
     },
     {
       "bucket": "70-75",
@@ -147,14 +147,14 @@
     {
       "key": "AFC North",
       "label": "AFC North",
-      "n": 20,
+      "n": 21,
       "suWins": 15,
-      "suLosses": 5,
-      "suWinPct": 0.75,
+      "suLosses": 6,
+      "suWinPct": 0.7142857142857143,
       "atsWins": 11,
-      "atsLosses": 7,
+      "atsLosses": 8,
       "atsPushes": 2,
-      "atsWinPct": 0.6111111111111112
+      "atsWinPct": 0.5789473684210527
     },
     {
       "key": "AFC South",
@@ -221,14 +221,14 @@
     {
       "key": "favorite",
       "label": "Picked the favorite",
-      "n": 147,
+      "n": 148,
       "suWins": 101,
-      "suLosses": 46,
-      "suWinPct": 0.6870748299319728,
+      "suLosses": 47,
+      "suWinPct": 0.6824324324324325,
       "atsWins": 74,
-      "atsLosses": 67,
+      "atsLosses": 68,
       "atsPushes": 6,
-      "atsWinPct": 0.524822695035461
+      "atsWinPct": 0.5211267605633803
     },
     {
       "key": "underdog",
@@ -247,14 +247,14 @@
     {
       "key": "home",
       "label": "Picked home team",
-      "n": 82,
+      "n": 83,
       "suWins": 53,
-      "suLosses": 29,
-      "suWinPct": 0.6463414634146342,
+      "suLosses": 30,
+      "suWinPct": 0.6385542168674698,
       "atsWins": 36,
-      "atsLosses": 43,
+      "atsLosses": 44,
       "atsPushes": 3,
-      "atsWinPct": 0.45569620253164556
+      "atsWinPct": 0.45
     },
     {
       "key": "neutral",
@@ -1445,8 +1445,8 @@
     {
       "columnId": "2026-week-w10",
       "label": "Week 10",
-      "runningSU": "101-47",
-      "runningATS": "74-69",
+      "runningSU": "101-48",
+      "runningATS": "74-70",
       "games": [
         {
           "gameId": 3278847114,
@@ -1551,6 +1551,14 @@
           "confidence": 62.989849977361814,
           "result": "Cincinnati Bengals 38-18 Pittsburgh Steelers",
           "correct": true
+        },
+        {
+          "gameId": 29652762,
+          "matchup": "Los Angeles Chargers @ Baltimore Ravens",
+          "pick": "Baltimore Ravens",
+          "confidence": 66.27665720318878,
+          "result": "Baltimore Ravens 20-23 Los Angeles Chargers",
+          "correct": false
         }
       ]
     }
