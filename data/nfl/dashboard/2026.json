@@ -1,11 +1,11 @@
 {
   "league": "nfl",
   "season": 2026,
-  "n": 161,
+  "n": 162,
   "suWins": 110,
-  "suLosses": 51,
+  "suLosses": 52,
   "atsWins": 81,
-  "atsLosses": 74,
+  "atsLosses": 75,
   "atsPushes": 6,
   "confidenceBuckets": [
     {
@@ -56,12 +56,12 @@
       "bucket": "70-75",
       "min": 70,
       "max": 75,
-      "n": 19,
+      "n": 20,
       "suWins": 14,
-      "suLosses": 5,
-      "suWinPct": 0.7368421052631579,
-      "avgPredictedProb": 73.06883744477055,
-      "actualWinRate": 0.7368421052631579
+      "suLosses": 6,
+      "suWinPct": 0.7,
+      "avgPredictedProb": 73.06589859723105,
+      "actualWinRate": 0.7
     },
     {
       "bucket": "75-80",
@@ -147,14 +147,14 @@
     {
       "key": "AFC North",
       "label": "AFC North",
-      "n": 22,
+      "n": 23,
       "suWins": 15,
-      "suLosses": 7,
-      "suWinPct": 0.6818181818181818,
+      "suLosses": 8,
+      "suWinPct": 0.6521739130434783,
       "atsWins": 11,
-      "atsLosses": 9,
+      "atsLosses": 10,
       "atsPushes": 2,
-      "atsWinPct": 0.55
+      "atsWinPct": 0.5238095238095238
     },
     {
       "key": "AFC South",
@@ -221,14 +221,14 @@
     {
       "key": "favorite",
       "label": "Picked the favorite",
-      "n": 160,
+      "n": 161,
       "suWins": 110,
-      "suLosses": 50,
-      "suWinPct": 0.6875,
+      "suLosses": 51,
+      "suWinPct": 0.6832298136645962,
       "atsWins": 81,
-      "atsLosses": 73,
+      "atsLosses": 74,
       "atsPushes": 6,
-      "atsWinPct": 0.525974025974026
+      "atsWinPct": 0.5225806451612903
     },
     {
       "key": "underdog",
@@ -271,14 +271,14 @@
     {
       "key": "away",
       "label": "Picked away team",
-      "n": 60,
+      "n": 61,
       "suWins": 42,
-      "suLosses": 18,
-      "suWinPct": 0.7,
+      "suLosses": 19,
+      "suWinPct": 0.6885245901639344,
       "atsWins": 34,
-      "atsLosses": 24,
+      "atsLosses": 25,
       "atsPushes": 2,
-      "atsWinPct": 0.5862068965517241
+      "atsWinPct": 0.576271186440678
     }
   ],
   "weekLog": [
@@ -1565,8 +1565,8 @@
     {
       "columnId": "2026-week-w11",
       "label": "Week 11",
-      "runningSU": "110-51",
-      "runningATS": "81-75",
+      "runningSU": "110-52",
+      "runningATS": "81-76",
       "games": [
         {
           "gameId": 3437020095,
@@ -1663,6 +1663,14 @@
           "confidence": 64.65038204393936,
           "result": "San Francisco 49ers 35-10 Minnesota Vikings",
           "correct": true
+        },
+        {
+          "gameId": 1960202553,
+          "matchup": "Cincinnati Bengals @ Washington Commanders",
+          "pick": "Cincinnati Bengals",
+          "confidence": 73.01006049398067,
+          "result": "Washington Commanders 22-20 Cincinnati Bengals",
+          "correct": false
         }
       ]
     }
