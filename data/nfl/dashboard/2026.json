@@ -1,10 +1,10 @@
 {
   "league": "nfl",
   "season": 2026,
-  "n": 162,
-  "suWins": 110,
+  "n": 163,
+  "suWins": 111,
   "suLosses": 52,
-  "atsWins": 81,
+  "atsWins": 82,
   "atsLosses": 75,
   "atsPushes": 6,
   "confidenceBuckets": [
@@ -23,12 +23,12 @@
       "bucket": "55-60",
       "min": 55,
       "max": 60,
-      "n": 31,
-      "suWins": 18,
+      "n": 32,
+      "suWins": 19,
       "suLosses": 13,
-      "suWinPct": 0.5806451612903226,
-      "avgPredictedProb": 58.061819325398815,
-      "actualWinRate": 0.5806451612903226
+      "suWinPct": 0.59375,
+      "avgPredictedProb": 58.10269057806063,
+      "actualWinRate": 0.59375
     },
     {
       "bucket": "60-65",
@@ -123,14 +123,14 @@
     {
       "key": "NFC West",
       "label": "NFC West",
-      "n": 29,
-      "suWins": 19,
+      "n": 30,
+      "suWins": 20,
       "suLosses": 10,
-      "suWinPct": 0.6551724137931034,
-      "atsWins": 15,
+      "suWinPct": 0.6666666666666666,
+      "atsWins": 16,
       "atsLosses": 12,
       "atsPushes": 2,
-      "atsWinPct": 0.5555555555555556
+      "atsWinPct": 0.5714285714285714
     },
     {
       "key": "NFC North",
@@ -221,14 +221,14 @@
     {
       "key": "favorite",
       "label": "Picked the favorite",
-      "n": 161,
-      "suWins": 110,
+      "n": 162,
+      "suWins": 111,
       "suLosses": 51,
-      "suWinPct": 0.6832298136645962,
-      "atsWins": 81,
+      "suWinPct": 0.6851851851851852,
+      "atsWins": 82,
       "atsLosses": 74,
       "atsPushes": 6,
-      "atsWinPct": 0.5225806451612903
+      "atsWinPct": 0.5256410256410257
     },
     {
       "key": "underdog",
@@ -247,14 +247,14 @@
     {
       "key": "home",
       "label": "Picked home team",
-      "n": 92,
-      "suWins": 61,
+      "n": 93,
+      "suWins": 62,
       "suLosses": 31,
-      "suWinPct": 0.6630434782608695,
-      "atsWins": 42,
+      "suWinPct": 0.6666666666666666,
+      "atsWins": 43,
       "atsLosses": 47,
       "atsPushes": 3,
-      "atsWinPct": 0.47191011235955055
+      "atsWinPct": 0.4777777777777778
     },
     {
       "key": "neutral",
@@ -1671,6 +1671,22 @@
           "confidence": 73.01006049398067,
           "result": "Washington Commanders 22-20 Cincinnati Bengals",
           "correct": false
+        }
+      ]
+    },
+    {
+      "columnId": "2026-week-w12",
+      "label": "Week 12",
+      "runningSU": "111-52",
+      "runningATS": "82-76",
+      "games": [
+        {
+          "gameId": 3483466621,
+          "matchup": "Green Bay Packers @ Los Angeles Rams",
+          "pick": "Los Angeles Rams",
+          "confidence": 59.36969941057697,
+          "result": "Los Angeles Rams 26-13 Green Bay Packers",
+          "correct": true
         }
       ]
     }
