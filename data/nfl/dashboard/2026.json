@@ -1,23 +1,23 @@
 {
   "league": "nfl",
   "season": 2026,
-  "n": 163,
-  "suWins": 111,
-  "suLosses": 52,
-  "atsWins": 82,
-  "atsLosses": 75,
-  "atsPushes": 6,
+  "n": 166,
+  "suWins": 113,
+  "suLosses": 53,
+  "atsWins": 83,
+  "atsLosses": 76,
+  "atsPushes": 7,
   "confidenceBuckets": [
     {
       "bucket": "50-55",
       "min": 50,
       "max": 55,
-      "n": 11,
-      "suWins": 5,
+      "n": 12,
+      "suWins": 6,
       "suLosses": 6,
-      "suWinPct": 0.45454545454545453,
-      "avgPredictedProb": 53.33826920226851,
-      "actualWinRate": 0.45454545454545453
+      "suWinPct": 0.5,
+      "avgPredictedProb": 53.44477996214395,
+      "actualWinRate": 0.5
     },
     {
       "bucket": "55-60",
@@ -34,12 +34,12 @@
       "bucket": "60-65",
       "min": 60,
       "max": 65,
-      "n": 46,
-      "suWins": 30,
+      "n": 47,
+      "suWins": 31,
       "suLosses": 16,
-      "suWinPct": 0.6521739130434783,
-      "avgPredictedProb": 62.2672612047749,
-      "actualWinRate": 0.6521739130434783
+      "suWinPct": 0.6595744680851063,
+      "avgPredictedProb": 62.241708562949384,
+      "actualWinRate": 0.6595744680851063
     },
     {
       "bucket": "65-70",
@@ -67,12 +67,12 @@
       "bucket": "75-80",
       "min": 75,
       "max": 80,
-      "n": 16,
+      "n": 17,
       "suWins": 13,
-      "suLosses": 3,
-      "suWinPct": 0.8125,
-      "avgPredictedProb": 77.07477379266511,
-      "actualWinRate": 0.8125
+      "suLosses": 4,
+      "suWinPct": 0.7647058823529411,
+      "avgPredictedProb": 77.07581989036422,
+      "actualWinRate": 0.7647058823529411
     },
     {
       "bucket": "80-85",
@@ -135,14 +135,14 @@
     {
       "key": "NFC North",
       "label": "NFC North",
-      "n": 27,
-      "suWins": 22,
+      "n": 28,
+      "suWins": 23,
       "suLosses": 5,
-      "suWinPct": 0.8148148148148148,
-      "atsWins": 13,
+      "suWinPct": 0.8214285714285714,
+      "atsWins": 14,
       "atsLosses": 12,
       "atsPushes": 2,
-      "atsWinPct": 0.52
+      "atsWinPct": 0.5384615384615384
     },
     {
       "key": "AFC North",
@@ -169,6 +169,18 @@
       "atsWinPct": 0.45
     },
     {
+      "key": "AFC East",
+      "label": "AFC East",
+      "n": 18,
+      "suWins": 14,
+      "suLosses": 4,
+      "suWinPct": 0.7777777777777778,
+      "atsWins": 10,
+      "atsLosses": 7,
+      "atsPushes": 1,
+      "atsWinPct": 0.5882352941176471
+    },
+    {
       "key": "AFC West",
       "label": "AFC West",
       "n": 18,
@@ -181,28 +193,16 @@
       "atsWinPct": 0.7222222222222222
     },
     {
-      "key": "AFC East",
-      "label": "AFC East",
-      "n": 17,
-      "suWins": 13,
-      "suLosses": 4,
-      "suWinPct": 0.7647058823529411,
-      "atsWins": 10,
-      "atsLosses": 7,
-      "atsPushes": 0,
-      "atsWinPct": 0.5882352941176471
-    },
-    {
       "key": "NFC East",
       "label": "NFC East",
-      "n": 15,
+      "n": 16,
       "suWins": 9,
-      "suLosses": 6,
-      "suWinPct": 0.6,
+      "suLosses": 7,
+      "suWinPct": 0.5625,
       "atsWins": 6,
-      "atsLosses": 9,
+      "atsLosses": 10,
       "atsPushes": 0,
-      "atsWinPct": 0.4
+      "atsWinPct": 0.375
     },
     {
       "key": "NFC South",
@@ -221,14 +221,14 @@
     {
       "key": "favorite",
       "label": "Picked the favorite",
-      "n": 162,
-      "suWins": 111,
-      "suLosses": 51,
-      "suWinPct": 0.6851851851851852,
-      "atsWins": 82,
-      "atsLosses": 74,
-      "atsPushes": 6,
-      "atsWinPct": 0.5256410256410257
+      "n": 165,
+      "suWins": 113,
+      "suLosses": 52,
+      "suWinPct": 0.6848484848484848,
+      "atsWins": 83,
+      "atsLosses": 75,
+      "atsPushes": 7,
+      "atsWinPct": 0.5253164556962026
     },
     {
       "key": "underdog",
@@ -247,14 +247,14 @@
     {
       "key": "home",
       "label": "Picked home team",
-      "n": 93,
-      "suWins": 62,
-      "suLosses": 31,
-      "suWinPct": 0.6666666666666666,
+      "n": 95,
+      "suWins": 63,
+      "suLosses": 32,
+      "suWinPct": 0.6631578947368421,
       "atsWins": 43,
-      "atsLosses": 47,
-      "atsPushes": 3,
-      "atsWinPct": 0.4777777777777778
+      "atsLosses": 48,
+      "atsPushes": 4,
+      "atsWinPct": 0.4725274725274725
     },
     {
       "key": "neutral",
@@ -271,14 +271,14 @@
     {
       "key": "away",
       "label": "Picked away team",
-      "n": 61,
-      "suWins": 42,
+      "n": 62,
+      "suWins": 43,
       "suLosses": 19,
-      "suWinPct": 0.6885245901639344,
-      "atsWins": 34,
+      "suWinPct": 0.6935483870967742,
+      "atsWins": 35,
       "atsLosses": 25,
       "atsPushes": 2,
-      "atsWinPct": 0.576271186440678
+      "atsWinPct": 0.5833333333333334
     }
   ],
   "weekLog": [
@@ -1677,8 +1677,8 @@
     {
       "columnId": "2026-week-w12",
       "label": "Week 12",
-      "runningSU": "111-52",
-      "runningATS": "82-76",
+      "runningSU": "113-53",
+      "runningATS": "83-77",
       "games": [
         {
           "gameId": 3483466621,
@@ -1686,6 +1686,30 @@
           "pick": "Los Angeles Rams",
           "confidence": 59.36969941057697,
           "result": "Los Angeles Rams 26-13 Green Bay Packers",
+          "correct": true
+        },
+        {
+          "gameId": 4067458484,
+          "matchup": "Chicago Bears @ Detroit Lions",
+          "pick": "Chicago Bears",
+          "confidence": 54.61639832077374,
+          "result": "Detroit Lions 35-39 Chicago Bears",
+          "correct": true
+        },
+        {
+          "gameId": 650279781,
+          "matchup": "Philadelphia Eagles @ Dallas Cowboys",
+          "pick": "Dallas Cowboys",
+          "confidence": 77.09255745355001,
+          "result": "Dallas Cowboys 38-39 Philadelphia Eagles",
+          "correct": false
+        },
+        {
+          "gameId": 1390458652,
+          "matchup": "Kansas City Chiefs @ Buffalo Bills",
+          "pick": "Buffalo Bills",
+          "confidence": 61.066287038975716,
+          "result": "Buffalo Bills 13-10 Kansas City Chiefs",
           "correct": true
         }
       ]

@@ -990,13 +990,24 @@
     }
   ],
   [
-    401858313,
+    401858540,
     {
-      "gameId": 401858313,
-      "homeTeam": "North Carolina",
-      "awayTeam": "NC State",
-      "spread": 6,
-      "overUnder": 54.5,
+      "gameId": 401858540,
+      "homeTeam": "Ohio State",
+      "awayTeam": "Michigan",
+      "spread": 10,
+      "overUnder": 37.5,
+      "provider": "DraftKings"
+    }
+  ],
+  [
+    401856764,
+    {
+      "gameId": 401856764,
+      "homeTeam": "Clemson",
+      "awayTeam": "South Carolina",
+      "spread": -6.5,
+      "overUnder": 42.5,
       "provider": "DraftKings"
     }
   ],
@@ -1030,17 +1041,6 @@
       "awayTeam": "Gardner-Webb",
       "spread": -1.5,
       "overUnder": 51.5,
-      "provider": "DraftKings"
-    }
-  ],
-  [
-    401858540,
-    {
-      "gameId": 401858540,
-      "homeTeam": "Ohio State",
-      "awayTeam": "Michigan",
-      "spread": 10.5,
-      "overUnder": 37.5,
       "provider": "DraftKings"
     }
   ],
@@ -1089,13 +1089,13 @@
     }
   ],
   [
-    401856764,
+    401858313,
     {
-      "gameId": 401856764,
-      "homeTeam": "Clemson",
-      "awayTeam": "South Carolina",
-      "spread": -6,
-      "overUnder": 41.5,
+      "gameId": 401858313,
+      "homeTeam": "North Carolina",
+      "awayTeam": "NC State",
+      "spread": 5.5,
+      "overUnder": 53.5,
       "provider": "DraftKings"
     }
   ],
@@ -1105,7 +1105,7 @@
       "gameId": 401856873,
       "homeTeam": "Arizona",
       "awayTeam": "Arizona State",
-      "spread": 8.5,
+      "spread": 7.5,
       "overUnder": 53.5,
       "provider": "DraftKings"
     }
@@ -1254,6 +1254,17 @@
     }
   ],
   [
+    401856879,
+    {
+      "gameId": 401856879,
+      "homeTeam": "Texas Tech",
+      "awayTeam": "TCU",
+      "spread": 13.5,
+      "overUnder": 46.5,
+      "provider": "DraftKings"
+    }
+  ],
+  [
     401856734,
     {
       "gameId": 401856734,
@@ -1265,12 +1276,12 @@
     }
   ],
   [
-    401856879,
+    401858543,
     {
-      "gameId": 401856879,
-      "homeTeam": "Texas Tech",
-      "awayTeam": "TCU",
-      "spread": 15.5,
+      "gameId": 401858543,
+      "homeTeam": "UCLA",
+      "awayTeam": "USC",
+      "spread": -6.5,
       "overUnder": 46.5,
       "provider": "DraftKings"
     }
@@ -1331,13 +1342,13 @@
     }
   ],
   [
-    401858541,
+    401856765,
     {
-      "gameId": 401858541,
-      "homeTeam": "Oregon",
-      "awayTeam": "Washington",
-      "spread": 14,
-      "overUnder": 50.5,
+      "gameId": 401856765,
+      "homeTeam": "Vanderbilt",
+      "awayTeam": "Tennessee",
+      "spread": -13.5,
+      "overUnder": 43.5,
       "provider": "DraftKings"
     }
   ],
@@ -1375,13 +1386,13 @@
     }
   ],
   [
-    401858543,
+    401856756,
     {
-      "gameId": 401858543,
-      "homeTeam": "UCLA",
-      "awayTeam": "USC",
-      "spread": -6.5,
-      "overUnder": 45.5,
+      "gameId": 401856756,
+      "homeTeam": "Texas A&M",
+      "awayTeam": "Texas",
+      "spread": -11.5,
+      "overUnder": 40.5,
       "provider": "DraftKings"
     }
   ],
@@ -1437,17 +1448,6 @@
       "awayTeam": "SMU",
       "spread": 20.5,
       "overUnder": 55.5,
-      "provider": "DraftKings"
-    }
-  ],
-  [
-    401856762,
-    {
-      "gameId": 401856762,
-      "homeTeam": "Ole Miss",
-      "awayTeam": "Mississippi State",
-      "spread": 18.5,
-      "overUnder": 56.5,
       "provider": "DraftKings"
     }
   ],
@@ -1547,17 +1547,6 @@
       "awayTeam": "Ole Miss",
       "spread": 2.5,
       "overUnder": 48.5,
-      "provider": "DraftKings"
-    }
-  ],
-  [
-    401856765,
-    {
-      "gameId": 401856765,
-      "homeTeam": "Vanderbilt",
-      "awayTeam": "Tennessee",
-      "spread": -13.5,
-      "overUnder": 42.5,
       "provider": "DraftKings"
     }
   ],
@@ -1749,6 +1738,17 @@
     }
   ],
   [
+    401856762,
+    {
+      "gameId": 401856762,
+      "homeTeam": "Ole Miss",
+      "awayTeam": "Mississippi State",
+      "spread": 17.5,
+      "overUnder": 56.5,
+      "provider": "DraftKings"
+    }
+  ],
+  [
     401871069,
     {
       "gameId": 401871069,
@@ -1760,13 +1760,13 @@
     }
   ],
   [
-    401856756,
+    401858541,
     {
-      "gameId": 401856756,
-      "homeTeam": "Texas A&M",
-      "awayTeam": "Texas",
-      "spread": -10.5,
-      "overUnder": 40.5,
+      "gameId": 401858541,
+      "homeTeam": "Oregon",
+      "awayTeam": "Washington",
+      "spread": 13.5,
+      "overUnder": 50.5,
       "provider": "DraftKings"
     }
   ],
@@ -15642,13 +15642,13 @@
     }
   ],
   [
-    401864549,
+    401861969,
     {
-      "gameId": 401864549,
-      "homeTeam": "San José State",
-      "awayTeam": "North Dakota State",
-      "spread": -7.5,
-      "overUnder": 40.5,
+      "gameId": 401861969,
+      "homeTeam": "Wyoming",
+      "awayTeam": "UConn",
+      "spread": -3.5,
+      "overUnder": 44.5,
       "provider": "DraftKings"
     }
   ],
@@ -15719,13 +15719,13 @@
     }
   ],
   [
-    401866474,
+    401856880,
     {
-      "gameId": 401866474,
-      "homeTeam": "Ball State",
-      "awayTeam": "Central Michigan",
-      "spread": -4,
-      "overUnder": 50.5,
+      "gameId": 401856880,
+      "homeTeam": "Utah",
+      "awayTeam": "West Virginia",
+      "spread": 26,
+      "overUnder": 66.5,
       "provider": "Bovada"
     }
   ],
@@ -16038,6 +16038,17 @@
     }
   ],
   [
+    401856761,
+    {
+      "gameId": 401856761,
+      "homeTeam": "Kentucky",
+      "awayTeam": "Louisville",
+      "spread": -3,
+      "overUnder": 53.5,
+      "provider": "DraftKings"
+    }
+  ],
+  [
     401868226,
     {
       "gameId": 401868226,
@@ -16104,24 +16115,13 @@
     }
   ],
   [
-    401856761,
+    401871083,
     {
-      "gameId": 401856761,
-      "homeTeam": "Kentucky",
-      "awayTeam": "Louisville",
-      "spread": -3,
-      "overUnder": 54.5,
-      "provider": "DraftKings"
-    }
-  ],
-  [
-    401858314,
-    {
-      "gameId": 401858314,
-      "homeTeam": "Syracuse",
-      "awayTeam": "Notre Dame",
-      "spread": -25.5,
-      "overUnder": 52.5,
+      "gameId": 401871083,
+      "homeTeam": "Middle Tennessee",
+      "awayTeam": "New Mexico State",
+      "spread": 3,
+      "overUnder": 51.5,
       "provider": "DraftKings"
     }
   ],
@@ -16181,14 +16181,14 @@
     }
   ],
   [
-    401856763,
+    401858314,
     {
-      "gameId": 401856763,
-      "homeTeam": "Missouri",
-      "awayTeam": "Oklahoma",
-      "spread": 2.5,
-      "overUnder": 41.5,
-      "provider": "DraftKings"
+      "gameId": 401858314,
+      "homeTeam": "Syracuse",
+      "awayTeam": "Notre Dame",
+      "spread": -26,
+      "overUnder": 54.5,
+      "provider": "Bovada"
     }
   ],
   [
@@ -16203,46 +16203,13 @@
     }
   ],
   [
-    401858536,
+    401866473,
     {
-      "gameId": 401858536,
-      "homeTeam": "Iowa",
-      "awayTeam": "Nebraska",
-      "spread": 4.5,
-      "overUnder": 40.5,
-      "provider": "DraftKings"
-    }
-  ],
-  [
-    401871083,
-    {
-      "gameId": 401871083,
-      "homeTeam": "Middle Tennessee",
-      "awayTeam": "New Mexico State",
-      "spread": 3,
-      "overUnder": 51.5,
-      "provider": "DraftKings"
-    }
-  ],
-  [
-    401861969,
-    {
-      "gameId": 401861969,
-      "homeTeam": "Wyoming",
-      "awayTeam": "UConn",
+      "gameId": 401866473,
+      "homeTeam": "Ohio",
+      "awayTeam": "Toledo",
       "spread": -3,
-      "overUnder": 45.5,
-      "provider": "DraftKings"
-    }
-  ],
-  [
-    401856876,
-    {
-      "gameId": 401856876,
-      "homeTeam": "BYU",
-      "awayTeam": "Cincinnati",
-      "spread": 15.5,
-      "overUnder": 56.5,
+      "overUnder": 44.5,
       "provider": "DraftKings"
     }
   ],
@@ -16252,8 +16219,41 @@
       "gameId": 401856878,
       "homeTeam": "Iowa State",
       "awayTeam": "Kansas State",
-      "spread": 3.5,
+      "spread": 4,
       "overUnder": 53.5,
+      "provider": "DraftKings"
+    }
+  ],
+  [
+    401866474,
+    {
+      "gameId": 401866474,
+      "homeTeam": "Ball State",
+      "awayTeam": "Central Michigan",
+      "spread": -3.5,
+      "overUnder": 50.5,
+      "provider": "Bovada"
+    }
+  ],
+  [
+    401856876,
+    {
+      "gameId": 401856876,
+      "homeTeam": "BYU",
+      "awayTeam": "Cincinnati",
+      "spread": 15.5,
+      "overUnder": 55.5,
+      "provider": "DraftKings"
+    }
+  ],
+  [
+    401864549,
+    {
+      "gameId": 401864549,
+      "homeTeam": "San José State",
+      "awayTeam": "North Dakota State",
+      "spread": -8.5,
+      "overUnder": 39.5,
       "provider": "DraftKings"
     }
   ],
@@ -16269,24 +16269,35 @@
     }
   ],
   [
-    401856880,
+    401871082,
     {
-      "gameId": 401856880,
-      "homeTeam": "Utah",
-      "awayTeam": "West Virginia",
-      "spread": 26,
-      "overUnder": 67,
-      "provider": "Bovada"
+      "gameId": 401871082,
+      "homeTeam": "Florida International",
+      "awayTeam": "Sam Houston",
+      "spread": 11.5,
+      "overUnder": 40.5,
+      "provider": "DraftKings"
     }
   ],
   [
-    401866473,
+    401856763,
     {
-      "gameId": 401866473,
-      "homeTeam": "Ohio",
-      "awayTeam": "Toledo",
-      "spread": -3,
-      "overUnder": 45.5,
+      "gameId": 401856763,
+      "homeTeam": "Missouri",
+      "awayTeam": "Oklahoma",
+      "spread": 2.5,
+      "overUnder": 41.5,
+      "provider": "DraftKings"
+    }
+  ],
+  [
+    401858536,
+    {
+      "gameId": 401858536,
+      "homeTeam": "Iowa",
+      "awayTeam": "Nebraska",
+      "spread": 3.5,
+      "overUnder": 40.5,
       "provider": "DraftKings"
     }
   ],
@@ -16297,18 +16308,7 @@
       "homeTeam": "South Florida",
       "awayTeam": "Tulane",
       "spread": 6.5,
-      "overUnder": 43.5,
-      "provider": "DraftKings"
-    }
-  ],
-  [
-    401871082,
-    {
-      "gameId": 401871082,
-      "homeTeam": "Florida International",
-      "awayTeam": "Sam Houston",
-      "spread": 11.5,
-      "overUnder": 41.5,
+      "overUnder": 44.5,
       "provider": "DraftKings"
     }
   ],
@@ -16335,13 +16335,13 @@
     }
   ],
   [
-    401862842,
+    401858544,
     {
-      "gameId": 401862842,
-      "homeTeam": "Charlotte",
-      "awayTeam": "Navy",
-      "spread": -16.5,
-      "overUnder": 54.5,
+      "gameId": 401858544,
+      "homeTeam": "Wisconsin",
+      "awayTeam": "Minnesota",
+      "spread": 9.5,
+      "overUnder": 37.5,
       "provider": "DraftKings"
     }
   ],
@@ -16434,13 +16434,13 @@
     }
   ],
   [
-    401860928,
+    401866472,
     {
-      "gameId": 401860928,
-      "homeTeam": "Utah State",
-      "awayTeam": "Texas State",
-      "spread": -7,
-      "overUnder": 52.5,
+      "gameId": 401866472,
+      "homeTeam": "Akron",
+      "awayTeam": "Buffalo",
+      "spread": -7.5,
+      "overUnder": 49.5,
       "provider": "DraftKings"
     }
   ],
@@ -16478,13 +16478,13 @@
     }
   ],
   [
-    401858544,
+    401860928,
     {
-      "gameId": 401858544,
-      "homeTeam": "Wisconsin",
-      "awayTeam": "Minnesota",
-      "spread": 8.5,
-      "overUnder": 37.5,
+      "gameId": 401860928,
+      "homeTeam": "Utah State",
+      "awayTeam": "Texas State",
+      "spread": -7,
+      "overUnder": 52.5,
       "provider": "DraftKings"
     }
   ],
@@ -16522,24 +16522,24 @@
     }
   ],
   [
-    401871102,
+    401862842,
     {
-      "gameId": 401871102,
-      "homeTeam": "UL Monroe",
-      "awayTeam": "Marshall",
-      "spread": -5.5,
-      "overUnder": 51.5,
+      "gameId": 401862842,
+      "homeTeam": "Charlotte",
+      "awayTeam": "Navy",
+      "spread": -16.5,
+      "overUnder": 53.5,
       "provider": "DraftKings"
     }
   ],
   [
-    401869959,
+    401858542,
     {
-      "gameId": 401869959,
-      "homeTeam": "Georgia State",
-      "awayTeam": "Louisiana",
-      "spread": -5.5,
-      "overUnder": 55.5,
+      "gameId": 401858542,
+      "homeTeam": "Rutgers",
+      "awayTeam": "Michigan State",
+      "spread": -3,
+      "overUnder": 46.5,
       "provider": "DraftKings"
     }
   ],
@@ -16550,17 +16550,6 @@
       "homeTeam": "Maine",
       "awayTeam": "New Hampshire",
       "spread": -3.5,
-      "overUnder": 42.5,
-      "provider": "DraftKings"
-    }
-  ],
-  [
-    401866475,
-    {
-      "gameId": 401866475,
-      "homeTeam": "Bowling Green",
-      "awayTeam": "Massachusetts",
-      "spread": 3,
       "overUnder": 42.5,
       "provider": "DraftKings"
     }
@@ -16577,13 +16566,13 @@
     }
   ],
   [
-    401864550,
+    401866475,
     {
-      "gameId": 401864550,
-      "homeTeam": "Northern Illinois",
-      "awayTeam": "UTEP",
-      "spread": 4,
-      "overUnder": 50.5,
+      "gameId": 401866475,
+      "homeTeam": "Bowling Green",
+      "awayTeam": "Massachusetts",
+      "spread": 3,
+      "overUnder": 41.5,
       "provider": "DraftKings"
     }
   ],
@@ -16610,24 +16599,13 @@
     }
   ],
   [
-    401862841,
+    401871102,
     {
-      "gameId": 401862841,
-      "homeTeam": "Rice",
-      "awayTeam": "Army",
-      "spread": -6,
-      "overUnder": 47.5,
-      "provider": "DraftKings"
-    }
-  ],
-  [
-    401858542,
-    {
-      "gameId": 401858542,
-      "homeTeam": "Rutgers",
-      "awayTeam": "Michigan State",
-      "spread": -3,
-      "overUnder": 46.5,
+      "gameId": 401871102,
+      "homeTeam": "UL Monroe",
+      "awayTeam": "Marshall",
+      "spread": -5.5,
+      "overUnder": 51.5,
       "provider": "DraftKings"
     }
   ],
@@ -16643,13 +16621,13 @@
     }
   ],
   [
-    401866472,
+    401864550,
     {
-      "gameId": 401866472,
-      "homeTeam": "Akron",
-      "awayTeam": "Buffalo",
-      "spread": -7.5,
-      "overUnder": 47.5,
+      "gameId": 401864550,
+      "homeTeam": "Northern Illinois",
+      "awayTeam": "UTEP",
+      "spread": 4.5,
+      "overUnder": 50.5,
       "provider": "DraftKings"
     }
   ],
@@ -16676,36 +16654,25 @@
     }
   ],
   [
-    401869930,
+    401862841,
     {
-      "gameId": 401869930,
-      "homeTeam": "South Alabama",
-      "awayTeam": "App State",
-      "spread": 3.5,
-      "overUnder": 56.5,
+      "gameId": 401862841,
+      "homeTeam": "Rice",
+      "awayTeam": "Army",
+      "spread": -5.5,
+      "overUnder": 47.5,
       "provider": "DraftKings"
     }
   ],
   [
-    401856877,
+    401869959,
     {
-      "gameId": 401856877,
-      "homeTeam": "Oklahoma State",
-      "awayTeam": "Kansas",
-      "spread": 6.5,
-      "overUnder": 64.5,
+      "gameId": 401869959,
+      "homeTeam": "Georgia State",
+      "awayTeam": "Louisiana",
+      "spread": -4.5,
+      "overUnder": 55.5,
       "provider": "DraftKings"
-    }
-  ],
-  [
-    401869954,
-    {
-      "gameId": 401869954,
-      "homeTeam": "Georgia Southern",
-      "awayTeam": "Louisiana Tech",
-      "spread": 2.5,
-      "overUnder": 54,
-      "provider": "Bovada"
     }
   ],
   [
@@ -16715,18 +16682,18 @@
       "homeTeam": "Colorado",
       "awayTeam": "UCF",
       "spread": 2.5,
-      "overUnder": 49.5,
+      "overUnder": 48.5,
       "provider": "DraftKings"
     }
   ],
   [
-    401862843,
+    401869930,
     {
-      "gameId": 401862843,
-      "homeTeam": "North Texas",
-      "awayTeam": "UAB",
-      "spread": 3,
-      "overUnder": 45.5,
+      "gameId": 401869930,
+      "homeTeam": "South Alabama",
+      "awayTeam": "App State",
+      "spread": 3.5,
+      "overUnder": 56.5,
       "provider": "DraftKings"
     }
   ],
@@ -16775,12 +16742,45 @@
     }
   ],
   [
+    401869954,
+    {
+      "gameId": 401869954,
+      "homeTeam": "Georgia Southern",
+      "awayTeam": "Louisiana Tech",
+      "spread": 2.5,
+      "overUnder": 53,
+      "provider": "Bovada"
+    }
+  ],
+  [
+    401862843,
+    {
+      "gameId": 401862843,
+      "homeTeam": "North Texas",
+      "awayTeam": "UAB",
+      "spread": 2.5,
+      "overUnder": 45.5,
+      "provider": "DraftKings"
+    }
+  ],
+  [
+    401856877,
+    {
+      "gameId": 401856877,
+      "homeTeam": "Oklahoma State",
+      "awayTeam": "Kansas",
+      "spread": 6,
+      "overUnder": 64.5,
+      "provider": "DraftKings"
+    }
+  ],
+  [
     401871063,
     {
       "gameId": 401871063,
       "homeTeam": "Missouri State",
       "awayTeam": "Liberty",
-      "spread": -18,
+      "spread": -18.5,
       "overUnder": 53,
       "provider": "Bovada"
     }
@@ -16797,17 +16797,6 @@
     }
   ],
   [
-    401862838,
-    {
-      "gameId": 401862838,
-      "homeTeam": "Memphis",
-      "awayTeam": "Temple",
-      "spread": 18,
-      "overUnder": 66,
-      "provider": "Bovada"
-    }
-  ],
-  [
     401864546,
     {
       "gameId": 401864546,
@@ -16819,12 +16808,23 @@
     }
   ],
   [
+    401862838,
+    {
+      "gameId": 401862838,
+      "homeTeam": "Memphis",
+      "awayTeam": "Temple",
+      "spread": 18.5,
+      "overUnder": 66,
+      "provider": "Bovada"
+    }
+  ],
+  [
     401862840,
     {
       "gameId": 401862840,
       "homeTeam": "UTSA",
       "awayTeam": "Tulsa",
-      "spread": 1,
+      "spread": -1,
       "overUnder": 57.5,
       "provider": "Bovada"
     }
@@ -16907,6 +16907,17 @@
     }
   ],
   [
+    401934097,
+    {
+      "gameId": 401934097,
+      "homeTeam": "Lehigh",
+      "awayTeam": "UAlbany",
+      "spread": 6.5,
+      "overUnder": 46.5,
+      "provider": "DraftKings"
+    }
+  ],
+  [
     401858312,
     {
       "gameId": 401858312,
@@ -16962,17 +16973,6 @@
     }
   ],
   [
-    401934097,
-    {
-      "gameId": 401934097,
-      "homeTeam": "Lehigh",
-      "awayTeam": "UAlbany",
-      "spread": 6.5,
-      "overUnder": 45.5,
-      "provider": "DraftKings"
-    }
-  ],
-  [
     401864548,
     {
       "gameId": 401864548,
@@ -17000,8 +17000,8 @@
       "gameId": 401934095,
       "homeTeam": "Monmouth",
       "awayTeam": "Harvard",
-      "spread": -6,
-      "overUnder": 52.5,
+      "spread": -4.5,
+      "overUnder": 51.5,
       "provider": "DraftKings"
     }
   ],
